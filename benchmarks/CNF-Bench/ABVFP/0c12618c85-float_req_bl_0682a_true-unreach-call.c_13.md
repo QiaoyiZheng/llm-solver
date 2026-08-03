@@ -1,0 +1,14 @@
+(⟦(= |c___ieee754_atan2f_#t~ret35_primed| |c_fabs_float_#res|)⟧) ∧
+(¬τ1 ∨ ⟦(= |c_old(#memory_int)| |c_#memory_int_Hier|)⟧) ∧
+(¬τ1 ∨ ⟦(= |c_old(#length)| |c_#length_Hier|)⟧) ∧
+(¬τ1 ∨ ⟦(= |c_old(#valid)| |c_#valid_Hier|)⟧) ∧
+(τ1 ∨ ¬⟦(= |c_old(#memory_int)| |c_#memory_int_Hier|)⟧ ∨ ¬⟦(= |c_old(#length)| |c_#length_Hier|)⟧ ∨ ¬⟦(= |c_old(#valid)| |c_#valid_Hier|)⟧) ∧
+(τ1) ∧
+(⟦(= |c_fabs_float_#in~x| (fp.div c_currentRoundingMode c___ieee754_atan2f_~y_Hier c___ieee754_atan2f_~x_Hier))⟧) ∧
+(¬τ2 ∨ ⟦(exists ((__ieee754_atan2f_~hy~0 (_ BitVec 32)) (__ieee754_atan2f_~hx~1 (_ BitVec 32))) (and (= (bvand (_ bv2147483647 32) __ieee754_atan2f_~hy~0) c___ieee754_atan2f_~iy~0_Hier) (= |c___ieee754_atan2f_#in~y_Hier| (fp ((_ extract 31 31) __ieee754_atan2f_~hy~0) ((_ extract 30 23) __ieee754_atan2f_~hy~0) ((_ extract 22 0) __ieee754_atan2f_~hy~0))) (= c___ieee754_atan2f_~m~0_Hier (bvor (bvand (_ bv1 32) (bvashr __ieee754_atan2f_~hy~0 (_ bv31 32))) (bvand (_ bv2 32) (bvashr __ieee754_atan2f_~hx~1 (_ bv30 32)))))))⟧) ∧
+(¬τ2 ∨ ⟦(= (bvand (_ bv2147483647 32) c___ieee754_atan2f_~hy~0_Hier) c___ieee754_atan2f_~iy~0_Hier)⟧) ∧
+(¬τ2 ∨ ⟦(= |c___ieee754_atan2f_#in~y_Hier| (fp ((_ extract 31 31) c___ieee754_atan2f_~hy~0_Hier) ((_ extract 30 23) c___ieee754_atan2f_~hy~0_Hier) ((_ extract 22 0) c___ieee754_atan2f_~hy~0_Hier)))⟧) ∧
+(¬τ2 ∨ ⟦(= |c___ieee754_atan2f_#in~y_Hier| c___ieee754_atan2f_~y_Hier)⟧) ∧
+(τ2 ∨ ¬⟦(exists ((__ieee754_atan2f_~hy~0 (_ BitVec 32)) (__ieee754_atan2f_~hx~1 (_ BitVec 32))) (and (= (bvand (_ bv2147483647 32) __ieee754_atan2f_~hy~0) c___ieee754_atan2f_~iy~0_Hier) (= |c___ieee754_atan2f_#in~y_Hier| (fp ((_ extract 31 31) __ieee754_atan2f_~hy~0) ((_ extract 30 23) __ieee754_atan2f_~hy~0) ((_ extract 22 0) __ieee754_atan2f_~hy~0))) (= c___ieee754_atan2f_~m~0_Hier (bvor (bvand (_ bv1 32) (bvashr __ieee754_atan2f_~hy~0 (_ bv31 32))) (bvand (_ bv2 32) (bvashr __ieee754_atan2f_~hx~1 (_ bv30 32)))))))⟧ ∨ ¬⟦(= (bvand (_ bv2147483647 32) c___ieee754_atan2f_~hy~0_Hier) c___ieee754_atan2f_~iy~0_Hier)⟧ ∨ ¬⟦(= |c___ieee754_atan2f_#in~y_Hier| (fp ((_ extract 31 31) c___ieee754_atan2f_~hy~0_Hier) ((_ extract 30 23) c___ieee754_atan2f_~hy~0_Hier) ((_ extract 22 0) c___ieee754_atan2f_~hy~0_Hier)))⟧ ∨ ¬⟦(= |c___ieee754_atan2f_#in~y_Hier| c___ieee754_atan2f_~y_Hier)⟧) ∧
+(τ2) ∧
+(¬⟦(exists ((__ieee754_atan2f_~hy~0 (_ BitVec 32)) (__ieee754_atan2f_~hx~1 (_ BitVec 32))) (and (= (_ bv2 32) (bvor (bvand (_ bv1 32) (bvashr __ieee754_atan2f_~hy~0 (_ bv31 32))) (bvand (_ bv2 32) (bvashr __ieee754_atan2f_~hx~1 (_ bv30 32))))) (= |c___ieee754_atan2f_#in~y_Hier| (fp ((_ extract 31 31) __ieee754_atan2f_~hy~0) ((_ extract 30 23) __ieee754_atan2f_~hy~0) ((_ extract 22 0) __ieee754_atan2f_~hy~0))) (= (bvadd ((_ sign_extend 32) (bvand (_ bv2147483647 32) __ieee754_atan2f_~hy~0)) (_ bv18446744071570456576 64)) (_ bv0 64))))⟧)

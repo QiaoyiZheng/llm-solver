@@ -1,0 +1,6 @@
+(⟦(= |c_modf_float_#res_primed| (fp.sub c_currentRoundingMode c_modf_float_~x (fp ((_ extract 31 31) (select (select |c_#memory_int| c_modf_float_~iptr.base) c_modf_float_~iptr.offset)) ((_ extract 30 23) (select (select |c_#memory_int| c_modf_float_~iptr.base) c_modf_float_~iptr.offset)) ((_ extract 22 0) (select (select |c_#memory_int| c_modf_float_~iptr.base) c_modf_float_~iptr.offset)))))⟧) ∧
+(¬τ1 ∨ ⟦(= |c_modf_float_#in~iptr.offset| c_modf_float_~iptr.offset)⟧) ∧
+(¬τ1 ∨ ⟦(= |c_modf_float_#in~iptr.base| c_modf_float_~iptr.base)⟧) ∧
+(τ1 ∨ ¬⟦(= |c_modf_float_#in~iptr.offset| c_modf_float_~iptr.offset)⟧ ∨ ¬⟦(= |c_modf_float_#in~iptr.base| c_modf_float_~iptr.base)⟧) ∧
+(τ1) ∧
+(¬⟦(exists ((v_arrayElimCell_1 (_ BitVec 32)) (modf_float_~i0~0 (_ BitVec 32))) (and (= (fp ((_ extract 31 31) v_arrayElimCell_1) ((_ extract 30 23) v_arrayElimCell_1) ((_ extract 22 0) v_arrayElimCell_1)) (fp ((_ extract 31 31) (bvand (_ bv2147483648 32) modf_float_~i0~0)) ((_ extract 30 23) (bvand (_ bv2147483648 32) modf_float_~i0~0)) ((_ extract 22 0) (bvand (_ bv2147483648 32) modf_float_~i0~0)))) (= (fp ((_ extract 31 31) v_arrayElimCell_1) ((_ extract 30 23) v_arrayElimCell_1) ((_ extract 22 0) v_arrayElimCell_1)) |c_main_#t~mem14|)))⟧)
