@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "c_~a24~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a24~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a21~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_old(~a26~0)|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a26~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a14~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a14~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a28~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a28~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_calculate_output_#res_primed|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_calculate_output_~input",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(<= c_~a28~0 300)⟧) ∧\n(¬τ1 ∨ ⟦(< 134 c_~a28~0)⟧) ∧\n(τ1 ∨ ¬⟦(<= c_~a28~0 300)⟧ ∨ ¬⟦(< 134 c_~a28~0)⟧) ∧\n(τ2 ∨ ¬τ1) ∧\n(τ2 ∨ ¬⟦(< 300 c_~a28~0)⟧) ∧\n(¬τ2 ∨ τ1 ∨ ⟦(< 300 c_~a28~0)⟧) ∧\n(¬τ3 ∨ τ2) ∧\n(¬τ3 ∨ ⟦(= c_~a28~0_primed (ite (and (not (= (mod (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) (- 5)) 0)) (< (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) 0)) (+ (div (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) (- 5)) (- 1)) (div (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) (- 5))))⟧) ∧\n(¬τ3 ∨ ⟦(= c_~a24~0_primed 1)⟧) ∧\n(¬τ3 ∨ ⟦(< 0 (+ c_~a14~0 84))⟧) ∧\n(¬τ3 ∨ ⟦(= c_~a14~0_primed (+ (ite (and (< (* 9 c_~a14~0) 0) (not (= (mod (* 9 c_~a14~0) 10) 0))) (+ (div (* 9 c_~a14~0) 10) 1) (div (* 9 c_~a14~0) 10)) (- 575682)))⟧) ∧\n(¬τ3 ∨ ⟦(<= c_~a21~0 127)⟧) ∧\n(¬τ3 ∨ ⟦(<= (+ c_~a26~0 68) 0)⟧) ∧\n(¬τ3 ∨ ⟦(= c_calculate_output_~input 6)⟧) ∧\n(¬τ3 ∨ ⟦(= |c_calculate_output_#res_primed| (- 1))⟧) ∧\n(¬τ3 ∨ ⟦(= 2 c_~a24~0)⟧) ∧\n(τ3 ∨ ¬τ2 ∨ ¬⟦(= c_~a28~0_primed (ite (and (not (= (mod (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) (- 5)) 0)) (< (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) 0)) (+ (div (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) (- 5)) (- 1)) (div (ite (and (< (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 0) (not (= (mod (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 0))) (+ (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5) 1) (div (ite (and (< c_~a28~0 0) (not (= 0 (mod c_~a28~0 5)))) (+ (div c_~a28~0 5) 1) (div c_~a28~0 5)) 5)) (- 5))))⟧ ∨ ¬⟦(= c_~a24~0_primed 1)⟧ ∨ ¬⟦(< 0 (+ c_~a14~0 84))⟧ ∨ ¬⟦(= c_~a14~0_primed (+ (ite (and (< (* 9 c_~a14~0) 0) (not (= (mod (* 9 c_~a14~0) 10) 0))) (+ (div (* 9 c_~a14~0) 10) 1) (div (* 9 c_~a14~0) 10)) (- 575682)))⟧ ∨ ¬⟦(<= c_~a21~0 127)⟧ ∨ ¬⟦(<= (+ c_~a26~0 68) 0)⟧ ∨ ¬⟦(= c_calculate_output_~input 6)⟧ ∨ ¬⟦(= |c_calculate_output_#res_primed| (- 1))⟧ ∨ ¬⟦(= 2 c_~a24~0)⟧) ∧\n(τ3) ∧\n(¬τ4 ∨ ⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10)) (<= v_~a26~0_1267 222)))⟧) ∧\n(¬τ4 ∨ ⟦(<= c_~a26~0 |c_old(~a26~0)|)⟧) ∧\n(τ4 ∨ ¬⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10)) (<= v_~a26~0_1267 222)))⟧ ∨ ¬⟦(<= c_~a26~0 |c_old(~a26~0)|)⟧) ∧\n(τ4) ∧\n(¬⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= v_~a26~0_1267 |c_old(~a26~0)|) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10))))⟧)"
+}

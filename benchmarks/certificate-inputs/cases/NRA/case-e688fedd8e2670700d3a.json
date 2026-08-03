@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "logic": "NRA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "xuscore2dollarskuscore1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ts2uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t2uscore0dollarskuscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    }
+  ],
+  "cnf": "(¬⟦(exists ((ts2uscore0 Real)) (=> (and (and (and (=> (and (<= 0 ts2uscore0) (<= ts2uscore0 t2uscore0dollarskuscore0)) (<= ts2uscore0 c)) (>= t2uscore0dollarskuscore0 0)) (<= (* xuscore2dollarskuscore1 xuscore2dollarskuscore1) (* (* 4 c) (* 4 c)))) (< (* x x) (* (* 4 c) (* 4 c)))) (or (> xuscore2dollarskuscore1 0) (<= (* (+ (* 4 t2uscore0dollarskuscore0) xuscore2dollarskuscore1) (+ (* 4 t2uscore0dollarskuscore0) xuscore2dollarskuscore1)) (* (* 4 c) (* 4 c))))))⟧)"
+}

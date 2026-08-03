@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [],
+  "cnf": "(¬⟦(forall ((?X Int)) (= (* ?X ?X) ?X))⟧)"
+}

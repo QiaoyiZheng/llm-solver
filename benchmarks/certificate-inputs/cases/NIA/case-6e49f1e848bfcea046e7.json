@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "c_mp_add_~r2~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_mp_add_~partial_sum~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_mp_add_~i~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(= 2 (mod c_mp_add_~i~0 256))⟧) ∧\n(¬τ1 ∨ ⟦(= c_mp_add_~r2~0_primed c_mp_add_~partial_sum~0)⟧) ∧\n(τ1 ∨ ¬⟦(= 2 (mod c_mp_add_~i~0 256))⟧ ∨ ¬⟦(= c_mp_add_~r2~0_primed c_mp_add_~partial_sum~0)⟧) ∧\n(τ1) ∧\n(⟦(< (mod c_mp_add_~i~0 256) 4)⟧) ∧\n(¬⟦(exists ((v_mp_add_~i~0_63 Int)) (and (= (mod v_mp_add_~i~0_63 256) 1) (= c_mp_add_~i~0 (+ (mod v_mp_add_~i~0_63 256) 1))))⟧)"
+}

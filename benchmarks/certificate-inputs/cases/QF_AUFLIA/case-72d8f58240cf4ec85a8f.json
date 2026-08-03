@@ -1,0 +1,1480 @@
+{
+  "schema_version": 1,
+  "logic": "QF_AUFLIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "a_1230",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1231",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1232",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1233",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1234",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1235",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1236",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1237",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1238",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1239",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1240",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1241",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1242",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1243",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1244",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1245",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1246",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1247",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1248",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1249",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1250",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1251",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1252",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1253",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1254",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1255",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1256",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1257",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1258",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1259",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1260",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1261",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1262",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1263",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1264",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1265",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1266",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1267",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1268",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1269",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1270",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1271",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1272",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1273",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1274",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1275",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1276",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1277",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1278",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1279",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1280",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1281",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1282",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1283",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1284",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1285",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1286",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1287",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1288",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1289",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1290",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1291",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1292",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1293",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1294",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1295",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1296",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1297",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1298",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1299",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1300",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1301",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1302",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1303",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1304",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1305",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1306",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1307",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1308",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1309",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1310",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1311",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1312",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1313",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1314",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1315",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1316",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1317",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1318",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1319",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1320",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1321",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1322",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1323",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1324",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1325",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1326",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1327",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1328",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1329",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1330",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1331",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1332",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1333",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1334",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1335",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1336",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1337",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1338",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1339",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1340",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1341",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1342",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1343",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1344",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1345",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1346",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1347",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1348",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1349",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1351",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1352",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i_1350",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a1",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e10",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e11",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e12",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e13",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e14",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e15",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e16",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e17",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e18",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e19",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e20",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e21",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e22",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e23",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e24",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e25",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e26",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e27",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e28",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e29",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e3",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e30",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e31",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e32",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e33",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e34",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e35",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e36",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e37",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e38",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e39",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e40",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e41",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e42",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e43",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e44",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e45",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e46",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e47",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e48",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e49",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e50",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e51",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e52",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e53",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e54",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e55",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e56",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e57",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e58",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e59",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e60",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e7",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e8",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e9",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i10",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i11",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i12",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i13",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i14",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i15",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i16",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i17",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i18",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i19",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i20",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i21",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i22",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i23",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i24",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i25",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i26",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i27",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i28",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i29",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i3",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i30",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i31",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i32",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i33",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i34",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i35",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i36",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i37",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i38",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i39",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i40",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i41",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i42",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i43",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i44",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i45",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i46",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i47",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i48",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i49",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i50",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i51",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i52",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i53",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i54",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i55",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i56",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i57",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i58",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i59",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i60",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i7",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i8",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i9",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "function",
+      "symbol": "sk",
+      "parameter_sorts": [
+        "(Array Int Int)",
+        "(Array Int Int)"
+      ],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(⟦(= a_1230 (store a1 i1 e1))⟧) ∧\n(⟦(= a_1231 (store a_1230 i2 e2))⟧) ∧\n(⟦(= a_1232 (store a_1231 i3 e3))⟧) ∧\n(⟦(= a_1233 (store a_1232 i4 e4))⟧) ∧\n(⟦(= a_1234 (store a_1233 i5 e5))⟧) ∧\n(⟦(= a_1235 (store a_1234 i6 e6))⟧) ∧\n(⟦(= a_1236 (store a_1235 i7 e7))⟧) ∧\n(⟦(= a_1237 (store a_1236 i8 e8))⟧) ∧\n(⟦(= a_1238 (store a_1237 i9 e9))⟧) ∧\n(⟦(= a_1239 (store a_1238 i10 e10))⟧) ∧\n(⟦(= a_1240 (store a_1239 i11 e11))⟧) ∧\n(⟦(= a_1241 (store a_1240 i12 e12))⟧) ∧\n(⟦(= a_1242 (store a_1241 i13 e13))⟧) ∧\n(⟦(= a_1243 (store a_1242 i14 e14))⟧) ∧\n(⟦(= a_1244 (store a_1243 i15 e15))⟧) ∧\n(⟦(= a_1245 (store a_1244 i16 e16))⟧) ∧\n(⟦(= a_1246 (store a_1245 i17 e17))⟧) ∧\n(⟦(= a_1247 (store a_1246 i18 e18))⟧) ∧\n(⟦(= a_1248 (store a_1247 i19 e19))⟧) ∧\n(⟦(= a_1249 (store a_1248 i20 e20))⟧) ∧\n(⟦(= a_1250 (store a_1249 i21 e21))⟧) ∧\n(⟦(= a_1251 (store a_1250 i22 e22))⟧) ∧\n(⟦(= a_1252 (store a_1251 i23 e23))⟧) ∧\n(⟦(= a_1253 (store a_1252 i24 e24))⟧) ∧\n(⟦(= a_1254 (store a_1253 i25 e25))⟧) ∧\n(⟦(= a_1255 (store a_1254 i26 e26))⟧) ∧\n(⟦(= a_1256 (store a_1255 i27 e27))⟧) ∧\n(⟦(= a_1257 (store a_1256 i28 e28))⟧) ∧\n(⟦(= a_1258 (store a_1257 i29 e29))⟧) ∧\n(⟦(= a_1259 (store a_1258 i30 e30))⟧) ∧\n(⟦(= a_1260 (store a_1259 i31 e31))⟧) ∧\n(⟦(= a_1261 (store a_1260 i32 e32))⟧) ∧\n(⟦(= a_1262 (store a_1261 i33 e33))⟧) ∧\n(⟦(= a_1263 (store a_1262 i34 e34))⟧) ∧\n(⟦(= a_1264 (store a_1263 i35 e35))⟧) ∧\n(⟦(= a_1265 (store a_1264 i36 e36))⟧) ∧\n(⟦(= a_1266 (store a_1265 i37 e37))⟧) ∧\n(⟦(= a_1267 (store a_1266 i38 e38))⟧) ∧\n(⟦(= a_1268 (store a_1267 i39 e39))⟧) ∧\n(⟦(= a_1269 (store a_1268 i40 e40))⟧) ∧\n(⟦(= a_1270 (store a_1269 i41 e41))⟧) ∧\n(⟦(= a_1271 (store a_1270 i42 e42))⟧) ∧\n(⟦(= a_1272 (store a_1271 i43 e43))⟧) ∧\n(⟦(= a_1273 (store a_1272 i44 e44))⟧) ∧\n(⟦(= a_1274 (store a_1273 i45 e45))⟧) ∧\n(⟦(= a_1275 (store a_1274 i46 e46))⟧) ∧\n(⟦(= a_1276 (store a_1275 i47 e47))⟧) ∧\n(⟦(= a_1277 (store a_1276 i48 e48))⟧) ∧\n(⟦(= a_1278 (store a_1277 i49 e49))⟧) ∧\n(⟦(= a_1279 (store a_1278 i50 e50))⟧) ∧\n(⟦(= a_1280 (store a_1279 i51 e51))⟧) ∧\n(⟦(= a_1281 (store a_1280 i52 e52))⟧) ∧\n(⟦(= a_1282 (store a_1281 i53 e53))⟧) ∧\n(⟦(= a_1283 (store a_1282 i54 e54))⟧) ∧\n(⟦(= a_1284 (store a_1283 i55 e55))⟧) ∧\n(⟦(= a_1285 (store a_1284 i56 e56))⟧) ∧\n(⟦(= a_1286 (store a_1285 i57 e57))⟧) ∧\n(⟦(= a_1287 (store a_1286 i58 e58))⟧) ∧\n(⟦(= a_1288 (store a_1287 i59 e59))⟧) ∧\n(⟦(= a_1289 (store a_1288 i1 e1))⟧) ∧\n(⟦(= a_1290 (store a1 i21 e21))⟧) ∧\n(⟦(= a_1291 (store a_1290 i24 e24))⟧) ∧\n(⟦(= a_1292 (store a_1291 i36 e36))⟧) ∧\n(⟦(= a_1293 (store a_1292 i27 e27))⟧) ∧\n(⟦(= a_1294 (store a_1293 i47 e47))⟧) ∧\n(⟦(= a_1295 (store a_1294 i54 e54))⟧) ∧\n(⟦(= a_1296 (store a_1295 i41 e41))⟧) ∧\n(⟦(= a_1297 (store a_1296 i59 e59))⟧) ∧\n(⟦(= a_1298 (store a_1297 i56 e56))⟧) ∧\n(⟦(= a_1299 (store a_1298 i58 e58))⟧) ∧\n(⟦(= a_1300 (store a_1299 i20 e20))⟧) ∧\n(⟦(= a_1301 (store a_1300 i9 e9))⟧) ∧\n(⟦(= a_1302 (store a_1301 i50 e50))⟧) ∧\n(⟦(= a_1303 (store a_1302 i6 e6))⟧) ∧\n(⟦(= a_1304 (store a_1303 i42 e42))⟧) ∧\n(⟦(= a_1305 (store a_1304 i44 e44))⟧) ∧\n(⟦(= a_1306 (store a_1305 i12 e12))⟧) ∧\n(⟦(= a_1307 (store a_1306 i8 e8))⟧) ∧\n(⟦(= a_1308 (store a_1307 i35 e35))⟧) ∧\n(⟦(= a_1309 (store a_1308 i18 e18))⟧) ∧\n(⟦(= a_1310 (store a_1309 i46 e46))⟧) ∧\n(⟦(= a_1311 (store a_1310 i40 e40))⟧) ∧\n(⟦(= a_1312 (store a_1311 i29 e29))⟧) ∧\n(⟦(= a_1313 (store a_1312 i15 e15))⟧) ∧\n(⟦(= a_1314 (store a_1313 i51 e51))⟧) ∧\n(⟦(= a_1315 (store a_1314 i22 e22))⟧) ∧\n(⟦(= a_1316 (store a_1315 i30 e30))⟧) ∧\n(⟦(= a_1317 (store a_1316 i32 e32))⟧) ∧\n(⟦(= a_1318 (store a_1317 i17 e17))⟧) ∧\n(⟦(= a_1319 (store a_1318 i28 e28))⟧) ∧\n(⟦(= a_1320 (store a_1319 i5 e5))⟧) ∧\n(⟦(= a_1321 (store a_1320 i23 e23))⟧) ∧\n(⟦(= a_1322 (store a_1321 i39 e39))⟧) ∧\n(⟦(= a_1323 (store a_1322 i52 e52))⟧) ∧\n(⟦(= a_1324 (store a_1323 i10 e10))⟧) ∧\n(⟦(= a_1325 (store a_1324 i3 e3))⟧) ∧\n(⟦(= a_1326 (store a_1325 i19 e19))⟧) ∧\n(⟦(= a_1327 (store a_1326 i53 e53))⟧) ∧\n(⟦(= a_1328 (store a_1327 i43 e43))⟧) ∧\n(⟦(= a_1329 (store a_1328 i26 e26))⟧) ∧\n(⟦(= a_1330 (store a_1329 i1 e1))⟧) ∧\n(⟦(= a_1331 (store a_1330 i48 e48))⟧) ∧\n(⟦(= a_1332 (store a_1331 i57 e57))⟧) ∧\n(⟦(= a_1333 (store a_1332 i13 e13))⟧) ∧\n(⟦(= a_1334 (store a_1333 i33 e33))⟧) ∧\n(⟦(= a_1335 (store a_1334 i11 e11))⟧) ∧\n(⟦(= a_1336 (store a_1335 i49 e49))⟧) ∧\n(⟦(= a_1337 (store a_1336 i4 e4))⟧) ∧\n(⟦(= a_1338 (store a_1337 i55 e55))⟧) ∧\n(⟦(= a_1339 (store a_1338 i16 e16))⟧) ∧\n(⟦(= a_1340 (store a_1339 i60 e60))⟧) ∧\n(⟦(= a_1341 (store a_1340 i31 e31))⟧) ∧\n(⟦(= a_1342 (store a_1341 i37 e37))⟧) ∧\n(⟦(= a_1343 (store a_1342 i2 e2))⟧) ∧\n(⟦(= a_1344 (store a_1343 i25 e25))⟧) ∧\n(⟦(= a_1345 (store a_1344 i45 e45))⟧) ∧\n(⟦(= a_1346 (store a_1345 i38 e38))⟧) ∧\n(⟦(= a_1347 (store a_1346 i14 e14))⟧) ∧\n(⟦(= a_1348 (store a_1347 i7 e7))⟧) ∧\n(⟦(= a_1349 (store a_1348 i34 e34))⟧) ∧\n(⟦(= e_1351 (select a_1289 i_1350))⟧) ∧\n(⟦(= e_1352 (select a_1349 i_1350))⟧) ∧\n(⟦(= i_1350 (sk a_1289 a_1349))⟧) ∧\n(¬⟦(= i59 i60)⟧) ∧\n(¬⟦(= i58 i60)⟧) ∧\n(¬⟦(= i58 i59)⟧) ∧\n(¬⟦(= i57 i60)⟧) ∧\n(¬⟦(= i57 i59)⟧) ∧\n(¬⟦(= i57 i58)⟧) ∧\n(¬⟦(= i56 i60)⟧) ∧\n(¬⟦(= i56 i59)⟧) ∧\n(¬⟦(= i56 i58)⟧) ∧\n(¬⟦(= i56 i57)⟧) ∧\n(¬⟦(= i55 i60)⟧) ∧\n(¬⟦(= i55 i59)⟧) ∧\n(¬⟦(= i55 i58)⟧) ∧\n(¬⟦(= i55 i57)⟧) ∧\n(¬⟦(= i55 i56)⟧) ∧\n(¬⟦(= i54 i60)⟧) ∧\n(¬⟦(= i54 i59)⟧) ∧\n(¬⟦(= i54 i58)⟧) ∧\n(¬⟦(= i54 i57)⟧) ∧\n(¬⟦(= i54 i56)⟧) ∧\n(¬⟦(= i54 i55)⟧) ∧\n(¬⟦(= i53 i60)⟧) ∧\n(¬⟦(= i53 i59)⟧) ∧\n(¬⟦(= i53 i58)⟧) ∧\n(¬⟦(= i53 i57)⟧) ∧\n(¬⟦(= i53 i56)⟧) ∧\n(¬⟦(= i53 i55)⟧) ∧\n(¬⟦(= i53 i54)⟧) ∧\n(¬⟦(= i52 i60)⟧) ∧\n(¬⟦(= i52 i59)⟧) ∧\n(¬⟦(= i52 i58)⟧) ∧\n(¬⟦(= i52 i57)⟧) ∧\n(¬⟦(= i52 i56)⟧) ∧\n(¬⟦(= i52 i55)⟧) ∧\n(¬⟦(= i52 i54)⟧) ∧\n(¬⟦(= i52 i53)⟧) ∧\n(¬⟦(= i51 i60)⟧) ∧\n(¬⟦(= i51 i59)⟧) ∧\n(¬⟦(= i51 i58)⟧) ∧\n(¬⟦(= i51 i57)⟧) ∧\n(¬⟦(= i51 i56)⟧) ∧\n(¬⟦(= i51 i55)⟧) ∧\n(¬⟦(= i51 i54)⟧) ∧\n(¬⟦(= i51 i53)⟧) ∧\n(¬⟦(= i51 i52)⟧) ∧\n(¬⟦(= i50 i60)⟧) ∧\n(¬⟦(= i50 i59)⟧) ∧\n(¬⟦(= i50 i58)⟧) ∧\n(¬⟦(= i50 i57)⟧) ∧\n(¬⟦(= i50 i56)⟧) ∧\n(¬⟦(= i50 i55)⟧) ∧\n(¬⟦(= i50 i54)⟧) ∧\n(¬⟦(= i50 i53)⟧) ∧\n(¬⟦(= i50 i52)⟧) ∧\n(¬⟦(= i50 i51)⟧) ∧\n(¬⟦(= i49 i60)⟧) ∧\n(¬⟦(= i49 i59)⟧) ∧\n(¬⟦(= i49 i58)⟧) ∧\n(¬⟦(= i49 i57)⟧) ∧\n(¬⟦(= i49 i56)⟧) ∧\n(¬⟦(= i49 i55)⟧) ∧\n(¬⟦(= i49 i54)⟧) ∧\n(¬⟦(= i49 i53)⟧) ∧\n(¬⟦(= i49 i52)⟧) ∧\n(¬⟦(= i49 i51)⟧) ∧\n(¬⟦(= i49 i50)⟧) ∧\n(¬⟦(= i48 i60)⟧) ∧\n(¬⟦(= i48 i59)⟧) ∧\n(¬⟦(= i48 i58)⟧) ∧\n(¬⟦(= i48 i57)⟧) ∧\n(¬⟦(= i48 i56)⟧) ∧\n(¬⟦(= i48 i55)⟧) ∧\n(¬⟦(= i48 i54)⟧) ∧\n(¬⟦(= i48 i53)⟧) ∧\n(¬⟦(= i48 i52)⟧) ∧\n(¬⟦(= i48 i51)⟧) ∧\n(¬⟦(= i48 i50)⟧) ∧\n(¬⟦(= i48 i49)⟧) ∧\n(¬⟦(= i47 i60)⟧) ∧\n(¬⟦(= i47 i59)⟧) ∧\n(¬⟦(= i47 i58)⟧) ∧\n(¬⟦(= i47 i57)⟧) ∧\n(¬⟦(= i47 i56)⟧) ∧\n(¬⟦(= i47 i55)⟧) ∧\n(¬⟦(= i47 i54)⟧) ∧\n(¬⟦(= i47 i53)⟧) ∧\n(¬⟦(= i47 i52)⟧) ∧\n(¬⟦(= i47 i51)⟧) ∧\n(¬⟦(= i47 i50)⟧) ∧\n(¬⟦(= i47 i49)⟧) ∧\n(¬⟦(= i47 i48)⟧) ∧\n(¬⟦(= i46 i60)⟧) ∧\n(¬⟦(= i46 i59)⟧) ∧\n(¬⟦(= i46 i58)⟧) ∧\n(¬⟦(= i46 i57)⟧) ∧\n(¬⟦(= i46 i56)⟧) ∧\n(¬⟦(= i46 i55)⟧) ∧\n(¬⟦(= i46 i54)⟧) ∧\n(¬⟦(= i46 i53)⟧) ∧\n(¬⟦(= i46 i52)⟧) ∧\n(¬⟦(= i46 i51)⟧) ∧\n(¬⟦(= i46 i50)⟧) ∧\n(¬⟦(= i46 i49)⟧) ∧\n(¬⟦(= i46 i48)⟧) ∧\n(¬⟦(= i46 i47)⟧) ∧\n(¬⟦(= i45 i60)⟧) ∧\n(¬⟦(= i45 i59)⟧) ∧\n(¬⟦(= i45 i58)⟧) ∧\n(¬⟦(= i45 i57)⟧) ∧\n(¬⟦(= i45 i56)⟧) ∧\n(¬⟦(= i45 i55)⟧) ∧\n(¬⟦(= i45 i54)⟧) ∧\n(¬⟦(= i45 i53)⟧) ∧\n(¬⟦(= i45 i52)⟧) ∧\n(¬⟦(= i45 i51)⟧) ∧\n(¬⟦(= i45 i50)⟧) ∧\n(¬⟦(= i45 i49)⟧) ∧\n(¬⟦(= i45 i48)⟧) ∧\n(¬⟦(= i45 i47)⟧) ∧\n(¬⟦(= i45 i46)⟧) ∧\n(¬⟦(= i44 i60)⟧) ∧\n(¬⟦(= i44 i59)⟧) ∧\n(¬⟦(= i44 i58)⟧) ∧\n(¬⟦(= i44 i57)⟧) ∧\n(¬⟦(= i44 i56)⟧) ∧\n(¬⟦(= i44 i55)⟧) ∧\n(¬⟦(= i44 i54)⟧) ∧\n(¬⟦(= i44 i53)⟧) ∧\n(¬⟦(= i44 i52)⟧) ∧\n(¬⟦(= i44 i51)⟧) ∧\n(¬⟦(= i44 i50)⟧) ∧\n(¬⟦(= i44 i49)⟧) ∧\n(¬⟦(= i44 i48)⟧) ∧\n(¬⟦(= i44 i47)⟧) ∧\n(¬⟦(= i44 i46)⟧) ∧\n(¬⟦(= i44 i45)⟧) ∧\n(¬⟦(= i43 i60)⟧) ∧\n(¬⟦(= i43 i59)⟧) ∧\n(¬⟦(= i43 i58)⟧) ∧\n(¬⟦(= i43 i57)⟧) ∧\n(¬⟦(= i43 i56)⟧) ∧\n(¬⟦(= i43 i55)⟧) ∧\n(¬⟦(= i43 i54)⟧) ∧\n(¬⟦(= i43 i53)⟧) ∧\n(¬⟦(= i43 i52)⟧) ∧\n(¬⟦(= i43 i51)⟧) ∧\n(¬⟦(= i43 i50)⟧) ∧\n(¬⟦(= i43 i49)⟧) ∧\n(¬⟦(= i43 i48)⟧) ∧\n(¬⟦(= i43 i47)⟧) ∧\n(¬⟦(= i43 i46)⟧) ∧\n(¬⟦(= i43 i45)⟧) ∧\n(¬⟦(= i43 i44)⟧) ∧\n(¬⟦(= i42 i60)⟧) ∧\n(¬⟦(= i42 i59)⟧) ∧\n(¬⟦(= i42 i58)⟧) ∧\n(¬⟦(= i42 i57)⟧) ∧\n(¬⟦(= i42 i56)⟧) ∧\n(¬⟦(= i42 i55)⟧) ∧\n(¬⟦(= i42 i54)⟧) ∧\n(¬⟦(= i42 i53)⟧) ∧\n(¬⟦(= i42 i52)⟧) ∧\n(¬⟦(= i42 i51)⟧) ∧\n(¬⟦(= i42 i50)⟧) ∧\n(¬⟦(= i42 i49)⟧) ∧\n(¬⟦(= i42 i48)⟧) ∧\n(¬⟦(= i42 i47)⟧) ∧\n(¬⟦(= i42 i46)⟧) ∧\n(¬⟦(= i42 i45)⟧) ∧\n(¬⟦(= i42 i44)⟧) ∧\n(¬⟦(= i42 i43)⟧) ∧\n(¬⟦(= i41 i60)⟧) ∧\n(¬⟦(= i41 i59)⟧) ∧\n(¬⟦(= i41 i58)⟧) ∧\n(¬⟦(= i41 i57)⟧) ∧\n(¬⟦(= i41 i56)⟧) ∧\n(¬⟦(= i41 i55)⟧) ∧\n(¬⟦(= i41 i54)⟧) ∧\n(¬⟦(= i41 i53)⟧) ∧\n(¬⟦(= i41 i52)⟧) ∧\n(¬⟦(= i41 i51)⟧) ∧\n(¬⟦(= i41 i50)⟧) ∧\n(¬⟦(= i41 i49)⟧) ∧\n(¬⟦(= i41 i48)⟧) ∧\n(¬⟦(= i41 i47)⟧) ∧\n(¬⟦(= i41 i46)⟧) ∧\n(¬⟦(= i41 i45)⟧) ∧\n(¬⟦(= i41 i44)⟧) ∧\n(¬⟦(= i41 i43)⟧) ∧\n(¬⟦(= i41 i42)⟧) ∧\n(¬⟦(= i40 i60)⟧) ∧\n(¬⟦(= i40 i59)⟧) ∧\n(¬⟦(= i40 i58)⟧) ∧\n(¬⟦(= i40 i57)⟧) ∧\n(¬⟦(= i40 i56)⟧) ∧\n(¬⟦(= i40 i55)⟧) ∧\n(¬⟦(= i40 i54)⟧) ∧\n(¬⟦(= i40 i53)⟧) ∧\n(¬⟦(= i40 i52)⟧) ∧\n(¬⟦(= i40 i51)⟧) ∧\n(¬⟦(= i40 i50)⟧) ∧\n(¬⟦(= i40 i49)⟧) ∧\n(¬⟦(= i40 i48)⟧) ∧\n(¬⟦(= i40 i47)⟧) ∧\n(¬⟦(= i40 i46)⟧) ∧\n(¬⟦(= i40 i45)⟧) ∧\n(¬⟦(= i40 i44)⟧) ∧\n(¬⟦(= i40 i43)⟧) ∧\n(¬⟦(= i40 i42)⟧) ∧\n(¬⟦(= i40 i41)⟧) ∧\n(¬⟦(= i39 i60)⟧) ∧\n(¬⟦(= i39 i59)⟧) ∧\n(¬⟦(= i39 i58)⟧) ∧\n(¬⟦(= i39 i57)⟧) ∧\n(¬⟦(= i39 i56)⟧) ∧\n(¬⟦(= i39 i55)⟧) ∧\n(¬⟦(= i39 i54)⟧) ∧\n(¬⟦(= i39 i53)⟧) ∧\n(¬⟦(= i39 i52)⟧) ∧\n(¬⟦(= i39 i51)⟧) ∧\n(¬⟦(= i39 i50)⟧) ∧\n(¬⟦(= i39 i49)⟧) ∧\n(¬⟦(= i39 i48)⟧) ∧\n(¬⟦(= i39 i47)⟧) ∧\n(¬⟦(= i39 i46)⟧) ∧\n(¬⟦(= i39 i45)⟧) ∧\n(¬⟦(= i39 i44)⟧) ∧\n(¬⟦(= i39 i43)⟧) ∧\n(¬⟦(= i39 i42)⟧) ∧\n(¬⟦(= i39 i41)⟧) ∧\n(¬⟦(= i39 i40)⟧) ∧\n(¬⟦(= i38 i60)⟧) ∧\n(¬⟦(= i38 i59)⟧) ∧\n(¬⟦(= i38 i58)⟧) ∧\n(¬⟦(= i38 i57)⟧) ∧\n(¬⟦(= i38 i56)⟧) ∧\n(¬⟦(= i38 i55)⟧) ∧\n(¬⟦(= i38 i54)⟧) ∧\n(¬⟦(= i38 i53)⟧) ∧\n(¬⟦(= i38 i52)⟧) ∧\n(¬⟦(= i38 i51)⟧) ∧\n(¬⟦(= i38 i50)⟧) ∧\n(¬⟦(= i38 i49)⟧) ∧\n(¬⟦(= i38 i48)⟧) ∧\n(¬⟦(= i38 i47)⟧) ∧\n(¬⟦(= i38 i46)⟧) ∧\n(¬⟦(= i38 i45)⟧) ∧\n(¬⟦(= i38 i44)⟧) ∧\n(¬⟦(= i38 i43)⟧) ∧\n(¬⟦(= i38 i42)⟧) ∧\n(¬⟦(= i38 i41)⟧) ∧\n(¬⟦(= i38 i40)⟧) ∧\n(¬⟦(= i38 i39)⟧) ∧\n(¬⟦(= i37 i60)⟧) ∧\n(¬⟦(= i37 i59)⟧) ∧\n(¬⟦(= i37 i58)⟧) ∧\n(¬⟦(= i37 i57)⟧) ∧\n(¬⟦(= i37 i56)⟧) ∧\n(¬⟦(= i37 i55)⟧) ∧\n(¬⟦(= i37 i54)⟧) ∧\n(¬⟦(= i37 i53)⟧) ∧\n(¬⟦(= i37 i52)⟧) ∧\n(¬⟦(= i37 i51)⟧) ∧\n(¬⟦(= i37 i50)⟧) ∧\n(¬⟦(= i37 i49)⟧) ∧\n(¬⟦(= i37 i48)⟧) ∧\n(¬⟦(= i37 i47)⟧) ∧\n(¬⟦(= i37 i46)⟧) ∧\n(¬⟦(= i37 i45)⟧) ∧\n(¬⟦(= i37 i44)⟧) ∧\n(¬⟦(= i37 i43)⟧) ∧\n(¬⟦(= i37 i42)⟧) ∧\n(¬⟦(= i37 i41)⟧) ∧\n(¬⟦(= i37 i40)⟧) ∧\n(¬⟦(= i37 i39)⟧) ∧\n(¬⟦(= i37 i38)⟧) ∧\n(¬⟦(= i36 i60)⟧) ∧\n(¬⟦(= i36 i59)⟧) ∧\n(¬⟦(= i36 i58)⟧) ∧\n(¬⟦(= i36 i57)⟧) ∧\n(¬⟦(= i36 i56)⟧) ∧\n(¬⟦(= i36 i55)⟧) ∧\n(¬⟦(= i36 i54)⟧) ∧\n(¬⟦(= i36 i53)⟧) ∧\n(¬⟦(= i36 i52)⟧) ∧\n(¬⟦(= i36 i51)⟧) ∧\n(¬⟦(= i36 i50)⟧) ∧\n(¬⟦(= i36 i49)⟧) ∧\n(¬⟦(= i36 i48)⟧) ∧\n(¬⟦(= i36 i47)⟧) ∧\n(¬⟦(= i36 i46)⟧) ∧\n(¬⟦(= i36 i45)⟧) ∧\n(¬⟦(= i36 i44)⟧) ∧\n(¬⟦(= i36 i43)⟧) ∧\n(¬⟦(= i36 i42)⟧) ∧\n(¬⟦(= i36 i41)⟧) ∧\n(¬⟦(= i36 i40)⟧) ∧\n(¬⟦(= i36 i39)⟧) ∧\n(¬⟦(= i36 i38)⟧) ∧\n(¬⟦(= i36 i37)⟧) ∧\n(¬⟦(= i35 i60)⟧) ∧\n(¬⟦(= i35 i59)⟧) ∧\n(¬⟦(= i35 i58)⟧) ∧\n(¬⟦(= i35 i57)⟧) ∧\n(¬⟦(= i35 i56)⟧) ∧\n(¬⟦(= i35 i55)⟧) ∧\n(¬⟦(= i35 i54)⟧) ∧\n(¬⟦(= i35 i53)⟧) ∧\n(¬⟦(= i35 i52)⟧) ∧\n(¬⟦(= i35 i51)⟧) ∧\n(¬⟦(= i35 i50)⟧) ∧\n(¬⟦(= i35 i49)⟧) ∧\n(¬⟦(= i35 i48)⟧) ∧\n(¬⟦(= i35 i47)⟧) ∧\n(¬⟦(= i35 i46)⟧) ∧\n(¬⟦(= i35 i45)⟧) ∧\n(¬⟦(= i35 i44)⟧) ∧\n(¬⟦(= i35 i43)⟧) ∧\n(¬⟦(= i35 i42)⟧) ∧\n(¬⟦(= i35 i41)⟧) ∧\n(¬⟦(= i35 i40)⟧) ∧\n(¬⟦(= i35 i39)⟧) ∧\n(¬⟦(= i35 i38)⟧) ∧\n(¬⟦(= i35 i37)⟧) ∧\n(¬⟦(= i35 i36)⟧) ∧\n(¬⟦(= i34 i60)⟧) ∧\n(¬⟦(= i34 i59)⟧) ∧\n(¬⟦(= i34 i58)⟧) ∧\n(¬⟦(= i34 i57)⟧) ∧\n(¬⟦(= i34 i56)⟧) ∧\n(¬⟦(= i34 i55)⟧) ∧\n(¬⟦(= i34 i54)⟧) ∧\n(¬⟦(= i34 i53)⟧) ∧\n(¬⟦(= i34 i52)⟧) ∧\n(¬⟦(= i34 i51)⟧) ∧\n(¬⟦(= i34 i50)⟧) ∧\n(¬⟦(= i34 i49)⟧) ∧\n(¬⟦(= i34 i48)⟧) ∧\n(¬⟦(= i34 i47)⟧) ∧\n(¬⟦(= i34 i46)⟧) ∧\n(¬⟦(= i34 i45)⟧) ∧\n(¬⟦(= i34 i44)⟧) ∧\n(¬⟦(= i34 i43)⟧) ∧\n(¬⟦(= i34 i42)⟧) ∧\n(¬⟦(= i34 i41)⟧) ∧\n(¬⟦(= i34 i40)⟧) ∧\n(¬⟦(= i34 i39)⟧) ∧\n(¬⟦(= i34 i38)⟧) ∧\n(¬⟦(= i34 i37)⟧) ∧\n(¬⟦(= i34 i36)⟧) ∧\n(¬⟦(= i34 i35)⟧) ∧\n(¬⟦(= i33 i60)⟧) ∧\n(¬⟦(= i33 i59)⟧) ∧\n(¬⟦(= i33 i58)⟧) ∧\n(¬⟦(= i33 i57)⟧) ∧\n(¬⟦(= i33 i56)⟧) ∧\n(¬⟦(= i33 i55)⟧) ∧\n(¬⟦(= i33 i54)⟧) ∧\n(¬⟦(= i33 i53)⟧) ∧\n(¬⟦(= i33 i52)⟧) ∧\n(¬⟦(= i33 i51)⟧) ∧\n(¬⟦(= i33 i50)⟧) ∧\n(¬⟦(= i33 i49)⟧) ∧\n(¬⟦(= i33 i48)⟧) ∧\n(¬⟦(= i33 i47)⟧) ∧\n(¬⟦(= i33 i46)⟧) ∧\n(¬⟦(= i33 i45)⟧) ∧\n(¬⟦(= i33 i44)⟧) ∧\n(¬⟦(= i33 i43)⟧) ∧\n(¬⟦(= i33 i42)⟧) ∧\n(¬⟦(= i33 i41)⟧) ∧\n(¬⟦(= i33 i40)⟧) ∧\n(¬⟦(= i33 i39)⟧) ∧\n(¬⟦(= i33 i38)⟧) ∧\n(¬⟦(= i33 i37)⟧) ∧\n(¬⟦(= i33 i36)⟧) ∧\n(¬⟦(= i33 i35)⟧) ∧\n(¬⟦(= i33 i34)⟧) ∧\n(¬⟦(= i32 i60)⟧) ∧\n(¬⟦(= i32 i59)⟧) ∧\n(¬⟦(= i32 i58)⟧) ∧\n(¬⟦(= i32 i57)⟧) ∧\n(¬⟦(= i32 i56)⟧) ∧\n(¬⟦(= i32 i55)⟧) ∧\n(¬⟦(= i32 i54)⟧) ∧\n(¬⟦(= i32 i53)⟧) ∧\n(¬⟦(= i32 i52)⟧) ∧\n(¬⟦(= i32 i51)⟧) ∧\n(¬⟦(= i32 i50)⟧) ∧\n(¬⟦(= i32 i49)⟧) ∧\n(¬⟦(= i32 i48)⟧) ∧\n(¬⟦(= i32 i47)⟧) ∧\n(¬⟦(= i32 i46)⟧) ∧\n(¬⟦(= i32 i45)⟧) ∧\n(¬⟦(= i32 i44)⟧) ∧\n(¬⟦(= i32 i43)⟧) ∧\n(¬⟦(= i32 i42)⟧) ∧\n(¬⟦(= i32 i41)⟧) ∧\n(¬⟦(= i32 i40)⟧) ∧\n(¬⟦(= i32 i39)⟧) ∧\n(¬⟦(= i32 i38)⟧) ∧\n(¬⟦(= i32 i37)⟧) ∧\n(¬⟦(= i32 i36)⟧) ∧\n(¬⟦(= i32 i35)⟧) ∧\n(¬⟦(= i32 i34)⟧) ∧\n(¬⟦(= i32 i33)⟧) ∧\n(¬⟦(= i31 i60)⟧) ∧\n(¬⟦(= i31 i59)⟧) ∧\n(¬⟦(= i31 i58)⟧) ∧\n(¬⟦(= i31 i57)⟧) ∧\n(¬⟦(= i31 i56)⟧) ∧\n(¬⟦(= i31 i55)⟧) ∧\n(¬⟦(= i31 i54)⟧) ∧\n(¬⟦(= i31 i53)⟧) ∧\n(¬⟦(= i31 i52)⟧) ∧\n(¬⟦(= i31 i51)⟧) ∧\n(¬⟦(= i31 i50)⟧) ∧\n(¬⟦(= i31 i49)⟧) ∧\n(¬⟦(= i31 i48)⟧) ∧\n(¬⟦(= i31 i47)⟧) ∧\n(¬⟦(= i31 i46)⟧) ∧\n(¬⟦(= i31 i45)⟧) ∧\n(¬⟦(= i31 i44)⟧) ∧\n(¬⟦(= i31 i43)⟧) ∧\n(¬⟦(= i31 i42)⟧) ∧\n(¬⟦(= i31 i41)⟧) ∧\n(¬⟦(= i31 i40)⟧) ∧\n(¬⟦(= i31 i39)⟧) ∧\n(¬⟦(= i31 i38)⟧) ∧\n(¬⟦(= i31 i37)⟧) ∧\n(¬⟦(= i31 i36)⟧) ∧\n(¬⟦(= i31 i35)⟧) ∧\n(¬⟦(= i31 i34)⟧) ∧\n(¬⟦(= i31 i33)⟧) ∧\n(¬⟦(= i31 i32)⟧) ∧\n(¬⟦(= i30 i60)⟧) ∧\n(¬⟦(= i30 i59)⟧) ∧\n(¬⟦(= i30 i58)⟧) ∧\n(¬⟦(= i30 i57)⟧) ∧\n(¬⟦(= i30 i56)⟧) ∧\n(¬⟦(= i30 i55)⟧) ∧\n(¬⟦(= i30 i54)⟧) ∧\n(¬⟦(= i30 i53)⟧) ∧\n(¬⟦(= i30 i52)⟧) ∧\n(¬⟦(= i30 i51)⟧) ∧\n(¬⟦(= i30 i50)⟧) ∧\n(¬⟦(= i30 i49)⟧) ∧\n(¬⟦(= i30 i48)⟧) ∧\n(¬⟦(= i30 i47)⟧) ∧\n(¬⟦(= i30 i46)⟧) ∧\n(¬⟦(= i30 i45)⟧) ∧\n(¬⟦(= i30 i44)⟧) ∧\n(¬⟦(= i30 i43)⟧) ∧\n(¬⟦(= i30 i42)⟧) ∧\n(¬⟦(= i30 i41)⟧) ∧\n(¬⟦(= i30 i40)⟧) ∧\n(¬⟦(= i30 i39)⟧) ∧\n(¬⟦(= i30 i38)⟧) ∧\n(¬⟦(= i30 i37)⟧) ∧\n(¬⟦(= i30 i36)⟧) ∧\n(¬⟦(= i30 i35)⟧) ∧\n(¬⟦(= i30 i34)⟧) ∧\n(¬⟦(= i30 i33)⟧) ∧\n(¬⟦(= i30 i32)⟧) ∧\n(¬⟦(= i30 i31)⟧) ∧\n(¬⟦(= i29 i60)⟧) ∧\n(¬⟦(= i29 i59)⟧) ∧\n(¬⟦(= i29 i58)⟧) ∧\n(¬⟦(= i29 i57)⟧) ∧\n(¬⟦(= i29 i56)⟧) ∧\n(¬⟦(= i29 i55)⟧) ∧\n(¬⟦(= i29 i54)⟧) ∧\n(¬⟦(= i29 i53)⟧) ∧\n(¬⟦(= i29 i52)⟧) ∧\n(¬⟦(= i29 i51)⟧) ∧\n(¬⟦(= i29 i50)⟧) ∧\n(¬⟦(= i29 i49)⟧) ∧\n(¬⟦(= i29 i48)⟧) ∧\n(¬⟦(= i29 i47)⟧) ∧\n(¬⟦(= i29 i46)⟧) ∧\n(¬⟦(= i29 i45)⟧) ∧\n(¬⟦(= i29 i44)⟧) ∧\n(¬⟦(= i29 i43)⟧) ∧\n(¬⟦(= i29 i42)⟧) ∧\n(¬⟦(= i29 i41)⟧) ∧\n(¬⟦(= i29 i40)⟧) ∧\n(¬⟦(= i29 i39)⟧) ∧\n(¬⟦(= i29 i38)⟧) ∧\n(¬⟦(= i29 i37)⟧) ∧\n(¬⟦(= i29 i36)⟧) ∧\n(¬⟦(= i29 i35)⟧) ∧\n(¬⟦(= i29 i34)⟧) ∧\n(¬⟦(= i29 i33)⟧) ∧\n(¬⟦(= i29 i32)⟧) ∧\n(¬⟦(= i29 i31)⟧) ∧\n(¬⟦(= i29 i30)⟧) ∧\n(¬⟦(= i28 i60)⟧) ∧\n(¬⟦(= i28 i59)⟧) ∧\n(¬⟦(= i28 i58)⟧) ∧\n(¬⟦(= i28 i57)⟧) ∧\n(¬⟦(= i28 i56)⟧) ∧\n(¬⟦(= i28 i55)⟧) ∧\n(¬⟦(= i28 i54)⟧) ∧\n(¬⟦(= i28 i53)⟧) ∧\n(¬⟦(= i28 i52)⟧) ∧\n(¬⟦(= i28 i51)⟧) ∧\n(¬⟦(= i28 i50)⟧) ∧\n(¬⟦(= i28 i49)⟧) ∧\n(¬⟦(= i28 i48)⟧) ∧\n(¬⟦(= i28 i47)⟧) ∧\n(¬⟦(= i28 i46)⟧) ∧\n(¬⟦(= i28 i45)⟧) ∧\n(¬⟦(= i28 i44)⟧) ∧\n(¬⟦(= i28 i43)⟧) ∧\n(¬⟦(= i28 i42)⟧) ∧\n(¬⟦(= i28 i41)⟧) ∧\n(¬⟦(= i28 i40)⟧) ∧\n(¬⟦(= i28 i39)⟧) ∧\n(¬⟦(= i28 i38)⟧) ∧\n(¬⟦(= i28 i37)⟧) ∧\n(¬⟦(= i28 i36)⟧) ∧\n(¬⟦(= i28 i35)⟧) ∧\n(¬⟦(= i28 i34)⟧) ∧\n(¬⟦(= i28 i33)⟧) ∧\n(¬⟦(= i28 i32)⟧) ∧\n(¬⟦(= i28 i31)⟧) ∧\n(¬⟦(= i28 i30)⟧) ∧\n(¬⟦(= i28 i29)⟧) ∧\n(¬⟦(= i27 i60)⟧) ∧\n(¬⟦(= i27 i59)⟧) ∧\n(¬⟦(= i27 i58)⟧) ∧\n(¬⟦(= i27 i57)⟧) ∧\n(¬⟦(= i27 i56)⟧) ∧\n(¬⟦(= i27 i55)⟧) ∧\n(¬⟦(= i27 i54)⟧) ∧\n(¬⟦(= i27 i53)⟧) ∧\n(¬⟦(= i27 i52)⟧) ∧\n(¬⟦(= i27 i51)⟧) ∧\n(¬⟦(= i27 i50)⟧) ∧\n(¬⟦(= i27 i49)⟧) ∧\n(¬⟦(= i27 i48)⟧) ∧\n(¬⟦(= i27 i47)⟧) ∧\n(¬⟦(= i27 i46)⟧) ∧\n(¬⟦(= i27 i45)⟧) ∧\n(¬⟦(= i27 i44)⟧) ∧\n(¬⟦(= i27 i43)⟧) ∧\n(¬⟦(= i27 i42)⟧) ∧\n(¬⟦(= i27 i41)⟧) ∧\n(¬⟦(= i27 i40)⟧) ∧\n(¬⟦(= i27 i39)⟧) ∧\n(¬⟦(= i27 i38)⟧) ∧\n(¬⟦(= i27 i37)⟧) ∧\n(¬⟦(= i27 i36)⟧) ∧\n(¬⟦(= i27 i35)⟧) ∧\n(¬⟦(= i27 i34)⟧) ∧\n(¬⟦(= i27 i33)⟧) ∧\n(¬⟦(= i27 i32)⟧) ∧\n(¬⟦(= i27 i31)⟧) ∧\n(¬⟦(= i27 i30)⟧) ∧\n(¬⟦(= i27 i29)⟧) ∧\n(¬⟦(= i27 i28)⟧) ∧\n(¬⟦(= i26 i60)⟧) ∧\n(¬⟦(= i26 i59)⟧) ∧\n(¬⟦(= i26 i58)⟧) ∧\n(¬⟦(= i26 i57)⟧) ∧\n(¬⟦(= i26 i56)⟧) ∧\n(¬⟦(= i26 i55)⟧) ∧\n(¬⟦(= i26 i54)⟧) ∧\n(¬⟦(= i26 i53)⟧) ∧\n(¬⟦(= i26 i52)⟧) ∧\n(¬⟦(= i26 i51)⟧) ∧\n(¬⟦(= i26 i50)⟧) ∧\n(¬⟦(= i26 i49)⟧) ∧\n(¬⟦(= i26 i48)⟧) ∧\n(¬⟦(= i26 i47)⟧) ∧\n(¬⟦(= i26 i46)⟧) ∧\n(¬⟦(= i26 i45)⟧) ∧\n(¬⟦(= i26 i44)⟧) ∧\n(¬⟦(= i26 i43)⟧) ∧\n(¬⟦(= i26 i42)⟧) ∧\n(¬⟦(= i26 i41)⟧) ∧\n(¬⟦(= i26 i40)⟧) ∧\n(¬⟦(= i26 i39)⟧) ∧\n(¬⟦(= i26 i38)⟧) ∧\n(¬⟦(= i26 i37)⟧) ∧\n(¬⟦(= i26 i36)⟧) ∧\n(¬⟦(= i26 i35)⟧) ∧\n(¬⟦(= i26 i34)⟧) ∧\n(¬⟦(= i26 i33)⟧) ∧\n(¬⟦(= i26 i32)⟧) ∧\n(¬⟦(= i26 i31)⟧) ∧\n(¬⟦(= i26 i30)⟧) ∧\n(¬⟦(= i26 i29)⟧) ∧\n(¬⟦(= i26 i28)⟧) ∧\n(¬⟦(= i26 i27)⟧) ∧\n(¬⟦(= i25 i60)⟧) ∧\n(¬⟦(= i25 i59)⟧) ∧\n(¬⟦(= i25 i58)⟧) ∧\n(¬⟦(= i25 i57)⟧) ∧\n(¬⟦(= i25 i56)⟧) ∧\n(¬⟦(= i25 i55)⟧) ∧\n(¬⟦(= i25 i54)⟧) ∧\n(¬⟦(= i25 i53)⟧) ∧\n(¬⟦(= i25 i52)⟧) ∧\n(¬⟦(= i25 i51)⟧) ∧\n(¬⟦(= i25 i50)⟧) ∧\n(¬⟦(= i25 i49)⟧) ∧\n(¬⟦(= i25 i48)⟧) ∧\n(¬⟦(= i25 i47)⟧) ∧\n(¬⟦(= i25 i46)⟧) ∧\n(¬⟦(= i25 i45)⟧) ∧\n(¬⟦(= i25 i44)⟧) ∧\n(¬⟦(= i25 i43)⟧) ∧\n(¬⟦(= i25 i42)⟧) ∧\n(¬⟦(= i25 i41)⟧) ∧\n(¬⟦(= i25 i40)⟧) ∧\n(¬⟦(= i25 i39)⟧) ∧\n(¬⟦(= i25 i38)⟧) ∧\n(¬⟦(= i25 i37)⟧) ∧\n(¬⟦(= i25 i36)⟧) ∧\n(¬⟦(= i25 i35)⟧) ∧\n(¬⟦(= i25 i34)⟧) ∧\n(¬⟦(= i25 i33)⟧) ∧\n(¬⟦(= i25 i32)⟧) ∧\n(¬⟦(= i25 i31)⟧) ∧\n(¬⟦(= i25 i30)⟧) ∧\n(¬⟦(= i25 i29)⟧) ∧\n(¬⟦(= i25 i28)⟧) ∧\n(¬⟦(= i25 i27)⟧) ∧\n(¬⟦(= i25 i26)⟧) ∧\n(¬⟦(= i24 i60)⟧) ∧\n(¬⟦(= i24 i59)⟧) ∧\n(¬⟦(= i24 i58)⟧) ∧\n(¬⟦(= i24 i57)⟧) ∧\n(¬⟦(= i24 i56)⟧) ∧\n(¬⟦(= i24 i55)⟧) ∧\n(¬⟦(= i24 i54)⟧) ∧\n(¬⟦(= i24 i53)⟧) ∧\n(¬⟦(= i24 i52)⟧) ∧\n(¬⟦(= i24 i51)⟧) ∧\n(¬⟦(= i24 i50)⟧) ∧\n(¬⟦(= i24 i49)⟧) ∧\n(¬⟦(= i24 i48)⟧) ∧\n(¬⟦(= i24 i47)⟧) ∧\n(¬⟦(= i24 i46)⟧) ∧\n(¬⟦(= i24 i45)⟧) ∧\n(¬⟦(= i24 i44)⟧) ∧\n(¬⟦(= i24 i43)⟧) ∧\n(¬⟦(= i24 i42)⟧) ∧\n(¬⟦(= i24 i41)⟧) ∧\n(¬⟦(= i24 i40)⟧) ∧\n(¬⟦(= i24 i39)⟧) ∧\n(¬⟦(= i24 i38)⟧) ∧\n(¬⟦(= i24 i37)⟧) ∧\n(¬⟦(= i24 i36)⟧) ∧\n(¬⟦(= i24 i35)⟧) ∧\n(¬⟦(= i24 i34)⟧) ∧\n(¬⟦(= i24 i33)⟧) ∧\n(¬⟦(= i24 i32)⟧) ∧\n(¬⟦(= i24 i31)⟧) ∧\n(¬⟦(= i24 i30)⟧) ∧\n(¬⟦(= i24 i29)⟧) ∧\n(¬⟦(= i24 i28)⟧) ∧\n(¬⟦(= i24 i27)⟧) ∧\n(¬⟦(= i24 i26)⟧) ∧\n(¬⟦(= i24 i25)⟧) ∧\n(¬⟦(= i23 i60)⟧) ∧\n(¬⟦(= i23 i59)⟧) ∧\n(¬⟦(= i23 i58)⟧) ∧\n(¬⟦(= i23 i57)⟧) ∧\n(¬⟦(= i23 i56)⟧) ∧\n(¬⟦(= i23 i55)⟧) ∧\n(¬⟦(= i23 i54)⟧) ∧\n(¬⟦(= i23 i53)⟧) ∧\n(¬⟦(= i23 i52)⟧) ∧\n(¬⟦(= i23 i51)⟧) ∧\n(¬⟦(= i23 i50)⟧) ∧\n(¬⟦(= i23 i49)⟧) ∧\n(¬⟦(= i23 i48)⟧) ∧\n(¬⟦(= i23 i47)⟧) ∧\n(¬⟦(= i23 i46)⟧) ∧\n(¬⟦(= i23 i45)⟧) ∧\n(¬⟦(= i23 i44)⟧) ∧\n(¬⟦(= i23 i43)⟧) ∧\n(¬⟦(= i23 i42)⟧) ∧\n(¬⟦(= i23 i41)⟧) ∧\n(¬⟦(= i23 i40)⟧) ∧\n(¬⟦(= i23 i39)⟧) ∧\n(¬⟦(= i23 i38)⟧) ∧\n(¬⟦(= i23 i37)⟧) ∧\n(¬⟦(= i23 i36)⟧) ∧\n(¬⟦(= i23 i35)⟧) ∧\n(¬⟦(= i23 i34)⟧) ∧\n(¬⟦(= i23 i33)⟧) ∧\n(¬⟦(= i23 i32)⟧) ∧\n(¬⟦(= i23 i31)⟧) ∧\n(¬⟦(= i23 i30)⟧) ∧\n(¬⟦(= i23 i29)⟧) ∧\n(¬⟦(= i23 i28)⟧) ∧\n(¬⟦(= i23 i27)⟧) ∧\n(¬⟦(= i23 i26)⟧) ∧\n(¬⟦(= i23 i25)⟧) ∧\n(¬⟦(= i23 i24)⟧) ∧\n(¬⟦(= i22 i60)⟧) ∧\n(¬⟦(= i22 i59)⟧) ∧\n(¬⟦(= i22 i58)⟧) ∧\n(¬⟦(= i22 i57)⟧) ∧\n(¬⟦(= i22 i56)⟧) ∧\n(¬⟦(= i22 i55)⟧) ∧\n(¬⟦(= i22 i54)⟧) ∧\n(¬⟦(= i22 i53)⟧) ∧\n(¬⟦(= i22 i52)⟧) ∧\n(¬⟦(= i22 i51)⟧) ∧\n(¬⟦(= i22 i50)⟧) ∧\n(¬⟦(= i22 i49)⟧) ∧\n(¬⟦(= i22 i48)⟧) ∧\n(¬⟦(= i22 i47)⟧) ∧\n(¬⟦(= i22 i46)⟧) ∧\n(¬⟦(= i22 i45)⟧) ∧\n(¬⟦(= i22 i44)⟧) ∧\n(¬⟦(= i22 i43)⟧) ∧\n(¬⟦(= i22 i42)⟧) ∧\n(¬⟦(= i22 i41)⟧) ∧\n(¬⟦(= i22 i40)⟧) ∧\n(¬⟦(= i22 i39)⟧) ∧\n(¬⟦(= i22 i38)⟧) ∧\n(¬⟦(= i22 i37)⟧) ∧\n(¬⟦(= i22 i36)⟧) ∧\n(¬⟦(= i22 i35)⟧) ∧\n(¬⟦(= i22 i34)⟧) ∧\n(¬⟦(= i22 i33)⟧) ∧\n(¬⟦(= i22 i32)⟧) ∧\n(¬⟦(= i22 i31)⟧) ∧\n(¬⟦(= i22 i30)⟧) ∧\n(¬⟦(= i22 i29)⟧) ∧\n(¬⟦(= i22 i28)⟧) ∧\n(¬⟦(= i22 i27)⟧) ∧\n(¬⟦(= i22 i26)⟧) ∧\n(¬⟦(= i22 i25)⟧) ∧\n(¬⟦(= i22 i24)⟧) ∧\n(¬⟦(= i22 i23)⟧) ∧\n(¬⟦(= i21 i60)⟧) ∧\n(¬⟦(= i21 i59)⟧) ∧\n(¬⟦(= i21 i58)⟧) ∧\n(¬⟦(= i21 i57)⟧) ∧\n(¬⟦(= i21 i56)⟧) ∧\n(¬⟦(= i21 i55)⟧) ∧\n(¬⟦(= i21 i54)⟧) ∧\n(¬⟦(= i21 i53)⟧) ∧\n(¬⟦(= i21 i52)⟧) ∧\n(¬⟦(= i21 i51)⟧) ∧\n(¬⟦(= i21 i50)⟧) ∧\n(¬⟦(= i21 i49)⟧) ∧\n(¬⟦(= i21 i48)⟧) ∧\n(¬⟦(= i21 i47)⟧) ∧\n(¬⟦(= i21 i46)⟧) ∧\n(¬⟦(= i21 i45)⟧) ∧\n(¬⟦(= i21 i44)⟧) ∧\n(¬⟦(= i21 i43)⟧) ∧\n(¬⟦(= i21 i42)⟧) ∧\n(¬⟦(= i21 i41)⟧) ∧\n(¬⟦(= i21 i40)⟧) ∧\n(¬⟦(= i21 i39)⟧) ∧\n(¬⟦(= i21 i38)⟧) ∧\n(¬⟦(= i21 i37)⟧) ∧\n(¬⟦(= i21 i36)⟧) ∧\n(¬⟦(= i21 i35)⟧) ∧\n(¬⟦(= i21 i34)⟧) ∧\n(¬⟦(= i21 i33)⟧) ∧\n(¬⟦(= i21 i32)⟧) ∧\n(¬⟦(= i21 i31)⟧) ∧\n(¬⟦(= i21 i30)⟧) ∧\n(¬⟦(= i21 i29)⟧) ∧\n(¬⟦(= i21 i28)⟧) ∧\n(¬⟦(= i21 i27)⟧) ∧\n(¬⟦(= i21 i26)⟧) ∧\n(¬⟦(= i21 i25)⟧) ∧\n(¬⟦(= i21 i24)⟧) ∧\n(¬⟦(= i21 i23)⟧) ∧\n(¬⟦(= i21 i22)⟧) ∧\n(¬⟦(= i20 i60)⟧) ∧\n(¬⟦(= i20 i59)⟧) ∧\n(¬⟦(= i20 i58)⟧) ∧\n(¬⟦(= i20 i57)⟧) ∧\n(¬⟦(= i20 i56)⟧) ∧\n(¬⟦(= i20 i55)⟧) ∧\n(¬⟦(= i20 i54)⟧) ∧\n(¬⟦(= i20 i53)⟧) ∧\n(¬⟦(= i20 i52)⟧) ∧\n(¬⟦(= i20 i51)⟧) ∧\n(¬⟦(= i20 i50)⟧) ∧\n(¬⟦(= i20 i49)⟧) ∧\n(¬⟦(= i20 i48)⟧) ∧\n(¬⟦(= i20 i47)⟧) ∧\n(¬⟦(= i20 i46)⟧) ∧\n(¬⟦(= i20 i45)⟧) ∧\n(¬⟦(= i20 i44)⟧) ∧\n(¬⟦(= i20 i43)⟧) ∧\n(¬⟦(= i20 i42)⟧) ∧\n(¬⟦(= i20 i41)⟧) ∧\n(¬⟦(= i20 i40)⟧) ∧\n(¬⟦(= i20 i39)⟧) ∧\n(¬⟦(= i20 i38)⟧) ∧\n(¬⟦(= i20 i37)⟧) ∧\n(¬⟦(= i20 i36)⟧) ∧\n(¬⟦(= i20 i35)⟧) ∧\n(¬⟦(= i20 i34)⟧) ∧\n(¬⟦(= i20 i33)⟧) ∧\n(¬⟦(= i20 i32)⟧) ∧\n(¬⟦(= i20 i31)⟧) ∧\n(¬⟦(= i20 i30)⟧) ∧\n(¬⟦(= i20 i29)⟧) ∧\n(¬⟦(= i20 i28)⟧) ∧\n(¬⟦(= i20 i27)⟧) ∧\n(¬⟦(= i20 i26)⟧) ∧\n(¬⟦(= i20 i25)⟧) ∧\n(¬⟦(= i20 i24)⟧) ∧\n(¬⟦(= i20 i23)⟧) ∧\n(¬⟦(= i20 i22)⟧) ∧\n(¬⟦(= i20 i21)⟧) ∧\n(¬⟦(= i19 i60)⟧) ∧\n(¬⟦(= i19 i59)⟧) ∧\n(¬⟦(= i19 i58)⟧) ∧\n(¬⟦(= i19 i57)⟧) ∧\n(¬⟦(= i19 i56)⟧) ∧\n(¬⟦(= i19 i55)⟧) ∧\n(¬⟦(= i19 i54)⟧) ∧\n(¬⟦(= i19 i53)⟧) ∧\n(¬⟦(= i19 i52)⟧) ∧\n(¬⟦(= i19 i51)⟧) ∧\n(¬⟦(= i19 i50)⟧) ∧\n(¬⟦(= i19 i49)⟧) ∧\n(¬⟦(= i19 i48)⟧) ∧\n(¬⟦(= i19 i47)⟧) ∧\n(¬⟦(= i19 i46)⟧) ∧\n(¬⟦(= i19 i45)⟧) ∧\n(¬⟦(= i19 i44)⟧) ∧\n(¬⟦(= i19 i43)⟧) ∧\n(¬⟦(= i19 i42)⟧) ∧\n(¬⟦(= i19 i41)⟧) ∧\n(¬⟦(= i19 i40)⟧) ∧\n(¬⟦(= i19 i39)⟧) ∧\n(¬⟦(= i19 i38)⟧) ∧\n(¬⟦(= i19 i37)⟧) ∧\n(¬⟦(= i19 i36)⟧) ∧\n(¬⟦(= i19 i35)⟧) ∧\n(¬⟦(= i19 i34)⟧) ∧\n(¬⟦(= i19 i33)⟧) ∧\n(¬⟦(= i19 i32)⟧) ∧\n(¬⟦(= i19 i31)⟧) ∧\n(¬⟦(= i19 i30)⟧) ∧\n(¬⟦(= i19 i29)⟧) ∧\n(¬⟦(= i19 i28)⟧) ∧\n(¬⟦(= i19 i27)⟧) ∧\n(¬⟦(= i19 i26)⟧) ∧\n(¬⟦(= i19 i25)⟧) ∧\n(¬⟦(= i19 i24)⟧) ∧\n(¬⟦(= i19 i23)⟧) ∧\n(¬⟦(= i19 i22)⟧) ∧\n(¬⟦(= i19 i21)⟧) ∧\n(¬⟦(= i19 i20)⟧) ∧\n(¬⟦(= i18 i60)⟧) ∧\n(¬⟦(= i18 i59)⟧) ∧\n(¬⟦(= i18 i58)⟧) ∧\n(¬⟦(= i18 i57)⟧) ∧\n(¬⟦(= i18 i56)⟧) ∧\n(¬⟦(= i18 i55)⟧) ∧\n(¬⟦(= i18 i54)⟧) ∧\n(¬⟦(= i18 i53)⟧) ∧\n(¬⟦(= i18 i52)⟧) ∧\n(¬⟦(= i18 i51)⟧) ∧\n(¬⟦(= i18 i50)⟧) ∧\n(¬⟦(= i18 i49)⟧) ∧\n(¬⟦(= i18 i48)⟧) ∧\n(¬⟦(= i18 i47)⟧) ∧\n(¬⟦(= i18 i46)⟧) ∧\n(¬⟦(= i18 i45)⟧) ∧\n(¬⟦(= i18 i44)⟧) ∧\n(¬⟦(= i18 i43)⟧) ∧\n(¬⟦(= i18 i42)⟧) ∧\n(¬⟦(= i18 i41)⟧) ∧\n(¬⟦(= i18 i40)⟧) ∧\n(¬⟦(= i18 i39)⟧) ∧\n(¬⟦(= i18 i38)⟧) ∧\n(¬⟦(= i18 i37)⟧) ∧\n(¬⟦(= i18 i36)⟧) ∧\n(¬⟦(= i18 i35)⟧) ∧\n(¬⟦(= i18 i34)⟧) ∧\n(¬⟦(= i18 i33)⟧) ∧\n(¬⟦(= i18 i32)⟧) ∧\n(¬⟦(= i18 i31)⟧) ∧\n(¬⟦(= i18 i30)⟧) ∧\n(¬⟦(= i18 i29)⟧) ∧\n(¬⟦(= i18 i28)⟧) ∧\n(¬⟦(= i18 i27)⟧) ∧\n(¬⟦(= i18 i26)⟧) ∧\n(¬⟦(= i18 i25)⟧) ∧\n(¬⟦(= i18 i24)⟧) ∧\n(¬⟦(= i18 i23)⟧) ∧\n(¬⟦(= i18 i22)⟧) ∧\n(¬⟦(= i18 i21)⟧) ∧\n(¬⟦(= i18 i20)⟧) ∧\n(¬⟦(= i18 i19)⟧) ∧\n(¬⟦(= i17 i60)⟧) ∧\n(¬⟦(= i17 i59)⟧) ∧\n(¬⟦(= i17 i58)⟧) ∧\n(¬⟦(= i17 i57)⟧) ∧\n(¬⟦(= i17 i56)⟧) ∧\n(¬⟦(= i17 i55)⟧) ∧\n(¬⟦(= i17 i54)⟧) ∧\n(¬⟦(= i17 i53)⟧) ∧\n(¬⟦(= i17 i52)⟧) ∧\n(¬⟦(= i17 i51)⟧) ∧\n(¬⟦(= i17 i50)⟧) ∧\n(¬⟦(= i17 i49)⟧) ∧\n(¬⟦(= i17 i48)⟧) ∧\n(¬⟦(= i17 i47)⟧) ∧\n(¬⟦(= i17 i46)⟧) ∧\n(¬⟦(= i17 i45)⟧) ∧\n(¬⟦(= i17 i44)⟧) ∧\n(¬⟦(= i17 i43)⟧) ∧\n(¬⟦(= i17 i42)⟧) ∧\n(¬⟦(= i17 i41)⟧) ∧\n(¬⟦(= i17 i40)⟧) ∧\n(¬⟦(= i17 i39)⟧) ∧\n(¬⟦(= i17 i38)⟧) ∧\n(¬⟦(= i17 i37)⟧) ∧\n(¬⟦(= i17 i36)⟧) ∧\n(¬⟦(= i17 i35)⟧) ∧\n(¬⟦(= i17 i34)⟧) ∧\n(¬⟦(= i17 i33)⟧) ∧\n(¬⟦(= i17 i32)⟧) ∧\n(¬⟦(= i17 i31)⟧) ∧\n(¬⟦(= i17 i30)⟧) ∧\n(¬⟦(= i17 i29)⟧) ∧\n(¬⟦(= i17 i28)⟧) ∧\n(¬⟦(= i17 i27)⟧) ∧\n(¬⟦(= i17 i26)⟧) ∧\n(¬⟦(= i17 i25)⟧) ∧\n(¬⟦(= i17 i24)⟧) ∧\n(¬⟦(= i17 i23)⟧) ∧\n(¬⟦(= i17 i22)⟧) ∧\n(¬⟦(= i17 i21)⟧) ∧\n(¬⟦(= i17 i20)⟧) ∧\n(¬⟦(= i17 i19)⟧) ∧\n(¬⟦(= i17 i18)⟧) ∧\n(¬⟦(= i16 i60)⟧) ∧\n(¬⟦(= i16 i59)⟧) ∧\n(¬⟦(= i16 i58)⟧) ∧\n(¬⟦(= i16 i57)⟧) ∧\n(¬⟦(= i16 i56)⟧) ∧\n(¬⟦(= i16 i55)⟧) ∧\n(¬⟦(= i16 i54)⟧) ∧\n(¬⟦(= i16 i53)⟧) ∧\n(¬⟦(= i16 i52)⟧) ∧\n(¬⟦(= i16 i51)⟧) ∧\n(¬⟦(= i16 i50)⟧) ∧\n(¬⟦(= i16 i49)⟧) ∧\n(¬⟦(= i16 i48)⟧) ∧\n(¬⟦(= i16 i47)⟧) ∧\n(¬⟦(= i16 i46)⟧) ∧\n(¬⟦(= i16 i45)⟧) ∧\n(¬⟦(= i16 i44)⟧) ∧\n(¬⟦(= i16 i43)⟧) ∧\n(¬⟦(= i16 i42)⟧) ∧\n(¬⟦(= i16 i41)⟧) ∧\n(¬⟦(= i16 i40)⟧) ∧\n(¬⟦(= i16 i39)⟧) ∧\n(¬⟦(= i16 i38)⟧) ∧\n(¬⟦(= i16 i37)⟧) ∧\n(¬⟦(= i16 i36)⟧) ∧\n(¬⟦(= i16 i35)⟧) ∧\n(¬⟦(= i16 i34)⟧) ∧\n(¬⟦(= i16 i33)⟧) ∧\n(¬⟦(= i16 i32)⟧) ∧\n(¬⟦(= i16 i31)⟧) ∧\n(¬⟦(= i16 i30)⟧) ∧\n(¬⟦(= i16 i29)⟧) ∧\n(¬⟦(= i16 i28)⟧) ∧\n(¬⟦(= i16 i27)⟧) ∧\n(¬⟦(= i16 i26)⟧) ∧\n(¬⟦(= i16 i25)⟧) ∧\n(¬⟦(= i16 i24)⟧) ∧\n(¬⟦(= i16 i23)⟧) ∧\n(¬⟦(= i16 i22)⟧) ∧\n(¬⟦(= i16 i21)⟧) ∧\n(¬⟦(= i16 i20)⟧) ∧\n(¬⟦(= i16 i19)⟧) ∧\n(¬⟦(= i16 i18)⟧) ∧\n(¬⟦(= i16 i17)⟧) ∧\n(¬⟦(= i15 i60)⟧) ∧\n(¬⟦(= i15 i59)⟧) ∧\n(¬⟦(= i15 i58)⟧) ∧\n(¬⟦(= i15 i57)⟧) ∧\n(¬⟦(= i15 i56)⟧) ∧\n(¬⟦(= i15 i55)⟧) ∧\n(¬⟦(= i15 i54)⟧) ∧\n(¬⟦(= i15 i53)⟧) ∧\n(¬⟦(= i15 i52)⟧) ∧\n(¬⟦(= i15 i51)⟧) ∧\n(¬⟦(= i15 i50)⟧) ∧\n(¬⟦(= i15 i49)⟧) ∧\n(¬⟦(= i15 i48)⟧) ∧\n(¬⟦(= i15 i47)⟧) ∧\n(¬⟦(= i15 i46)⟧) ∧\n(¬⟦(= i15 i45)⟧) ∧\n(¬⟦(= i15 i44)⟧) ∧\n(¬⟦(= i15 i43)⟧) ∧\n(¬⟦(= i15 i42)⟧) ∧\n(¬⟦(= i15 i41)⟧) ∧\n(¬⟦(= i15 i40)⟧) ∧\n(¬⟦(= i15 i39)⟧) ∧\n(¬⟦(= i15 i38)⟧) ∧\n(¬⟦(= i15 i37)⟧) ∧\n(¬⟦(= i15 i36)⟧) ∧\n(¬⟦(= i15 i35)⟧) ∧\n(¬⟦(= i15 i34)⟧) ∧\n(¬⟦(= i15 i33)⟧) ∧\n(¬⟦(= i15 i32)⟧) ∧\n(¬⟦(= i15 i31)⟧) ∧\n(¬⟦(= i15 i30)⟧) ∧\n(¬⟦(= i15 i29)⟧) ∧\n(¬⟦(= i15 i28)⟧) ∧\n(¬⟦(= i15 i27)⟧) ∧\n(¬⟦(= i15 i26)⟧) ∧\n(¬⟦(= i15 i25)⟧) ∧\n(¬⟦(= i15 i24)⟧) ∧\n(¬⟦(= i15 i23)⟧) ∧\n(¬⟦(= i15 i22)⟧) ∧\n(¬⟦(= i15 i21)⟧) ∧\n(¬⟦(= i15 i20)⟧) ∧\n(¬⟦(= i15 i19)⟧) ∧\n(¬⟦(= i15 i18)⟧) ∧\n(¬⟦(= i15 i17)⟧) ∧\n(¬⟦(= i15 i16)⟧) ∧\n(¬⟦(= i14 i60)⟧) ∧\n(¬⟦(= i14 i59)⟧) ∧\n(¬⟦(= i14 i58)⟧) ∧\n(¬⟦(= i14 i57)⟧) ∧\n(¬⟦(= i14 i56)⟧) ∧\n(¬⟦(= i14 i55)⟧) ∧\n(¬⟦(= i14 i54)⟧) ∧\n(¬⟦(= i14 i53)⟧) ∧\n(¬⟦(= i14 i52)⟧) ∧\n(¬⟦(= i14 i51)⟧) ∧\n(¬⟦(= i14 i50)⟧) ∧\n(¬⟦(= i14 i49)⟧) ∧\n(¬⟦(= i14 i48)⟧) ∧\n(¬⟦(= i14 i47)⟧) ∧\n(¬⟦(= i14 i46)⟧) ∧\n(¬⟦(= i14 i45)⟧) ∧\n(¬⟦(= i14 i44)⟧) ∧\n(¬⟦(= i14 i43)⟧) ∧\n(¬⟦(= i14 i42)⟧) ∧\n(¬⟦(= i14 i41)⟧) ∧\n(¬⟦(= i14 i40)⟧) ∧\n(¬⟦(= i14 i39)⟧) ∧\n(¬⟦(= i14 i38)⟧) ∧\n(¬⟦(= i14 i37)⟧) ∧\n(¬⟦(= i14 i36)⟧) ∧\n(¬⟦(= i14 i35)⟧) ∧\n(¬⟦(= i14 i34)⟧) ∧\n(¬⟦(= i14 i33)⟧) ∧\n(¬⟦(= i14 i32)⟧) ∧\n(¬⟦(= i14 i31)⟧) ∧\n(¬⟦(= i14 i30)⟧) ∧\n(¬⟦(= i14 i29)⟧) ∧\n(¬⟦(= i14 i28)⟧) ∧\n(¬⟦(= i14 i27)⟧) ∧\n(¬⟦(= i14 i26)⟧) ∧\n(¬⟦(= i14 i25)⟧) ∧\n(¬⟦(= i14 i24)⟧) ∧\n(¬⟦(= i14 i23)⟧) ∧\n(¬⟦(= i14 i22)⟧) ∧\n(¬⟦(= i14 i21)⟧) ∧\n(¬⟦(= i14 i20)⟧) ∧\n(¬⟦(= i14 i19)⟧) ∧\n(¬⟦(= i14 i18)⟧) ∧\n(¬⟦(= i14 i17)⟧) ∧\n(¬⟦(= i14 i16)⟧) ∧\n(¬⟦(= i14 i15)⟧) ∧\n(¬⟦(= i13 i60)⟧) ∧\n(¬⟦(= i13 i59)⟧) ∧\n(¬⟦(= i13 i58)⟧) ∧\n(¬⟦(= i13 i57)⟧) ∧\n(¬⟦(= i13 i56)⟧) ∧\n(¬⟦(= i13 i55)⟧) ∧\n(¬⟦(= i13 i54)⟧) ∧\n(¬⟦(= i13 i53)⟧) ∧\n(¬⟦(= i13 i52)⟧) ∧\n(¬⟦(= i13 i51)⟧) ∧\n(¬⟦(= i13 i50)⟧) ∧\n(¬⟦(= i13 i49)⟧) ∧\n(¬⟦(= i13 i48)⟧) ∧\n(¬⟦(= i13 i47)⟧) ∧\n(¬⟦(= i13 i46)⟧) ∧\n(¬⟦(= i13 i45)⟧) ∧\n(¬⟦(= i13 i44)⟧) ∧\n(¬⟦(= i13 i43)⟧) ∧\n(¬⟦(= i13 i42)⟧) ∧\n(¬⟦(= i13 i41)⟧) ∧\n(¬⟦(= i13 i40)⟧) ∧\n(¬⟦(= i13 i39)⟧) ∧\n(¬⟦(= i13 i38)⟧) ∧\n(¬⟦(= i13 i37)⟧) ∧\n(¬⟦(= i13 i36)⟧) ∧\n(¬⟦(= i13 i35)⟧) ∧\n(¬⟦(= i13 i34)⟧) ∧\n(¬⟦(= i13 i33)⟧) ∧\n(¬⟦(= i13 i32)⟧) ∧\n(¬⟦(= i13 i31)⟧) ∧\n(¬⟦(= i13 i30)⟧) ∧\n(¬⟦(= i13 i29)⟧) ∧\n(¬⟦(= i13 i28)⟧) ∧\n(¬⟦(= i13 i27)⟧) ∧\n(¬⟦(= i13 i26)⟧) ∧\n(¬⟦(= i13 i25)⟧) ∧\n(¬⟦(= i13 i24)⟧) ∧\n(¬⟦(= i13 i23)⟧) ∧\n(¬⟦(= i13 i22)⟧) ∧\n(¬⟦(= i13 i21)⟧) ∧\n(¬⟦(= i13 i20)⟧) ∧\n(¬⟦(= i13 i19)⟧) ∧\n(¬⟦(= i13 i18)⟧) ∧\n(¬⟦(= i13 i17)⟧) ∧\n(¬⟦(= i13 i16)⟧) ∧\n(¬⟦(= i13 i15)⟧) ∧\n(¬⟦(= i13 i14)⟧) ∧\n(¬⟦(= i12 i60)⟧) ∧\n(¬⟦(= i12 i59)⟧) ∧\n(¬⟦(= i12 i58)⟧) ∧\n(¬⟦(= i12 i57)⟧) ∧\n(¬⟦(= i12 i56)⟧) ∧\n(¬⟦(= i12 i55)⟧) ∧\n(¬⟦(= i12 i54)⟧) ∧\n(¬⟦(= i12 i53)⟧) ∧\n(¬⟦(= i12 i52)⟧) ∧\n(¬⟦(= i12 i51)⟧) ∧\n(¬⟦(= i12 i50)⟧) ∧\n(¬⟦(= i12 i49)⟧) ∧\n(¬⟦(= i12 i48)⟧) ∧\n(¬⟦(= i12 i47)⟧) ∧\n(¬⟦(= i12 i46)⟧) ∧\n(¬⟦(= i12 i45)⟧) ∧\n(¬⟦(= i12 i44)⟧) ∧\n(¬⟦(= i12 i43)⟧) ∧\n(¬⟦(= i12 i42)⟧) ∧\n(¬⟦(= i12 i41)⟧) ∧\n(¬⟦(= i12 i40)⟧) ∧\n(¬⟦(= i12 i39)⟧) ∧\n(¬⟦(= i12 i38)⟧) ∧\n(¬⟦(= i12 i37)⟧) ∧\n(¬⟦(= i12 i36)⟧) ∧\n(¬⟦(= i12 i35)⟧) ∧\n(¬⟦(= i12 i34)⟧) ∧\n(¬⟦(= i12 i33)⟧) ∧\n(¬⟦(= i12 i32)⟧) ∧\n(¬⟦(= i12 i31)⟧) ∧\n(¬⟦(= i12 i30)⟧) ∧\n(¬⟦(= i12 i29)⟧) ∧\n(¬⟦(= i12 i28)⟧) ∧\n(¬⟦(= i12 i27)⟧) ∧\n(¬⟦(= i12 i26)⟧) ∧\n(¬⟦(= i12 i25)⟧) ∧\n(¬⟦(= i12 i24)⟧) ∧\n(¬⟦(= i12 i23)⟧) ∧\n(¬⟦(= i12 i22)⟧) ∧\n(¬⟦(= i12 i21)⟧) ∧\n(¬⟦(= i12 i20)⟧) ∧\n(¬⟦(= i12 i19)⟧) ∧\n(¬⟦(= i12 i18)⟧) ∧\n(¬⟦(= i12 i17)⟧) ∧\n(¬⟦(= i12 i16)⟧) ∧\n(¬⟦(= i12 i15)⟧) ∧\n(¬⟦(= i12 i14)⟧) ∧\n(¬⟦(= i12 i13)⟧) ∧\n(¬⟦(= i11 i60)⟧) ∧\n(¬⟦(= i11 i59)⟧) ∧\n(¬⟦(= i11 i58)⟧) ∧\n(¬⟦(= i11 i57)⟧) ∧\n(¬⟦(= i11 i56)⟧) ∧\n(¬⟦(= i11 i55)⟧) ∧\n(¬⟦(= i11 i54)⟧) ∧\n(¬⟦(= i11 i53)⟧) ∧\n(¬⟦(= i11 i52)⟧) ∧\n(¬⟦(= i11 i51)⟧) ∧\n(¬⟦(= i11 i50)⟧) ∧\n(¬⟦(= i11 i49)⟧) ∧\n(¬⟦(= i11 i48)⟧) ∧\n(¬⟦(= i11 i47)⟧) ∧\n(¬⟦(= i11 i46)⟧) ∧\n(¬⟦(= i11 i45)⟧) ∧\n(¬⟦(= i11 i44)⟧) ∧\n(¬⟦(= i11 i43)⟧) ∧\n(¬⟦(= i11 i42)⟧) ∧\n(¬⟦(= i11 i41)⟧) ∧\n(¬⟦(= i11 i40)⟧) ∧\n(¬⟦(= i11 i39)⟧) ∧\n(¬⟦(= i11 i38)⟧) ∧\n(¬⟦(= i11 i37)⟧) ∧\n(¬⟦(= i11 i36)⟧) ∧\n(¬⟦(= i11 i35)⟧) ∧\n(¬⟦(= i11 i34)⟧) ∧\n(¬⟦(= i11 i33)⟧) ∧\n(¬⟦(= i11 i32)⟧) ∧\n(¬⟦(= i11 i31)⟧) ∧\n(¬⟦(= i11 i30)⟧) ∧\n(¬⟦(= i11 i29)⟧) ∧\n(¬⟦(= i11 i28)⟧) ∧\n(¬⟦(= i11 i27)⟧) ∧\n(¬⟦(= i11 i26)⟧) ∧\n(¬⟦(= i11 i25)⟧) ∧\n(¬⟦(= i11 i24)⟧) ∧\n(¬⟦(= i11 i23)⟧) ∧\n(¬⟦(= i11 i22)⟧) ∧\n(¬⟦(= i11 i21)⟧) ∧\n(¬⟦(= i11 i20)⟧) ∧\n(¬⟦(= i11 i19)⟧) ∧\n(¬⟦(= i11 i18)⟧) ∧\n(¬⟦(= i11 i17)⟧) ∧\n(¬⟦(= i11 i16)⟧) ∧\n(¬⟦(= i11 i15)⟧) ∧\n(¬⟦(= i11 i14)⟧) ∧\n(¬⟦(= i11 i13)⟧) ∧\n(¬⟦(= i11 i12)⟧) ∧\n(¬⟦(= i10 i60)⟧) ∧\n(¬⟦(= i10 i59)⟧) ∧\n(¬⟦(= i10 i58)⟧) ∧\n(¬⟦(= i10 i57)⟧) ∧\n(¬⟦(= i10 i56)⟧) ∧\n(¬⟦(= i10 i55)⟧) ∧\n(¬⟦(= i10 i54)⟧) ∧\n(¬⟦(= i10 i53)⟧) ∧\n(¬⟦(= i10 i52)⟧) ∧\n(¬⟦(= i10 i51)⟧) ∧\n(¬⟦(= i10 i50)⟧) ∧\n(¬⟦(= i10 i49)⟧) ∧\n(¬⟦(= i10 i48)⟧) ∧\n(¬⟦(= i10 i47)⟧) ∧\n(¬⟦(= i10 i46)⟧) ∧\n(¬⟦(= i10 i45)⟧) ∧\n(¬⟦(= i10 i44)⟧) ∧\n(¬⟦(= i10 i43)⟧) ∧\n(¬⟦(= i10 i42)⟧) ∧\n(¬⟦(= i10 i41)⟧) ∧\n(¬⟦(= i10 i40)⟧) ∧\n(¬⟦(= i10 i39)⟧) ∧\n(¬⟦(= i10 i38)⟧) ∧\n(¬⟦(= i10 i37)⟧) ∧\n(¬⟦(= i10 i36)⟧) ∧\n(¬⟦(= i10 i35)⟧) ∧\n(¬⟦(= i10 i34)⟧) ∧\n(¬⟦(= i10 i33)⟧) ∧\n(¬⟦(= i10 i32)⟧) ∧\n(¬⟦(= i10 i31)⟧) ∧\n(¬⟦(= i10 i30)⟧) ∧\n(¬⟦(= i10 i29)⟧) ∧\n(¬⟦(= i10 i28)⟧) ∧\n(¬⟦(= i10 i27)⟧) ∧\n(¬⟦(= i10 i26)⟧) ∧\n(¬⟦(= i10 i25)⟧) ∧\n(¬⟦(= i10 i24)⟧) ∧\n(¬⟦(= i10 i23)⟧) ∧\n(¬⟦(= i10 i22)⟧) ∧\n(¬⟦(= i10 i21)⟧) ∧\n(¬⟦(= i10 i20)⟧) ∧\n(¬⟦(= i10 i19)⟧) ∧\n(¬⟦(= i10 i18)⟧) ∧\n(¬⟦(= i10 i17)⟧) ∧\n(¬⟦(= i10 i16)⟧) ∧\n(¬⟦(= i10 i15)⟧) ∧\n(¬⟦(= i10 i14)⟧) ∧\n(¬⟦(= i10 i13)⟧) ∧\n(¬⟦(= i10 i12)⟧) ∧\n(¬⟦(= i10 i11)⟧) ∧\n(¬⟦(= i9 i60)⟧) ∧\n(¬⟦(= i9 i59)⟧) ∧\n(¬⟦(= i9 i58)⟧) ∧\n(¬⟦(= i9 i57)⟧) ∧\n(¬⟦(= i9 i56)⟧) ∧\n(¬⟦(= i9 i55)⟧) ∧\n(¬⟦(= i9 i54)⟧) ∧\n(¬⟦(= i9 i53)⟧) ∧\n(¬⟦(= i9 i52)⟧) ∧\n(¬⟦(= i9 i51)⟧) ∧\n(¬⟦(= i9 i50)⟧) ∧\n(¬⟦(= i9 i49)⟧) ∧\n(¬⟦(= i9 i48)⟧) ∧\n(¬⟦(= i9 i47)⟧) ∧\n(¬⟦(= i9 i46)⟧) ∧\n(¬⟦(= i9 i45)⟧) ∧\n(¬⟦(= i9 i44)⟧) ∧\n(¬⟦(= i9 i43)⟧) ∧\n(¬⟦(= i9 i42)⟧) ∧\n(¬⟦(= i9 i41)⟧) ∧\n(¬⟦(= i9 i40)⟧) ∧\n(¬⟦(= i9 i39)⟧) ∧\n(¬⟦(= i9 i38)⟧) ∧\n(¬⟦(= i9 i37)⟧) ∧\n(¬⟦(= i9 i36)⟧) ∧\n(¬⟦(= i9 i35)⟧) ∧\n(¬⟦(= i9 i34)⟧) ∧\n(¬⟦(= i9 i33)⟧) ∧\n(¬⟦(= i9 i32)⟧) ∧\n(¬⟦(= i9 i31)⟧) ∧\n(¬⟦(= i9 i30)⟧) ∧\n(¬⟦(= i9 i29)⟧) ∧\n(¬⟦(= i9 i28)⟧) ∧\n(¬⟦(= i9 i27)⟧) ∧\n(¬⟦(= i9 i26)⟧) ∧\n(¬⟦(= i9 i25)⟧) ∧\n(¬⟦(= i9 i24)⟧) ∧\n(¬⟦(= i9 i23)⟧) ∧\n(¬⟦(= i9 i22)⟧) ∧\n(¬⟦(= i9 i21)⟧) ∧\n(¬⟦(= i9 i20)⟧) ∧\n(¬⟦(= i9 i19)⟧) ∧\n(¬⟦(= i9 i18)⟧) ∧\n(¬⟦(= i9 i17)⟧) ∧\n(¬⟦(= i9 i16)⟧) ∧\n(¬⟦(= i9 i15)⟧) ∧\n(¬⟦(= i9 i14)⟧) ∧\n(¬⟦(= i9 i13)⟧) ∧\n(¬⟦(= i9 i12)⟧) ∧\n(¬⟦(= i9 i11)⟧) ∧\n(¬⟦(= i9 i10)⟧) ∧\n(¬⟦(= i8 i60)⟧) ∧\n(¬⟦(= i8 i59)⟧) ∧\n(¬⟦(= i8 i58)⟧) ∧\n(¬⟦(= i8 i57)⟧) ∧\n(¬⟦(= i8 i56)⟧) ∧\n(¬⟦(= i8 i55)⟧) ∧\n(¬⟦(= i8 i54)⟧) ∧\n(¬⟦(= i8 i53)⟧) ∧\n(¬⟦(= i8 i52)⟧) ∧\n(¬⟦(= i8 i51)⟧) ∧\n(¬⟦(= i8 i50)⟧) ∧\n(¬⟦(= i8 i49)⟧) ∧\n(¬⟦(= i8 i48)⟧) ∧\n(¬⟦(= i8 i47)⟧) ∧\n(¬⟦(= i8 i46)⟧) ∧\n(¬⟦(= i8 i45)⟧) ∧\n(¬⟦(= i8 i44)⟧) ∧\n(¬⟦(= i8 i43)⟧) ∧\n(¬⟦(= i8 i42)⟧) ∧\n(¬⟦(= i8 i41)⟧) ∧\n(¬⟦(= i8 i40)⟧) ∧\n(¬⟦(= i8 i39)⟧) ∧\n(¬⟦(= i8 i38)⟧) ∧\n(¬⟦(= i8 i37)⟧) ∧\n(¬⟦(= i8 i36)⟧) ∧\n(¬⟦(= i8 i35)⟧) ∧\n(¬⟦(= i8 i34)⟧) ∧\n(¬⟦(= i8 i33)⟧) ∧\n(¬⟦(= i8 i32)⟧) ∧\n(¬⟦(= i8 i31)⟧) ∧\n(¬⟦(= i8 i30)⟧) ∧\n(¬⟦(= i8 i29)⟧) ∧\n(¬⟦(= i8 i28)⟧) ∧\n(¬⟦(= i8 i27)⟧) ∧\n(¬⟦(= i8 i26)⟧) ∧\n(¬⟦(= i8 i25)⟧) ∧\n(¬⟦(= i8 i24)⟧) ∧\n(¬⟦(= i8 i23)⟧) ∧\n(¬⟦(= i8 i22)⟧) ∧\n(¬⟦(= i8 i21)⟧) ∧\n(¬⟦(= i8 i20)⟧) ∧\n(¬⟦(= i8 i19)⟧) ∧\n(¬⟦(= i8 i18)⟧) ∧\n(¬⟦(= i8 i17)⟧) ∧\n(¬⟦(= i8 i16)⟧) ∧\n(¬⟦(= i8 i15)⟧) ∧\n(¬⟦(= i8 i14)⟧) ∧\n(¬⟦(= i8 i13)⟧) ∧\n(¬⟦(= i8 i12)⟧) ∧\n(¬⟦(= i8 i11)⟧) ∧\n(¬⟦(= i8 i10)⟧) ∧\n(¬⟦(= i8 i9)⟧) ∧\n(¬⟦(= i7 i60)⟧) ∧\n(¬⟦(= i7 i59)⟧) ∧\n(¬⟦(= i7 i58)⟧) ∧\n(¬⟦(= i7 i57)⟧) ∧\n(¬⟦(= i7 i56)⟧) ∧\n(¬⟦(= i7 i55)⟧) ∧\n(¬⟦(= i7 i54)⟧) ∧\n(¬⟦(= i7 i53)⟧) ∧\n(¬⟦(= i7 i52)⟧) ∧\n(¬⟦(= i7 i51)⟧) ∧\n(¬⟦(= i7 i50)⟧) ∧\n(¬⟦(= i7 i49)⟧) ∧\n(¬⟦(= i7 i48)⟧) ∧\n(¬⟦(= i7 i47)⟧) ∧\n(¬⟦(= i7 i46)⟧) ∧\n(¬⟦(= i7 i45)⟧) ∧\n(¬⟦(= i7 i44)⟧) ∧\n(¬⟦(= i7 i43)⟧) ∧\n(¬⟦(= i7 i42)⟧) ∧\n(¬⟦(= i7 i41)⟧) ∧\n(¬⟦(= i7 i40)⟧) ∧\n(¬⟦(= i7 i39)⟧) ∧\n(¬⟦(= i7 i38)⟧) ∧\n(¬⟦(= i7 i37)⟧) ∧\n(¬⟦(= i7 i36)⟧) ∧\n(¬⟦(= i7 i35)⟧) ∧\n(¬⟦(= i7 i34)⟧) ∧\n(¬⟦(= i7 i33)⟧) ∧\n(¬⟦(= i7 i32)⟧) ∧\n(¬⟦(= i7 i31)⟧) ∧\n(¬⟦(= i7 i30)⟧) ∧\n(¬⟦(= i7 i29)⟧) ∧\n(¬⟦(= i7 i28)⟧) ∧\n(¬⟦(= i7 i27)⟧) ∧\n(¬⟦(= i7 i26)⟧) ∧\n(¬⟦(= i7 i25)⟧) ∧\n(¬⟦(= i7 i24)⟧) ∧\n(¬⟦(= i7 i23)⟧) ∧\n(¬⟦(= i7 i22)⟧) ∧\n(¬⟦(= i7 i21)⟧) ∧\n(¬⟦(= i7 i20)⟧) ∧\n(¬⟦(= i7 i19)⟧) ∧\n(¬⟦(= i7 i18)⟧) ∧\n(¬⟦(= i7 i17)⟧) ∧\n(¬⟦(= i7 i16)⟧) ∧\n(¬⟦(= i7 i15)⟧) ∧\n(¬⟦(= i7 i14)⟧) ∧\n(¬⟦(= i7 i13)⟧) ∧\n(¬⟦(= i7 i12)⟧) ∧\n(¬⟦(= i7 i11)⟧) ∧\n(¬⟦(= i7 i10)⟧) ∧\n(¬⟦(= i7 i9)⟧) ∧\n(¬⟦(= i7 i8)⟧) ∧\n(¬⟦(= i6 i60)⟧) ∧\n(¬⟦(= i6 i59)⟧) ∧\n(¬⟦(= i6 i58)⟧) ∧\n(¬⟦(= i6 i57)⟧) ∧\n(¬⟦(= i6 i56)⟧) ∧\n(¬⟦(= i6 i55)⟧) ∧\n(¬⟦(= i6 i54)⟧) ∧\n(¬⟦(= i6 i53)⟧) ∧\n(¬⟦(= i6 i52)⟧) ∧\n(¬⟦(= i6 i51)⟧) ∧\n(¬⟦(= i6 i50)⟧) ∧\n(¬⟦(= i6 i49)⟧) ∧\n(¬⟦(= i6 i48)⟧) ∧\n(¬⟦(= i6 i47)⟧) ∧\n(¬⟦(= i6 i46)⟧) ∧\n(¬⟦(= i6 i45)⟧) ∧\n(¬⟦(= i6 i44)⟧) ∧\n(¬⟦(= i6 i43)⟧) ∧\n(¬⟦(= i6 i42)⟧) ∧\n(¬⟦(= i6 i41)⟧) ∧\n(¬⟦(= i6 i40)⟧) ∧\n(¬⟦(= i6 i39)⟧) ∧\n(¬⟦(= i6 i38)⟧) ∧\n(¬⟦(= i6 i37)⟧) ∧\n(¬⟦(= i6 i36)⟧) ∧\n(¬⟦(= i6 i35)⟧) ∧\n(¬⟦(= i6 i34)⟧) ∧\n(¬⟦(= i6 i33)⟧) ∧\n(¬⟦(= i6 i32)⟧) ∧\n(¬⟦(= i6 i31)⟧) ∧\n(¬⟦(= i6 i30)⟧) ∧\n(¬⟦(= i6 i29)⟧) ∧\n(¬⟦(= i6 i28)⟧) ∧\n(¬⟦(= i6 i27)⟧) ∧\n(¬⟦(= i6 i26)⟧) ∧\n(¬⟦(= i6 i25)⟧) ∧\n(¬⟦(= i6 i24)⟧) ∧\n(¬⟦(= i6 i23)⟧) ∧\n(¬⟦(= i6 i22)⟧) ∧\n(¬⟦(= i6 i21)⟧) ∧\n(¬⟦(= i6 i20)⟧) ∧\n(¬⟦(= i6 i19)⟧) ∧\n(¬⟦(= i6 i18)⟧) ∧\n(¬⟦(= i6 i17)⟧) ∧\n(¬⟦(= i6 i16)⟧) ∧\n(¬⟦(= i6 i15)⟧) ∧\n(¬⟦(= i6 i14)⟧) ∧\n(¬⟦(= i6 i13)⟧) ∧\n(¬⟦(= i6 i12)⟧) ∧\n(¬⟦(= i6 i11)⟧) ∧\n(¬⟦(= i6 i10)⟧) ∧\n(¬⟦(= i6 i9)⟧) ∧\n(¬⟦(= i6 i8)⟧) ∧\n(¬⟦(= i6 i7)⟧) ∧\n(¬⟦(= i5 i60)⟧) ∧\n(¬⟦(= i5 i59)⟧) ∧\n(¬⟦(= i5 i58)⟧) ∧\n(¬⟦(= i5 i57)⟧) ∧\n(¬⟦(= i5 i56)⟧) ∧\n(¬⟦(= i5 i55)⟧) ∧\n(¬⟦(= i5 i54)⟧) ∧\n(¬⟦(= i5 i53)⟧) ∧\n(¬⟦(= i5 i52)⟧) ∧\n(¬⟦(= i5 i51)⟧) ∧\n(¬⟦(= i5 i50)⟧) ∧\n(¬⟦(= i5 i49)⟧) ∧\n(¬⟦(= i5 i48)⟧) ∧\n(¬⟦(= i5 i47)⟧) ∧\n(¬⟦(= i5 i46)⟧) ∧\n(¬⟦(= i5 i45)⟧) ∧\n(¬⟦(= i5 i44)⟧) ∧\n(¬⟦(= i5 i43)⟧) ∧\n(¬⟦(= i5 i42)⟧) ∧\n(¬⟦(= i5 i41)⟧) ∧\n(¬⟦(= i5 i40)⟧) ∧\n(¬⟦(= i5 i39)⟧) ∧\n(¬⟦(= i5 i38)⟧) ∧\n(¬⟦(= i5 i37)⟧) ∧\n(¬⟦(= i5 i36)⟧) ∧\n(¬⟦(= i5 i35)⟧) ∧\n(¬⟦(= i5 i34)⟧) ∧\n(¬⟦(= i5 i33)⟧) ∧\n(¬⟦(= i5 i32)⟧) ∧\n(¬⟦(= i5 i31)⟧) ∧\n(¬⟦(= i5 i30)⟧) ∧\n(¬⟦(= i5 i29)⟧) ∧\n(¬⟦(= i5 i28)⟧) ∧\n(¬⟦(= i5 i27)⟧) ∧\n(¬⟦(= i5 i26)⟧) ∧\n(¬⟦(= i5 i25)⟧) ∧\n(¬⟦(= i5 i24)⟧) ∧\n(¬⟦(= i5 i23)⟧) ∧\n(¬⟦(= i5 i22)⟧) ∧\n(¬⟦(= i5 i21)⟧) ∧\n(¬⟦(= i5 i20)⟧) ∧\n(¬⟦(= i5 i19)⟧) ∧\n(¬⟦(= i5 i18)⟧) ∧\n(¬⟦(= i5 i17)⟧) ∧\n(¬⟦(= i5 i16)⟧) ∧\n(¬⟦(= i5 i15)⟧) ∧\n(¬⟦(= i5 i14)⟧) ∧\n(¬⟦(= i5 i13)⟧) ∧\n(¬⟦(= i5 i12)⟧) ∧\n(¬⟦(= i5 i11)⟧) ∧\n(¬⟦(= i5 i10)⟧) ∧\n(¬⟦(= i5 i9)⟧) ∧\n(¬⟦(= i5 i8)⟧) ∧\n(¬⟦(= i5 i7)⟧) ∧\n(¬⟦(= i5 i6)⟧) ∧\n(¬⟦(= i4 i60)⟧) ∧\n(¬⟦(= i4 i59)⟧) ∧\n(¬⟦(= i4 i58)⟧) ∧\n(¬⟦(= i4 i57)⟧) ∧\n(¬⟦(= i4 i56)⟧) ∧\n(¬⟦(= i4 i55)⟧) ∧\n(¬⟦(= i4 i54)⟧) ∧\n(¬⟦(= i4 i53)⟧) ∧\n(¬⟦(= i4 i52)⟧) ∧\n(¬⟦(= i4 i51)⟧) ∧\n(¬⟦(= i4 i50)⟧) ∧\n(¬⟦(= i4 i49)⟧) ∧\n(¬⟦(= i4 i48)⟧) ∧\n(¬⟦(= i4 i47)⟧) ∧\n(¬⟦(= i4 i46)⟧) ∧\n(¬⟦(= i4 i45)⟧) ∧\n(¬⟦(= i4 i44)⟧) ∧\n(¬⟦(= i4 i43)⟧) ∧\n(¬⟦(= i4 i42)⟧) ∧\n(¬⟦(= i4 i41)⟧) ∧\n(¬⟦(= i4 i40)⟧) ∧\n(¬⟦(= i4 i39)⟧) ∧\n(¬⟦(= i4 i38)⟧) ∧\n(¬⟦(= i4 i37)⟧) ∧\n(¬⟦(= i4 i36)⟧) ∧\n(¬⟦(= i4 i35)⟧) ∧\n(¬⟦(= i4 i34)⟧) ∧\n(¬⟦(= i4 i33)⟧) ∧\n(¬⟦(= i4 i32)⟧) ∧\n(¬⟦(= i4 i31)⟧) ∧\n(¬⟦(= i4 i30)⟧) ∧\n(¬⟦(= i4 i29)⟧) ∧\n(¬⟦(= i4 i28)⟧) ∧\n(¬⟦(= i4 i27)⟧) ∧\n(¬⟦(= i4 i26)⟧) ∧\n(¬⟦(= i4 i25)⟧) ∧\n(¬⟦(= i4 i24)⟧) ∧\n(¬⟦(= i4 i23)⟧) ∧\n(¬⟦(= i4 i22)⟧) ∧\n(¬⟦(= i4 i21)⟧) ∧\n(¬⟦(= i4 i20)⟧) ∧\n(¬⟦(= i4 i19)⟧) ∧\n(¬⟦(= i4 i18)⟧) ∧\n(¬⟦(= i4 i17)⟧) ∧\n(¬⟦(= i4 i16)⟧) ∧\n(¬⟦(= i4 i15)⟧) ∧\n(¬⟦(= i4 i14)⟧) ∧\n(¬⟦(= i4 i13)⟧) ∧\n(¬⟦(= i4 i12)⟧) ∧\n(¬⟦(= i4 i11)⟧) ∧\n(¬⟦(= i4 i10)⟧) ∧\n(¬⟦(= i4 i9)⟧) ∧\n(¬⟦(= i4 i8)⟧) ∧\n(¬⟦(= i4 i7)⟧) ∧\n(¬⟦(= i4 i6)⟧) ∧\n(¬⟦(= i4 i5)⟧) ∧\n(¬⟦(= i3 i60)⟧) ∧\n(¬⟦(= i3 i59)⟧) ∧\n(¬⟦(= i3 i58)⟧) ∧\n(¬⟦(= i3 i57)⟧) ∧\n(¬⟦(= i3 i56)⟧) ∧\n(¬⟦(= i3 i55)⟧) ∧\n(¬⟦(= i3 i54)⟧) ∧\n(¬⟦(= i3 i53)⟧) ∧\n(¬⟦(= i3 i52)⟧) ∧\n(¬⟦(= i3 i51)⟧) ∧\n(¬⟦(= i3 i50)⟧) ∧\n(¬⟦(= i3 i49)⟧) ∧\n(¬⟦(= i3 i48)⟧) ∧\n(¬⟦(= i3 i47)⟧) ∧\n(¬⟦(= i3 i46)⟧) ∧\n(¬⟦(= i3 i45)⟧) ∧\n(¬⟦(= i3 i44)⟧) ∧\n(¬⟦(= i3 i43)⟧) ∧\n(¬⟦(= i3 i42)⟧) ∧\n(¬⟦(= i3 i41)⟧) ∧\n(¬⟦(= i3 i40)⟧) ∧\n(¬⟦(= i3 i39)⟧) ∧\n(¬⟦(= i3 i38)⟧) ∧\n(¬⟦(= i3 i37)⟧) ∧\n(¬⟦(= i3 i36)⟧) ∧\n(¬⟦(= i3 i35)⟧) ∧\n(¬⟦(= i3 i34)⟧) ∧\n(¬⟦(= i3 i33)⟧) ∧\n(¬⟦(= i3 i32)⟧) ∧\n(¬⟦(= i3 i31)⟧) ∧\n(¬⟦(= i3 i30)⟧) ∧\n(¬⟦(= i3 i29)⟧) ∧\n(¬⟦(= i3 i28)⟧) ∧\n(¬⟦(= i3 i27)⟧) ∧\n(¬⟦(= i3 i26)⟧) ∧\n(¬⟦(= i3 i25)⟧) ∧\n(¬⟦(= i3 i24)⟧) ∧\n(¬⟦(= i3 i23)⟧) ∧\n(¬⟦(= i3 i22)⟧) ∧\n(¬⟦(= i3 i21)⟧) ∧\n(¬⟦(= i3 i20)⟧) ∧\n(¬⟦(= i3 i19)⟧) ∧\n(¬⟦(= i3 i18)⟧) ∧\n(¬⟦(= i3 i17)⟧) ∧\n(¬⟦(= i3 i16)⟧) ∧\n(¬⟦(= i3 i15)⟧) ∧\n(¬⟦(= i3 i14)⟧) ∧\n(¬⟦(= i3 i13)⟧) ∧\n(¬⟦(= i3 i12)⟧) ∧\n(¬⟦(= i3 i11)⟧) ∧\n(¬⟦(= i3 i10)⟧) ∧\n(¬⟦(= i3 i9)⟧) ∧\n(¬⟦(= i3 i8)⟧) ∧\n(¬⟦(= i3 i7)⟧) ∧\n(¬⟦(= i3 i6)⟧) ∧\n(¬⟦(= i3 i5)⟧) ∧\n(¬⟦(= i3 i4)⟧) ∧\n(¬⟦(= i2 i60)⟧) ∧\n(¬⟦(= i2 i59)⟧) ∧\n(¬⟦(= i2 i58)⟧) ∧\n(¬⟦(= i2 i57)⟧) ∧\n(¬⟦(= i2 i56)⟧) ∧\n(¬⟦(= i2 i55)⟧) ∧\n(¬⟦(= i2 i54)⟧) ∧\n(¬⟦(= i2 i53)⟧) ∧\n(¬⟦(= i2 i52)⟧) ∧\n(¬⟦(= i2 i51)⟧) ∧\n(¬⟦(= i2 i50)⟧) ∧\n(¬⟦(= i2 i49)⟧) ∧\n(¬⟦(= i2 i48)⟧) ∧\n(¬⟦(= i2 i47)⟧) ∧\n(¬⟦(= i2 i46)⟧) ∧\n(¬⟦(= i2 i45)⟧) ∧\n(¬⟦(= i2 i44)⟧) ∧\n(¬⟦(= i2 i43)⟧) ∧\n(¬⟦(= i2 i42)⟧) ∧\n(¬⟦(= i2 i41)⟧) ∧\n(¬⟦(= i2 i40)⟧) ∧\n(¬⟦(= i2 i39)⟧) ∧\n(¬⟦(= i2 i38)⟧) ∧\n(¬⟦(= i2 i37)⟧) ∧\n(¬⟦(= i2 i36)⟧) ∧\n(¬⟦(= i2 i35)⟧) ∧\n(¬⟦(= i2 i34)⟧) ∧\n(¬⟦(= i2 i33)⟧) ∧\n(¬⟦(= i2 i32)⟧) ∧\n(¬⟦(= i2 i31)⟧) ∧\n(¬⟦(= i2 i30)⟧) ∧\n(¬⟦(= i2 i29)⟧) ∧\n(¬⟦(= i2 i28)⟧) ∧\n(¬⟦(= i2 i27)⟧) ∧\n(¬⟦(= i2 i26)⟧) ∧\n(¬⟦(= i2 i25)⟧) ∧\n(¬⟦(= i2 i24)⟧) ∧\n(¬⟦(= i2 i23)⟧) ∧\n(¬⟦(= i2 i22)⟧) ∧\n(¬⟦(= i2 i21)⟧) ∧\n(¬⟦(= i2 i20)⟧) ∧\n(¬⟦(= i2 i19)⟧) ∧\n(¬⟦(= i2 i18)⟧) ∧\n(¬⟦(= i2 i17)⟧) ∧\n(¬⟦(= i2 i16)⟧) ∧\n(¬⟦(= i2 i15)⟧) ∧\n(¬⟦(= i2 i14)⟧) ∧\n(¬⟦(= i2 i13)⟧) ∧\n(¬⟦(= i2 i12)⟧) ∧\n(¬⟦(= i2 i11)⟧) ∧\n(¬⟦(= i2 i10)⟧) ∧\n(¬⟦(= i2 i9)⟧) ∧\n(¬⟦(= i2 i8)⟧) ∧\n(¬⟦(= i2 i7)⟧) ∧\n(¬⟦(= i2 i6)⟧) ∧\n(¬⟦(= i2 i5)⟧) ∧\n(¬⟦(= i2 i4)⟧) ∧\n(¬⟦(= i2 i3)⟧) ∧\n(¬⟦(= i1 i60)⟧) ∧\n(¬⟦(= i1 i59)⟧) ∧\n(¬⟦(= i1 i58)⟧) ∧\n(¬⟦(= i1 i57)⟧) ∧\n(¬⟦(= i1 i56)⟧) ∧\n(¬⟦(= i1 i55)⟧) ∧\n(¬⟦(= i1 i54)⟧) ∧\n(¬⟦(= i1 i53)⟧) ∧\n(¬⟦(= i1 i52)⟧) ∧\n(¬⟦(= i1 i51)⟧) ∧\n(¬⟦(= i1 i50)⟧) ∧\n(¬⟦(= i1 i49)⟧) ∧\n(¬⟦(= i1 i48)⟧) ∧\n(¬⟦(= i1 i47)⟧) ∧\n(¬⟦(= i1 i46)⟧) ∧\n(¬⟦(= i1 i45)⟧) ∧\n(¬⟦(= i1 i44)⟧) ∧\n(¬⟦(= i1 i43)⟧) ∧\n(¬⟦(= i1 i42)⟧) ∧\n(¬⟦(= i1 i41)⟧) ∧\n(¬⟦(= i1 i40)⟧) ∧\n(¬⟦(= i1 i39)⟧) ∧\n(¬⟦(= i1 i38)⟧) ∧\n(¬⟦(= i1 i37)⟧) ∧\n(¬⟦(= i1 i36)⟧) ∧\n(¬⟦(= i1 i35)⟧) ∧\n(¬⟦(= i1 i34)⟧) ∧\n(¬⟦(= i1 i33)⟧) ∧\n(¬⟦(= i1 i32)⟧) ∧\n(¬⟦(= i1 i31)⟧) ∧\n(¬⟦(= i1 i30)⟧) ∧\n(¬⟦(= i1 i29)⟧) ∧\n(¬⟦(= i1 i28)⟧) ∧\n(¬⟦(= i1 i27)⟧) ∧\n(¬⟦(= i1 i26)⟧) ∧\n(¬⟦(= i1 i25)⟧) ∧\n(¬⟦(= i1 i24)⟧) ∧\n(¬⟦(= i1 i23)⟧) ∧\n(¬⟦(= i1 i22)⟧) ∧\n(¬⟦(= i1 i21)⟧) ∧\n(¬⟦(= i1 i20)⟧) ∧\n(¬⟦(= i1 i19)⟧) ∧\n(¬⟦(= i1 i18)⟧) ∧\n(¬⟦(= i1 i17)⟧) ∧\n(¬⟦(= i1 i16)⟧) ∧\n(¬⟦(= i1 i15)⟧) ∧\n(¬⟦(= i1 i14)⟧) ∧\n(¬⟦(= i1 i13)⟧) ∧\n(¬⟦(= i1 i12)⟧) ∧\n(¬⟦(= i1 i11)⟧) ∧\n(¬⟦(= i1 i10)⟧) ∧\n(¬⟦(= i1 i9)⟧) ∧\n(¬⟦(= i1 i8)⟧) ∧\n(¬⟦(= i1 i7)⟧) ∧\n(¬⟦(= i1 i6)⟧) ∧\n(¬⟦(= i1 i5)⟧) ∧\n(¬⟦(= i1 i4)⟧) ∧\n(¬⟦(= i1 i3)⟧) ∧\n(¬⟦(= i1 i2)⟧) ∧\n(¬⟦(= e_1351 e_1352)⟧)"
+}

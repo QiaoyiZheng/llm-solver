@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "logic": "QF_AUFLIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "a1",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e10",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e11",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e12",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e13",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e14",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e15",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e16",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e17",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e18",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e19",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e20",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e3",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e7",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e8",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e9",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬⟦(= (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store a1 1 e1) 2 e2) 3 e3) 4 e4) 5 e5) 6 e6) 7 e7) 8 e8) 9 e9) 10 e10) 11 e11) 12 e12) 13 e13) 14 e14) 15 e15) 16 e16) 17 e17) 18 e18) 19 e19) 1 e1) (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store (store a1 20 e20) 18 e18) 19 e19) 3 e3) 12 e12) 5 e5) 11 e11) 16 e16) 1 e1) 2 e2) 10 e10) 6 e6) 8 e8) 4 e4) 17 e17) 7 e7) 13 e13) 9 e9) 15 e15) 14 e14))⟧)"
+}

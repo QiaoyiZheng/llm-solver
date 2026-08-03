@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "logic": "ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "V_5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "u",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "l",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t_1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(<= l t_1)⟧) ∧\n(¬τ1 ∨ ⟦(<= t_1 u)⟧) ∧\n(τ1 ∨ ¬⟦(<= l t_1)⟧ ∨ ¬⟦(<= t_1 u)⟧) ∧\n(¬τ2 ∨ ⟦(< u V_5)⟧) ∧\n(¬τ2 ∨ ⟦(forall ((?V_8 Int)) (=> (and (<= 0 ?V_8) (<= ?V_8 (- V_5 1))) (forall ((?V_9 Int)) (=> (and (<= 0 ?V_9) (<= ?V_9 ?V_8)) (<= (select a ?V_9) (select a ?V_8))))))⟧) ∧\n(τ2 ∨ ¬⟦(< u V_5)⟧ ∨ ¬⟦(forall ((?V_8 Int)) (=> (and (<= 0 ?V_8) (<= ?V_8 (- V_5 1))) (forall ((?V_9 Int)) (=> (and (<= 0 ?V_9) (<= ?V_9 ?V_8)) (<= (select a ?V_9) (select a ?V_8))))))⟧) ∧\n(¬τ3 ∨ ⟦(<= 0 l)⟧) ∧\n(¬τ3 ∨ τ2) ∧\n(τ3 ∨ ¬⟦(<= 0 l)⟧ ∨ ¬τ2) ∧\n(¬τ4 ∨ τ3) ∧\n(¬τ4 ∨ ⟦(>= V_5 0)⟧) ∧\n(τ4 ∨ ¬τ3 ∨ ¬⟦(>= V_5 0)⟧) ∧\n(¬τ5 ∨ ⟦(<= l u)⟧) ∧\n(¬τ5 ∨ τ4) ∧\n(τ5 ∨ ¬⟦(<= l u)⟧ ∨ ¬τ4) ∧\n(¬τ6 ∨ τ1) ∧\n(¬τ6 ∨ τ5) ∧\n(τ6 ∨ ¬τ1 ∨ ¬τ5) ∧\n(¬τ7 ∨ ¬⟦(= (select a t_1) e)⟧) ∧\n(¬τ7 ∨ τ6) ∧\n(τ7 ∨ ⟦(= (select a t_1) e)⟧ ∨ ¬τ6) ∧\n(¬τ8 ∨ ⟦(>= (select a t_1) e)⟧) ∧\n(¬τ8 ∨ τ7) ∧\n(τ8 ∨ ¬⟦(>= (select a t_1) e)⟧ ∨ ¬τ7) ∧\n(τ9 ∨ ¬⟦(>= (- t_1 1) V_5)⟧) ∧\n(τ9 ∨ ¬⟦(exists ((?V_6 Int)) (and (and (<= 0 ?V_6) (<= ?V_6 (- V_5 1))) (exists ((?V_7 Int)) (and (and (<= 0 ?V_7) (<= ?V_7 ?V_6)) (> (select a ?V_7) (select a ?V_6))))))⟧) ∧\n(¬τ9 ∨ ⟦(>= (- t_1 1) V_5)⟧ ∨ ⟦(exists ((?V_6 Int)) (and (and (<= 0 ?V_6) (<= ?V_6 (- V_5 1))) (exists ((?V_7 Int)) (and (and (<= 0 ?V_7) (<= ?V_7 ?V_6)) (> (select a ?V_7) (select a ?V_6))))))⟧) ∧\n(τ10 ∨ ¬⟦(> 0 l)⟧) ∧\n(τ10 ∨ ¬τ9) ∧\n(¬τ10 ∨ ⟦(> 0 l)⟧ ∨ τ9) ∧\n(τ11 ∨ ¬τ10) ∧\n(τ11 ∨ ¬⟦(< V_5 0)⟧) ∧\n(¬τ11 ∨ τ10 ∨ ⟦(< V_5 0)⟧) ∧\n(¬τ12 ∨ τ8) ∧\n(¬τ12 ∨ τ11) ∧\n(τ12 ∨ ¬τ8 ∨ ¬τ11) ∧\n(τ12)"
+}

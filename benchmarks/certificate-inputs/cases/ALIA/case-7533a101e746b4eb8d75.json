@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "logic": "ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "V_6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "V_5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ix",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "j",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_0",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(τ1 ∨ ¬⟦(= j (- i 1))⟧) ∧\n(τ1 ∨ ¬⟦(<= (select a (- i 1)) (select a i))⟧) ∧\n(¬τ1 ∨ ⟦(= j (- i 1))⟧ ∨ ⟦(<= (select a (- i 1)) (select a i))⟧) ∧\n(τ2 ∨ ¬⟦(= j (- i 1))⟧) ∧\n(τ2 ∨ ¬⟦(forall ((?V_9 Int)) (=> (and (<= (+ j 1) ?V_9) (<= ?V_9 i)) (> (select a ?V_9) t)))⟧) ∧\n(¬τ2 ∨ ⟦(= j (- i 1))⟧ ∨ ⟦(forall ((?V_9 Int)) (=> (and (<= (+ j 1) ?V_9) (<= ?V_9 i)) (> (select a ?V_9) t)))⟧) ∧\n(¬τ3 ∨ τ2) ∧\n(¬τ3 ∨ ⟦(= V_6 V_5)⟧) ∧\n(τ3 ∨ ¬τ2 ∨ ¬⟦(= V_6 V_5)⟧) ∧\n(¬τ4 ∨ τ1) ∧\n(¬τ4 ∨ τ3) ∧\n(τ4 ∨ ¬τ1 ∨ ¬τ3) ∧\n(¬τ5 ∨ ⟦(forall ((?V_10 Int)) (=> (and (<= 0 ?V_10) (<= ?V_10 (- i 1))) (forall ((?V_11 Int)) (=> (and (<= 0 ?V_11) (<= ?V_11 ?V_10)) (<= (select a ?V_11) (select a ?V_10))))))⟧) ∧\n(¬τ5 ∨ τ4) ∧\n(τ5 ∨ ¬⟦(forall ((?V_10 Int)) (=> (and (<= 0 ?V_10) (<= ?V_10 (- i 1))) (forall ((?V_11 Int)) (=> (and (<= 0 ?V_11) (<= ?V_11 ?V_10)) (<= (select a ?V_11) (select a ?V_10))))))⟧ ∨ ¬τ4) ∧\n(¬τ6 ∨ ⟦(<= j (- i 1))⟧) ∧\n(¬τ6 ∨ τ5) ∧\n(τ6 ∨ ¬⟦(<= j (- i 1))⟧ ∨ ¬τ5) ∧\n(¬τ7 ∨ ⟦(<= (- 1) j)⟧) ∧\n(¬τ7 ∨ τ6) ∧\n(τ7 ∨ ¬⟦(<= (- 1) j)⟧ ∨ ¬τ6) ∧\n(¬τ8 ∨ ⟦(< i V_6)⟧) ∧\n(¬τ8 ∨ τ7) ∧\n(τ8 ∨ ¬⟦(< i V_6)⟧ ∨ ¬τ7) ∧\n(¬τ9 ∨ ⟦(<= 1 i)⟧) ∧\n(¬τ9 ∨ τ8) ∧\n(τ9 ∨ ¬⟦(<= 1 i)⟧ ∨ ¬τ8) ∧\n(¬τ10 ∨ τ9) ∧\n(¬τ10 ∨ ⟦(>= V_5 0)⟧) ∧\n(τ10 ∨ ¬τ9 ∨ ¬⟦(>= V_5 0)⟧) ∧\n(¬τ11 ∨ ⟦(< j 0)⟧) ∧\n(¬τ11 ∨ τ10) ∧\n(τ11 ∨ ¬⟦(< j 0)⟧ ∨ ¬τ10) ∧\n(¬τ12 ∨ ⟦(>= V_5 0)⟧) ∧\n(¬τ12 ∨ τ11) ∧\n(τ12 ∨ ¬⟦(>= V_5 0)⟧ ∨ ¬τ11) ∧\n(τ13 ∨ ¬⟦(exists ((?V_7 Int)) (and (and (<= 0 ?V_7) (<= ?V_7 (- (+ i 1) 1))) (exists ((?V_8 Int)) (and (and (<= 0 ?V_8) (<= ?V_8 ?V_7)) (> (select (store a (+ j 1) t) ?V_8) (select (store a (+ j 1) t) ?V_7))))))⟧) ∧\n(τ13 ∨ ⟦(= V_6 V_5)⟧) ∧\n(¬τ13 ∨ ⟦(exists ((?V_7 Int)) (and (and (<= 0 ?V_7) (<= ?V_7 (- (+ i 1) 1))) (exists ((?V_8 Int)) (and (and (<= 0 ?V_8) (<= ?V_8 ?V_7)) (> (select (store a (+ j 1) t) ?V_8) (select (store a (+ j 1) t) ?V_7))))))⟧ ∨ ¬⟦(= V_6 V_5)⟧) ∧\n(τ14 ∨ ¬⟦(> 1 (+ i 1))⟧) ∧\n(τ14 ∨ ¬τ13) ∧\n(¬τ14 ∨ ⟦(> 1 (+ i 1))⟧ ∨ τ13) ∧\n(¬τ15 ∨ τ12) ∧\n(¬τ15 ∨ τ14) ∧\n(τ15 ∨ ¬τ12 ∨ ¬τ14) ∧\n(τ15)"
+}

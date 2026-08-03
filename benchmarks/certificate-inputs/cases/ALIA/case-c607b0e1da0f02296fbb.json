@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "logic": "ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "V_3",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(>= V_3 0)⟧) ∧\n(¬τ1 ∨ ⟦(>= V_3 0)⟧) ∧\n(τ1 ∨ ¬⟦(>= V_3 0)⟧) ∧\n(τ2 ∨ ¬⟦(exists ((?V_4 Int)) (and (and (<= 0 ?V_4) (<= ?V_4 (- 1 1))) (exists ((?V_5 Int)) (and (and (<= 0 ?V_5) (<= ?V_5 ?V_4)) (> (select a ?V_5) (select a ?V_4))))))⟧) ∧\n(τ2 ∨ ⟦(= V_3 V_3)⟧) ∧\n(¬τ2 ∨ ⟦(exists ((?V_4 Int)) (and (and (<= 0 ?V_4) (<= ?V_4 (- 1 1))) (exists ((?V_5 Int)) (and (and (<= 0 ?V_5) (<= ?V_5 ?V_4)) (> (select a ?V_5) (select a ?V_4))))))⟧ ∨ ¬⟦(= V_3 V_3)⟧) ∧\n(τ3 ∨ ¬⟦(> 1 1)⟧) ∧\n(τ3 ∨ ¬τ2) ∧\n(¬τ3 ∨ ⟦(> 1 1)⟧ ∨ τ2) ∧\n(¬τ4 ∨ τ1) ∧\n(¬τ4 ∨ τ3) ∧\n(τ4 ∨ ¬τ1 ∨ ¬τ3) ∧\n(τ4)"
+}

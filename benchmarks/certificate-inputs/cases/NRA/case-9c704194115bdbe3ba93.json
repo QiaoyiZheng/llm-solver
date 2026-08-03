@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "logic": "NRA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "v1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ts3548uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I1uscore4dollarskuscore862",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x2uscore4dollarskuscore611",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "A",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "B",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "v2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "v2uscore4dollarskuscore862",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I2uscore4dollarskuscore862",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "v1uscore4dollarskuscore862",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "xI1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "V",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "xI2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x1uscore4dollarskuscore604",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ep",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t3548uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    }
+  ],
+  "cnf": "(¬⟦(exists ((ts3548uscore0 Real)) (=> (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (= v2uscore4dollarskuscore862 V) (= xI2 x2uscore4dollarskuscore611)) (= v1uscore4dollarskuscore862 V)) (= xI1 x1uscore4dollarskuscore604)) (= I2uscore4dollarskuscore862 1)) (> xI2 (+ (+ x2uscore4dollarskuscore611 (/ (* v2uscore4dollarskuscore862 v2uscore4dollarskuscore862) (* 2 B))) (* (+ (/ A B) 1) (+ (* (/ A 2) (* ep ep)) (* ep v2uscore4dollarskuscore862)))))) (= I1uscore4dollarskuscore862 1)) (> xI1 (+ (+ x1uscore4dollarskuscore604 (/ (* v1uscore4dollarskuscore862 v1uscore4dollarskuscore862) (* 2 B))) (* (+ (/ A B) 1) (+ (* (/ A 2) (* ep ep)) (* ep v1uscore4dollarskuscore862)))))) (= I2uscore4dollarskuscore862 2)) (= I1 2)) (> xI1 (+ x1 (/ (* v1 v1) (* 2 B))))) (= I2 2)) (> xI2 (+ x2 (/ (* v2 v2) (* 2 B))))) (> B 0)) (>= v1 0)) (<= v1 V)) (>= v2 0)) (<= v2 V)) (>= A 0)) (> V 0)) (> ep 0)) (=> (>= t3548uscore0 0) (=> (=> (and (<= 0 ts3548uscore0) (<= ts3548uscore0 t3548uscore0)) (and (and (and (and (>= v1uscore4dollarskuscore862 0) (<= v1uscore4dollarskuscore862 V)) (>= v2uscore4dollarskuscore862 0)) (<= v2uscore4dollarskuscore862 V)) (<= (+ ts3548uscore0 0) ep))) (or (= 2 2) (= 2 2))))))⟧)"
+}

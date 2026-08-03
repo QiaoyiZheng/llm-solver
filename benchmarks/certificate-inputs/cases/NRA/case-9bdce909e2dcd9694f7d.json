@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "logic": "NRA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "v",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "d",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "b",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "Z1uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t1uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ep",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ts1uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "M1uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "amax",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "SB",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    }
+  ],
+  "cnf": "(¬⟦(exists ((t1uscore0 Real)) (forall ((ts1uscore0 Real)) (=> (and (and (and (and (and (=> (>= t1uscore0 0.0) (=> (=> (and (<= 0.0 ts1uscore0) (<= ts1uscore0 t1uscore0)) (and (>= (+ (* amax ts1uscore0) v) 0.0) (<= ts1uscore0 ep))) (<= (- (* (+ (* amax t1uscore0) v) (+ (* amax t1uscore0) v)) (* d d)) (* (* 2.0 b) (- M1uscore0 (* (/ 1.0 2.0) (+ (+ (* amax (* t1uscore0 t1uscore0)) (* (* 2.0 t1uscore0) v)) (* 2.0 Z1uscore0)))))))) (>= d 0.0)) (> b 0.0)) (> ep 0.0)) (> amax 0.0)) (>= v 0.0)) (>= SB (+ (/ (- (* v v) (* d d)) (* 2.0 b)) (* (+ (/ amax b) 1.0) (+ (* (/ amax 2.0) (* ep ep)) (* ep v))))))))⟧)"
+}

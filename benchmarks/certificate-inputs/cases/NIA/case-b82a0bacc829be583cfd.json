@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "|c_main_#t~nondet0|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_main_#t~nondet1|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_main_#t~nondet2|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~x~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~x~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~y~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~y~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~z~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~z~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(= c_main_~y~0_primed (+ (* 4 |c_main_#t~nondet1|) c_main_~y~0))⟧) ∧\n(¬τ1 ∨ ⟦(= c_main_~z~0_primed (+ (* 8 |c_main_#t~nondet2|) c_main_~z~0))⟧) ∧\n(¬τ1 ∨ ⟦(= c_main_~x~0_primed (+ (* 2 |c_main_#t~nondet0|) c_main_~x~0))⟧) ∧\n(τ1 ∨ ¬⟦(= c_main_~y~0_primed (+ (* 4 |c_main_#t~nondet1|) c_main_~y~0))⟧ ∨ ¬⟦(= c_main_~z~0_primed (+ (* 8 |c_main_#t~nondet2|) c_main_~z~0))⟧ ∨ ¬⟦(= c_main_~x~0_primed (+ (* 2 |c_main_#t~nondet0|) c_main_~x~0))⟧) ∧\n(τ1) ∧\n(¬τ2 ∨ ⟦(= c_main_~y~0 0)⟧) ∧\n(¬τ2 ∨ ⟦(= c_main_~x~0 0)⟧) ∧\n(¬τ2 ∨ ⟦(= c_main_~z~0 0)⟧) ∧\n(τ2 ∨ ¬⟦(= c_main_~y~0 0)⟧ ∨ ¬⟦(= c_main_~x~0 0)⟧ ∨ ¬⟦(= c_main_~z~0 0)⟧) ∧\n(τ2) ∧\n(¬⟦(forall ((|main_#t~nondet0| Int) (|main_#t~nondet1| Int) (|main_#t~nondet2| Int)) (not (= (mod (+ (* 8 |main_#t~nondet0|) (* 4 c_main_~x~0_primed) (* 2 c_main_~y~0_primed) c_main_~z~0_primed (* 8 |main_#t~nondet1|) (* 8 |main_#t~nondet2|)) 4294967296) 4)))⟧)"
+}

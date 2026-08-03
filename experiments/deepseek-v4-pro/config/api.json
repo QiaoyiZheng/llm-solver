@@ -1,0 +1,7 @@
+{
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-pro",
+  "api_key_file": "../../../api-key",
+  "api_key_environment_fallback": "DEEPSEEK_API_KEY"
+}

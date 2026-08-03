@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "logic": "NRA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "v1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ts1192uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "A",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "B",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "v2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "v1uscore3dollarskuscore257",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I1uscore3dollarskuscore257",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "v2uscore3dollarskuscore257",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "I2uscore3dollarskuscore257",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "xI1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x1uscore3dollarskuscore193",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "V",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "xI2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t1192uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ep",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x2uscore3dollarskuscore181",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    }
+  ],
+  "cnf": "(¬⟦(exists ((ts1192uscore0 Real)) (=> (and (and (and (and (and (and (and (and (and (and (and (and (and (and (and (= xI1 x1uscore3dollarskuscore193) (= I2uscore3dollarskuscore257 1)) (< xI2 x2uscore3dollarskuscore181)) (= I1uscore3dollarskuscore257 2)) (= I1 2)) (< xI1 x1)) (= I2 2)) (> xI2 (+ x2 (/ (* v2 v2) (* 2 B))))) (> B 0)) (>= v1 0)) (<= v1 V)) (>= v2 0)) (<= v2 V)) (>= A 0)) (> V 0)) (> ep 0)) (=> (>= t1192uscore0 0) (=> (=> (and (<= 0 ts1192uscore0) (<= ts1192uscore0 t1192uscore0)) (and (and (and (and (>= (+ (* A ts1192uscore0) v1uscore3dollarskuscore257) 0) (<= (+ (* A ts1192uscore0) v1uscore3dollarskuscore257) V)) (>= (+ (* (* (- 1) B) ts1192uscore0) v2uscore3dollarskuscore257) 0)) (<= (+ (* (* (- 1) B) ts1192uscore0) v2uscore3dollarskuscore257) V)) (<= (+ ts1192uscore0 0) ep))) (or (= I1uscore3dollarskuscore257 2) (= 2 2))))))⟧)"
+}

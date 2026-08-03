@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "logic": "ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "V_9",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(>= V_9 0)⟧) ∧\n(¬τ1 ∨ ⟦(>= V_9 0)⟧) ∧\n(τ1 ∨ ¬⟦(>= V_9 0)⟧) ∧\n(¬τ2 ∨ ⟦(forall ((?V_7 Int)) (=> (and (<= 0 ?V_7) (<= ?V_7 1)) (forall ((?V_8 Int)) (=> (and (<= 0 ?V_8) (<= ?V_8 ?V_7)) (<= (select (store (store a 0 5) 1 7) ?V_8) (select (store (store a 0 5) 1 7) ?V_7))))))⟧) ∧\n(¬τ2 ∨ ⟦(forall ((?V_5 Int)) (=> (and (<= 0 ?V_5) (<= ?V_5 1)) (forall ((?V_6 Int)) (=> (and (<= 0 ?V_6) (<= ?V_6 ?V_5)) (<= (select (store (store a 0 1) 1 3) ?V_6) (select (store (store a 0 1) 1 3) ?V_5))))))⟧) ∧\n(τ2 ∨ ¬⟦(forall ((?V_7 Int)) (=> (and (<= 0 ?V_7) (<= ?V_7 1)) (forall ((?V_8 Int)) (=> (and (<= 0 ?V_8) (<= ?V_8 ?V_7)) (<= (select (store (store a 0 5) 1 7) ?V_8) (select (store (store a 0 5) 1 7) ?V_7))))))⟧ ∨ ¬⟦(forall ((?V_5 Int)) (=> (and (<= 0 ?V_5) (<= ?V_5 1)) (forall ((?V_6 Int)) (=> (and (<= 0 ?V_6) (<= ?V_6 ?V_5)) (<= (select (store (store a 0 1) 1 3) ?V_6) (select (store (store a 0 1) 1 3) ?V_5))))))⟧) ∧\n(¬τ3 ∨ τ1) ∧\n(¬τ3 ∨ τ2) ∧\n(τ3 ∨ ¬τ1 ∨ ¬τ2) ∧\n(τ3)"
+}

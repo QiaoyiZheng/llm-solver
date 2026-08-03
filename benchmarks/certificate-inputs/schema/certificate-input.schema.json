@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/llm-cnf/certificate-input.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "logic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "declarations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["constant", "function"]
+          },
+          "symbol": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parameter_sorts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "return_sort": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": ["kind", "symbol", "parameter_sorts", "return_sort"],
+        "additionalProperties": false
+      }
+    },
+    "cnf": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": ["schema_version", "logic", "declarations", "cnf"],
+  "additionalProperties": false
+}
+

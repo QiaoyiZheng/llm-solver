@@ -1,0 +1,24 @@
+# Experiment runtime artifacts
+experiments/*/logs/**
+experiments/*/raw/**
+experiments/*/results/**
+experiments/*/work/**
+experiments/*/runs/**
+!experiments/*/logs/.gitkeep
+!experiments/*/raw/.gitkeep
+!experiments/*/results/.gitkeep
+!experiments/*/work/.gitkeep
+!experiments/*/runs/.gitkeep
+
+__pycache__/
+*.py[cod]
+
+# Local API secrets
+/api-key
+/api-key.*
+
+# Unused parts of the local cvc5 SDK distribution
+/tools/cvc5/**/include/
+/tools/cvc5/**/lib/
+/tools/cvc5/**/share/
+/tools/cvc5/**/bin/cvc5jni.dll

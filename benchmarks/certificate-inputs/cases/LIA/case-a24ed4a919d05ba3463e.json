@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "logic": "LIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "c_main_~i~6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~j~6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_main_~k~6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(<= c_main_~j~6 (+ (* 2 c_main_~i~6) 1))⟧) ∧\n(¬τ1 ∨ ⟦(<= c_main_~i~6 4)⟧) ∧\n(¬τ1 ∨ ⟦(<= c_main_~j~6 (+ (* 2 c_main_~i~6) 2))⟧) ∧\n(¬τ1 ∨ ⟦(exists ((v_nnf_96 Int)) (and (<= (+ v_nnf_96 2) c_main_~k~6) (<= c_main_~j~6 (+ (* 2 v_nnf_96) 2)) (<= v_nnf_96 4)))⟧) ∧\n(¬τ1 ∨ ⟦(<= c_main_~j~6 (* 2 c_main_~i~6))⟧) ∧\n(¬τ1 ∨ ⟦(<= c_main_~i~6 3)⟧) ∧\n(τ1 ∨ ¬⟦(<= c_main_~j~6 (+ (* 2 c_main_~i~6) 1))⟧ ∨ ¬⟦(<= c_main_~i~6 4)⟧ ∨ ¬⟦(<= c_main_~j~6 (+ (* 2 c_main_~i~6) 2))⟧ ∨ ¬⟦(exists ((v_nnf_96 Int)) (and (<= (+ v_nnf_96 2) c_main_~k~6) (<= c_main_~j~6 (+ (* 2 v_nnf_96) 2)) (<= v_nnf_96 4)))⟧ ∨ ¬⟦(<= c_main_~j~6 (* 2 c_main_~i~6))⟧ ∨ ¬⟦(<= c_main_~i~6 3)⟧) ∧\n(τ1) ∧\n(¬τ2 ∨ ⟦(<= c_main_~j~6 (+ (* 2 c_main_~i~6) 1))⟧) ∧\n(¬τ2 ∨ ⟦(<= c_main_~i~6 4)⟧) ∧\n(¬τ2 ∨ ⟦(exists ((v_nnf_96 Int)) (and (<= (+ v_nnf_96 2) c_main_~k~6) (<= c_main_~j~6 (+ (* 2 v_nnf_96) 2)) (<= v_nnf_96 4)))⟧) ∧\n(¬τ2 ∨ ⟦(<= c_main_~j~6 (* 2 c_main_~i~6))⟧) ∧\n(¬τ2 ∨ ⟦(<= c_main_~i~6 3)⟧) ∧\n(τ2 ∨ ¬⟦(<= c_main_~j~6 (+ (* 2 c_main_~i~6) 1))⟧ ∨ ¬⟦(<= c_main_~i~6 4)⟧ ∨ ¬⟦(exists ((v_nnf_96 Int)) (and (<= (+ v_nnf_96 2) c_main_~k~6) (<= c_main_~j~6 (+ (* 2 v_nnf_96) 2)) (<= v_nnf_96 4)))⟧ ∨ ¬⟦(<= c_main_~j~6 (* 2 c_main_~i~6))⟧ ∨ ¬⟦(<= c_main_~i~6 3)⟧) ∧\n(¬τ2)"
+}

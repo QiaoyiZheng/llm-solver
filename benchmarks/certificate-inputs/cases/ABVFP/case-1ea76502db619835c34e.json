@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "logic": "ABVFP",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "|c_old(#valid)|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) Bool)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_old(#length)|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) (_ BitVec 32))"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_old(#memory_int)|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) (Array (_ BitVec 32) (_ BitVec 32)))"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_cos_double_#t~ret139_primed|",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c___kernel_cos_#in~x|",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c___kernel_cos_#in~y|",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c___kernel_cos_#res|",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_#valid_Hier|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) Bool)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_#memory_int_Hier|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) (Array (_ BitVec 32) (_ BitVec 32)))"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_#length_Hier|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) (_ BitVec 32))"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_cos_double_~x_Hier",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_cos_double_~z~4_Hier",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_cos_double_~ix~3_Hier",
+      "parameter_sorts": [],
+      "return_sort": "(_ BitVec 32)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_cos_double_#in~x_Hier|",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 11 53)"
+    }
+  ],
+  "cnf": "(⟦(= |c_cos_double_#t~ret139_primed| |c___kernel_cos_#res|)⟧) ∧\n(¬τ1 ∨ ⟦(= |c_old(#memory_int)| |c_#memory_int_Hier|)⟧) ∧\n(¬τ1 ∨ ⟦(= |c_old(#length)| |c_#length_Hier|)⟧) ∧\n(¬τ1 ∨ ⟦(= |c_old(#valid)| |c_#valid_Hier|)⟧) ∧\n(τ1 ∨ ¬⟦(= |c_old(#memory_int)| |c_#memory_int_Hier|)⟧ ∨ ¬⟦(= |c_old(#length)| |c_#length_Hier|)⟧ ∨ ¬⟦(= |c_old(#valid)| |c_#valid_Hier|)⟧) ∧\n(τ1) ∧\n(¬τ2 ∨ ⟦(= |c___kernel_cos_#in~x| c_cos_double_~x_Hier)⟧) ∧\n(¬τ2 ∨ ⟦(= |c___kernel_cos_#in~y| c_cos_double_~z~4_Hier)⟧) ∧\n(τ2 ∨ ¬⟦(= |c___kernel_cos_#in~x| c_cos_double_~x_Hier)⟧ ∨ ¬⟦(= |c___kernel_cos_#in~y| c_cos_double_~z~4_Hier)⟧) ∧\n(τ2) ∧\n(¬τ3 ∨ ⟦(= |c_cos_double_#in~x_Hier| c_cos_double_~x_Hier)⟧) ∧\n(¬τ3 ∨ ⟦(exists ((v_skolemized_v_prenex_18_3 (_ BitVec 64))) (and (= |c_cos_double_#in~x_Hier| (fp ((_ extract 63 63) v_skolemized_v_prenex_18_3) ((_ extract 62 52) v_skolemized_v_prenex_18_3) ((_ extract 51 0) v_skolemized_v_prenex_18_3))) (= c_cos_double_~ix~3_Hier (bvand (_ bv2147483647 32) ((_ extract 63 32) v_skolemized_v_prenex_18_3)))))⟧) ∧\n(τ3 ∨ ¬⟦(= |c_cos_double_#in~x_Hier| c_cos_double_~x_Hier)⟧ ∨ ¬⟦(exists ((v_skolemized_v_prenex_18_3 (_ BitVec 64))) (and (= |c_cos_double_#in~x_Hier| (fp ((_ extract 63 63) v_skolemized_v_prenex_18_3) ((_ extract 62 52) v_skolemized_v_prenex_18_3) ((_ extract 51 0) v_skolemized_v_prenex_18_3))) (= c_cos_double_~ix~3_Hier (bvand (_ bv2147483647 32) ((_ extract 63 32) v_skolemized_v_prenex_18_3)))))⟧) ∧\n(τ3) ∧\n(¬⟦(exists ((v_skolemized_v_prenex_18_3 (_ BitVec 64))) (and (bvsge (bvand (_ bv2147483647 32) ((_ extract 63 32) v_skolemized_v_prenex_18_3)) (_ bv2146435072 32)) (= |c_cos_double_#in~x_Hier| (fp ((_ extract 63 63) v_skolemized_v_prenex_18_3) ((_ extract 62 52) v_skolemized_v_prenex_18_3) ((_ extract 51 0) v_skolemized_v_prenex_18_3)))))⟧)"
+}

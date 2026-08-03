@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "logic": "ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "V_21",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "V_18",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "V_13",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "arr",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "u",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "l",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t_3",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t_2",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "t_1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(forall ((?V_25 Int)) (=> (and (<= 0 ?V_25) (<= ?V_25 (- (+ t_1 1) 1))) (= (select t_3 ?V_25) (select t_2 ?V_25))))⟧) ∧\n(¬τ1 ∨ ⟦(forall ((?V_24 Int)) (=> (and (<= (+ u 1) ?V_24) (<= ?V_24 (- V_21 1))) (= (select t_3 ?V_24) (select t_2 ?V_24))))⟧) ∧\n(τ1 ∨ ¬⟦(forall ((?V_25 Int)) (=> (and (<= 0 ?V_25) (<= ?V_25 (- (+ t_1 1) 1))) (= (select t_3 ?V_25) (select t_2 ?V_25))))⟧ ∨ ¬⟦(forall ((?V_24 Int)) (=> (and (<= (+ u 1) ?V_24) (<= ?V_24 (- V_21 1))) (= (select t_3 ?V_24) (select t_2 ?V_24))))⟧) ∧\n(¬τ2 ∨ ⟦(= V_13 V_21)⟧) ∧\n(¬τ2 ∨ τ1) ∧\n(τ2 ∨ ¬⟦(= V_13 V_21)⟧ ∨ ¬τ1) ∧\n(¬τ3 ∨ ⟦(forall ((?V_26 Int)) (=> (and (<= (+ t_1 1) ?V_26) (<= ?V_26 u)) (forall ((?V_27 Int)) (=> (and (<= (+ t_1 1) ?V_27) (<= ?V_27 ?V_26)) (<= (select t_3 ?V_27) (select t_3 ?V_26))))))⟧) ∧\n(¬τ3 ∨ τ2) ∧\n(τ3 ∨ ¬⟦(forall ((?V_26 Int)) (=> (and (<= (+ t_1 1) ?V_26) (<= ?V_26 u)) (forall ((?V_27 Int)) (=> (and (<= (+ t_1 1) ?V_27) (<= ?V_27 ?V_26)) (<= (select t_3 ?V_27) (select t_3 ?V_26))))))⟧ ∨ ¬τ2) ∧\n(¬τ4 ∨ ⟦(forall ((?V_20 Int)) (=> (and (<= 0 ?V_20) (<= ?V_20 (- l 1))) (= (select t_2 ?V_20) (select arr ?V_20))))⟧) ∧\n(¬τ4 ∨ ⟦(forall ((?V_19 Int)) (=> (and (<= (+ t_1 1) ?V_19) (<= ?V_19 (- V_18 1))) (= (select t_2 ?V_19) (select arr ?V_19))))⟧) ∧\n(τ4 ∨ ¬⟦(forall ((?V_20 Int)) (=> (and (<= 0 ?V_20) (<= ?V_20 (- l 1))) (= (select t_2 ?V_20) (select arr ?V_20))))⟧ ∨ ¬⟦(forall ((?V_19 Int)) (=> (and (<= (+ t_1 1) ?V_19) (<= ?V_19 (- V_18 1))) (= (select t_2 ?V_19) (select arr ?V_19))))⟧) ∧\n(¬τ5 ∨ ⟦(= V_21 V_18)⟧) ∧\n(¬τ5 ∨ τ4) ∧\n(τ5 ∨ ¬⟦(= V_21 V_18)⟧ ∨ ¬τ4) ∧\n(¬τ6 ∨ ⟦(forall ((?V_22 Int)) (=> (and (<= l ?V_22) (<= ?V_22 t_1)) (forall ((?V_23 Int)) (=> (and (<= l ?V_23) (<= ?V_23 ?V_22)) (<= (select t_2 ?V_23) (select t_2 ?V_22))))))⟧) ∧\n(¬τ6 ∨ τ5) ∧\n(τ6 ∨ ¬⟦(forall ((?V_22 Int)) (=> (and (<= l ?V_22) (<= ?V_22 t_1)) (forall ((?V_23 Int)) (=> (and (<= l ?V_23) (<= ?V_23 ?V_22)) (<= (select t_2 ?V_23) (select t_2 ?V_22))))))⟧ ∨ ¬τ5) ∧\n(¬τ7 ∨ ⟦(<= l t_1)⟧) ∧\n(¬τ7 ∨ ⟦(< t_1 u)⟧) ∧\n(τ7 ∨ ¬⟦(<= l t_1)⟧ ∨ ¬⟦(< t_1 u)⟧) ∧\n(¬τ8 ∨ ⟦(<= 0 l)⟧) ∧\n(¬τ8 ∨ ⟦(< u V_18)⟧) ∧\n(τ8 ∨ ¬⟦(<= 0 l)⟧ ∨ ¬⟦(< u V_18)⟧) ∧\n(¬τ9 ∨ τ8) ∧\n(¬τ9 ∨ ⟦(>= V_18 0)⟧) ∧\n(τ9 ∨ ¬τ8 ∨ ¬⟦(>= V_18 0)⟧) ∧\n(¬τ10 ∨ ⟦(< l u)⟧) ∧\n(¬τ10 ∨ τ9) ∧\n(τ10 ∨ ¬⟦(< l u)⟧ ∨ ¬τ9) ∧\n(¬τ11 ∨ τ7) ∧\n(¬τ11 ∨ τ10) ∧\n(τ11 ∨ ¬τ7 ∨ ¬τ10) ∧\n(¬τ12 ∨ τ6) ∧\n(¬τ12 ∨ τ11) ∧\n(τ12 ∨ ¬τ6 ∨ ¬τ11) ∧\n(¬τ13 ∨ τ3) ∧\n(¬τ13 ∨ τ12) ∧\n(τ13 ∨ ¬τ3 ∨ ¬τ12) ∧\n(τ14 ∨ ¬⟦(exists ((?V_16 Int)) (and (and (<= l ?V_16) (<= ?V_16 t_1)) (exists ((?V_17 Int)) (and (and (<= l ?V_17) (<= ?V_17 ?V_16)) (> (select t_3 ?V_17) (select t_3 ?V_16))))))⟧) ∧\n(τ14 ∨ ¬⟦(exists ((?V_14 Int)) (and (and (<= (+ t_1 1) ?V_14) (<= ?V_14 u)) (exists ((?V_15 Int)) (and (and (<= (+ t_1 1) ?V_15) (<= ?V_15 ?V_14)) (> (select t_3 ?V_15) (select t_3 ?V_14))))))⟧) ∧\n(¬τ14 ∨ ⟦(exists ((?V_16 Int)) (and (and (<= l ?V_16) (<= ?V_16 t_1)) (exists ((?V_17 Int)) (and (and (<= l ?V_17) (<= ?V_17 ?V_16)) (> (select t_3 ?V_17) (select t_3 ?V_16))))))⟧ ∨ ⟦(exists ((?V_14 Int)) (and (and (<= (+ t_1 1) ?V_14) (<= ?V_14 u)) (exists ((?V_15 Int)) (and (and (<= (+ t_1 1) ?V_15) (<= ?V_15 ?V_14)) (> (select t_3 ?V_15) (select t_3 ?V_14))))))⟧) ∧\n(τ15 ∨ ¬⟦(>= u V_13)⟧) ∧\n(τ15 ∨ ¬τ14) ∧\n(¬τ15 ∨ ⟦(>= u V_13)⟧ ∨ τ14) ∧\n(τ16 ∨ ¬⟦(>= t_1 u)⟧) ∧\n(τ16 ∨ ¬τ15) ∧\n(¬τ16 ∨ ⟦(>= t_1 u)⟧ ∨ τ15) ∧\n(τ17 ∨ ¬⟦(> l t_1)⟧) ∧\n(τ17 ∨ ¬τ16) ∧\n(¬τ17 ∨ ⟦(> l t_1)⟧ ∨ τ16) ∧\n(τ18 ∨ ¬⟦(> 0 l)⟧) ∧\n(τ18 ∨ ¬τ17) ∧\n(¬τ18 ∨ ⟦(> 0 l)⟧ ∨ τ17) ∧\n(τ19 ∨ ¬τ18) ∧\n(τ19 ∨ ¬⟦(< V_13 0)⟧) ∧\n(¬τ19 ∨ τ18 ∨ ⟦(< V_13 0)⟧) ∧\n(¬τ20 ∨ τ13) ∧\n(¬τ20 ∨ τ19) ∧\n(τ20 ∨ ¬τ13 ∨ ¬τ19) ∧\n(τ20)"
+}

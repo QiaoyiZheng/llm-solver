@@ -1,0 +1,1987 @@
+{
+  "schema_version": 1,
+  "logic": "QF_ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "x_0",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_3",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_4",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_5",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_6",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_7",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_8",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_9",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_10",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_11",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_12",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_13",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_14",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_15",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_16",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_17",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_18",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_19",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_20",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_21",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_22",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_23",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_24",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_25",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_26",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_27",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_28",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_29",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_30",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_31",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_32",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_33",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_34",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_35",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_36",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_37",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_38",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_39",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_40",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_41",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_42",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_43",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_44",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_45",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_46",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_47",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_48",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_49",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_50",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_51",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_52",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_53",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_54",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_55",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_56",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_57",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_58",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_59",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_60",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_61",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_62",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_63",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_64",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_65",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_66",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_67",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_68",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_69",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_70",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_71",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_72",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_73",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_74",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_75",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_76",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_77",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_78",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_79",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_80",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_81",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_82",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_83",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_84",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_85",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_86",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_87",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_88",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_89",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_90",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_91",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_92",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_93",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_94",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_95",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_96",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_97",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_98",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_99",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_100",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_101",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_102",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_103",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_104",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_105",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_106",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_107",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_108",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_109",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_110",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_111",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_112",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_113",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_114",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_115",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_116",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_117",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_118",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_119",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_120",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_121",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_122",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_123",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_124",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_125",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_126",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_127",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_128",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_129",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_130",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_131",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_132",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_133",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_134",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_135",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_136",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_137",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_138",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_139",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_140",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_141",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_142",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_143",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_144",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_145",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_146",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_147",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_148",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_149",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_150",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_151",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_152",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_153",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_154",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_155",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_156",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_157",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_158",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_159",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_160",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_161",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_162",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_163",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_164",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_165",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_166",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_167",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_168",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_169",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_170",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_171",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_172",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_173",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_174",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_175",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_176",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_177",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_178",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_179",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_180",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_181",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_182",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_183",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_184",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_185",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_186",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_187",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_188",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_189",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_190",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_191",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_192",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_193",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_194",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_195",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_196",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_197",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_198",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_199",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_200",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_201",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_202",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_203",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_204",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_205",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_206",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_207",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_208",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_209",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_210",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_211",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_212",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_213",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_214",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_215",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_216",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_217",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_218",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_219",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_220",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_221",
+      "parameter_sorts": [],
+      "return_sort": "Bool"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_222",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_223",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_224",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_225",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_226",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_227",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_228",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_229",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_230",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_231",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_232",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_233",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_234",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_235",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_236",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_237",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_238",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_239",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_240",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_241",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_242",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_243",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_244",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_245",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_246",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_247",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_248",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_249",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_250",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_251",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_252",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_253",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_254",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_255",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_256",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_257",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_258",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_259",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_260",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_261",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_262",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_263",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_264",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_265",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_266",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_267",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_268",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_269",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_270",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_271",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_272",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_273",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_274",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_275",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_276",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_277",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_278",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_279",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_280",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_281",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_282",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_283",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_284",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_285",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_286",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_287",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_288",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_289",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_290",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_291",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_292",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_293",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_294",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_295",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_296",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_297",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_298",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_299",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_300",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_301",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_302",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_303",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_304",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_305",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_306",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_307",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_308",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_309",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_310",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_311",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_312",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_313",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_314",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_315",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_316",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_317",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_318",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_319",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_320",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_321",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_322",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_323",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_324",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_325",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_326",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_327",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_328",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_329",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ¬⟦(= x_2 x_1)⟧) ∧\n(¬τ1 ∨ ⟦(= x_232 (select x_17 x_1))⟧) ∧\n(τ1 ∨ ⟦(= x_2 x_1)⟧ ∨ ¬⟦(= x_232 (select x_17 x_1))⟧) ∧\n(¬τ2 ∨ τ1) ∧\n(¬τ2 ∨ ⟦(= x_233 (select x_17 x_2))⟧) ∧\n(τ2 ∨ ¬τ1 ∨ ¬⟦(= x_233 (select x_17 x_2))⟧) ∧\n(τ3 ∨ ⟦(= x_232 3)⟧) ∧\n(τ3 ∨ ⟦(= x_233 3)⟧) ∧\n(¬τ3 ∨ ¬⟦(= x_232 3)⟧ ∨ ¬⟦(= x_233 3)⟧) ∧\n(¬τ4 ∨ τ2) ∧\n(¬τ4 ∨ τ3) ∧\n(τ4 ∨ ¬τ2 ∨ ¬τ3) ∧\n(¬τ5 ∨ τ4) ∧\n(¬τ5 ∨ ⟦(= x_234 (select x_16 x_1))⟧) ∧\n(τ5 ∨ ¬τ4 ∨ ¬⟦(= x_234 (select x_16 x_1))⟧) ∧\n(¬τ6 ∨ τ5) ∧\n(¬τ6 ∨ ⟦(= x_235 (select x_16 x_2))⟧) ∧\n(τ6 ∨ ¬τ5 ∨ ¬⟦(= x_235 (select x_16 x_2))⟧) ∧\n(τ7 ∨ ⟦(= x_234 3)⟧) ∧\n(τ7 ∨ ⟦(= x_235 3)⟧) ∧\n(¬τ7 ∨ ¬⟦(= x_234 3)⟧ ∨ ¬⟦(= x_235 3)⟧) ∧\n(¬τ8 ∨ τ6) ∧\n(¬τ8 ∨ τ7) ∧\n(τ8 ∨ ¬τ6 ∨ ¬τ7) ∧\n(¬τ9 ∨ τ8) ∧\n(¬τ9 ∨ ⟦(= x_236 (select x_15 x_1))⟧) ∧\n(τ9 ∨ ¬τ8 ∨ ¬⟦(= x_236 (select x_15 x_1))⟧) ∧\n(¬τ10 ∨ τ9) ∧\n(¬τ10 ∨ ⟦(= x_237 (select x_15 x_2))⟧) ∧\n(τ10 ∨ ¬τ9 ∨ ¬⟦(= x_237 (select x_15 x_2))⟧) ∧\n(τ11 ∨ ⟦(= x_236 3)⟧) ∧\n(τ11 ∨ ⟦(= x_237 3)⟧) ∧\n(¬τ11 ∨ ¬⟦(= x_236 3)⟧ ∨ ¬⟦(= x_237 3)⟧) ∧\n(¬τ12 ∨ τ10) ∧\n(¬τ12 ∨ τ11) ∧\n(τ12 ∨ ¬τ10 ∨ ¬τ11) ∧\n(¬τ13 ∨ τ12) ∧\n(¬τ13 ∨ ⟦(= x_238 (select x_14 x_1))⟧) ∧\n(τ13 ∨ ¬τ12 ∨ ¬⟦(= x_238 (select x_14 x_1))⟧) ∧\n(¬τ14 ∨ τ13) ∧\n(¬τ14 ∨ ⟦(= x_239 (select x_14 x_2))⟧) ∧\n(τ14 ∨ ¬τ13 ∨ ¬⟦(= x_239 (select x_14 x_2))⟧) ∧\n(τ15 ∨ ⟦(= x_238 3)⟧) ∧\n(τ15 ∨ ⟦(= x_239 3)⟧) ∧\n(¬τ15 ∨ ¬⟦(= x_238 3)⟧ ∨ ¬⟦(= x_239 3)⟧) ∧\n(¬τ16 ∨ τ14) ∧\n(¬τ16 ∨ τ15) ∧\n(τ16 ∨ ¬τ14 ∨ ¬τ15) ∧\n(¬τ17 ∨ τ16) ∧\n(¬τ17 ∨ ⟦(= x_240 (select x_13 x_1))⟧) ∧\n(τ17 ∨ ¬τ16 ∨ ¬⟦(= x_240 (select x_13 x_1))⟧) ∧\n(¬τ18 ∨ τ17) ∧\n(¬τ18 ∨ ⟦(= x_241 (select x_13 x_2))⟧) ∧\n(τ18 ∨ ¬τ17 ∨ ¬⟦(= x_241 (select x_13 x_2))⟧) ∧\n(τ19 ∨ ⟦(= x_240 3)⟧) ∧\n(τ19 ∨ ⟦(= x_241 3)⟧) ∧\n(¬τ19 ∨ ¬⟦(= x_240 3)⟧ ∨ ¬⟦(= x_241 3)⟧) ∧\n(¬τ20 ∨ τ18) ∧\n(¬τ20 ∨ τ19) ∧\n(τ20 ∨ ¬τ18 ∨ ¬τ19) ∧\n(¬τ21 ∨ τ20) ∧\n(¬τ21 ∨ ⟦(= x_242 (select x_12 x_1))⟧) ∧\n(τ21 ∨ ¬τ20 ∨ ¬⟦(= x_242 (select x_12 x_1))⟧) ∧\n(¬τ22 ∨ τ21) ∧\n(¬τ22 ∨ ⟦(= x_243 (select x_12 x_2))⟧) ∧\n(τ22 ∨ ¬τ21 ∨ ¬⟦(= x_243 (select x_12 x_2))⟧) ∧\n(τ23 ∨ ⟦(= x_242 3)⟧) ∧\n(τ23 ∨ ⟦(= x_243 3)⟧) ∧\n(¬τ23 ∨ ¬⟦(= x_242 3)⟧ ∨ ¬⟦(= x_243 3)⟧) ∧\n(¬τ24 ∨ τ22) ∧\n(¬τ24 ∨ τ23) ∧\n(τ24 ∨ ¬τ22 ∨ ¬τ23) ∧\n(¬τ25 ∨ τ24) ∧\n(¬τ25 ∨ ⟦(= x_244 (select x_11 x_1))⟧) ∧\n(τ25 ∨ ¬τ24 ∨ ¬⟦(= x_244 (select x_11 x_1))⟧) ∧\n(¬τ26 ∨ τ25) ∧\n(¬τ26 ∨ ⟦(= x_245 (select x_11 x_2))⟧) ∧\n(τ26 ∨ ¬τ25 ∨ ¬⟦(= x_245 (select x_11 x_2))⟧) ∧\n(τ27 ∨ ⟦(= x_244 3)⟧) ∧\n(τ27 ∨ ⟦(= x_245 3)⟧) ∧\n(¬τ27 ∨ ¬⟦(= x_244 3)⟧ ∨ ¬⟦(= x_245 3)⟧) ∧\n(¬τ28 ∨ τ26) ∧\n(¬τ28 ∨ τ27) ∧\n(τ28 ∨ ¬τ26 ∨ ¬τ27) ∧\n(¬τ29 ∨ τ28) ∧\n(¬τ29 ∨ ⟦(= x_246 (select x_10 x_1))⟧) ∧\n(τ29 ∨ ¬τ28 ∨ ¬⟦(= x_246 (select x_10 x_1))⟧) ∧\n(¬τ30 ∨ τ29) ∧\n(¬τ30 ∨ ⟦(= x_247 (select x_10 x_2))⟧) ∧\n(τ30 ∨ ¬τ29 ∨ ¬⟦(= x_247 (select x_10 x_2))⟧) ∧\n(τ31 ∨ ⟦(= x_246 3)⟧) ∧\n(τ31 ∨ ⟦(= x_247 3)⟧) ∧\n(¬τ31 ∨ ¬⟦(= x_246 3)⟧ ∨ ¬⟦(= x_247 3)⟧) ∧\n(¬τ32 ∨ τ30) ∧\n(¬τ32 ∨ τ31) ∧\n(τ32 ∨ ¬τ30 ∨ ¬τ31) ∧\n(¬τ33 ∨ τ32) ∧\n(¬τ33 ∨ ⟦(= x_248 (select x_9 x_1))⟧) ∧\n(τ33 ∨ ¬τ32 ∨ ¬⟦(= x_248 (select x_9 x_1))⟧) ∧\n(¬τ34 ∨ τ33) ∧\n(¬τ34 ∨ ⟦(= x_249 (select x_9 x_2))⟧) ∧\n(τ34 ∨ ¬τ33 ∨ ¬⟦(= x_249 (select x_9 x_2))⟧) ∧\n(τ35 ∨ ⟦(= x_248 3)⟧) ∧\n(τ35 ∨ ⟦(= x_249 3)⟧) ∧\n(¬τ35 ∨ ¬⟦(= x_248 3)⟧ ∨ ¬⟦(= x_249 3)⟧) ∧\n(¬τ36 ∨ τ34) ∧\n(¬τ36 ∨ τ35) ∧\n(τ36 ∨ ¬τ34 ∨ ¬τ35) ∧\n(¬τ37 ∨ τ36) ∧\n(¬τ37 ∨ ⟦(= x_250 (select x_8 x_1))⟧) ∧\n(τ37 ∨ ¬τ36 ∨ ¬⟦(= x_250 (select x_8 x_1))⟧) ∧\n(¬τ38 ∨ τ37) ∧\n(¬τ38 ∨ ⟦(= x_251 (select x_8 x_2))⟧) ∧\n(τ38 ∨ ¬τ37 ∨ ¬⟦(= x_251 (select x_8 x_2))⟧) ∧\n(τ39 ∨ ⟦(= x_250 3)⟧) ∧\n(τ39 ∨ ⟦(= x_251 3)⟧) ∧\n(¬τ39 ∨ ¬⟦(= x_250 3)⟧ ∨ ¬⟦(= x_251 3)⟧) ∧\n(¬τ40 ∨ τ38) ∧\n(¬τ40 ∨ τ39) ∧\n(τ40 ∨ ¬τ38 ∨ ¬τ39) ∧\n(¬τ41 ∨ τ40) ∧\n(¬τ41 ∨ ⟦(= x_252 (select x_7 x_1))⟧) ∧\n(τ41 ∨ ¬τ40 ∨ ¬⟦(= x_252 (select x_7 x_1))⟧) ∧\n(¬τ42 ∨ τ41) ∧\n(¬τ42 ∨ ⟦(= x_253 (select x_7 x_2))⟧) ∧\n(τ42 ∨ ¬τ41 ∨ ¬⟦(= x_253 (select x_7 x_2))⟧) ∧\n(τ43 ∨ ⟦(= x_252 3)⟧) ∧\n(τ43 ∨ ⟦(= x_253 3)⟧) ∧\n(¬τ43 ∨ ¬⟦(= x_252 3)⟧ ∨ ¬⟦(= x_253 3)⟧) ∧\n(¬τ44 ∨ τ42) ∧\n(¬τ44 ∨ τ43) ∧\n(τ44 ∨ ¬τ42 ∨ ¬τ43) ∧\n(¬τ45 ∨ τ44) ∧\n(¬τ45 ∨ ⟦(= x_254 (select x_6 x_1))⟧) ∧\n(τ45 ∨ ¬τ44 ∨ ¬⟦(= x_254 (select x_6 x_1))⟧) ∧\n(¬τ46 ∨ τ45) ∧\n(¬τ46 ∨ ⟦(= x_255 (select x_6 x_2))⟧) ∧\n(τ46 ∨ ¬τ45 ∨ ¬⟦(= x_255 (select x_6 x_2))⟧) ∧\n(τ47 ∨ ⟦(= x_254 3)⟧) ∧\n(τ47 ∨ ⟦(= x_255 3)⟧) ∧\n(¬τ47 ∨ ¬⟦(= x_254 3)⟧ ∨ ¬⟦(= x_255 3)⟧) ∧\n(¬τ48 ∨ τ46) ∧\n(¬τ48 ∨ τ47) ∧\n(τ48 ∨ ¬τ46 ∨ ¬τ47) ∧\n(¬τ49 ∨ τ48) ∧\n(¬τ49 ∨ ⟦(= x_256 (select x_5 x_1))⟧) ∧\n(τ49 ∨ ¬τ48 ∨ ¬⟦(= x_256 (select x_5 x_1))⟧) ∧\n(¬τ50 ∨ τ49) ∧\n(¬τ50 ∨ ⟦(= x_257 (select x_5 x_2))⟧) ∧\n(τ50 ∨ ¬τ49 ∨ ¬⟦(= x_257 (select x_5 x_2))⟧) ∧\n(τ51 ∨ ⟦(= x_256 3)⟧) ∧\n(τ51 ∨ ⟦(= x_257 3)⟧) ∧\n(¬τ51 ∨ ¬⟦(= x_256 3)⟧ ∨ ¬⟦(= x_257 3)⟧) ∧\n(¬τ52 ∨ τ50) ∧\n(¬τ52 ∨ τ51) ∧\n(τ52 ∨ ¬τ50 ∨ ¬τ51) ∧\n(¬τ53 ∨ τ52) ∧\n(¬τ53 ∨ ⟦(= x_258 (select x_4 x_1))⟧) ∧\n(τ53 ∨ ¬τ52 ∨ ¬⟦(= x_258 (select x_4 x_1))⟧) ∧\n(¬τ54 ∨ τ53) ∧\n(¬τ54 ∨ ⟦(= x_259 (select x_4 x_2))⟧) ∧\n(τ54 ∨ ¬τ53 ∨ ¬⟦(= x_259 (select x_4 x_2))⟧) ∧\n(τ55 ∨ ⟦(= x_258 3)⟧) ∧\n(τ55 ∨ ⟦(= x_259 3)⟧) ∧\n(¬τ55 ∨ ¬⟦(= x_258 3)⟧ ∨ ¬⟦(= x_259 3)⟧) ∧\n(¬τ56 ∨ τ54) ∧\n(¬τ56 ∨ τ55) ∧\n(τ56 ∨ ¬τ54 ∨ ¬τ55) ∧\n(¬τ57 ∨ τ56) ∧\n(¬τ57 ∨ ⟦(= x_260 (select x_3 x_1))⟧) ∧\n(τ57 ∨ ¬τ56 ∨ ¬⟦(= x_260 (select x_3 x_1))⟧) ∧\n(¬τ58 ∨ τ57) ∧\n(¬τ58 ∨ ⟦(= x_261 (select x_3 x_2))⟧) ∧\n(τ58 ∨ ¬τ57 ∨ ¬⟦(= x_261 (select x_3 x_2))⟧) ∧\n(τ59 ∨ ⟦(= x_260 3)⟧) ∧\n(τ59 ∨ ⟦(= x_261 3)⟧) ∧\n(¬τ59 ∨ ¬⟦(= x_260 3)⟧ ∨ ¬⟦(= x_261 3)⟧) ∧\n(¬τ60 ∨ τ58) ∧\n(¬τ60 ∨ τ59) ∧\n(τ60 ∨ ¬τ58 ∨ ¬τ59) ∧\n(¬τ61 ∨ τ60) ∧\n(¬τ61 ∨ ⟦(= x_262 (select x_0 x_1))⟧) ∧\n(τ61 ∨ ¬τ60 ∨ ¬⟦(= x_262 (select x_0 x_1))⟧) ∧\n(¬τ62 ∨ τ61) ∧\n(¬τ62 ∨ ⟦(= x_263 (select x_0 x_2))⟧) ∧\n(τ62 ∨ ¬τ61 ∨ ¬⟦(= x_263 (select x_0 x_2))⟧) ∧\n(τ63 ∨ ⟦(= x_262 3)⟧) ∧\n(τ63 ∨ ⟦(= x_263 3)⟧) ∧\n(¬τ63 ∨ ¬⟦(= x_262 3)⟧ ∨ ¬⟦(= x_263 3)⟧) ∧\n(¬τ64 ∨ τ62) ∧\n(¬τ64 ∨ τ63) ∧\n(τ64 ∨ ¬τ62 ∨ ¬τ63) ∧\n(¬τ65 ∨ τ64) ∧\n(¬τ65 ∨ ⟦(= x_264 (select x_18 x_19))⟧) ∧\n(τ65 ∨ ¬τ64 ∨ ¬⟦(= x_264 (select x_18 x_19))⟧) ∧\n(¬τ66 ∨ τ65) ∧\n(¬τ66 ∨ ⟦(= x_20 x_264)⟧) ∧\n(τ66 ∨ ¬τ65 ∨ ¬⟦(= x_20 x_264)⟧) ∧\n(¬τ67 ∨ τ66) ∧\n(¬τ67 ∨ ⟦(= x_265 (select x_21 x_22))⟧) ∧\n(τ67 ∨ ¬τ66 ∨ ¬⟦(= x_265 (select x_21 x_22))⟧) ∧\n(¬τ68 ∨ τ67) ∧\n(¬τ68 ∨ ⟦(= x_36 x_265)⟧) ∧\n(τ68 ∨ ¬τ67 ∨ ¬⟦(= x_36 x_265)⟧) ∧\n(¬τ69 ∨ τ68) ∧\n(¬τ69 ∨ ⟦(= x_266 (select x_37 x_38))⟧) ∧\n(τ69 ∨ ¬τ68 ∨ ¬⟦(= x_266 (select x_37 x_38))⟧) ∧\n(¬τ70 ∨ τ69) ∧\n(¬τ70 ∨ ⟦(= x_49 x_266)⟧) ∧\n(τ70 ∨ ¬τ69 ∨ ¬⟦(= x_49 x_266)⟧) ∧\n(¬τ71 ∨ τ70) ∧\n(¬τ71 ∨ ⟦(= x_267 (select x_50 x_51))⟧) ∧\n(τ71 ∨ ¬τ70 ∨ ¬⟦(= x_267 (select x_50 x_51))⟧) ∧\n(¬τ72 ∨ τ71) ∧\n(¬τ72 ∨ ⟦(= x_62 x_267)⟧) ∧\n(τ72 ∨ ¬τ71 ∨ ¬⟦(= x_62 x_267)⟧) ∧\n(¬τ73 ∨ τ72) ∧\n(¬τ73 ∨ ⟦(= x_268 (select x_63 x_64))⟧) ∧\n(τ73 ∨ ¬τ72 ∨ ¬⟦(= x_268 (select x_63 x_64))⟧) ∧\n(¬τ74 ∨ τ73) ∧\n(¬τ74 ∨ ⟦(= x_75 x_268)⟧) ∧\n(τ74 ∨ ¬τ73 ∨ ¬⟦(= x_75 x_268)⟧) ∧\n(¬τ75 ∨ τ74) ∧\n(¬τ75 ∨ ⟦(= x_269 (select x_76 x_77))⟧) ∧\n(τ75 ∨ ¬τ74 ∨ ¬⟦(= x_269 (select x_76 x_77))⟧) ∧\n(¬τ76 ∨ τ75) ∧\n(¬τ76 ∨ ⟦(= x_88 x_269)⟧) ∧\n(τ76 ∨ ¬τ75 ∨ ¬⟦(= x_88 x_269)⟧) ∧\n(¬τ77 ∨ τ76) ∧\n(¬τ77 ∨ ⟦(= x_270 (select x_89 x_90))⟧) ∧\n(τ77 ∨ ¬τ76 ∨ ¬⟦(= x_270 (select x_89 x_90))⟧) ∧\n(¬τ78 ∨ τ77) ∧\n(¬τ78 ∨ ⟦(= x_101 x_270)⟧) ∧\n(τ78 ∨ ¬τ77 ∨ ¬⟦(= x_101 x_270)⟧) ∧\n(¬τ79 ∨ τ78) ∧\n(¬τ79 ∨ ⟦(= x_271 (select x_102 x_103))⟧) ∧\n(τ79 ∨ ¬τ78 ∨ ¬⟦(= x_271 (select x_102 x_103))⟧) ∧\n(¬τ80 ∨ τ79) ∧\n(¬τ80 ∨ ⟦(= x_114 x_271)⟧) ∧\n(τ80 ∨ ¬τ79 ∨ ¬⟦(= x_114 x_271)⟧) ∧\n(¬τ81 ∨ τ80) ∧\n(¬τ81 ∨ ⟦(= x_272 (select x_115 x_116))⟧) ∧\n(τ81 ∨ ¬τ80 ∨ ¬⟦(= x_272 (select x_115 x_116))⟧) ∧\n(¬τ82 ∨ τ81) ∧\n(¬τ82 ∨ ⟦(= x_127 x_272)⟧) ∧\n(τ82 ∨ ¬τ81 ∨ ¬⟦(= x_127 x_272)⟧) ∧\n(¬τ83 ∨ τ82) ∧\n(¬τ83 ∨ ⟦(= x_273 (select x_128 x_129))⟧) ∧\n(τ83 ∨ ¬τ82 ∨ ¬⟦(= x_273 (select x_128 x_129))⟧) ∧\n(¬τ84 ∨ τ83) ∧\n(¬τ84 ∨ ⟦(= x_140 x_273)⟧) ∧\n(τ84 ∨ ¬τ83 ∨ ¬⟦(= x_140 x_273)⟧) ∧\n(¬τ85 ∨ τ84) ∧\n(¬τ85 ∨ ⟦(= x_274 (select x_141 x_142))⟧) ∧\n(τ85 ∨ ¬τ84 ∨ ¬⟦(= x_274 (select x_141 x_142))⟧) ∧\n(¬τ86 ∨ τ85) ∧\n(¬τ86 ∨ ⟦(= x_153 x_274)⟧) ∧\n(τ86 ∨ ¬τ85 ∨ ¬⟦(= x_153 x_274)⟧) ∧\n(¬τ87 ∨ τ86) ∧\n(¬τ87 ∨ ⟦(= x_275 (select x_154 x_155))⟧) ∧\n(τ87 ∨ ¬τ86 ∨ ¬⟦(= x_275 (select x_154 x_155))⟧) ∧\n(¬τ88 ∨ τ87) ∧\n(¬τ88 ∨ ⟦(= x_166 x_275)⟧) ∧\n(τ88 ∨ ¬τ87 ∨ ¬⟦(= x_166 x_275)⟧) ∧\n(¬τ89 ∨ τ88) ∧\n(¬τ89 ∨ ⟦(= x_276 (select x_167 x_168))⟧) ∧\n(τ89 ∨ ¬τ88 ∨ ¬⟦(= x_276 (select x_167 x_168))⟧) ∧\n(¬τ90 ∨ τ89) ∧\n(¬τ90 ∨ ⟦(= x_179 x_276)⟧) ∧\n(τ90 ∨ ¬τ89 ∨ ¬⟦(= x_179 x_276)⟧) ∧\n(¬τ91 ∨ τ90) ∧\n(¬τ91 ∨ ⟦(= x_277 (select x_180 x_181))⟧) ∧\n(τ91 ∨ ¬τ90 ∨ ¬⟦(= x_277 (select x_180 x_181))⟧) ∧\n(¬τ92 ∨ τ91) ∧\n(¬τ92 ∨ ⟦(= x_192 x_277)⟧) ∧\n(τ92 ∨ ¬τ91 ∨ ¬⟦(= x_192 x_277)⟧) ∧\n(¬τ93 ∨ τ92) ∧\n(¬τ93 ∨ ⟦(= x_278 (select x_193 x_194))⟧) ∧\n(τ93 ∨ ¬τ92 ∨ ¬⟦(= x_278 (select x_193 x_194))⟧) ∧\n(¬τ94 ∨ τ93) ∧\n(¬τ94 ∨ ⟦(= x_205 x_278)⟧) ∧\n(τ94 ∨ ¬τ93 ∨ ¬⟦(= x_205 x_278)⟧) ∧\n(¬τ95 ∨ τ94) ∧\n(¬τ95 ∨ ⟦(= x_279 (select x_206 x_207))⟧) ∧\n(τ95 ∨ ¬τ94 ∨ ¬⟦(= x_279 (select x_206 x_207))⟧) ∧\n(¬τ96 ∨ τ95) ∧\n(¬τ96 ∨ ⟦(= x_218 x_279)⟧) ∧\n(τ96 ∨ ¬τ95 ∨ ¬⟦(= x_218 x_279)⟧) ∧\n(¬τ97 ∨ τ96) ∧\n(¬τ97 ∨ ⟦(= x_223 (+ x_210 1))⟧) ∧\n(τ97 ∨ ¬τ96 ∨ ¬⟦(= x_223 (+ x_210 1))⟧) ∧\n(¬τ98 ∨ τ97) ∧\n(¬τ98 ∨ ⟦(= x_280 (select x_17 x_225))⟧) ∧\n(τ98 ∨ ¬τ97 ∨ ¬⟦(= x_280 (select x_17 x_225))⟧) ∧\n(¬τ99 ∨ τ98) ∧\n(¬τ99 ∨ ⟦(= x_281 (select x_17 x_228))⟧) ∧\n(τ99 ∨ ¬τ98 ∨ ¬⟦(= x_281 (select x_17 x_228))⟧) ∧\n(¬τ100 ∨ τ99) ∧\n(¬τ100 ∨ ⟦(= x_282 (select x_17 x_230))⟧) ∧\n(τ100 ∨ ¬τ99 ∨ ¬⟦(= x_282 (select x_17 x_230))⟧) ∧\n(¬τ101 ∨ ⟦(= x_224 0)⟧) ∧\n(¬τ101 ∨ ⟦(= x_222 (+ x_209 1))⟧) ∧\n(τ101 ∨ ¬⟦(= x_224 0)⟧ ∨ ¬⟦(= x_222 (+ x_209 1))⟧) ∧\n(¬τ102 ∨ τ101) ∧\n(¬τ102 ∨ ⟦(= x_220 x_207)⟧) ∧\n(τ102 ∨ ¬τ101 ∨ ¬⟦(= x_220 x_207)⟧) ∧\n(¬τ103 ∨ τ102) ∧\n(¬τ103 ∨ ⟦(= x_221 x_208)⟧) ∧\n(τ103 ∨ ¬τ102 ∨ ¬⟦(= x_221 x_208)⟧) ∧\n(¬τ104 ∨ τ103) ∧\n(¬τ104 ∨ ⟦(= x_226 x_225)⟧) ∧\n(τ104 ∨ ¬τ103 ∨ ¬⟦(= x_226 x_225)⟧) ∧\n(¬τ105 ∨ τ104) ∧\n(¬τ105 ∨ ⟦(= x_280 1)⟧) ∧\n(τ105 ∨ ¬τ104 ∨ ¬⟦(= x_280 1)⟧) ∧\n(¬τ106 ∨ τ105) ∧\n(¬τ106 ∨ ⟦(= x_227 (store x_17 x_225 2))⟧) ∧\n(τ106 ∨ ¬τ105 ∨ ¬⟦(= x_227 (store x_17 x_225 2))⟧) ∧\n(¬τ107 ∨ τ106) ∧\n(¬τ107 ∨ ⟦(= x_219 (store x_206 x_209 x_225))⟧) ∧\n(τ107 ∨ ¬τ106 ∨ ¬⟦(= x_219 (store x_206 x_209 x_225))⟧) ∧\n(¬τ108 ∨ ⟦(= x_224 1)⟧) ∧\n(¬τ108 ∨ ¬⟦(<= x_209 x_207)⟧) ∧\n(τ108 ∨ ¬⟦(= x_224 1)⟧ ∨ ⟦(<= x_209 x_207)⟧) ∧\n(¬τ109 ∨ τ108) ∧\n(¬τ109 ∨ ⟦(= x_220 x_207)⟧) ∧\n(τ109 ∨ ¬τ108 ∨ ¬⟦(= x_220 x_207)⟧) ∧\n(¬τ110 ∨ τ109) ∧\n(¬τ110 ∨ ⟦(= x_221 x_208)⟧) ∧\n(τ110 ∨ ¬τ109 ∨ ¬⟦(= x_221 x_208)⟧) ∧\n(¬τ111 ∨ τ110) ∧\n(¬τ111 ∨ ⟦(= x_219 x_206)⟧) ∧\n(τ111 ∨ ¬τ110 ∨ ¬⟦(= x_219 x_206)⟧) ∧\n(¬τ112 ∨ τ111) ∧\n(¬τ112 ∨ ⟦(= x_222 x_209)⟧) ∧\n(τ112 ∨ ¬τ111 ∨ ¬⟦(= x_222 x_209)⟧) ∧\n(¬τ113 ∨ τ112) ∧\n(¬τ113 ∨ ⟦(= x_229 x_228)⟧) ∧\n(τ113 ∨ ¬τ112 ∨ ¬⟦(= x_229 x_228)⟧) ∧\n(¬τ114 ∨ τ113) ∧\n(¬τ114 ∨ ⟦(= x_281 2)⟧) ∧\n(τ114 ∨ ¬τ113 ∨ ¬⟦(= x_281 2)⟧) ∧\n(¬τ115 ∨ τ114) ∧\n(¬τ115 ∨ ⟦(= x_218 x_228)⟧) ∧\n(τ115 ∨ ¬τ114 ∨ ¬⟦(= x_218 x_228)⟧) ∧\n(¬τ116 ∨ τ115) ∧\n(¬τ116 ∨ ⟦(= x_227 (store x_17 x_228 3))⟧) ∧\n(τ116 ∨ ¬τ115 ∨ ¬⟦(= x_227 (store x_17 x_228 3))⟧) ∧\n(τ117 ∨ ¬τ107) ∧\n(τ117 ∨ ¬τ116) ∧\n(¬τ117 ∨ τ107 ∨ τ116) ∧\n(¬τ118 ∨ ⟦(= x_224 2)⟧) ∧\n(¬τ118 ∨ ¬⟦(<= x_209 x_207)⟧) ∧\n(τ118 ∨ ¬⟦(= x_224 2)⟧ ∨ ⟦(<= x_209 x_207)⟧) ∧\n(¬τ119 ∨ τ118) ∧\n(¬τ119 ∨ ⟦(= x_220 (+ x_207 1))⟧) ∧\n(τ119 ∨ ¬τ118 ∨ ¬⟦(= x_220 (+ x_207 1))⟧) ∧\n(¬τ120 ∨ τ119) ∧\n(¬τ120 ∨ ⟦(= x_221 x_208)⟧) ∧\n(τ120 ∨ ¬τ119 ∨ ¬⟦(= x_221 x_208)⟧) ∧\n(¬τ121 ∨ τ120) ∧\n(¬τ121 ∨ ⟦(= x_219 x_206)⟧) ∧\n(τ121 ∨ ¬τ120 ∨ ¬⟦(= x_219 x_206)⟧) ∧\n(¬τ122 ∨ τ121) ∧\n(¬τ122 ∨ ⟦(= x_222 x_209)⟧) ∧\n(τ122 ∨ ¬τ121 ∨ ¬⟦(= x_222 x_209)⟧) ∧\n(¬τ123 ∨ τ122) ∧\n(¬τ123 ∨ ⟦(= x_231 x_230)⟧) ∧\n(τ123 ∨ ¬τ122 ∨ ¬⟦(= x_231 x_230)⟧) ∧\n(¬τ124 ∨ τ123) ∧\n(¬τ124 ∨ ⟦(= x_282 3)⟧) ∧\n(τ124 ∨ ¬τ123 ∨ ¬⟦(= x_282 3)⟧) ∧\n(τ125 ∨ ⟦(<= x_210 12)⟧) ∧\n(τ125 ∨ ¬⟦(= x_218 x_230)⟧) ∧\n(¬τ125 ∨ ¬⟦(<= x_210 12)⟧ ∨ ⟦(= x_218 x_230)⟧) ∧\n(¬τ126 ∨ τ124) ∧\n(¬τ126 ∨ τ125) ∧\n(τ126 ∨ ¬τ124 ∨ ¬τ125) ∧\n(¬τ127 ∨ τ126) ∧\n(¬τ127 ∨ ⟦(= x_227 (store x_17 x_230 1))⟧) ∧\n(τ127 ∨ ¬τ126 ∨ ¬⟦(= x_227 (store x_17 x_230 1))⟧) ∧\n(τ128 ∨ ¬τ117) ∧\n(τ128 ∨ ¬τ127) ∧\n(¬τ128 ∨ τ117 ∨ τ127) ∧\n(¬τ129 ∨ ⟦(= x_224 3)⟧) ∧\n(¬τ129 ∨ ⟦(= x_219 x_206)⟧) ∧\n(τ129 ∨ ¬⟦(= x_224 3)⟧ ∨ ¬⟦(= x_219 x_206)⟧) ∧\n(¬τ130 ∨ τ129) ∧\n(¬τ130 ∨ ⟦(= x_220 x_207)⟧) ∧\n(τ130 ∨ ¬τ129 ∨ ¬⟦(= x_220 x_207)⟧) ∧\n(¬τ131 ∨ τ130) ∧\n(¬τ131 ∨ ⟦(= x_221 x_208)⟧) ∧\n(τ131 ∨ ¬τ130 ∨ ¬⟦(= x_221 x_208)⟧) ∧\n(¬τ132 ∨ τ131) ∧\n(¬τ132 ∨ ⟦(= x_227 x_17)⟧) ∧\n(τ132 ∨ ¬τ131 ∨ ¬⟦(= x_227 x_17)⟧) ∧\n(¬τ133 ∨ τ132) ∧\n(¬τ133 ∨ ⟦(= x_222 x_209)⟧) ∧\n(τ133 ∨ ¬τ132 ∨ ¬⟦(= x_222 x_209)⟧) ∧\n(τ134 ∨ ¬τ128) ∧\n(τ134 ∨ ¬τ133) ∧\n(¬τ134 ∨ τ128 ∨ τ133) ∧\n(¬τ135 ∨ τ100) ∧\n(¬τ135 ∨ τ134) ∧\n(τ135 ∨ ¬τ100 ∨ ¬τ134) ∧\n(¬τ136 ∨ τ135) ∧\n(¬τ136 ∨ ⟦(= x_210 (+ x_197 1))⟧) ∧\n(τ136 ∨ ¬τ135 ∨ ¬⟦(= x_210 (+ x_197 1))⟧) ∧\n(¬τ137 ∨ τ136) ∧\n(¬τ137 ∨ ⟦(= x_283 (select x_16 x_212))⟧) ∧\n(τ137 ∨ ¬τ136 ∨ ¬⟦(= x_283 (select x_16 x_212))⟧) ∧\n(¬τ138 ∨ τ137) ∧\n(¬τ138 ∨ ⟦(= x_284 (select x_16 x_214))⟧) ∧\n(τ138 ∨ ¬τ137 ∨ ¬⟦(= x_284 (select x_16 x_214))⟧) ∧\n(¬τ139 ∨ τ138) ∧\n(¬τ139 ∨ ⟦(= x_285 (select x_16 x_216))⟧) ∧\n(τ139 ∨ ¬τ138 ∨ ¬⟦(= x_285 (select x_16 x_216))⟧) ∧\n(¬τ140 ∨ ⟦(= x_211 0)⟧) ∧\n(¬τ140 ∨ ⟦(= x_209 (+ x_196 1))⟧) ∧\n(τ140 ∨ ¬⟦(= x_211 0)⟧ ∨ ¬⟦(= x_209 (+ x_196 1))⟧) ∧\n(¬τ141 ∨ τ140) ∧\n(¬τ141 ∨ ⟦(= x_207 x_194)⟧) ∧\n(τ141 ∨ ¬τ140 ∨ ¬⟦(= x_207 x_194)⟧) ∧\n(¬τ142 ∨ τ141) ∧\n(¬τ142 ∨ ⟦(= x_208 x_195)⟧) ∧\n(τ142 ∨ ¬τ141 ∨ ¬⟦(= x_208 x_195)⟧) ∧\n(¬τ143 ∨ τ142) ∧\n(¬τ143 ∨ ⟦(= x_213 x_212)⟧) ∧\n(τ143 ∨ ¬τ142 ∨ ¬⟦(= x_213 x_212)⟧) ∧\n(¬τ144 ∨ τ143) ∧\n(¬τ144 ∨ ⟦(= x_283 1)⟧) ∧\n(τ144 ∨ ¬τ143 ∨ ¬⟦(= x_283 1)⟧) ∧\n(¬τ145 ∨ τ144) ∧\n(¬τ145 ∨ ⟦(= x_17 (store x_16 x_212 2))⟧) ∧\n(τ145 ∨ ¬τ144 ∨ ¬⟦(= x_17 (store x_16 x_212 2))⟧) ∧\n(¬τ146 ∨ τ145) ∧\n(¬τ146 ∨ ⟦(= x_206 (store x_193 x_196 x_212))⟧) ∧\n(τ146 ∨ ¬τ145 ∨ ¬⟦(= x_206 (store x_193 x_196 x_212))⟧) ∧\n(¬τ147 ∨ ⟦(= x_211 1)⟧) ∧\n(¬τ147 ∨ ¬⟦(<= x_196 x_194)⟧) ∧\n(τ147 ∨ ¬⟦(= x_211 1)⟧ ∨ ⟦(<= x_196 x_194)⟧) ∧\n(¬τ148 ∨ τ147) ∧\n(¬τ148 ∨ ⟦(= x_207 x_194)⟧) ∧\n(τ148 ∨ ¬τ147 ∨ ¬⟦(= x_207 x_194)⟧) ∧\n(¬τ149 ∨ τ148) ∧\n(¬τ149 ∨ ⟦(= x_208 x_195)⟧) ∧\n(τ149 ∨ ¬τ148 ∨ ¬⟦(= x_208 x_195)⟧) ∧\n(¬τ150 ∨ τ149) ∧\n(¬τ150 ∨ ⟦(= x_206 x_193)⟧) ∧\n(τ150 ∨ ¬τ149 ∨ ¬⟦(= x_206 x_193)⟧) ∧\n(¬τ151 ∨ τ150) ∧\n(¬τ151 ∨ ⟦(= x_209 x_196)⟧) ∧\n(τ151 ∨ ¬τ150 ∨ ¬⟦(= x_209 x_196)⟧) ∧\n(¬τ152 ∨ τ151) ∧\n(¬τ152 ∨ ⟦(= x_215 x_214)⟧) ∧\n(τ152 ∨ ¬τ151 ∨ ¬⟦(= x_215 x_214)⟧) ∧\n(¬τ153 ∨ τ152) ∧\n(¬τ153 ∨ ⟦(= x_284 2)⟧) ∧\n(τ153 ∨ ¬τ152 ∨ ¬⟦(= x_284 2)⟧) ∧\n(¬τ154 ∨ τ153) ∧\n(¬τ154 ∨ ⟦(= x_205 x_214)⟧) ∧\n(τ154 ∨ ¬τ153 ∨ ¬⟦(= x_205 x_214)⟧) ∧\n(¬τ155 ∨ τ154) ∧\n(¬τ155 ∨ ⟦(= x_17 (store x_16 x_214 3))⟧) ∧\n(τ155 ∨ ¬τ154 ∨ ¬⟦(= x_17 (store x_16 x_214 3))⟧) ∧\n(τ156 ∨ ¬τ146) ∧\n(τ156 ∨ ¬τ155) ∧\n(¬τ156 ∨ τ146 ∨ τ155) ∧\n(¬τ157 ∨ ⟦(= x_211 2)⟧) ∧\n(¬τ157 ∨ ¬⟦(<= x_196 x_194)⟧) ∧\n(τ157 ∨ ¬⟦(= x_211 2)⟧ ∨ ⟦(<= x_196 x_194)⟧) ∧\n(¬τ158 ∨ τ157) ∧\n(¬τ158 ∨ ⟦(= x_207 (+ x_194 1))⟧) ∧\n(τ158 ∨ ¬τ157 ∨ ¬⟦(= x_207 (+ x_194 1))⟧) ∧\n(¬τ159 ∨ τ158) ∧\n(¬τ159 ∨ ⟦(= x_208 x_195)⟧) ∧\n(τ159 ∨ ¬τ158 ∨ ¬⟦(= x_208 x_195)⟧) ∧\n(¬τ160 ∨ τ159) ∧\n(¬τ160 ∨ ⟦(= x_206 x_193)⟧) ∧\n(τ160 ∨ ¬τ159 ∨ ¬⟦(= x_206 x_193)⟧) ∧\n(¬τ161 ∨ τ160) ∧\n(¬τ161 ∨ ⟦(= x_209 x_196)⟧) ∧\n(τ161 ∨ ¬τ160 ∨ ¬⟦(= x_209 x_196)⟧) ∧\n(¬τ162 ∨ τ161) ∧\n(¬τ162 ∨ ⟦(= x_217 x_216)⟧) ∧\n(τ162 ∨ ¬τ161 ∨ ¬⟦(= x_217 x_216)⟧) ∧\n(¬τ163 ∨ τ162) ∧\n(¬τ163 ∨ ⟦(= x_285 3)⟧) ∧\n(τ163 ∨ ¬τ162 ∨ ¬⟦(= x_285 3)⟧) ∧\n(τ164 ∨ ⟦(<= x_197 12)⟧) ∧\n(τ164 ∨ ¬⟦(= x_205 x_216)⟧) ∧\n(¬τ164 ∨ ¬⟦(<= x_197 12)⟧ ∨ ⟦(= x_205 x_216)⟧) ∧\n(¬τ165 ∨ τ163) ∧\n(¬τ165 ∨ τ164) ∧\n(τ165 ∨ ¬τ163 ∨ ¬τ164) ∧\n(¬τ166 ∨ τ165) ∧\n(¬τ166 ∨ ⟦(= x_17 (store x_16 x_216 1))⟧) ∧\n(τ166 ∨ ¬τ165 ∨ ¬⟦(= x_17 (store x_16 x_216 1))⟧) ∧\n(τ167 ∨ ¬τ156) ∧\n(τ167 ∨ ¬τ166) ∧\n(¬τ167 ∨ τ156 ∨ τ166) ∧\n(¬τ168 ∨ ⟦(= x_211 3)⟧) ∧\n(¬τ168 ∨ ⟦(= x_206 x_193)⟧) ∧\n(τ168 ∨ ¬⟦(= x_211 3)⟧ ∨ ¬⟦(= x_206 x_193)⟧) ∧\n(¬τ169 ∨ τ168) ∧\n(¬τ169 ∨ ⟦(= x_207 x_194)⟧) ∧\n(τ169 ∨ ¬τ168 ∨ ¬⟦(= x_207 x_194)⟧) ∧\n(¬τ170 ∨ τ169) ∧\n(¬τ170 ∨ ⟦(= x_208 x_195)⟧) ∧\n(τ170 ∨ ¬τ169 ∨ ¬⟦(= x_208 x_195)⟧) ∧\n(¬τ171 ∨ τ170) ∧\n(¬τ171 ∨ ⟦(= x_17 x_16)⟧) ∧\n(τ171 ∨ ¬τ170 ∨ ¬⟦(= x_17 x_16)⟧) ∧\n(¬τ172 ∨ τ171) ∧\n(¬τ172 ∨ ⟦(= x_209 x_196)⟧) ∧\n(τ172 ∨ ¬τ171 ∨ ¬⟦(= x_209 x_196)⟧) ∧\n(τ173 ∨ ¬τ167) ∧\n(τ173 ∨ ¬τ172) ∧\n(¬τ173 ∨ τ167 ∨ τ172) ∧\n(¬τ174 ∨ τ139) ∧\n(¬τ174 ∨ τ173) ∧\n(τ174 ∨ ¬τ139 ∨ ¬τ173) ∧\n(¬τ175 ∨ τ174) ∧\n(¬τ175 ∨ ⟦(= x_197 (+ x_184 1))⟧) ∧\n(τ175 ∨ ¬τ174 ∨ ¬⟦(= x_197 (+ x_184 1))⟧) ∧\n(¬τ176 ∨ τ175) ∧\n(¬τ176 ∨ ⟦(= x_286 (select x_15 x_199))⟧) ∧\n(τ176 ∨ ¬τ175 ∨ ¬⟦(= x_286 (select x_15 x_199))⟧) ∧\n(¬τ177 ∨ τ176) ∧\n(¬τ177 ∨ ⟦(= x_287 (select x_15 x_201))⟧) ∧\n(τ177 ∨ ¬τ176 ∨ ¬⟦(= x_287 (select x_15 x_201))⟧) ∧\n(¬τ178 ∨ τ177) ∧\n(¬τ178 ∨ ⟦(= x_288 (select x_15 x_203))⟧) ∧\n(τ178 ∨ ¬τ177 ∨ ¬⟦(= x_288 (select x_15 x_203))⟧) ∧\n(¬τ179 ∨ ⟦(= x_198 0)⟧) ∧\n(¬τ179 ∨ ⟦(= x_196 (+ x_183 1))⟧) ∧\n(τ179 ∨ ¬⟦(= x_198 0)⟧ ∨ ¬⟦(= x_196 (+ x_183 1))⟧) ∧\n(¬τ180 ∨ τ179) ∧\n(¬τ180 ∨ ⟦(= x_194 x_181)⟧) ∧\n(τ180 ∨ ¬τ179 ∨ ¬⟦(= x_194 x_181)⟧) ∧\n(¬τ181 ∨ τ180) ∧\n(¬τ181 ∨ ⟦(= x_195 x_182)⟧) ∧\n(τ181 ∨ ¬τ180 ∨ ¬⟦(= x_195 x_182)⟧) ∧\n(¬τ182 ∨ τ181) ∧\n(¬τ182 ∨ ⟦(= x_200 x_199)⟧) ∧\n(τ182 ∨ ¬τ181 ∨ ¬⟦(= x_200 x_199)⟧) ∧\n(¬τ183 ∨ τ182) ∧\n(¬τ183 ∨ ⟦(= x_286 1)⟧) ∧\n(τ183 ∨ ¬τ182 ∨ ¬⟦(= x_286 1)⟧) ∧\n(¬τ184 ∨ τ183) ∧\n(¬τ184 ∨ ⟦(= x_16 (store x_15 x_199 2))⟧) ∧\n(τ184 ∨ ¬τ183 ∨ ¬⟦(= x_16 (store x_15 x_199 2))⟧) ∧\n(¬τ185 ∨ τ184) ∧\n(¬τ185 ∨ ⟦(= x_193 (store x_180 x_183 x_199))⟧) ∧\n(τ185 ∨ ¬τ184 ∨ ¬⟦(= x_193 (store x_180 x_183 x_199))⟧) ∧\n(¬τ186 ∨ ⟦(= x_198 1)⟧) ∧\n(¬τ186 ∨ ¬⟦(<= x_183 x_181)⟧) ∧\n(τ186 ∨ ¬⟦(= x_198 1)⟧ ∨ ⟦(<= x_183 x_181)⟧) ∧\n(¬τ187 ∨ τ186) ∧\n(¬τ187 ∨ ⟦(= x_194 x_181)⟧) ∧\n(τ187 ∨ ¬τ186 ∨ ¬⟦(= x_194 x_181)⟧) ∧\n(¬τ188 ∨ τ187) ∧\n(¬τ188 ∨ ⟦(= x_195 x_182)⟧) ∧\n(τ188 ∨ ¬τ187 ∨ ¬⟦(= x_195 x_182)⟧) ∧\n(¬τ189 ∨ τ188) ∧\n(¬τ189 ∨ ⟦(= x_193 x_180)⟧) ∧\n(τ189 ∨ ¬τ188 ∨ ¬⟦(= x_193 x_180)⟧) ∧\n(¬τ190 ∨ τ189) ∧\n(¬τ190 ∨ ⟦(= x_196 x_183)⟧) ∧\n(τ190 ∨ ¬τ189 ∨ ¬⟦(= x_196 x_183)⟧) ∧\n(¬τ191 ∨ τ190) ∧\n(¬τ191 ∨ ⟦(= x_202 x_201)⟧) ∧\n(τ191 ∨ ¬τ190 ∨ ¬⟦(= x_202 x_201)⟧) ∧\n(¬τ192 ∨ τ191) ∧\n(¬τ192 ∨ ⟦(= x_287 2)⟧) ∧\n(τ192 ∨ ¬τ191 ∨ ¬⟦(= x_287 2)⟧) ∧\n(¬τ193 ∨ τ192) ∧\n(¬τ193 ∨ ⟦(= x_192 x_201)⟧) ∧\n(τ193 ∨ ¬τ192 ∨ ¬⟦(= x_192 x_201)⟧) ∧\n(¬τ194 ∨ τ193) ∧\n(¬τ194 ∨ ⟦(= x_16 (store x_15 x_201 3))⟧) ∧\n(τ194 ∨ ¬τ193 ∨ ¬⟦(= x_16 (store x_15 x_201 3))⟧) ∧\n(τ195 ∨ ¬τ185) ∧\n(τ195 ∨ ¬τ194) ∧\n(¬τ195 ∨ τ185 ∨ τ194) ∧\n(¬τ196 ∨ ⟦(= x_198 2)⟧) ∧\n(¬τ196 ∨ ¬⟦(<= x_183 x_181)⟧) ∧\n(τ196 ∨ ¬⟦(= x_198 2)⟧ ∨ ⟦(<= x_183 x_181)⟧) ∧\n(¬τ197 ∨ τ196) ∧\n(¬τ197 ∨ ⟦(= x_194 (+ x_181 1))⟧) ∧\n(τ197 ∨ ¬τ196 ∨ ¬⟦(= x_194 (+ x_181 1))⟧) ∧\n(¬τ198 ∨ τ197) ∧\n(¬τ198 ∨ ⟦(= x_195 x_182)⟧) ∧\n(τ198 ∨ ¬τ197 ∨ ¬⟦(= x_195 x_182)⟧) ∧\n(¬τ199 ∨ τ198) ∧\n(¬τ199 ∨ ⟦(= x_193 x_180)⟧) ∧\n(τ199 ∨ ¬τ198 ∨ ¬⟦(= x_193 x_180)⟧) ∧\n(¬τ200 ∨ τ199) ∧\n(¬τ200 ∨ ⟦(= x_196 x_183)⟧) ∧\n(τ200 ∨ ¬τ199 ∨ ¬⟦(= x_196 x_183)⟧) ∧\n(¬τ201 ∨ τ200) ∧\n(¬τ201 ∨ ⟦(= x_204 x_203)⟧) ∧\n(τ201 ∨ ¬τ200 ∨ ¬⟦(= x_204 x_203)⟧) ∧\n(¬τ202 ∨ τ201) ∧\n(¬τ202 ∨ ⟦(= x_288 3)⟧) ∧\n(τ202 ∨ ¬τ201 ∨ ¬⟦(= x_288 3)⟧) ∧\n(τ203 ∨ ⟦(<= x_184 12)⟧) ∧\n(τ203 ∨ ¬⟦(= x_192 x_203)⟧) ∧\n(¬τ203 ∨ ¬⟦(<= x_184 12)⟧ ∨ ⟦(= x_192 x_203)⟧) ∧\n(¬τ204 ∨ τ202) ∧\n(¬τ204 ∨ τ203) ∧\n(τ204 ∨ ¬τ202 ∨ ¬τ203) ∧\n(¬τ205 ∨ τ204) ∧\n(¬τ205 ∨ ⟦(= x_16 (store x_15 x_203 1))⟧) ∧\n(τ205 ∨ ¬τ204 ∨ ¬⟦(= x_16 (store x_15 x_203 1))⟧) ∧\n(τ206 ∨ ¬τ195) ∧\n(τ206 ∨ ¬τ205) ∧\n(¬τ206 ∨ τ195 ∨ τ205) ∧\n(¬τ207 ∨ ⟦(= x_198 3)⟧) ∧\n(¬τ207 ∨ ⟦(= x_193 x_180)⟧) ∧\n(τ207 ∨ ¬⟦(= x_198 3)⟧ ∨ ¬⟦(= x_193 x_180)⟧) ∧\n(¬τ208 ∨ τ207) ∧\n(¬τ208 ∨ ⟦(= x_194 x_181)⟧) ∧\n(τ208 ∨ ¬τ207 ∨ ¬⟦(= x_194 x_181)⟧) ∧\n(¬τ209 ∨ τ208) ∧\n(¬τ209 ∨ ⟦(= x_195 x_182)⟧) ∧\n(τ209 ∨ ¬τ208 ∨ ¬⟦(= x_195 x_182)⟧) ∧\n(¬τ210 ∨ τ209) ∧\n(¬τ210 ∨ ⟦(= x_16 x_15)⟧) ∧\n(τ210 ∨ ¬τ209 ∨ ¬⟦(= x_16 x_15)⟧) ∧\n(¬τ211 ∨ τ210) ∧\n(¬τ211 ∨ ⟦(= x_196 x_183)⟧) ∧\n(τ211 ∨ ¬τ210 ∨ ¬⟦(= x_196 x_183)⟧) ∧\n(τ212 ∨ ¬τ206) ∧\n(τ212 ∨ ¬τ211) ∧\n(¬τ212 ∨ τ206 ∨ τ211) ∧\n(¬τ213 ∨ τ178) ∧\n(¬τ213 ∨ τ212) ∧\n(τ213 ∨ ¬τ178 ∨ ¬τ212) ∧\n(¬τ214 ∨ τ213) ∧\n(¬τ214 ∨ ⟦(= x_184 (+ x_171 1))⟧) ∧\n(τ214 ∨ ¬τ213 ∨ ¬⟦(= x_184 (+ x_171 1))⟧) ∧\n(¬τ215 ∨ τ214) ∧\n(¬τ215 ∨ ⟦(= x_289 (select x_14 x_186))⟧) ∧\n(τ215 ∨ ¬τ214 ∨ ¬⟦(= x_289 (select x_14 x_186))⟧) ∧\n(¬τ216 ∨ τ215) ∧\n(¬τ216 ∨ ⟦(= x_290 (select x_14 x_188))⟧) ∧\n(τ216 ∨ ¬τ215 ∨ ¬⟦(= x_290 (select x_14 x_188))⟧) ∧\n(¬τ217 ∨ τ216) ∧\n(¬τ217 ∨ ⟦(= x_291 (select x_14 x_190))⟧) ∧\n(τ217 ∨ ¬τ216 ∨ ¬⟦(= x_291 (select x_14 x_190))⟧) ∧\n(¬τ218 ∨ ⟦(= x_185 0)⟧) ∧\n(¬τ218 ∨ ⟦(= x_183 (+ x_170 1))⟧) ∧\n(τ218 ∨ ¬⟦(= x_185 0)⟧ ∨ ¬⟦(= x_183 (+ x_170 1))⟧) ∧\n(¬τ219 ∨ τ218) ∧\n(¬τ219 ∨ ⟦(= x_181 x_168)⟧) ∧\n(τ219 ∨ ¬τ218 ∨ ¬⟦(= x_181 x_168)⟧) ∧\n(¬τ220 ∨ τ219) ∧\n(¬τ220 ∨ ⟦(= x_182 x_169)⟧) ∧\n(τ220 ∨ ¬τ219 ∨ ¬⟦(= x_182 x_169)⟧) ∧\n(¬τ221 ∨ τ220) ∧\n(¬τ221 ∨ ⟦(= x_187 x_186)⟧) ∧\n(τ221 ∨ ¬τ220 ∨ ¬⟦(= x_187 x_186)⟧) ∧\n(¬τ222 ∨ τ221) ∧\n(¬τ222 ∨ ⟦(= x_289 1)⟧) ∧\n(τ222 ∨ ¬τ221 ∨ ¬⟦(= x_289 1)⟧) ∧\n(¬τ223 ∨ τ222) ∧\n(¬τ223 ∨ ⟦(= x_15 (store x_14 x_186 2))⟧) ∧\n(τ223 ∨ ¬τ222 ∨ ¬⟦(= x_15 (store x_14 x_186 2))⟧) ∧\n(¬τ224 ∨ τ223) ∧\n(¬τ224 ∨ ⟦(= x_180 (store x_167 x_170 x_186))⟧) ∧\n(τ224 ∨ ¬τ223 ∨ ¬⟦(= x_180 (store x_167 x_170 x_186))⟧) ∧\n(¬τ225 ∨ ⟦(= x_185 1)⟧) ∧\n(¬τ225 ∨ ¬⟦(<= x_170 x_168)⟧) ∧\n(τ225 ∨ ¬⟦(= x_185 1)⟧ ∨ ⟦(<= x_170 x_168)⟧) ∧\n(¬τ226 ∨ τ225) ∧\n(¬τ226 ∨ ⟦(= x_181 x_168)⟧) ∧\n(τ226 ∨ ¬τ225 ∨ ¬⟦(= x_181 x_168)⟧) ∧\n(¬τ227 ∨ τ226) ∧\n(¬τ227 ∨ ⟦(= x_182 x_169)⟧) ∧\n(τ227 ∨ ¬τ226 ∨ ¬⟦(= x_182 x_169)⟧) ∧\n(¬τ228 ∨ τ227) ∧\n(¬τ228 ∨ ⟦(= x_180 x_167)⟧) ∧\n(τ228 ∨ ¬τ227 ∨ ¬⟦(= x_180 x_167)⟧) ∧\n(¬τ229 ∨ τ228) ∧\n(¬τ229 ∨ ⟦(= x_183 x_170)⟧) ∧\n(τ229 ∨ ¬τ228 ∨ ¬⟦(= x_183 x_170)⟧) ∧\n(¬τ230 ∨ τ229) ∧\n(¬τ230 ∨ ⟦(= x_189 x_188)⟧) ∧\n(τ230 ∨ ¬τ229 ∨ ¬⟦(= x_189 x_188)⟧) ∧\n(¬τ231 ∨ τ230) ∧\n(¬τ231 ∨ ⟦(= x_290 2)⟧) ∧\n(τ231 ∨ ¬τ230 ∨ ¬⟦(= x_290 2)⟧) ∧\n(¬τ232 ∨ τ231) ∧\n(¬τ232 ∨ ⟦(= x_179 x_188)⟧) ∧\n(τ232 ∨ ¬τ231 ∨ ¬⟦(= x_179 x_188)⟧) ∧\n(¬τ233 ∨ τ232) ∧\n(¬τ233 ∨ ⟦(= x_15 (store x_14 x_188 3))⟧) ∧\n(τ233 ∨ ¬τ232 ∨ ¬⟦(= x_15 (store x_14 x_188 3))⟧) ∧\n(τ234 ∨ ¬τ224) ∧\n(τ234 ∨ ¬τ233) ∧\n(¬τ234 ∨ τ224 ∨ τ233) ∧\n(¬τ235 ∨ ⟦(= x_185 2)⟧) ∧\n(¬τ235 ∨ ¬⟦(<= x_170 x_168)⟧) ∧\n(τ235 ∨ ¬⟦(= x_185 2)⟧ ∨ ⟦(<= x_170 x_168)⟧) ∧\n(¬τ236 ∨ τ235) ∧\n(¬τ236 ∨ ⟦(= x_181 (+ x_168 1))⟧) ∧\n(τ236 ∨ ¬τ235 ∨ ¬⟦(= x_181 (+ x_168 1))⟧) ∧\n(¬τ237 ∨ τ236) ∧\n(¬τ237 ∨ ⟦(= x_182 x_169)⟧) ∧\n(τ237 ∨ ¬τ236 ∨ ¬⟦(= x_182 x_169)⟧) ∧\n(¬τ238 ∨ τ237) ∧\n(¬τ238 ∨ ⟦(= x_180 x_167)⟧) ∧\n(τ238 ∨ ¬τ237 ∨ ¬⟦(= x_180 x_167)⟧) ∧\n(¬τ239 ∨ τ238) ∧\n(¬τ239 ∨ ⟦(= x_183 x_170)⟧) ∧\n(τ239 ∨ ¬τ238 ∨ ¬⟦(= x_183 x_170)⟧) ∧\n(¬τ240 ∨ τ239) ∧\n(¬τ240 ∨ ⟦(= x_191 x_190)⟧) ∧\n(τ240 ∨ ¬τ239 ∨ ¬⟦(= x_191 x_190)⟧) ∧\n(¬τ241 ∨ τ240) ∧\n(¬τ241 ∨ ⟦(= x_291 3)⟧) ∧\n(τ241 ∨ ¬τ240 ∨ ¬⟦(= x_291 3)⟧) ∧\n(τ242 ∨ ⟦(<= x_171 12)⟧) ∧\n(τ242 ∨ ¬⟦(= x_179 x_190)⟧) ∧\n(¬τ242 ∨ ¬⟦(<= x_171 12)⟧ ∨ ⟦(= x_179 x_190)⟧) ∧\n(¬τ243 ∨ τ241) ∧\n(¬τ243 ∨ τ242) ∧\n(τ243 ∨ ¬τ241 ∨ ¬τ242) ∧\n(¬τ244 ∨ τ243) ∧\n(¬τ244 ∨ ⟦(= x_15 (store x_14 x_190 1))⟧) ∧\n(τ244 ∨ ¬τ243 ∨ ¬⟦(= x_15 (store x_14 x_190 1))⟧) ∧\n(τ245 ∨ ¬τ234) ∧\n(τ245 ∨ ¬τ244) ∧\n(¬τ245 ∨ τ234 ∨ τ244) ∧\n(¬τ246 ∨ ⟦(= x_185 3)⟧) ∧\n(¬τ246 ∨ ⟦(= x_180 x_167)⟧) ∧\n(τ246 ∨ ¬⟦(= x_185 3)⟧ ∨ ¬⟦(= x_180 x_167)⟧) ∧\n(¬τ247 ∨ τ246) ∧\n(¬τ247 ∨ ⟦(= x_181 x_168)⟧) ∧\n(τ247 ∨ ¬τ246 ∨ ¬⟦(= x_181 x_168)⟧) ∧\n(¬τ248 ∨ τ247) ∧\n(¬τ248 ∨ ⟦(= x_182 x_169)⟧) ∧\n(τ248 ∨ ¬τ247 ∨ ¬⟦(= x_182 x_169)⟧) ∧\n(¬τ249 ∨ τ248) ∧\n(¬τ249 ∨ ⟦(= x_15 x_14)⟧) ∧\n(τ249 ∨ ¬τ248 ∨ ¬⟦(= x_15 x_14)⟧) ∧\n(¬τ250 ∨ τ249) ∧\n(¬τ250 ∨ ⟦(= x_183 x_170)⟧) ∧\n(τ250 ∨ ¬τ249 ∨ ¬⟦(= x_183 x_170)⟧) ∧\n(τ251 ∨ ¬τ245) ∧\n(τ251 ∨ ¬τ250) ∧\n(¬τ251 ∨ τ245 ∨ τ250) ∧\n(¬τ252 ∨ τ217) ∧\n(¬τ252 ∨ τ251) ∧\n(τ252 ∨ ¬τ217 ∨ ¬τ251) ∧\n(¬τ253 ∨ τ252) ∧\n(¬τ253 ∨ ⟦(= x_171 (+ x_158 1))⟧) ∧\n(τ253 ∨ ¬τ252 ∨ ¬⟦(= x_171 (+ x_158 1))⟧) ∧\n(¬τ254 ∨ τ253) ∧\n(¬τ254 ∨ ⟦(= x_292 (select x_13 x_173))⟧) ∧\n(τ254 ∨ ¬τ253 ∨ ¬⟦(= x_292 (select x_13 x_173))⟧) ∧\n(¬τ255 ∨ τ254) ∧\n(¬τ255 ∨ ⟦(= x_293 (select x_13 x_175))⟧) ∧\n(τ255 ∨ ¬τ254 ∨ ¬⟦(= x_293 (select x_13 x_175))⟧) ∧\n(¬τ256 ∨ τ255) ∧\n(¬τ256 ∨ ⟦(= x_294 (select x_13 x_177))⟧) ∧\n(τ256 ∨ ¬τ255 ∨ ¬⟦(= x_294 (select x_13 x_177))⟧) ∧\n(¬τ257 ∨ ⟦(= x_172 0)⟧) ∧\n(¬τ257 ∨ ⟦(= x_170 (+ x_157 1))⟧) ∧\n(τ257 ∨ ¬⟦(= x_172 0)⟧ ∨ ¬⟦(= x_170 (+ x_157 1))⟧) ∧\n(¬τ258 ∨ τ257) ∧\n(¬τ258 ∨ ⟦(= x_168 x_155)⟧) ∧\n(τ258 ∨ ¬τ257 ∨ ¬⟦(= x_168 x_155)⟧) ∧\n(¬τ259 ∨ τ258) ∧\n(¬τ259 ∨ ⟦(= x_169 x_156)⟧) ∧\n(τ259 ∨ ¬τ258 ∨ ¬⟦(= x_169 x_156)⟧) ∧\n(¬τ260 ∨ τ259) ∧\n(¬τ260 ∨ ⟦(= x_174 x_173)⟧) ∧\n(τ260 ∨ ¬τ259 ∨ ¬⟦(= x_174 x_173)⟧) ∧\n(¬τ261 ∨ τ260) ∧\n(¬τ261 ∨ ⟦(= x_292 1)⟧) ∧\n(τ261 ∨ ¬τ260 ∨ ¬⟦(= x_292 1)⟧) ∧\n(¬τ262 ∨ τ261) ∧\n(¬τ262 ∨ ⟦(= x_14 (store x_13 x_173 2))⟧) ∧\n(τ262 ∨ ¬τ261 ∨ ¬⟦(= x_14 (store x_13 x_173 2))⟧) ∧\n(¬τ263 ∨ τ262) ∧\n(¬τ263 ∨ ⟦(= x_167 (store x_154 x_157 x_173))⟧) ∧\n(τ263 ∨ ¬τ262 ∨ ¬⟦(= x_167 (store x_154 x_157 x_173))⟧) ∧\n(¬τ264 ∨ ⟦(= x_172 1)⟧) ∧\n(¬τ264 ∨ ¬⟦(<= x_157 x_155)⟧) ∧\n(τ264 ∨ ¬⟦(= x_172 1)⟧ ∨ ⟦(<= x_157 x_155)⟧) ∧\n(¬τ265 ∨ τ264) ∧\n(¬τ265 ∨ ⟦(= x_168 x_155)⟧) ∧\n(τ265 ∨ ¬τ264 ∨ ¬⟦(= x_168 x_155)⟧) ∧\n(¬τ266 ∨ τ265) ∧\n(¬τ266 ∨ ⟦(= x_169 x_156)⟧) ∧\n(τ266 ∨ ¬τ265 ∨ ¬⟦(= x_169 x_156)⟧) ∧\n(¬τ267 ∨ τ266) ∧\n(¬τ267 ∨ ⟦(= x_167 x_154)⟧) ∧\n(τ267 ∨ ¬τ266 ∨ ¬⟦(= x_167 x_154)⟧) ∧\n(¬τ268 ∨ τ267) ∧\n(¬τ268 ∨ ⟦(= x_170 x_157)⟧) ∧\n(τ268 ∨ ¬τ267 ∨ ¬⟦(= x_170 x_157)⟧) ∧\n(¬τ269 ∨ τ268) ∧\n(¬τ269 ∨ ⟦(= x_176 x_175)⟧) ∧\n(τ269 ∨ ¬τ268 ∨ ¬⟦(= x_176 x_175)⟧) ∧\n(¬τ270 ∨ τ269) ∧\n(¬τ270 ∨ ⟦(= x_293 2)⟧) ∧\n(τ270 ∨ ¬τ269 ∨ ¬⟦(= x_293 2)⟧) ∧\n(¬τ271 ∨ τ270) ∧\n(¬τ271 ∨ ⟦(= x_166 x_175)⟧) ∧\n(τ271 ∨ ¬τ270 ∨ ¬⟦(= x_166 x_175)⟧) ∧\n(¬τ272 ∨ τ271) ∧\n(¬τ272 ∨ ⟦(= x_14 (store x_13 x_175 3))⟧) ∧\n(τ272 ∨ ¬τ271 ∨ ¬⟦(= x_14 (store x_13 x_175 3))⟧) ∧\n(τ273 ∨ ¬τ263) ∧\n(τ273 ∨ ¬τ272) ∧\n(¬τ273 ∨ τ263 ∨ τ272) ∧\n(¬τ274 ∨ ⟦(= x_172 2)⟧) ∧\n(¬τ274 ∨ ¬⟦(<= x_157 x_155)⟧) ∧\n(τ274 ∨ ¬⟦(= x_172 2)⟧ ∨ ⟦(<= x_157 x_155)⟧) ∧\n(¬τ275 ∨ τ274) ∧\n(¬τ275 ∨ ⟦(= x_168 (+ x_155 1))⟧) ∧\n(τ275 ∨ ¬τ274 ∨ ¬⟦(= x_168 (+ x_155 1))⟧) ∧\n(¬τ276 ∨ τ275) ∧\n(¬τ276 ∨ ⟦(= x_169 x_156)⟧) ∧\n(τ276 ∨ ¬τ275 ∨ ¬⟦(= x_169 x_156)⟧) ∧\n(¬τ277 ∨ τ276) ∧\n(¬τ277 ∨ ⟦(= x_167 x_154)⟧) ∧\n(τ277 ∨ ¬τ276 ∨ ¬⟦(= x_167 x_154)⟧) ∧\n(¬τ278 ∨ τ277) ∧\n(¬τ278 ∨ ⟦(= x_170 x_157)⟧) ∧\n(τ278 ∨ ¬τ277 ∨ ¬⟦(= x_170 x_157)⟧) ∧\n(¬τ279 ∨ τ278) ∧\n(¬τ279 ∨ ⟦(= x_178 x_177)⟧) ∧\n(τ279 ∨ ¬τ278 ∨ ¬⟦(= x_178 x_177)⟧) ∧\n(¬τ280 ∨ τ279) ∧\n(¬τ280 ∨ ⟦(= x_294 3)⟧) ∧\n(τ280 ∨ ¬τ279 ∨ ¬⟦(= x_294 3)⟧) ∧\n(τ281 ∨ ⟦(<= x_158 12)⟧) ∧\n(τ281 ∨ ¬⟦(= x_166 x_177)⟧) ∧\n(¬τ281 ∨ ¬⟦(<= x_158 12)⟧ ∨ ⟦(= x_166 x_177)⟧) ∧\n(¬τ282 ∨ τ280) ∧\n(¬τ282 ∨ τ281) ∧\n(τ282 ∨ ¬τ280 ∨ ¬τ281) ∧\n(¬τ283 ∨ τ282) ∧\n(¬τ283 ∨ ⟦(= x_14 (store x_13 x_177 1))⟧) ∧\n(τ283 ∨ ¬τ282 ∨ ¬⟦(= x_14 (store x_13 x_177 1))⟧) ∧\n(τ284 ∨ ¬τ273) ∧\n(τ284 ∨ ¬τ283) ∧\n(¬τ284 ∨ τ273 ∨ τ283) ∧\n(¬τ285 ∨ ⟦(= x_172 3)⟧) ∧\n(¬τ285 ∨ ⟦(= x_167 x_154)⟧) ∧\n(τ285 ∨ ¬⟦(= x_172 3)⟧ ∨ ¬⟦(= x_167 x_154)⟧) ∧\n(¬τ286 ∨ τ285) ∧\n(¬τ286 ∨ ⟦(= x_168 x_155)⟧) ∧\n(τ286 ∨ ¬τ285 ∨ ¬⟦(= x_168 x_155)⟧) ∧\n(¬τ287 ∨ τ286) ∧\n(¬τ287 ∨ ⟦(= x_169 x_156)⟧) ∧\n(τ287 ∨ ¬τ286 ∨ ¬⟦(= x_169 x_156)⟧) ∧\n(¬τ288 ∨ τ287) ∧\n(¬τ288 ∨ ⟦(= x_14 x_13)⟧) ∧\n(τ288 ∨ ¬τ287 ∨ ¬⟦(= x_14 x_13)⟧) ∧\n(¬τ289 ∨ τ288) ∧\n(¬τ289 ∨ ⟦(= x_170 x_157)⟧) ∧\n(τ289 ∨ ¬τ288 ∨ ¬⟦(= x_170 x_157)⟧) ∧\n(τ290 ∨ ¬τ284) ∧\n(τ290 ∨ ¬τ289) ∧\n(¬τ290 ∨ τ284 ∨ τ289) ∧\n(¬τ291 ∨ τ256) ∧\n(¬τ291 ∨ τ290) ∧\n(τ291 ∨ ¬τ256 ∨ ¬τ290) ∧\n(¬τ292 ∨ τ291) ∧\n(¬τ292 ∨ ⟦(= x_158 (+ x_145 1))⟧) ∧\n(τ292 ∨ ¬τ291 ∨ ¬⟦(= x_158 (+ x_145 1))⟧) ∧\n(¬τ293 ∨ τ292) ∧\n(¬τ293 ∨ ⟦(= x_295 (select x_12 x_160))⟧) ∧\n(τ293 ∨ ¬τ292 ∨ ¬⟦(= x_295 (select x_12 x_160))⟧) ∧\n(¬τ294 ∨ τ293) ∧\n(¬τ294 ∨ ⟦(= x_296 (select x_12 x_162))⟧) ∧\n(τ294 ∨ ¬τ293 ∨ ¬⟦(= x_296 (select x_12 x_162))⟧) ∧\n(¬τ295 ∨ τ294) ∧\n(¬τ295 ∨ ⟦(= x_297 (select x_12 x_164))⟧) ∧\n(τ295 ∨ ¬τ294 ∨ ¬⟦(= x_297 (select x_12 x_164))⟧) ∧\n(¬τ296 ∨ ⟦(= x_159 0)⟧) ∧\n(¬τ296 ∨ ⟦(= x_157 (+ x_144 1))⟧) ∧\n(τ296 ∨ ¬⟦(= x_159 0)⟧ ∨ ¬⟦(= x_157 (+ x_144 1))⟧) ∧\n(¬τ297 ∨ τ296) ∧\n(¬τ297 ∨ ⟦(= x_155 x_142)⟧) ∧\n(τ297 ∨ ¬τ296 ∨ ¬⟦(= x_155 x_142)⟧) ∧\n(¬τ298 ∨ τ297) ∧\n(¬τ298 ∨ ⟦(= x_156 x_143)⟧) ∧\n(τ298 ∨ ¬τ297 ∨ ¬⟦(= x_156 x_143)⟧) ∧\n(¬τ299 ∨ τ298) ∧\n(¬τ299 ∨ ⟦(= x_161 x_160)⟧) ∧\n(τ299 ∨ ¬τ298 ∨ ¬⟦(= x_161 x_160)⟧) ∧\n(¬τ300 ∨ τ299) ∧\n(¬τ300 ∨ ⟦(= x_295 1)⟧) ∧\n(τ300 ∨ ¬τ299 ∨ ¬⟦(= x_295 1)⟧) ∧\n(¬τ301 ∨ τ300) ∧\n(¬τ301 ∨ ⟦(= x_13 (store x_12 x_160 2))⟧) ∧\n(τ301 ∨ ¬τ300 ∨ ¬⟦(= x_13 (store x_12 x_160 2))⟧) ∧\n(¬τ302 ∨ τ301) ∧\n(¬τ302 ∨ ⟦(= x_154 (store x_141 x_144 x_160))⟧) ∧\n(τ302 ∨ ¬τ301 ∨ ¬⟦(= x_154 (store x_141 x_144 x_160))⟧) ∧\n(¬τ303 ∨ ⟦(= x_159 1)⟧) ∧\n(¬τ303 ∨ ¬⟦(<= x_144 x_142)⟧) ∧\n(τ303 ∨ ¬⟦(= x_159 1)⟧ ∨ ⟦(<= x_144 x_142)⟧) ∧\n(¬τ304 ∨ τ303) ∧\n(¬τ304 ∨ ⟦(= x_155 x_142)⟧) ∧\n(τ304 ∨ ¬τ303 ∨ ¬⟦(= x_155 x_142)⟧) ∧\n(¬τ305 ∨ τ304) ∧\n(¬τ305 ∨ ⟦(= x_156 x_143)⟧) ∧\n(τ305 ∨ ¬τ304 ∨ ¬⟦(= x_156 x_143)⟧) ∧\n(¬τ306 ∨ τ305) ∧\n(¬τ306 ∨ ⟦(= x_154 x_141)⟧) ∧\n(τ306 ∨ ¬τ305 ∨ ¬⟦(= x_154 x_141)⟧) ∧\n(¬τ307 ∨ τ306) ∧\n(¬τ307 ∨ ⟦(= x_157 x_144)⟧) ∧\n(τ307 ∨ ¬τ306 ∨ ¬⟦(= x_157 x_144)⟧) ∧\n(¬τ308 ∨ τ307) ∧\n(¬τ308 ∨ ⟦(= x_163 x_162)⟧) ∧\n(τ308 ∨ ¬τ307 ∨ ¬⟦(= x_163 x_162)⟧) ∧\n(¬τ309 ∨ τ308) ∧\n(¬τ309 ∨ ⟦(= x_296 2)⟧) ∧\n(τ309 ∨ ¬τ308 ∨ ¬⟦(= x_296 2)⟧) ∧\n(¬τ310 ∨ τ309) ∧\n(¬τ310 ∨ ⟦(= x_153 x_162)⟧) ∧\n(τ310 ∨ ¬τ309 ∨ ¬⟦(= x_153 x_162)⟧) ∧\n(¬τ311 ∨ τ310) ∧\n(¬τ311 ∨ ⟦(= x_13 (store x_12 x_162 3))⟧) ∧\n(τ311 ∨ ¬τ310 ∨ ¬⟦(= x_13 (store x_12 x_162 3))⟧) ∧\n(τ312 ∨ ¬τ302) ∧\n(τ312 ∨ ¬τ311) ∧\n(¬τ312 ∨ τ302 ∨ τ311) ∧\n(¬τ313 ∨ ⟦(= x_159 2)⟧) ∧\n(¬τ313 ∨ ¬⟦(<= x_144 x_142)⟧) ∧\n(τ313 ∨ ¬⟦(= x_159 2)⟧ ∨ ⟦(<= x_144 x_142)⟧) ∧\n(¬τ314 ∨ τ313) ∧\n(¬τ314 ∨ ⟦(= x_155 (+ x_142 1))⟧) ∧\n(τ314 ∨ ¬τ313 ∨ ¬⟦(= x_155 (+ x_142 1))⟧) ∧\n(¬τ315 ∨ τ314) ∧\n(¬τ315 ∨ ⟦(= x_156 x_143)⟧) ∧\n(τ315 ∨ ¬τ314 ∨ ¬⟦(= x_156 x_143)⟧) ∧\n(¬τ316 ∨ τ315) ∧\n(¬τ316 ∨ ⟦(= x_154 x_141)⟧) ∧\n(τ316 ∨ ¬τ315 ∨ ¬⟦(= x_154 x_141)⟧) ∧\n(¬τ317 ∨ τ316) ∧\n(¬τ317 ∨ ⟦(= x_157 x_144)⟧) ∧\n(τ317 ∨ ¬τ316 ∨ ¬⟦(= x_157 x_144)⟧) ∧\n(¬τ318 ∨ τ317) ∧\n(¬τ318 ∨ ⟦(= x_165 x_164)⟧) ∧\n(τ318 ∨ ¬τ317 ∨ ¬⟦(= x_165 x_164)⟧) ∧\n(¬τ319 ∨ τ318) ∧\n(¬τ319 ∨ ⟦(= x_297 3)⟧) ∧\n(τ319 ∨ ¬τ318 ∨ ¬⟦(= x_297 3)⟧) ∧\n(τ320 ∨ ⟦(<= x_145 12)⟧) ∧\n(τ320 ∨ ¬⟦(= x_153 x_164)⟧) ∧\n(¬τ320 ∨ ¬⟦(<= x_145 12)⟧ ∨ ⟦(= x_153 x_164)⟧) ∧\n(¬τ321 ∨ τ319) ∧\n(¬τ321 ∨ τ320) ∧\n(τ321 ∨ ¬τ319 ∨ ¬τ320) ∧\n(¬τ322 ∨ τ321) ∧\n(¬τ322 ∨ ⟦(= x_13 (store x_12 x_164 1))⟧) ∧\n(τ322 ∨ ¬τ321 ∨ ¬⟦(= x_13 (store x_12 x_164 1))⟧) ∧\n(τ323 ∨ ¬τ312) ∧\n(τ323 ∨ ¬τ322) ∧\n(¬τ323 ∨ τ312 ∨ τ322) ∧\n(¬τ324 ∨ ⟦(= x_159 3)⟧) ∧\n(¬τ324 ∨ ⟦(= x_154 x_141)⟧) ∧\n(τ324 ∨ ¬⟦(= x_159 3)⟧ ∨ ¬⟦(= x_154 x_141)⟧) ∧\n(¬τ325 ∨ τ324) ∧\n(¬τ325 ∨ ⟦(= x_155 x_142)⟧) ∧\n(τ325 ∨ ¬τ324 ∨ ¬⟦(= x_155 x_142)⟧) ∧\n(¬τ326 ∨ τ325) ∧\n(¬τ326 ∨ ⟦(= x_156 x_143)⟧) ∧\n(τ326 ∨ ¬τ325 ∨ ¬⟦(= x_156 x_143)⟧) ∧\n(¬τ327 ∨ τ326) ∧\n(¬τ327 ∨ ⟦(= x_13 x_12)⟧) ∧\n(τ327 ∨ ¬τ326 ∨ ¬⟦(= x_13 x_12)⟧) ∧\n(¬τ328 ∨ τ327) ∧\n(¬τ328 ∨ ⟦(= x_157 x_144)⟧) ∧\n(τ328 ∨ ¬τ327 ∨ ¬⟦(= x_157 x_144)⟧) ∧\n(τ329 ∨ ¬τ323) ∧\n(τ329 ∨ ¬τ328) ∧\n(¬τ329 ∨ τ323 ∨ τ328) ∧\n(¬τ330 ∨ τ295) ∧\n(¬τ330 ∨ τ329) ∧\n(τ330 ∨ ¬τ295 ∨ ¬τ329) ∧\n(¬τ331 ∨ τ330) ∧\n(¬τ331 ∨ ⟦(= x_145 (+ x_132 1))⟧) ∧\n(τ331 ∨ ¬τ330 ∨ ¬⟦(= x_145 (+ x_132 1))⟧) ∧\n(¬τ332 ∨ τ331) ∧\n(¬τ332 ∨ ⟦(= x_298 (select x_11 x_147))⟧) ∧\n(τ332 ∨ ¬τ331 ∨ ¬⟦(= x_298 (select x_11 x_147))⟧) ∧\n(¬τ333 ∨ τ332) ∧\n(¬τ333 ∨ ⟦(= x_299 (select x_11 x_149))⟧) ∧\n(τ333 ∨ ¬τ332 ∨ ¬⟦(= x_299 (select x_11 x_149))⟧) ∧\n(¬τ334 ∨ τ333) ∧\n(¬τ334 ∨ ⟦(= x_300 (select x_11 x_151))⟧) ∧\n(τ334 ∨ ¬τ333 ∨ ¬⟦(= x_300 (select x_11 x_151))⟧) ∧\n(¬τ335 ∨ ⟦(= x_146 0)⟧) ∧\n(¬τ335 ∨ ⟦(= x_144 (+ x_131 1))⟧) ∧\n(τ335 ∨ ¬⟦(= x_146 0)⟧ ∨ ¬⟦(= x_144 (+ x_131 1))⟧) ∧\n(¬τ336 ∨ τ335) ∧\n(¬τ336 ∨ ⟦(= x_142 x_129)⟧) ∧\n(τ336 ∨ ¬τ335 ∨ ¬⟦(= x_142 x_129)⟧) ∧\n(¬τ337 ∨ τ336) ∧\n(¬τ337 ∨ ⟦(= x_143 x_130)⟧) ∧\n(τ337 ∨ ¬τ336 ∨ ¬⟦(= x_143 x_130)⟧) ∧\n(¬τ338 ∨ τ337) ∧\n(¬τ338 ∨ ⟦(= x_148 x_147)⟧) ∧\n(τ338 ∨ ¬τ337 ∨ ¬⟦(= x_148 x_147)⟧) ∧\n(¬τ339 ∨ τ338) ∧\n(¬τ339 ∨ ⟦(= x_298 1)⟧) ∧\n(τ339 ∨ ¬τ338 ∨ ¬⟦(= x_298 1)⟧) ∧\n(¬τ340 ∨ τ339) ∧\n(¬τ340 ∨ ⟦(= x_12 (store x_11 x_147 2))⟧) ∧\n(τ340 ∨ ¬τ339 ∨ ¬⟦(= x_12 (store x_11 x_147 2))⟧) ∧\n(¬τ341 ∨ τ340) ∧\n(¬τ341 ∨ ⟦(= x_141 (store x_128 x_131 x_147))⟧) ∧\n(τ341 ∨ ¬τ340 ∨ ¬⟦(= x_141 (store x_128 x_131 x_147))⟧) ∧\n(¬τ342 ∨ ⟦(= x_146 1)⟧) ∧\n(¬τ342 ∨ ¬⟦(<= x_131 x_129)⟧) ∧\n(τ342 ∨ ¬⟦(= x_146 1)⟧ ∨ ⟦(<= x_131 x_129)⟧) ∧\n(¬τ343 ∨ τ342) ∧\n(¬τ343 ∨ ⟦(= x_142 x_129)⟧) ∧\n(τ343 ∨ ¬τ342 ∨ ¬⟦(= x_142 x_129)⟧) ∧\n(¬τ344 ∨ τ343) ∧\n(¬τ344 ∨ ⟦(= x_143 x_130)⟧) ∧\n(τ344 ∨ ¬τ343 ∨ ¬⟦(= x_143 x_130)⟧) ∧\n(¬τ345 ∨ τ344) ∧\n(¬τ345 ∨ ⟦(= x_141 x_128)⟧) ∧\n(τ345 ∨ ¬τ344 ∨ ¬⟦(= x_141 x_128)⟧) ∧\n(¬τ346 ∨ τ345) ∧\n(¬τ346 ∨ ⟦(= x_144 x_131)⟧) ∧\n(τ346 ∨ ¬τ345 ∨ ¬⟦(= x_144 x_131)⟧) ∧\n(¬τ347 ∨ τ346) ∧\n(¬τ347 ∨ ⟦(= x_150 x_149)⟧) ∧\n(τ347 ∨ ¬τ346 ∨ ¬⟦(= x_150 x_149)⟧) ∧\n(¬τ348 ∨ τ347) ∧\n(¬τ348 ∨ ⟦(= x_299 2)⟧) ∧\n(τ348 ∨ ¬τ347 ∨ ¬⟦(= x_299 2)⟧) ∧\n(¬τ349 ∨ τ348) ∧\n(¬τ349 ∨ ⟦(= x_140 x_149)⟧) ∧\n(τ349 ∨ ¬τ348 ∨ ¬⟦(= x_140 x_149)⟧) ∧\n(¬τ350 ∨ τ349) ∧\n(¬τ350 ∨ ⟦(= x_12 (store x_11 x_149 3))⟧) ∧\n(τ350 ∨ ¬τ349 ∨ ¬⟦(= x_12 (store x_11 x_149 3))⟧) ∧\n(τ351 ∨ ¬τ341) ∧\n(τ351 ∨ ¬τ350) ∧\n(¬τ351 ∨ τ341 ∨ τ350) ∧\n(¬τ352 ∨ ⟦(= x_146 2)⟧) ∧\n(¬τ352 ∨ ¬⟦(<= x_131 x_129)⟧) ∧\n(τ352 ∨ ¬⟦(= x_146 2)⟧ ∨ ⟦(<= x_131 x_129)⟧) ∧\n(¬τ353 ∨ τ352) ∧\n(¬τ353 ∨ ⟦(= x_142 (+ x_129 1))⟧) ∧\n(τ353 ∨ ¬τ352 ∨ ¬⟦(= x_142 (+ x_129 1))⟧) ∧\n(¬τ354 ∨ τ353) ∧\n(¬τ354 ∨ ⟦(= x_143 x_130)⟧) ∧\n(τ354 ∨ ¬τ353 ∨ ¬⟦(= x_143 x_130)⟧) ∧\n(¬τ355 ∨ τ354) ∧\n(¬τ355 ∨ ⟦(= x_141 x_128)⟧) ∧\n(τ355 ∨ ¬τ354 ∨ ¬⟦(= x_141 x_128)⟧) ∧\n(¬τ356 ∨ τ355) ∧\n(¬τ356 ∨ ⟦(= x_144 x_131)⟧) ∧\n(τ356 ∨ ¬τ355 ∨ ¬⟦(= x_144 x_131)⟧) ∧\n(¬τ357 ∨ τ356) ∧\n(¬τ357 ∨ ⟦(= x_152 x_151)⟧) ∧\n(τ357 ∨ ¬τ356 ∨ ¬⟦(= x_152 x_151)⟧) ∧\n(¬τ358 ∨ τ357) ∧\n(¬τ358 ∨ ⟦(= x_300 3)⟧) ∧\n(τ358 ∨ ¬τ357 ∨ ¬⟦(= x_300 3)⟧) ∧\n(τ359 ∨ ⟦(<= x_132 12)⟧) ∧\n(τ359 ∨ ¬⟦(= x_140 x_151)⟧) ∧\n(¬τ359 ∨ ¬⟦(<= x_132 12)⟧ ∨ ⟦(= x_140 x_151)⟧) ∧\n(¬τ360 ∨ τ358) ∧\n(¬τ360 ∨ τ359) ∧\n(τ360 ∨ ¬τ358 ∨ ¬τ359) ∧\n(¬τ361 ∨ τ360) ∧\n(¬τ361 ∨ ⟦(= x_12 (store x_11 x_151 1))⟧) ∧\n(τ361 ∨ ¬τ360 ∨ ¬⟦(= x_12 (store x_11 x_151 1))⟧) ∧\n(τ362 ∨ ¬τ351) ∧\n(τ362 ∨ ¬τ361) ∧\n(¬τ362 ∨ τ351 ∨ τ361) ∧\n(¬τ363 ∨ ⟦(= x_146 3)⟧) ∧\n(¬τ363 ∨ ⟦(= x_141 x_128)⟧) ∧\n(τ363 ∨ ¬⟦(= x_146 3)⟧ ∨ ¬⟦(= x_141 x_128)⟧) ∧\n(¬τ364 ∨ τ363) ∧\n(¬τ364 ∨ ⟦(= x_142 x_129)⟧) ∧\n(τ364 ∨ ¬τ363 ∨ ¬⟦(= x_142 x_129)⟧) ∧\n(¬τ365 ∨ τ364) ∧\n(¬τ365 ∨ ⟦(= x_143 x_130)⟧) ∧\n(τ365 ∨ ¬τ364 ∨ ¬⟦(= x_143 x_130)⟧) ∧\n(¬τ366 ∨ τ365) ∧\n(¬τ366 ∨ ⟦(= x_12 x_11)⟧) ∧\n(τ366 ∨ ¬τ365 ∨ ¬⟦(= x_12 x_11)⟧) ∧\n(¬τ367 ∨ τ366) ∧\n(¬τ367 ∨ ⟦(= x_144 x_131)⟧) ∧\n(τ367 ∨ ¬τ366 ∨ ¬⟦(= x_144 x_131)⟧) ∧\n(τ368 ∨ ¬τ362) ∧\n(τ368 ∨ ¬τ367) ∧\n(¬τ368 ∨ τ362 ∨ τ367) ∧\n(¬τ369 ∨ τ334) ∧\n(¬τ369 ∨ τ368) ∧\n(τ369 ∨ ¬τ334 ∨ ¬τ368) ∧\n(¬τ370 ∨ τ369) ∧\n(¬τ370 ∨ ⟦(= x_132 (+ x_119 1))⟧) ∧\n(τ370 ∨ ¬τ369 ∨ ¬⟦(= x_132 (+ x_119 1))⟧) ∧\n(¬τ371 ∨ τ370) ∧\n(¬τ371 ∨ ⟦(= x_301 (select x_10 x_134))⟧) ∧\n(τ371 ∨ ¬τ370 ∨ ¬⟦(= x_301 (select x_10 x_134))⟧) ∧\n(¬τ372 ∨ τ371) ∧\n(¬τ372 ∨ ⟦(= x_302 (select x_10 x_136))⟧) ∧\n(τ372 ∨ ¬τ371 ∨ ¬⟦(= x_302 (select x_10 x_136))⟧) ∧\n(¬τ373 ∨ τ372) ∧\n(¬τ373 ∨ ⟦(= x_303 (select x_10 x_138))⟧) ∧\n(τ373 ∨ ¬τ372 ∨ ¬⟦(= x_303 (select x_10 x_138))⟧) ∧\n(¬τ374 ∨ ⟦(= x_133 0)⟧) ∧\n(¬τ374 ∨ ⟦(= x_131 (+ x_118 1))⟧) ∧\n(τ374 ∨ ¬⟦(= x_133 0)⟧ ∨ ¬⟦(= x_131 (+ x_118 1))⟧) ∧\n(¬τ375 ∨ τ374) ∧\n(¬τ375 ∨ ⟦(= x_129 x_116)⟧) ∧\n(τ375 ∨ ¬τ374 ∨ ¬⟦(= x_129 x_116)⟧) ∧\n(¬τ376 ∨ τ375) ∧\n(¬τ376 ∨ ⟦(= x_130 x_117)⟧) ∧\n(τ376 ∨ ¬τ375 ∨ ¬⟦(= x_130 x_117)⟧) ∧\n(¬τ377 ∨ τ376) ∧\n(¬τ377 ∨ ⟦(= x_135 x_134)⟧) ∧\n(τ377 ∨ ¬τ376 ∨ ¬⟦(= x_135 x_134)⟧) ∧\n(¬τ378 ∨ τ377) ∧\n(¬τ378 ∨ ⟦(= x_301 1)⟧) ∧\n(τ378 ∨ ¬τ377 ∨ ¬⟦(= x_301 1)⟧) ∧\n(¬τ379 ∨ τ378) ∧\n(¬τ379 ∨ ⟦(= x_11 (store x_10 x_134 2))⟧) ∧\n(τ379 ∨ ¬τ378 ∨ ¬⟦(= x_11 (store x_10 x_134 2))⟧) ∧\n(¬τ380 ∨ τ379) ∧\n(¬τ380 ∨ ⟦(= x_128 (store x_115 x_118 x_134))⟧) ∧\n(τ380 ∨ ¬τ379 ∨ ¬⟦(= x_128 (store x_115 x_118 x_134))⟧) ∧\n(¬τ381 ∨ ⟦(= x_133 1)⟧) ∧\n(¬τ381 ∨ ¬⟦(<= x_118 x_116)⟧) ∧\n(τ381 ∨ ¬⟦(= x_133 1)⟧ ∨ ⟦(<= x_118 x_116)⟧) ∧\n(¬τ382 ∨ τ381) ∧\n(¬τ382 ∨ ⟦(= x_129 x_116)⟧) ∧\n(τ382 ∨ ¬τ381 ∨ ¬⟦(= x_129 x_116)⟧) ∧\n(¬τ383 ∨ τ382) ∧\n(¬τ383 ∨ ⟦(= x_130 x_117)⟧) ∧\n(τ383 ∨ ¬τ382 ∨ ¬⟦(= x_130 x_117)⟧) ∧\n(¬τ384 ∨ τ383) ∧\n(¬τ384 ∨ ⟦(= x_128 x_115)⟧) ∧\n(τ384 ∨ ¬τ383 ∨ ¬⟦(= x_128 x_115)⟧) ∧\n(¬τ385 ∨ τ384) ∧\n(¬τ385 ∨ ⟦(= x_131 x_118)⟧) ∧\n(τ385 ∨ ¬τ384 ∨ ¬⟦(= x_131 x_118)⟧) ∧\n(¬τ386 ∨ τ385) ∧\n(¬τ386 ∨ ⟦(= x_137 x_136)⟧) ∧\n(τ386 ∨ ¬τ385 ∨ ¬⟦(= x_137 x_136)⟧) ∧\n(¬τ387 ∨ τ386) ∧\n(¬τ387 ∨ ⟦(= x_302 2)⟧) ∧\n(τ387 ∨ ¬τ386 ∨ ¬⟦(= x_302 2)⟧) ∧\n(¬τ388 ∨ τ387) ∧\n(¬τ388 ∨ ⟦(= x_127 x_136)⟧) ∧\n(τ388 ∨ ¬τ387 ∨ ¬⟦(= x_127 x_136)⟧) ∧\n(¬τ389 ∨ τ388) ∧\n(¬τ389 ∨ ⟦(= x_11 (store x_10 x_136 3))⟧) ∧\n(τ389 ∨ ¬τ388 ∨ ¬⟦(= x_11 (store x_10 x_136 3))⟧) ∧\n(τ390 ∨ ¬τ380) ∧\n(τ390 ∨ ¬τ389) ∧\n(¬τ390 ∨ τ380 ∨ τ389) ∧\n(¬τ391 ∨ ⟦(= x_133 2)⟧) ∧\n(¬τ391 ∨ ¬⟦(<= x_118 x_116)⟧) ∧\n(τ391 ∨ ¬⟦(= x_133 2)⟧ ∨ ⟦(<= x_118 x_116)⟧) ∧\n(¬τ392 ∨ τ391) ∧\n(¬τ392 ∨ ⟦(= x_129 (+ x_116 1))⟧) ∧\n(τ392 ∨ ¬τ391 ∨ ¬⟦(= x_129 (+ x_116 1))⟧) ∧\n(¬τ393 ∨ τ392) ∧\n(¬τ393 ∨ ⟦(= x_130 x_117)⟧) ∧\n(τ393 ∨ ¬τ392 ∨ ¬⟦(= x_130 x_117)⟧) ∧\n(¬τ394 ∨ τ393) ∧\n(¬τ394 ∨ ⟦(= x_128 x_115)⟧) ∧\n(τ394 ∨ ¬τ393 ∨ ¬⟦(= x_128 x_115)⟧) ∧\n(¬τ395 ∨ τ394) ∧\n(¬τ395 ∨ ⟦(= x_131 x_118)⟧) ∧\n(τ395 ∨ ¬τ394 ∨ ¬⟦(= x_131 x_118)⟧) ∧\n(¬τ396 ∨ τ395) ∧\n(¬τ396 ∨ ⟦(= x_139 x_138)⟧) ∧\n(τ396 ∨ ¬τ395 ∨ ¬⟦(= x_139 x_138)⟧) ∧\n(¬τ397 ∨ τ396) ∧\n(¬τ397 ∨ ⟦(= x_303 3)⟧) ∧\n(τ397 ∨ ¬τ396 ∨ ¬⟦(= x_303 3)⟧) ∧\n(τ398 ∨ ⟦(<= x_119 12)⟧) ∧\n(τ398 ∨ ¬⟦(= x_127 x_138)⟧) ∧\n(¬τ398 ∨ ¬⟦(<= x_119 12)⟧ ∨ ⟦(= x_127 x_138)⟧) ∧\n(¬τ399 ∨ τ397) ∧\n(¬τ399 ∨ τ398) ∧\n(τ399 ∨ ¬τ397 ∨ ¬τ398) ∧\n(¬τ400 ∨ τ399) ∧\n(¬τ400 ∨ ⟦(= x_11 (store x_10 x_138 1))⟧) ∧\n(τ400 ∨ ¬τ399 ∨ ¬⟦(= x_11 (store x_10 x_138 1))⟧) ∧\n(τ401 ∨ ¬τ390) ∧\n(τ401 ∨ ¬τ400) ∧\n(¬τ401 ∨ τ390 ∨ τ400) ∧\n(¬τ402 ∨ ⟦(= x_133 3)⟧) ∧\n(¬τ402 ∨ ⟦(= x_128 x_115)⟧) ∧\n(τ402 ∨ ¬⟦(= x_133 3)⟧ ∨ ¬⟦(= x_128 x_115)⟧) ∧\n(¬τ403 ∨ τ402) ∧\n(¬τ403 ∨ ⟦(= x_129 x_116)⟧) ∧\n(τ403 ∨ ¬τ402 ∨ ¬⟦(= x_129 x_116)⟧) ∧\n(¬τ404 ∨ τ403) ∧\n(¬τ404 ∨ ⟦(= x_130 x_117)⟧) ∧\n(τ404 ∨ ¬τ403 ∨ ¬⟦(= x_130 x_117)⟧) ∧\n(¬τ405 ∨ τ404) ∧\n(¬τ405 ∨ ⟦(= x_11 x_10)⟧) ∧\n(τ405 ∨ ¬τ404 ∨ ¬⟦(= x_11 x_10)⟧) ∧\n(¬τ406 ∨ τ405) ∧\n(¬τ406 ∨ ⟦(= x_131 x_118)⟧) ∧\n(τ406 ∨ ¬τ405 ∨ ¬⟦(= x_131 x_118)⟧) ∧\n(τ407 ∨ ¬τ401) ∧\n(τ407 ∨ ¬τ406) ∧\n(¬τ407 ∨ τ401 ∨ τ406) ∧\n(¬τ408 ∨ τ373) ∧\n(¬τ408 ∨ τ407) ∧\n(τ408 ∨ ¬τ373 ∨ ¬τ407) ∧\n(¬τ409 ∨ τ408) ∧\n(¬τ409 ∨ ⟦(= x_119 (+ x_106 1))⟧) ∧\n(τ409 ∨ ¬τ408 ∨ ¬⟦(= x_119 (+ x_106 1))⟧) ∧\n(¬τ410 ∨ τ409) ∧\n(¬τ410 ∨ ⟦(= x_304 (select x_9 x_121))⟧) ∧\n(τ410 ∨ ¬τ409 ∨ ¬⟦(= x_304 (select x_9 x_121))⟧) ∧\n(¬τ411 ∨ τ410) ∧\n(¬τ411 ∨ ⟦(= x_305 (select x_9 x_123))⟧) ∧\n(τ411 ∨ ¬τ410 ∨ ¬⟦(= x_305 (select x_9 x_123))⟧) ∧\n(¬τ412 ∨ τ411) ∧\n(¬τ412 ∨ ⟦(= x_306 (select x_9 x_125))⟧) ∧\n(τ412 ∨ ¬τ411 ∨ ¬⟦(= x_306 (select x_9 x_125))⟧) ∧\n(¬τ413 ∨ ⟦(= x_120 0)⟧) ∧\n(¬τ413 ∨ ⟦(= x_118 (+ x_105 1))⟧) ∧\n(τ413 ∨ ¬⟦(= x_120 0)⟧ ∨ ¬⟦(= x_118 (+ x_105 1))⟧) ∧\n(¬τ414 ∨ τ413) ∧\n(¬τ414 ∨ ⟦(= x_116 x_103)⟧) ∧\n(τ414 ∨ ¬τ413 ∨ ¬⟦(= x_116 x_103)⟧) ∧\n(¬τ415 ∨ τ414) ∧\n(¬τ415 ∨ ⟦(= x_117 x_104)⟧) ∧\n(τ415 ∨ ¬τ414 ∨ ¬⟦(= x_117 x_104)⟧) ∧\n(¬τ416 ∨ τ415) ∧\n(¬τ416 ∨ ⟦(= x_122 x_121)⟧) ∧\n(τ416 ∨ ¬τ415 ∨ ¬⟦(= x_122 x_121)⟧) ∧\n(¬τ417 ∨ τ416) ∧\n(¬τ417 ∨ ⟦(= x_304 1)⟧) ∧\n(τ417 ∨ ¬τ416 ∨ ¬⟦(= x_304 1)⟧) ∧\n(¬τ418 ∨ τ417) ∧\n(¬τ418 ∨ ⟦(= x_10 (store x_9 x_121 2))⟧) ∧\n(τ418 ∨ ¬τ417 ∨ ¬⟦(= x_10 (store x_9 x_121 2))⟧) ∧\n(¬τ419 ∨ τ418) ∧\n(¬τ419 ∨ ⟦(= x_115 (store x_102 x_105 x_121))⟧) ∧\n(τ419 ∨ ¬τ418 ∨ ¬⟦(= x_115 (store x_102 x_105 x_121))⟧) ∧\n(¬τ420 ∨ ⟦(= x_120 1)⟧) ∧\n(¬τ420 ∨ ¬⟦(<= x_105 x_103)⟧) ∧\n(τ420 ∨ ¬⟦(= x_120 1)⟧ ∨ ⟦(<= x_105 x_103)⟧) ∧\n(¬τ421 ∨ τ420) ∧\n(¬τ421 ∨ ⟦(= x_116 x_103)⟧) ∧\n(τ421 ∨ ¬τ420 ∨ ¬⟦(= x_116 x_103)⟧) ∧\n(¬τ422 ∨ τ421) ∧\n(¬τ422 ∨ ⟦(= x_117 x_104)⟧) ∧\n(τ422 ∨ ¬τ421 ∨ ¬⟦(= x_117 x_104)⟧) ∧\n(¬τ423 ∨ τ422) ∧\n(¬τ423 ∨ ⟦(= x_115 x_102)⟧) ∧\n(τ423 ∨ ¬τ422 ∨ ¬⟦(= x_115 x_102)⟧) ∧\n(¬τ424 ∨ τ423) ∧\n(¬τ424 ∨ ⟦(= x_118 x_105)⟧) ∧\n(τ424 ∨ ¬τ423 ∨ ¬⟦(= x_118 x_105)⟧) ∧\n(¬τ425 ∨ τ424) ∧\n(¬τ425 ∨ ⟦(= x_124 x_123)⟧) ∧\n(τ425 ∨ ¬τ424 ∨ ¬⟦(= x_124 x_123)⟧) ∧\n(¬τ426 ∨ τ425) ∧\n(¬τ426 ∨ ⟦(= x_305 2)⟧) ∧\n(τ426 ∨ ¬τ425 ∨ ¬⟦(= x_305 2)⟧) ∧\n(¬τ427 ∨ τ426) ∧\n(¬τ427 ∨ ⟦(= x_114 x_123)⟧) ∧\n(τ427 ∨ ¬τ426 ∨ ¬⟦(= x_114 x_123)⟧) ∧\n(¬τ428 ∨ τ427) ∧\n(¬τ428 ∨ ⟦(= x_10 (store x_9 x_123 3))⟧) ∧\n(τ428 ∨ ¬τ427 ∨ ¬⟦(= x_10 (store x_9 x_123 3))⟧) ∧\n(τ429 ∨ ¬τ419) ∧\n(τ429 ∨ ¬τ428) ∧\n(¬τ429 ∨ τ419 ∨ τ428) ∧\n(¬τ430 ∨ ⟦(= x_120 2)⟧) ∧\n(¬τ430 ∨ ¬⟦(<= x_105 x_103)⟧) ∧\n(τ430 ∨ ¬⟦(= x_120 2)⟧ ∨ ⟦(<= x_105 x_103)⟧) ∧\n(¬τ431 ∨ τ430) ∧\n(¬τ431 ∨ ⟦(= x_116 (+ x_103 1))⟧) ∧\n(τ431 ∨ ¬τ430 ∨ ¬⟦(= x_116 (+ x_103 1))⟧) ∧\n(¬τ432 ∨ τ431) ∧\n(¬τ432 ∨ ⟦(= x_117 x_104)⟧) ∧\n(τ432 ∨ ¬τ431 ∨ ¬⟦(= x_117 x_104)⟧) ∧\n(¬τ433 ∨ τ432) ∧\n(¬τ433 ∨ ⟦(= x_115 x_102)⟧) ∧\n(τ433 ∨ ¬τ432 ∨ ¬⟦(= x_115 x_102)⟧) ∧\n(¬τ434 ∨ τ433) ∧\n(¬τ434 ∨ ⟦(= x_118 x_105)⟧) ∧\n(τ434 ∨ ¬τ433 ∨ ¬⟦(= x_118 x_105)⟧) ∧\n(¬τ435 ∨ τ434) ∧\n(¬τ435 ∨ ⟦(= x_126 x_125)⟧) ∧\n(τ435 ∨ ¬τ434 ∨ ¬⟦(= x_126 x_125)⟧) ∧\n(¬τ436 ∨ τ435) ∧\n(¬τ436 ∨ ⟦(= x_306 3)⟧) ∧\n(τ436 ∨ ¬τ435 ∨ ¬⟦(= x_306 3)⟧) ∧\n(τ437 ∨ ⟦(<= x_106 12)⟧) ∧\n(τ437 ∨ ¬⟦(= x_114 x_125)⟧) ∧\n(¬τ437 ∨ ¬⟦(<= x_106 12)⟧ ∨ ⟦(= x_114 x_125)⟧) ∧\n(¬τ438 ∨ τ436) ∧\n(¬τ438 ∨ τ437) ∧\n(τ438 ∨ ¬τ436 ∨ ¬τ437) ∧\n(¬τ439 ∨ τ438) ∧\n(¬τ439 ∨ ⟦(= x_10 (store x_9 x_125 1))⟧) ∧\n(τ439 ∨ ¬τ438 ∨ ¬⟦(= x_10 (store x_9 x_125 1))⟧) ∧\n(τ440 ∨ ¬τ429) ∧\n(τ440 ∨ ¬τ439) ∧\n(¬τ440 ∨ τ429 ∨ τ439) ∧\n(¬τ441 ∨ ⟦(= x_120 3)⟧) ∧\n(¬τ441 ∨ ⟦(= x_115 x_102)⟧) ∧\n(τ441 ∨ ¬⟦(= x_120 3)⟧ ∨ ¬⟦(= x_115 x_102)⟧) ∧\n(¬τ442 ∨ τ441) ∧\n(¬τ442 ∨ ⟦(= x_116 x_103)⟧) ∧\n(τ442 ∨ ¬τ441 ∨ ¬⟦(= x_116 x_103)⟧) ∧\n(¬τ443 ∨ τ442) ∧\n(¬τ443 ∨ ⟦(= x_117 x_104)⟧) ∧\n(τ443 ∨ ¬τ442 ∨ ¬⟦(= x_117 x_104)⟧) ∧\n(¬τ444 ∨ τ443) ∧\n(¬τ444 ∨ ⟦(= x_10 x_9)⟧) ∧\n(τ444 ∨ ¬τ443 ∨ ¬⟦(= x_10 x_9)⟧) ∧\n(¬τ445 ∨ τ444) ∧\n(¬τ445 ∨ ⟦(= x_118 x_105)⟧) ∧\n(τ445 ∨ ¬τ444 ∨ ¬⟦(= x_118 x_105)⟧) ∧\n(τ446 ∨ ¬τ440) ∧\n(τ446 ∨ ¬τ445) ∧\n(¬τ446 ∨ τ440 ∨ τ445) ∧\n(¬τ447 ∨ τ412) ∧\n(¬τ447 ∨ τ446) ∧\n(τ447 ∨ ¬τ412 ∨ ¬τ446) ∧\n(¬τ448 ∨ τ447) ∧\n(¬τ448 ∨ ⟦(= x_106 (+ x_93 1))⟧) ∧\n(τ448 ∨ ¬τ447 ∨ ¬⟦(= x_106 (+ x_93 1))⟧) ∧\n(¬τ449 ∨ τ448) ∧\n(¬τ449 ∨ ⟦(= x_307 (select x_8 x_108))⟧) ∧\n(τ449 ∨ ¬τ448 ∨ ¬⟦(= x_307 (select x_8 x_108))⟧) ∧\n(¬τ450 ∨ τ449) ∧\n(¬τ450 ∨ ⟦(= x_308 (select x_8 x_110))⟧) ∧\n(τ450 ∨ ¬τ449 ∨ ¬⟦(= x_308 (select x_8 x_110))⟧) ∧\n(¬τ451 ∨ τ450) ∧\n(¬τ451 ∨ ⟦(= x_309 (select x_8 x_112))⟧) ∧\n(τ451 ∨ ¬τ450 ∨ ¬⟦(= x_309 (select x_8 x_112))⟧) ∧\n(¬τ452 ∨ ⟦(= x_107 0)⟧) ∧\n(¬τ452 ∨ ⟦(= x_105 (+ x_92 1))⟧) ∧\n(τ452 ∨ ¬⟦(= x_107 0)⟧ ∨ ¬⟦(= x_105 (+ x_92 1))⟧) ∧\n(¬τ453 ∨ τ452) ∧\n(¬τ453 ∨ ⟦(= x_103 x_90)⟧) ∧\n(τ453 ∨ ¬τ452 ∨ ¬⟦(= x_103 x_90)⟧) ∧\n(¬τ454 ∨ τ453) ∧\n(¬τ454 ∨ ⟦(= x_104 x_91)⟧) ∧\n(τ454 ∨ ¬τ453 ∨ ¬⟦(= x_104 x_91)⟧) ∧\n(¬τ455 ∨ τ454) ∧\n(¬τ455 ∨ ⟦(= x_109 x_108)⟧) ∧\n(τ455 ∨ ¬τ454 ∨ ¬⟦(= x_109 x_108)⟧) ∧\n(¬τ456 ∨ τ455) ∧\n(¬τ456 ∨ ⟦(= x_307 1)⟧) ∧\n(τ456 ∨ ¬τ455 ∨ ¬⟦(= x_307 1)⟧) ∧\n(¬τ457 ∨ τ456) ∧\n(¬τ457 ∨ ⟦(= x_9 (store x_8 x_108 2))⟧) ∧\n(τ457 ∨ ¬τ456 ∨ ¬⟦(= x_9 (store x_8 x_108 2))⟧) ∧\n(¬τ458 ∨ τ457) ∧\n(¬τ458 ∨ ⟦(= x_102 (store x_89 x_92 x_108))⟧) ∧\n(τ458 ∨ ¬τ457 ∨ ¬⟦(= x_102 (store x_89 x_92 x_108))⟧) ∧\n(¬τ459 ∨ ⟦(= x_107 1)⟧) ∧\n(¬τ459 ∨ ¬⟦(<= x_92 x_90)⟧) ∧\n(τ459 ∨ ¬⟦(= x_107 1)⟧ ∨ ⟦(<= x_92 x_90)⟧) ∧\n(¬τ460 ∨ τ459) ∧\n(¬τ460 ∨ ⟦(= x_103 x_90)⟧) ∧\n(τ460 ∨ ¬τ459 ∨ ¬⟦(= x_103 x_90)⟧) ∧\n(¬τ461 ∨ τ460) ∧\n(¬τ461 ∨ ⟦(= x_104 x_91)⟧) ∧\n(τ461 ∨ ¬τ460 ∨ ¬⟦(= x_104 x_91)⟧) ∧\n(¬τ462 ∨ τ461) ∧\n(¬τ462 ∨ ⟦(= x_102 x_89)⟧) ∧\n(τ462 ∨ ¬τ461 ∨ ¬⟦(= x_102 x_89)⟧) ∧\n(¬τ463 ∨ τ462) ∧\n(¬τ463 ∨ ⟦(= x_105 x_92)⟧) ∧\n(τ463 ∨ ¬τ462 ∨ ¬⟦(= x_105 x_92)⟧) ∧\n(¬τ464 ∨ τ463) ∧\n(¬τ464 ∨ ⟦(= x_111 x_110)⟧) ∧\n(τ464 ∨ ¬τ463 ∨ ¬⟦(= x_111 x_110)⟧) ∧\n(¬τ465 ∨ τ464) ∧\n(¬τ465 ∨ ⟦(= x_308 2)⟧) ∧\n(τ465 ∨ ¬τ464 ∨ ¬⟦(= x_308 2)⟧) ∧\n(¬τ466 ∨ τ465) ∧\n(¬τ466 ∨ ⟦(= x_101 x_110)⟧) ∧\n(τ466 ∨ ¬τ465 ∨ ¬⟦(= x_101 x_110)⟧) ∧\n(¬τ467 ∨ τ466) ∧\n(¬τ467 ∨ ⟦(= x_9 (store x_8 x_110 3))⟧) ∧\n(τ467 ∨ ¬τ466 ∨ ¬⟦(= x_9 (store x_8 x_110 3))⟧) ∧\n(τ468 ∨ ¬τ458) ∧\n(τ468 ∨ ¬τ467) ∧\n(¬τ468 ∨ τ458 ∨ τ467) ∧\n(¬τ469 ∨ ⟦(= x_107 2)⟧) ∧\n(¬τ469 ∨ ¬⟦(<= x_92 x_90)⟧) ∧\n(τ469 ∨ ¬⟦(= x_107 2)⟧ ∨ ⟦(<= x_92 x_90)⟧) ∧\n(¬τ470 ∨ τ469) ∧\n(¬τ470 ∨ ⟦(= x_103 (+ x_90 1))⟧) ∧\n(τ470 ∨ ¬τ469 ∨ ¬⟦(= x_103 (+ x_90 1))⟧) ∧\n(¬τ471 ∨ τ470) ∧\n(¬τ471 ∨ ⟦(= x_104 x_91)⟧) ∧\n(τ471 ∨ ¬τ470 ∨ ¬⟦(= x_104 x_91)⟧) ∧\n(¬τ472 ∨ τ471) ∧\n(¬τ472 ∨ ⟦(= x_102 x_89)⟧) ∧\n(τ472 ∨ ¬τ471 ∨ ¬⟦(= x_102 x_89)⟧) ∧\n(¬τ473 ∨ τ472) ∧\n(¬τ473 ∨ ⟦(= x_105 x_92)⟧) ∧\n(τ473 ∨ ¬τ472 ∨ ¬⟦(= x_105 x_92)⟧) ∧\n(¬τ474 ∨ τ473) ∧\n(¬τ474 ∨ ⟦(= x_113 x_112)⟧) ∧\n(τ474 ∨ ¬τ473 ∨ ¬⟦(= x_113 x_112)⟧) ∧\n(¬τ475 ∨ τ474) ∧\n(¬τ475 ∨ ⟦(= x_309 3)⟧) ∧\n(τ475 ∨ ¬τ474 ∨ ¬⟦(= x_309 3)⟧) ∧\n(τ476 ∨ ⟦(<= x_93 12)⟧) ∧\n(τ476 ∨ ¬⟦(= x_101 x_112)⟧) ∧\n(¬τ476 ∨ ¬⟦(<= x_93 12)⟧ ∨ ⟦(= x_101 x_112)⟧) ∧\n(¬τ477 ∨ τ475) ∧\n(¬τ477 ∨ τ476) ∧\n(τ477 ∨ ¬τ475 ∨ ¬τ476) ∧\n(¬τ478 ∨ τ477) ∧\n(¬τ478 ∨ ⟦(= x_9 (store x_8 x_112 1))⟧) ∧\n(τ478 ∨ ¬τ477 ∨ ¬⟦(= x_9 (store x_8 x_112 1))⟧) ∧\n(τ479 ∨ ¬τ468) ∧\n(τ479 ∨ ¬τ478) ∧\n(¬τ479 ∨ τ468 ∨ τ478) ∧\n(¬τ480 ∨ ⟦(= x_107 3)⟧) ∧\n(¬τ480 ∨ ⟦(= x_102 x_89)⟧) ∧\n(τ480 ∨ ¬⟦(= x_107 3)⟧ ∨ ¬⟦(= x_102 x_89)⟧) ∧\n(¬τ481 ∨ τ480) ∧\n(¬τ481 ∨ ⟦(= x_103 x_90)⟧) ∧\n(τ481 ∨ ¬τ480 ∨ ¬⟦(= x_103 x_90)⟧) ∧\n(¬τ482 ∨ τ481) ∧\n(¬τ482 ∨ ⟦(= x_104 x_91)⟧) ∧\n(τ482 ∨ ¬τ481 ∨ ¬⟦(= x_104 x_91)⟧) ∧\n(¬τ483 ∨ τ482) ∧\n(¬τ483 ∨ ⟦(= x_9 x_8)⟧) ∧\n(τ483 ∨ ¬τ482 ∨ ¬⟦(= x_9 x_8)⟧) ∧\n(¬τ484 ∨ τ483) ∧\n(¬τ484 ∨ ⟦(= x_105 x_92)⟧) ∧\n(τ484 ∨ ¬τ483 ∨ ¬⟦(= x_105 x_92)⟧) ∧\n(τ485 ∨ ¬τ479) ∧\n(τ485 ∨ ¬τ484) ∧\n(¬τ485 ∨ τ479 ∨ τ484) ∧\n(¬τ486 ∨ τ451) ∧\n(¬τ486 ∨ τ485) ∧\n(τ486 ∨ ¬τ451 ∨ ¬τ485) ∧\n(¬τ487 ∨ τ486) ∧\n(¬τ487 ∨ ⟦(= x_93 (+ x_80 1))⟧) ∧\n(τ487 ∨ ¬τ486 ∨ ¬⟦(= x_93 (+ x_80 1))⟧) ∧\n(¬τ488 ∨ τ487) ∧\n(¬τ488 ∨ ⟦(= x_310 (select x_7 x_95))⟧) ∧\n(τ488 ∨ ¬τ487 ∨ ¬⟦(= x_310 (select x_7 x_95))⟧) ∧\n(¬τ489 ∨ τ488) ∧\n(¬τ489 ∨ ⟦(= x_311 (select x_7 x_97))⟧) ∧\n(τ489 ∨ ¬τ488 ∨ ¬⟦(= x_311 (select x_7 x_97))⟧) ∧\n(¬τ490 ∨ τ489) ∧\n(¬τ490 ∨ ⟦(= x_312 (select x_7 x_99))⟧) ∧\n(τ490 ∨ ¬τ489 ∨ ¬⟦(= x_312 (select x_7 x_99))⟧) ∧\n(¬τ491 ∨ ⟦(= x_94 0)⟧) ∧\n(¬τ491 ∨ ⟦(= x_92 (+ x_79 1))⟧) ∧\n(τ491 ∨ ¬⟦(= x_94 0)⟧ ∨ ¬⟦(= x_92 (+ x_79 1))⟧) ∧\n(¬τ492 ∨ τ491) ∧\n(¬τ492 ∨ ⟦(= x_90 x_77)⟧) ∧\n(τ492 ∨ ¬τ491 ∨ ¬⟦(= x_90 x_77)⟧) ∧\n(¬τ493 ∨ τ492) ∧\n(¬τ493 ∨ ⟦(= x_91 x_78)⟧) ∧\n(τ493 ∨ ¬τ492 ∨ ¬⟦(= x_91 x_78)⟧) ∧\n(¬τ494 ∨ τ493) ∧\n(¬τ494 ∨ ⟦(= x_96 x_95)⟧) ∧\n(τ494 ∨ ¬τ493 ∨ ¬⟦(= x_96 x_95)⟧) ∧\n(¬τ495 ∨ τ494) ∧\n(¬τ495 ∨ ⟦(= x_310 1)⟧) ∧\n(τ495 ∨ ¬τ494 ∨ ¬⟦(= x_310 1)⟧) ∧\n(¬τ496 ∨ τ495) ∧\n(¬τ496 ∨ ⟦(= x_8 (store x_7 x_95 2))⟧) ∧\n(τ496 ∨ ¬τ495 ∨ ¬⟦(= x_8 (store x_7 x_95 2))⟧) ∧\n(¬τ497 ∨ τ496) ∧\n(¬τ497 ∨ ⟦(= x_89 (store x_76 x_79 x_95))⟧) ∧\n(τ497 ∨ ¬τ496 ∨ ¬⟦(= x_89 (store x_76 x_79 x_95))⟧) ∧\n(¬τ498 ∨ ⟦(= x_94 1)⟧) ∧\n(¬τ498 ∨ ¬⟦(<= x_79 x_77)⟧) ∧\n(τ498 ∨ ¬⟦(= x_94 1)⟧ ∨ ⟦(<= x_79 x_77)⟧) ∧\n(¬τ499 ∨ τ498) ∧\n(¬τ499 ∨ ⟦(= x_90 x_77)⟧) ∧\n(τ499 ∨ ¬τ498 ∨ ¬⟦(= x_90 x_77)⟧) ∧\n(¬τ500 ∨ τ499) ∧\n(¬τ500 ∨ ⟦(= x_91 x_78)⟧) ∧\n(τ500 ∨ ¬τ499 ∨ ¬⟦(= x_91 x_78)⟧) ∧\n(¬τ501 ∨ τ500) ∧\n(¬τ501 ∨ ⟦(= x_89 x_76)⟧) ∧\n(τ501 ∨ ¬τ500 ∨ ¬⟦(= x_89 x_76)⟧) ∧\n(¬τ502 ∨ τ501) ∧\n(¬τ502 ∨ ⟦(= x_92 x_79)⟧) ∧\n(τ502 ∨ ¬τ501 ∨ ¬⟦(= x_92 x_79)⟧) ∧\n(¬τ503 ∨ τ502) ∧\n(¬τ503 ∨ ⟦(= x_98 x_97)⟧) ∧\n(τ503 ∨ ¬τ502 ∨ ¬⟦(= x_98 x_97)⟧) ∧\n(¬τ504 ∨ τ503) ∧\n(¬τ504 ∨ ⟦(= x_311 2)⟧) ∧\n(τ504 ∨ ¬τ503 ∨ ¬⟦(= x_311 2)⟧) ∧\n(¬τ505 ∨ τ504) ∧\n(¬τ505 ∨ ⟦(= x_88 x_97)⟧) ∧\n(τ505 ∨ ¬τ504 ∨ ¬⟦(= x_88 x_97)⟧) ∧\n(¬τ506 ∨ τ505) ∧\n(¬τ506 ∨ ⟦(= x_8 (store x_7 x_97 3))⟧) ∧\n(τ506 ∨ ¬τ505 ∨ ¬⟦(= x_8 (store x_7 x_97 3))⟧) ∧\n(τ507 ∨ ¬τ497) ∧\n(τ507 ∨ ¬τ506) ∧\n(¬τ507 ∨ τ497 ∨ τ506) ∧\n(¬τ508 ∨ ⟦(= x_94 2)⟧) ∧\n(¬τ508 ∨ ¬⟦(<= x_79 x_77)⟧) ∧\n(τ508 ∨ ¬⟦(= x_94 2)⟧ ∨ ⟦(<= x_79 x_77)⟧) ∧\n(¬τ509 ∨ τ508) ∧\n(¬τ509 ∨ ⟦(= x_90 (+ x_77 1))⟧) ∧\n(τ509 ∨ ¬τ508 ∨ ¬⟦(= x_90 (+ x_77 1))⟧) ∧\n(¬τ510 ∨ τ509) ∧\n(¬τ510 ∨ ⟦(= x_91 x_78)⟧) ∧\n(τ510 ∨ ¬τ509 ∨ ¬⟦(= x_91 x_78)⟧) ∧\n(¬τ511 ∨ τ510) ∧\n(¬τ511 ∨ ⟦(= x_89 x_76)⟧) ∧\n(τ511 ∨ ¬τ510 ∨ ¬⟦(= x_89 x_76)⟧) ∧\n(¬τ512 ∨ τ511) ∧\n(¬τ512 ∨ ⟦(= x_92 x_79)⟧) ∧\n(τ512 ∨ ¬τ511 ∨ ¬⟦(= x_92 x_79)⟧) ∧\n(¬τ513 ∨ τ512) ∧\n(¬τ513 ∨ ⟦(= x_100 x_99)⟧) ∧\n(τ513 ∨ ¬τ512 ∨ ¬⟦(= x_100 x_99)⟧) ∧\n(¬τ514 ∨ τ513) ∧\n(¬τ514 ∨ ⟦(= x_312 3)⟧) ∧\n(τ514 ∨ ¬τ513 ∨ ¬⟦(= x_312 3)⟧) ∧\n(τ515 ∨ ⟦(<= x_80 12)⟧) ∧\n(τ515 ∨ ¬⟦(= x_88 x_99)⟧) ∧\n(¬τ515 ∨ ¬⟦(<= x_80 12)⟧ ∨ ⟦(= x_88 x_99)⟧) ∧\n(¬τ516 ∨ τ514) ∧\n(¬τ516 ∨ τ515) ∧\n(τ516 ∨ ¬τ514 ∨ ¬τ515) ∧\n(¬τ517 ∨ τ516) ∧\n(¬τ517 ∨ ⟦(= x_8 (store x_7 x_99 1))⟧) ∧\n(τ517 ∨ ¬τ516 ∨ ¬⟦(= x_8 (store x_7 x_99 1))⟧) ∧\n(τ518 ∨ ¬τ507) ∧\n(τ518 ∨ ¬τ517) ∧\n(¬τ518 ∨ τ507 ∨ τ517) ∧\n(¬τ519 ∨ ⟦(= x_94 3)⟧) ∧\n(¬τ519 ∨ ⟦(= x_89 x_76)⟧) ∧\n(τ519 ∨ ¬⟦(= x_94 3)⟧ ∨ ¬⟦(= x_89 x_76)⟧) ∧\n(¬τ520 ∨ τ519) ∧\n(¬τ520 ∨ ⟦(= x_90 x_77)⟧) ∧\n(τ520 ∨ ¬τ519 ∨ ¬⟦(= x_90 x_77)⟧) ∧\n(¬τ521 ∨ τ520) ∧\n(¬τ521 ∨ ⟦(= x_91 x_78)⟧) ∧\n(τ521 ∨ ¬τ520 ∨ ¬⟦(= x_91 x_78)⟧) ∧\n(¬τ522 ∨ τ521) ∧\n(¬τ522 ∨ ⟦(= x_8 x_7)⟧) ∧\n(τ522 ∨ ¬τ521 ∨ ¬⟦(= x_8 x_7)⟧) ∧\n(¬τ523 ∨ τ522) ∧\n(¬τ523 ∨ ⟦(= x_92 x_79)⟧) ∧\n(τ523 ∨ ¬τ522 ∨ ¬⟦(= x_92 x_79)⟧) ∧\n(τ524 ∨ ¬τ518) ∧\n(τ524 ∨ ¬τ523) ∧\n(¬τ524 ∨ τ518 ∨ τ523) ∧\n(¬τ525 ∨ τ490) ∧\n(¬τ525 ∨ τ524) ∧\n(τ525 ∨ ¬τ490 ∨ ¬τ524) ∧\n(¬τ526 ∨ τ525) ∧\n(¬τ526 ∨ ⟦(= x_80 (+ x_67 1))⟧) ∧\n(τ526 ∨ ¬τ525 ∨ ¬⟦(= x_80 (+ x_67 1))⟧) ∧\n(¬τ527 ∨ τ526) ∧\n(¬τ527 ∨ ⟦(= x_313 (select x_6 x_82))⟧) ∧\n(τ527 ∨ ¬τ526 ∨ ¬⟦(= x_313 (select x_6 x_82))⟧) ∧\n(¬τ528 ∨ τ527) ∧\n(¬τ528 ∨ ⟦(= x_314 (select x_6 x_84))⟧) ∧\n(τ528 ∨ ¬τ527 ∨ ¬⟦(= x_314 (select x_6 x_84))⟧) ∧\n(¬τ529 ∨ τ528) ∧\n(¬τ529 ∨ ⟦(= x_315 (select x_6 x_86))⟧) ∧\n(τ529 ∨ ¬τ528 ∨ ¬⟦(= x_315 (select x_6 x_86))⟧) ∧\n(¬τ530 ∨ ⟦(= x_81 0)⟧) ∧\n(¬τ530 ∨ ⟦(= x_79 (+ x_66 1))⟧) ∧\n(τ530 ∨ ¬⟦(= x_81 0)⟧ ∨ ¬⟦(= x_79 (+ x_66 1))⟧) ∧\n(¬τ531 ∨ τ530) ∧\n(¬τ531 ∨ ⟦(= x_77 x_64)⟧) ∧\n(τ531 ∨ ¬τ530 ∨ ¬⟦(= x_77 x_64)⟧) ∧\n(¬τ532 ∨ τ531) ∧\n(¬τ532 ∨ ⟦(= x_78 x_65)⟧) ∧\n(τ532 ∨ ¬τ531 ∨ ¬⟦(= x_78 x_65)⟧) ∧\n(¬τ533 ∨ τ532) ∧\n(¬τ533 ∨ ⟦(= x_83 x_82)⟧) ∧\n(τ533 ∨ ¬τ532 ∨ ¬⟦(= x_83 x_82)⟧) ∧\n(¬τ534 ∨ τ533) ∧\n(¬τ534 ∨ ⟦(= x_313 1)⟧) ∧\n(τ534 ∨ ¬τ533 ∨ ¬⟦(= x_313 1)⟧) ∧\n(¬τ535 ∨ τ534) ∧\n(¬τ535 ∨ ⟦(= x_7 (store x_6 x_82 2))⟧) ∧\n(τ535 ∨ ¬τ534 ∨ ¬⟦(= x_7 (store x_6 x_82 2))⟧) ∧\n(¬τ536 ∨ τ535) ∧\n(¬τ536 ∨ ⟦(= x_76 (store x_63 x_66 x_82))⟧) ∧\n(τ536 ∨ ¬τ535 ∨ ¬⟦(= x_76 (store x_63 x_66 x_82))⟧) ∧\n(¬τ537 ∨ ⟦(= x_81 1)⟧) ∧\n(¬τ537 ∨ ¬⟦(<= x_66 x_64)⟧) ∧\n(τ537 ∨ ¬⟦(= x_81 1)⟧ ∨ ⟦(<= x_66 x_64)⟧) ∧\n(¬τ538 ∨ τ537) ∧\n(¬τ538 ∨ ⟦(= x_77 x_64)⟧) ∧\n(τ538 ∨ ¬τ537 ∨ ¬⟦(= x_77 x_64)⟧) ∧\n(¬τ539 ∨ τ538) ∧\n(¬τ539 ∨ ⟦(= x_78 x_65)⟧) ∧\n(τ539 ∨ ¬τ538 ∨ ¬⟦(= x_78 x_65)⟧) ∧\n(¬τ540 ∨ τ539) ∧\n(¬τ540 ∨ ⟦(= x_76 x_63)⟧) ∧\n(τ540 ∨ ¬τ539 ∨ ¬⟦(= x_76 x_63)⟧) ∧\n(¬τ541 ∨ τ540) ∧\n(¬τ541 ∨ ⟦(= x_79 x_66)⟧) ∧\n(τ541 ∨ ¬τ540 ∨ ¬⟦(= x_79 x_66)⟧) ∧\n(¬τ542 ∨ τ541) ∧\n(¬τ542 ∨ ⟦(= x_85 x_84)⟧) ∧\n(τ542 ∨ ¬τ541 ∨ ¬⟦(= x_85 x_84)⟧) ∧\n(¬τ543 ∨ τ542) ∧\n(¬τ543 ∨ ⟦(= x_314 2)⟧) ∧\n(τ543 ∨ ¬τ542 ∨ ¬⟦(= x_314 2)⟧) ∧\n(¬τ544 ∨ τ543) ∧\n(¬τ544 ∨ ⟦(= x_75 x_84)⟧) ∧\n(τ544 ∨ ¬τ543 ∨ ¬⟦(= x_75 x_84)⟧) ∧\n(¬τ545 ∨ τ544) ∧\n(¬τ545 ∨ ⟦(= x_7 (store x_6 x_84 3))⟧) ∧\n(τ545 ∨ ¬τ544 ∨ ¬⟦(= x_7 (store x_6 x_84 3))⟧) ∧\n(τ546 ∨ ¬τ536) ∧\n(τ546 ∨ ¬τ545) ∧\n(¬τ546 ∨ τ536 ∨ τ545) ∧\n(¬τ547 ∨ ⟦(= x_81 2)⟧) ∧\n(¬τ547 ∨ ¬⟦(<= x_66 x_64)⟧) ∧\n(τ547 ∨ ¬⟦(= x_81 2)⟧ ∨ ⟦(<= x_66 x_64)⟧) ∧\n(¬τ548 ∨ τ547) ∧\n(¬τ548 ∨ ⟦(= x_77 (+ x_64 1))⟧) ∧\n(τ548 ∨ ¬τ547 ∨ ¬⟦(= x_77 (+ x_64 1))⟧) ∧\n(¬τ549 ∨ τ548) ∧\n(¬τ549 ∨ ⟦(= x_78 x_65)⟧) ∧\n(τ549 ∨ ¬τ548 ∨ ¬⟦(= x_78 x_65)⟧) ∧\n(¬τ550 ∨ τ549) ∧\n(¬τ550 ∨ ⟦(= x_76 x_63)⟧) ∧\n(τ550 ∨ ¬τ549 ∨ ¬⟦(= x_76 x_63)⟧) ∧\n(¬τ551 ∨ τ550) ∧\n(¬τ551 ∨ ⟦(= x_79 x_66)⟧) ∧\n(τ551 ∨ ¬τ550 ∨ ¬⟦(= x_79 x_66)⟧) ∧\n(¬τ552 ∨ τ551) ∧\n(¬τ552 ∨ ⟦(= x_87 x_86)⟧) ∧\n(τ552 ∨ ¬τ551 ∨ ¬⟦(= x_87 x_86)⟧) ∧\n(¬τ553 ∨ τ552) ∧\n(¬τ553 ∨ ⟦(= x_315 3)⟧) ∧\n(τ553 ∨ ¬τ552 ∨ ¬⟦(= x_315 3)⟧) ∧\n(τ554 ∨ ⟦(<= x_67 12)⟧) ∧\n(τ554 ∨ ¬⟦(= x_75 x_86)⟧) ∧\n(¬τ554 ∨ ¬⟦(<= x_67 12)⟧ ∨ ⟦(= x_75 x_86)⟧) ∧\n(¬τ555 ∨ τ553) ∧\n(¬τ555 ∨ τ554) ∧\n(τ555 ∨ ¬τ553 ∨ ¬τ554) ∧\n(¬τ556 ∨ τ555) ∧\n(¬τ556 ∨ ⟦(= x_7 (store x_6 x_86 1))⟧) ∧\n(τ556 ∨ ¬τ555 ∨ ¬⟦(= x_7 (store x_6 x_86 1))⟧) ∧\n(τ557 ∨ ¬τ546) ∧\n(τ557 ∨ ¬τ556) ∧\n(¬τ557 ∨ τ546 ∨ τ556) ∧\n(¬τ558 ∨ ⟦(= x_81 3)⟧) ∧\n(¬τ558 ∨ ⟦(= x_76 x_63)⟧) ∧\n(τ558 ∨ ¬⟦(= x_81 3)⟧ ∨ ¬⟦(= x_76 x_63)⟧) ∧\n(¬τ559 ∨ τ558) ∧\n(¬τ559 ∨ ⟦(= x_77 x_64)⟧) ∧\n(τ559 ∨ ¬τ558 ∨ ¬⟦(= x_77 x_64)⟧) ∧\n(¬τ560 ∨ τ559) ∧\n(¬τ560 ∨ ⟦(= x_78 x_65)⟧) ∧\n(τ560 ∨ ¬τ559 ∨ ¬⟦(= x_78 x_65)⟧) ∧\n(¬τ561 ∨ τ560) ∧\n(¬τ561 ∨ ⟦(= x_7 x_6)⟧) ∧\n(τ561 ∨ ¬τ560 ∨ ¬⟦(= x_7 x_6)⟧) ∧\n(¬τ562 ∨ τ561) ∧\n(¬τ562 ∨ ⟦(= x_79 x_66)⟧) ∧\n(τ562 ∨ ¬τ561 ∨ ¬⟦(= x_79 x_66)⟧) ∧\n(τ563 ∨ ¬τ557) ∧\n(τ563 ∨ ¬τ562) ∧\n(¬τ563 ∨ τ557 ∨ τ562) ∧\n(¬τ564 ∨ τ529) ∧\n(¬τ564 ∨ τ563) ∧\n(τ564 ∨ ¬τ529 ∨ ¬τ563) ∧\n(¬τ565 ∨ τ564) ∧\n(¬τ565 ∨ ⟦(= x_67 (+ x_54 1))⟧) ∧\n(τ565 ∨ ¬τ564 ∨ ¬⟦(= x_67 (+ x_54 1))⟧) ∧\n(¬τ566 ∨ τ565) ∧\n(¬τ566 ∨ ⟦(= x_316 (select x_5 x_69))⟧) ∧\n(τ566 ∨ ¬τ565 ∨ ¬⟦(= x_316 (select x_5 x_69))⟧) ∧\n(¬τ567 ∨ τ566) ∧\n(¬τ567 ∨ ⟦(= x_317 (select x_5 x_71))⟧) ∧\n(τ567 ∨ ¬τ566 ∨ ¬⟦(= x_317 (select x_5 x_71))⟧) ∧\n(¬τ568 ∨ τ567) ∧\n(¬τ568 ∨ ⟦(= x_318 (select x_5 x_73))⟧) ∧\n(τ568 ∨ ¬τ567 ∨ ¬⟦(= x_318 (select x_5 x_73))⟧) ∧\n(¬τ569 ∨ ⟦(= x_68 0)⟧) ∧\n(¬τ569 ∨ ⟦(= x_66 (+ x_53 1))⟧) ∧\n(τ569 ∨ ¬⟦(= x_68 0)⟧ ∨ ¬⟦(= x_66 (+ x_53 1))⟧) ∧\n(¬τ570 ∨ τ569) ∧\n(¬τ570 ∨ ⟦(= x_64 x_51)⟧) ∧\n(τ570 ∨ ¬τ569 ∨ ¬⟦(= x_64 x_51)⟧) ∧\n(¬τ571 ∨ τ570) ∧\n(¬τ571 ∨ ⟦(= x_65 x_52)⟧) ∧\n(τ571 ∨ ¬τ570 ∨ ¬⟦(= x_65 x_52)⟧) ∧\n(¬τ572 ∨ τ571) ∧\n(¬τ572 ∨ ⟦(= x_70 x_69)⟧) ∧\n(τ572 ∨ ¬τ571 ∨ ¬⟦(= x_70 x_69)⟧) ∧\n(¬τ573 ∨ τ572) ∧\n(¬τ573 ∨ ⟦(= x_316 1)⟧) ∧\n(τ573 ∨ ¬τ572 ∨ ¬⟦(= x_316 1)⟧) ∧\n(¬τ574 ∨ τ573) ∧\n(¬τ574 ∨ ⟦(= x_6 (store x_5 x_69 2))⟧) ∧\n(τ574 ∨ ¬τ573 ∨ ¬⟦(= x_6 (store x_5 x_69 2))⟧) ∧\n(¬τ575 ∨ τ574) ∧\n(¬τ575 ∨ ⟦(= x_63 (store x_50 x_53 x_69))⟧) ∧\n(τ575 ∨ ¬τ574 ∨ ¬⟦(= x_63 (store x_50 x_53 x_69))⟧) ∧\n(¬τ576 ∨ ⟦(= x_68 1)⟧) ∧\n(¬τ576 ∨ ¬⟦(<= x_53 x_51)⟧) ∧\n(τ576 ∨ ¬⟦(= x_68 1)⟧ ∨ ⟦(<= x_53 x_51)⟧) ∧\n(¬τ577 ∨ τ576) ∧\n(¬τ577 ∨ ⟦(= x_64 x_51)⟧) ∧\n(τ577 ∨ ¬τ576 ∨ ¬⟦(= x_64 x_51)⟧) ∧\n(¬τ578 ∨ τ577) ∧\n(¬τ578 ∨ ⟦(= x_65 x_52)⟧) ∧\n(τ578 ∨ ¬τ577 ∨ ¬⟦(= x_65 x_52)⟧) ∧\n(¬τ579 ∨ τ578) ∧\n(¬τ579 ∨ ⟦(= x_63 x_50)⟧) ∧\n(τ579 ∨ ¬τ578 ∨ ¬⟦(= x_63 x_50)⟧) ∧\n(¬τ580 ∨ τ579) ∧\n(¬τ580 ∨ ⟦(= x_66 x_53)⟧) ∧\n(τ580 ∨ ¬τ579 ∨ ¬⟦(= x_66 x_53)⟧) ∧\n(¬τ581 ∨ τ580) ∧\n(¬τ581 ∨ ⟦(= x_72 x_71)⟧) ∧\n(τ581 ∨ ¬τ580 ∨ ¬⟦(= x_72 x_71)⟧) ∧\n(¬τ582 ∨ τ581) ∧\n(¬τ582 ∨ ⟦(= x_317 2)⟧) ∧\n(τ582 ∨ ¬τ581 ∨ ¬⟦(= x_317 2)⟧) ∧\n(¬τ583 ∨ τ582) ∧\n(¬τ583 ∨ ⟦(= x_62 x_71)⟧) ∧\n(τ583 ∨ ¬τ582 ∨ ¬⟦(= x_62 x_71)⟧) ∧\n(¬τ584 ∨ τ583) ∧\n(¬τ584 ∨ ⟦(= x_6 (store x_5 x_71 3))⟧) ∧\n(τ584 ∨ ¬τ583 ∨ ¬⟦(= x_6 (store x_5 x_71 3))⟧) ∧\n(τ585 ∨ ¬τ575) ∧\n(τ585 ∨ ¬τ584) ∧\n(¬τ585 ∨ τ575 ∨ τ584) ∧\n(¬τ586 ∨ ⟦(= x_68 2)⟧) ∧\n(¬τ586 ∨ ¬⟦(<= x_53 x_51)⟧) ∧\n(τ586 ∨ ¬⟦(= x_68 2)⟧ ∨ ⟦(<= x_53 x_51)⟧) ∧\n(¬τ587 ∨ τ586) ∧\n(¬τ587 ∨ ⟦(= x_64 (+ x_51 1))⟧) ∧\n(τ587 ∨ ¬τ586 ∨ ¬⟦(= x_64 (+ x_51 1))⟧) ∧\n(¬τ588 ∨ τ587) ∧\n(¬τ588 ∨ ⟦(= x_65 x_52)⟧) ∧\n(τ588 ∨ ¬τ587 ∨ ¬⟦(= x_65 x_52)⟧) ∧\n(¬τ589 ∨ τ588) ∧\n(¬τ589 ∨ ⟦(= x_63 x_50)⟧) ∧\n(τ589 ∨ ¬τ588 ∨ ¬⟦(= x_63 x_50)⟧) ∧\n(¬τ590 ∨ τ589) ∧\n(¬τ590 ∨ ⟦(= x_66 x_53)⟧) ∧\n(τ590 ∨ ¬τ589 ∨ ¬⟦(= x_66 x_53)⟧) ∧\n(¬τ591 ∨ τ590) ∧\n(¬τ591 ∨ ⟦(= x_74 x_73)⟧) ∧\n(τ591 ∨ ¬τ590 ∨ ¬⟦(= x_74 x_73)⟧) ∧\n(¬τ592 ∨ τ591) ∧\n(¬τ592 ∨ ⟦(= x_318 3)⟧) ∧\n(τ592 ∨ ¬τ591 ∨ ¬⟦(= x_318 3)⟧) ∧\n(τ593 ∨ ⟦(<= x_54 12)⟧) ∧\n(τ593 ∨ ¬⟦(= x_62 x_73)⟧) ∧\n(¬τ593 ∨ ¬⟦(<= x_54 12)⟧ ∨ ⟦(= x_62 x_73)⟧) ∧\n(¬τ594 ∨ τ592) ∧\n(¬τ594 ∨ τ593) ∧\n(τ594 ∨ ¬τ592 ∨ ¬τ593) ∧\n(¬τ595 ∨ τ594) ∧\n(¬τ595 ∨ ⟦(= x_6 (store x_5 x_73 1))⟧) ∧\n(τ595 ∨ ¬τ594 ∨ ¬⟦(= x_6 (store x_5 x_73 1))⟧) ∧\n(τ596 ∨ ¬τ585) ∧\n(τ596 ∨ ¬τ595) ∧\n(¬τ596 ∨ τ585 ∨ τ595) ∧\n(¬τ597 ∨ ⟦(= x_68 3)⟧) ∧\n(¬τ597 ∨ ⟦(= x_63 x_50)⟧) ∧\n(τ597 ∨ ¬⟦(= x_68 3)⟧ ∨ ¬⟦(= x_63 x_50)⟧) ∧\n(¬τ598 ∨ τ597) ∧\n(¬τ598 ∨ ⟦(= x_64 x_51)⟧) ∧\n(τ598 ∨ ¬τ597 ∨ ¬⟦(= x_64 x_51)⟧) ∧\n(¬τ599 ∨ τ598) ∧\n(¬τ599 ∨ ⟦(= x_65 x_52)⟧) ∧\n(τ599 ∨ ¬τ598 ∨ ¬⟦(= x_65 x_52)⟧) ∧\n(¬τ600 ∨ τ599) ∧\n(¬τ600 ∨ ⟦(= x_6 x_5)⟧) ∧\n(τ600 ∨ ¬τ599 ∨ ¬⟦(= x_6 x_5)⟧) ∧\n(¬τ601 ∨ τ600) ∧\n(¬τ601 ∨ ⟦(= x_66 x_53)⟧) ∧\n(τ601 ∨ ¬τ600 ∨ ¬⟦(= x_66 x_53)⟧) ∧\n(τ602 ∨ ¬τ596) ∧\n(τ602 ∨ ¬τ601) ∧\n(¬τ602 ∨ τ596 ∨ τ601) ∧\n(¬τ603 ∨ τ568) ∧\n(¬τ603 ∨ τ602) ∧\n(τ603 ∨ ¬τ568 ∨ ¬τ602) ∧\n(¬τ604 ∨ τ603) ∧\n(¬τ604 ∨ ⟦(= x_54 (+ x_41 1))⟧) ∧\n(τ604 ∨ ¬τ603 ∨ ¬⟦(= x_54 (+ x_41 1))⟧) ∧\n(¬τ605 ∨ τ604) ∧\n(¬τ605 ∨ ⟦(= x_319 (select x_4 x_56))⟧) ∧\n(τ605 ∨ ¬τ604 ∨ ¬⟦(= x_319 (select x_4 x_56))⟧) ∧\n(¬τ606 ∨ τ605) ∧\n(¬τ606 ∨ ⟦(= x_320 (select x_4 x_58))⟧) ∧\n(τ606 ∨ ¬τ605 ∨ ¬⟦(= x_320 (select x_4 x_58))⟧) ∧\n(¬τ607 ∨ τ606) ∧\n(¬τ607 ∨ ⟦(= x_321 (select x_4 x_60))⟧) ∧\n(τ607 ∨ ¬τ606 ∨ ¬⟦(= x_321 (select x_4 x_60))⟧) ∧\n(¬τ608 ∨ ⟦(= x_55 0)⟧) ∧\n(¬τ608 ∨ ⟦(= x_53 (+ x_40 1))⟧) ∧\n(τ608 ∨ ¬⟦(= x_55 0)⟧ ∨ ¬⟦(= x_53 (+ x_40 1))⟧) ∧\n(¬τ609 ∨ τ608) ∧\n(¬τ609 ∨ ⟦(= x_51 x_38)⟧) ∧\n(τ609 ∨ ¬τ608 ∨ ¬⟦(= x_51 x_38)⟧) ∧\n(¬τ610 ∨ τ609) ∧\n(¬τ610 ∨ ⟦(= x_52 x_39)⟧) ∧\n(τ610 ∨ ¬τ609 ∨ ¬⟦(= x_52 x_39)⟧) ∧\n(¬τ611 ∨ τ610) ∧\n(¬τ611 ∨ ⟦(= x_57 x_56)⟧) ∧\n(τ611 ∨ ¬τ610 ∨ ¬⟦(= x_57 x_56)⟧) ∧\n(¬τ612 ∨ τ611) ∧\n(¬τ612 ∨ ⟦(= x_319 1)⟧) ∧\n(τ612 ∨ ¬τ611 ∨ ¬⟦(= x_319 1)⟧) ∧\n(¬τ613 ∨ τ612) ∧\n(¬τ613 ∨ ⟦(= x_5 (store x_4 x_56 2))⟧) ∧\n(τ613 ∨ ¬τ612 ∨ ¬⟦(= x_5 (store x_4 x_56 2))⟧) ∧\n(¬τ614 ∨ τ613) ∧\n(¬τ614 ∨ ⟦(= x_50 (store x_37 x_40 x_56))⟧) ∧\n(τ614 ∨ ¬τ613 ∨ ¬⟦(= x_50 (store x_37 x_40 x_56))⟧) ∧\n(¬τ615 ∨ ⟦(= x_55 1)⟧) ∧\n(¬τ615 ∨ ¬⟦(<= x_40 x_38)⟧) ∧\n(τ615 ∨ ¬⟦(= x_55 1)⟧ ∨ ⟦(<= x_40 x_38)⟧) ∧\n(¬τ616 ∨ τ615) ∧\n(¬τ616 ∨ ⟦(= x_51 x_38)⟧) ∧\n(τ616 ∨ ¬τ615 ∨ ¬⟦(= x_51 x_38)⟧) ∧\n(¬τ617 ∨ τ616) ∧\n(¬τ617 ∨ ⟦(= x_52 x_39)⟧) ∧\n(τ617 ∨ ¬τ616 ∨ ¬⟦(= x_52 x_39)⟧) ∧\n(¬τ618 ∨ τ617) ∧\n(¬τ618 ∨ ⟦(= x_50 x_37)⟧) ∧\n(τ618 ∨ ¬τ617 ∨ ¬⟦(= x_50 x_37)⟧) ∧\n(¬τ619 ∨ τ618) ∧\n(¬τ619 ∨ ⟦(= x_53 x_40)⟧) ∧\n(τ619 ∨ ¬τ618 ∨ ¬⟦(= x_53 x_40)⟧) ∧\n(¬τ620 ∨ τ619) ∧\n(¬τ620 ∨ ⟦(= x_59 x_58)⟧) ∧\n(τ620 ∨ ¬τ619 ∨ ¬⟦(= x_59 x_58)⟧) ∧\n(¬τ621 ∨ τ620) ∧\n(¬τ621 ∨ ⟦(= x_320 2)⟧) ∧\n(τ621 ∨ ¬τ620 ∨ ¬⟦(= x_320 2)⟧) ∧\n(¬τ622 ∨ τ621) ∧\n(¬τ622 ∨ ⟦(= x_49 x_58)⟧) ∧\n(τ622 ∨ ¬τ621 ∨ ¬⟦(= x_49 x_58)⟧) ∧\n(¬τ623 ∨ τ622) ∧\n(¬τ623 ∨ ⟦(= x_5 (store x_4 x_58 3))⟧) ∧\n(τ623 ∨ ¬τ622 ∨ ¬⟦(= x_5 (store x_4 x_58 3))⟧) ∧\n(τ624 ∨ ¬τ614) ∧\n(τ624 ∨ ¬τ623) ∧\n(¬τ624 ∨ τ614 ∨ τ623) ∧\n(¬τ625 ∨ ⟦(= x_55 2)⟧) ∧\n(¬τ625 ∨ ¬⟦(<= x_40 x_38)⟧) ∧\n(τ625 ∨ ¬⟦(= x_55 2)⟧ ∨ ⟦(<= x_40 x_38)⟧) ∧\n(¬τ626 ∨ τ625) ∧\n(¬τ626 ∨ ⟦(= x_51 (+ x_38 1))⟧) ∧\n(τ626 ∨ ¬τ625 ∨ ¬⟦(= x_51 (+ x_38 1))⟧) ∧\n(¬τ627 ∨ τ626) ∧\n(¬τ627 ∨ ⟦(= x_52 x_39)⟧) ∧\n(τ627 ∨ ¬τ626 ∨ ¬⟦(= x_52 x_39)⟧) ∧\n(¬τ628 ∨ τ627) ∧\n(¬τ628 ∨ ⟦(= x_50 x_37)⟧) ∧\n(τ628 ∨ ¬τ627 ∨ ¬⟦(= x_50 x_37)⟧) ∧\n(¬τ629 ∨ τ628) ∧\n(¬τ629 ∨ ⟦(= x_53 x_40)⟧) ∧\n(τ629 ∨ ¬τ628 ∨ ¬⟦(= x_53 x_40)⟧) ∧\n(¬τ630 ∨ τ629) ∧\n(¬τ630 ∨ ⟦(= x_61 x_60)⟧) ∧\n(τ630 ∨ ¬τ629 ∨ ¬⟦(= x_61 x_60)⟧) ∧\n(¬τ631 ∨ τ630) ∧\n(¬τ631 ∨ ⟦(= x_321 3)⟧) ∧\n(τ631 ∨ ¬τ630 ∨ ¬⟦(= x_321 3)⟧) ∧\n(τ632 ∨ ⟦(<= x_41 12)⟧) ∧\n(τ632 ∨ ¬⟦(= x_49 x_60)⟧) ∧\n(¬τ632 ∨ ¬⟦(<= x_41 12)⟧ ∨ ⟦(= x_49 x_60)⟧) ∧\n(¬τ633 ∨ τ631) ∧\n(¬τ633 ∨ τ632) ∧\n(τ633 ∨ ¬τ631 ∨ ¬τ632) ∧\n(¬τ634 ∨ τ633) ∧\n(¬τ634 ∨ ⟦(= x_5 (store x_4 x_60 1))⟧) ∧\n(τ634 ∨ ¬τ633 ∨ ¬⟦(= x_5 (store x_4 x_60 1))⟧) ∧\n(τ635 ∨ ¬τ624) ∧\n(τ635 ∨ ¬τ634) ∧\n(¬τ635 ∨ τ624 ∨ τ634) ∧\n(¬τ636 ∨ ⟦(= x_55 3)⟧) ∧\n(¬τ636 ∨ ⟦(= x_50 x_37)⟧) ∧\n(τ636 ∨ ¬⟦(= x_55 3)⟧ ∨ ¬⟦(= x_50 x_37)⟧) ∧\n(¬τ637 ∨ τ636) ∧\n(¬τ637 ∨ ⟦(= x_51 x_38)⟧) ∧\n(τ637 ∨ ¬τ636 ∨ ¬⟦(= x_51 x_38)⟧) ∧\n(¬τ638 ∨ τ637) ∧\n(¬τ638 ∨ ⟦(= x_52 x_39)⟧) ∧\n(τ638 ∨ ¬τ637 ∨ ¬⟦(= x_52 x_39)⟧) ∧\n(¬τ639 ∨ τ638) ∧\n(¬τ639 ∨ ⟦(= x_5 x_4)⟧) ∧\n(τ639 ∨ ¬τ638 ∨ ¬⟦(= x_5 x_4)⟧) ∧\n(¬τ640 ∨ τ639) ∧\n(¬τ640 ∨ ⟦(= x_53 x_40)⟧) ∧\n(τ640 ∨ ¬τ639 ∨ ¬⟦(= x_53 x_40)⟧) ∧\n(τ641 ∨ ¬τ635) ∧\n(τ641 ∨ ¬τ640) ∧\n(¬τ641 ∨ τ635 ∨ τ640) ∧\n(¬τ642 ∨ τ607) ∧\n(¬τ642 ∨ τ641) ∧\n(τ642 ∨ ¬τ607 ∨ ¬τ641) ∧\n(¬τ643 ∨ τ642) ∧\n(¬τ643 ∨ ⟦(= x_41 (+ x_27 1))⟧) ∧\n(τ643 ∨ ¬τ642 ∨ ¬⟦(= x_41 (+ x_27 1))⟧) ∧\n(¬τ644 ∨ τ643) ∧\n(¬τ644 ∨ ⟦(= x_322 (select x_3 x_43))⟧) ∧\n(τ644 ∨ ¬τ643 ∨ ¬⟦(= x_322 (select x_3 x_43))⟧) ∧\n(¬τ645 ∨ τ644) ∧\n(¬τ645 ∨ ⟦(= x_323 (select x_3 x_45))⟧) ∧\n(τ645 ∨ ¬τ644 ∨ ¬⟦(= x_323 (select x_3 x_45))⟧) ∧\n(¬τ646 ∨ τ645) ∧\n(¬τ646 ∨ ⟦(= x_324 (select x_3 x_47))⟧) ∧\n(τ646 ∨ ¬τ645 ∨ ¬⟦(= x_324 (select x_3 x_47))⟧) ∧\n(¬τ647 ∨ ⟦(= x_42 0)⟧) ∧\n(¬τ647 ∨ ⟦(= x_40 (+ x_25 1))⟧) ∧\n(τ647 ∨ ¬⟦(= x_42 0)⟧ ∨ ¬⟦(= x_40 (+ x_25 1))⟧) ∧\n(¬τ648 ∨ τ647) ∧\n(¬τ648 ∨ ⟦(= x_38 x_22)⟧) ∧\n(τ648 ∨ ¬τ647 ∨ ¬⟦(= x_38 x_22)⟧) ∧\n(¬τ649 ∨ τ648) ∧\n(¬τ649 ∨ ⟦(= x_39 x_23)⟧) ∧\n(τ649 ∨ ¬τ648 ∨ ¬⟦(= x_39 x_23)⟧) ∧\n(¬τ650 ∨ τ649) ∧\n(¬τ650 ∨ ⟦(= x_44 x_43)⟧) ∧\n(τ650 ∨ ¬τ649 ∨ ¬⟦(= x_44 x_43)⟧) ∧\n(¬τ651 ∨ τ650) ∧\n(¬τ651 ∨ ⟦(= x_322 1)⟧) ∧\n(τ651 ∨ ¬τ650 ∨ ¬⟦(= x_322 1)⟧) ∧\n(¬τ652 ∨ τ651) ∧\n(¬τ652 ∨ ⟦(= x_4 (store x_3 x_43 2))⟧) ∧\n(τ652 ∨ ¬τ651 ∨ ¬⟦(= x_4 (store x_3 x_43 2))⟧) ∧\n(¬τ653 ∨ τ652) ∧\n(¬τ653 ∨ ⟦(= x_37 (store x_21 x_25 x_43))⟧) ∧\n(τ653 ∨ ¬τ652 ∨ ¬⟦(= x_37 (store x_21 x_25 x_43))⟧) ∧\n(¬τ654 ∨ ⟦(= x_42 1)⟧) ∧\n(¬τ654 ∨ ¬⟦(<= x_25 x_22)⟧) ∧\n(τ654 ∨ ¬⟦(= x_42 1)⟧ ∨ ⟦(<= x_25 x_22)⟧) ∧\n(¬τ655 ∨ τ654) ∧\n(¬τ655 ∨ ⟦(= x_38 x_22)⟧) ∧\n(τ655 ∨ ¬τ654 ∨ ¬⟦(= x_38 x_22)⟧) ∧\n(¬τ656 ∨ τ655) ∧\n(¬τ656 ∨ ⟦(= x_39 x_23)⟧) ∧\n(τ656 ∨ ¬τ655 ∨ ¬⟦(= x_39 x_23)⟧) ∧\n(¬τ657 ∨ τ656) ∧\n(¬τ657 ∨ ⟦(= x_37 x_21)⟧) ∧\n(τ657 ∨ ¬τ656 ∨ ¬⟦(= x_37 x_21)⟧) ∧\n(¬τ658 ∨ τ657) ∧\n(¬τ658 ∨ ⟦(= x_40 x_25)⟧) ∧\n(τ658 ∨ ¬τ657 ∨ ¬⟦(= x_40 x_25)⟧) ∧\n(¬τ659 ∨ τ658) ∧\n(¬τ659 ∨ ⟦(= x_46 x_45)⟧) ∧\n(τ659 ∨ ¬τ658 ∨ ¬⟦(= x_46 x_45)⟧) ∧\n(¬τ660 ∨ τ659) ∧\n(¬τ660 ∨ ⟦(= x_323 2)⟧) ∧\n(τ660 ∨ ¬τ659 ∨ ¬⟦(= x_323 2)⟧) ∧\n(¬τ661 ∨ τ660) ∧\n(¬τ661 ∨ ⟦(= x_36 x_45)⟧) ∧\n(τ661 ∨ ¬τ660 ∨ ¬⟦(= x_36 x_45)⟧) ∧\n(¬τ662 ∨ τ661) ∧\n(¬τ662 ∨ ⟦(= x_4 (store x_3 x_45 3))⟧) ∧\n(τ662 ∨ ¬τ661 ∨ ¬⟦(= x_4 (store x_3 x_45 3))⟧) ∧\n(τ663 ∨ ¬τ653) ∧\n(τ663 ∨ ¬τ662) ∧\n(¬τ663 ∨ τ653 ∨ τ662) ∧\n(¬τ664 ∨ ⟦(= x_42 2)⟧) ∧\n(¬τ664 ∨ ¬⟦(<= x_25 x_22)⟧) ∧\n(τ664 ∨ ¬⟦(= x_42 2)⟧ ∨ ⟦(<= x_25 x_22)⟧) ∧\n(¬τ665 ∨ τ664) ∧\n(¬τ665 ∨ ⟦(= x_38 (+ x_22 1))⟧) ∧\n(τ665 ∨ ¬τ664 ∨ ¬⟦(= x_38 (+ x_22 1))⟧) ∧\n(¬τ666 ∨ τ665) ∧\n(¬τ666 ∨ ⟦(= x_39 x_23)⟧) ∧\n(τ666 ∨ ¬τ665 ∨ ¬⟦(= x_39 x_23)⟧) ∧\n(¬τ667 ∨ τ666) ∧\n(¬τ667 ∨ ⟦(= x_37 x_21)⟧) ∧\n(τ667 ∨ ¬τ666 ∨ ¬⟦(= x_37 x_21)⟧) ∧\n(¬τ668 ∨ τ667) ∧\n(¬τ668 ∨ ⟦(= x_40 x_25)⟧) ∧\n(τ668 ∨ ¬τ667 ∨ ¬⟦(= x_40 x_25)⟧) ∧\n(¬τ669 ∨ τ668) ∧\n(¬τ669 ∨ ⟦(= x_48 x_47)⟧) ∧\n(τ669 ∨ ¬τ668 ∨ ¬⟦(= x_48 x_47)⟧) ∧\n(¬τ670 ∨ τ669) ∧\n(¬τ670 ∨ ⟦(= x_324 3)⟧) ∧\n(τ670 ∨ ¬τ669 ∨ ¬⟦(= x_324 3)⟧) ∧\n(τ671 ∨ ⟦(<= x_27 12)⟧) ∧\n(τ671 ∨ ¬⟦(= x_36 x_47)⟧) ∧\n(¬τ671 ∨ ¬⟦(<= x_27 12)⟧ ∨ ⟦(= x_36 x_47)⟧) ∧\n(¬τ672 ∨ τ670) ∧\n(¬τ672 ∨ τ671) ∧\n(τ672 ∨ ¬τ670 ∨ ¬τ671) ∧\n(¬τ673 ∨ τ672) ∧\n(¬τ673 ∨ ⟦(= x_4 (store x_3 x_47 1))⟧) ∧\n(τ673 ∨ ¬τ672 ∨ ¬⟦(= x_4 (store x_3 x_47 1))⟧) ∧\n(τ674 ∨ ¬τ663) ∧\n(τ674 ∨ ¬τ673) ∧\n(¬τ674 ∨ τ663 ∨ τ673) ∧\n(¬τ675 ∨ ⟦(= x_42 3)⟧) ∧\n(¬τ675 ∨ ⟦(= x_37 x_21)⟧) ∧\n(τ675 ∨ ¬⟦(= x_42 3)⟧ ∨ ¬⟦(= x_37 x_21)⟧) ∧\n(¬τ676 ∨ τ675) ∧\n(¬τ676 ∨ ⟦(= x_38 x_22)⟧) ∧\n(τ676 ∨ ¬τ675 ∨ ¬⟦(= x_38 x_22)⟧) ∧\n(¬τ677 ∨ τ676) ∧\n(¬τ677 ∨ ⟦(= x_39 x_23)⟧) ∧\n(τ677 ∨ ¬τ676 ∨ ¬⟦(= x_39 x_23)⟧) ∧\n(¬τ678 ∨ τ677) ∧\n(¬τ678 ∨ ⟦(= x_4 x_3)⟧) ∧\n(τ678 ∨ ¬τ677 ∨ ¬⟦(= x_4 x_3)⟧) ∧\n(¬τ679 ∨ τ678) ∧\n(¬τ679 ∨ ⟦(= x_40 x_25)⟧) ∧\n(τ679 ∨ ¬τ678 ∨ ¬⟦(= x_40 x_25)⟧) ∧\n(τ680 ∨ ¬τ674) ∧\n(τ680 ∨ ¬τ679) ∧\n(¬τ680 ∨ τ674 ∨ τ679) ∧\n(¬τ681 ∨ τ646) ∧\n(¬τ681 ∨ τ680) ∧\n(τ681 ∨ ¬τ646 ∨ ¬τ680) ∧\n(¬τ682 ∨ τ681) ∧\n(¬τ682 ∨ ⟦(= x_27 (+ x_28 1))⟧) ∧\n(τ682 ∨ ¬τ681 ∨ ¬⟦(= x_27 (+ x_28 1))⟧) ∧\n(¬τ683 ∨ τ682) ∧\n(¬τ683 ∨ ⟦(= x_325 (select x_0 x_30))⟧) ∧\n(τ683 ∨ ¬τ682 ∨ ¬⟦(= x_325 (select x_0 x_30))⟧) ∧\n(¬τ684 ∨ τ683) ∧\n(¬τ684 ∨ ⟦(= x_326 (select x_0 x_32))⟧) ∧\n(τ684 ∨ ¬τ683 ∨ ¬⟦(= x_326 (select x_0 x_32))⟧) ∧\n(¬τ685 ∨ τ684) ∧\n(¬τ685 ∨ ⟦(= x_327 (select x_0 x_34))⟧) ∧\n(τ685 ∨ ¬τ684 ∨ ¬⟦(= x_327 (select x_0 x_34))⟧) ∧\n(¬τ686 ∨ ⟦(= x_29 0)⟧) ∧\n(¬τ686 ∨ ⟦(= x_25 (+ x_26 1))⟧) ∧\n(τ686 ∨ ¬⟦(= x_29 0)⟧ ∨ ¬⟦(= x_25 (+ x_26 1))⟧) ∧\n(¬τ687 ∨ τ686) ∧\n(¬τ687 ∨ ⟦(= x_22 x_19)⟧) ∧\n(τ687 ∨ ¬τ686 ∨ ¬⟦(= x_22 x_19)⟧) ∧\n(¬τ688 ∨ τ687) ∧\n(¬τ688 ∨ ⟦(= x_23 x_24)⟧) ∧\n(τ688 ∨ ¬τ687 ∨ ¬⟦(= x_23 x_24)⟧) ∧\n(¬τ689 ∨ τ688) ∧\n(¬τ689 ∨ ⟦(= x_31 x_30)⟧) ∧\n(τ689 ∨ ¬τ688 ∨ ¬⟦(= x_31 x_30)⟧) ∧\n(¬τ690 ∨ τ689) ∧\n(¬τ690 ∨ ⟦(= x_325 1)⟧) ∧\n(τ690 ∨ ¬τ689 ∨ ¬⟦(= x_325 1)⟧) ∧\n(¬τ691 ∨ τ690) ∧\n(¬τ691 ∨ ⟦(= x_3 (store x_0 x_30 2))⟧) ∧\n(τ691 ∨ ¬τ690 ∨ ¬⟦(= x_3 (store x_0 x_30 2))⟧) ∧\n(¬τ692 ∨ τ691) ∧\n(¬τ692 ∨ ⟦(= x_21 (store x_18 x_26 x_30))⟧) ∧\n(τ692 ∨ ¬τ691 ∨ ¬⟦(= x_21 (store x_18 x_26 x_30))⟧) ∧\n(¬τ693 ∨ ⟦(= x_29 1)⟧) ∧\n(¬τ693 ∨ ¬⟦(<= x_26 x_19)⟧) ∧\n(τ693 ∨ ¬⟦(= x_29 1)⟧ ∨ ⟦(<= x_26 x_19)⟧) ∧\n(¬τ694 ∨ τ693) ∧\n(¬τ694 ∨ ⟦(= x_22 x_19)⟧) ∧\n(τ694 ∨ ¬τ693 ∨ ¬⟦(= x_22 x_19)⟧) ∧\n(¬τ695 ∨ τ694) ∧\n(¬τ695 ∨ ⟦(= x_23 x_24)⟧) ∧\n(τ695 ∨ ¬τ694 ∨ ¬⟦(= x_23 x_24)⟧) ∧\n(¬τ696 ∨ τ695) ∧\n(¬τ696 ∨ ⟦(= x_21 x_18)⟧) ∧\n(τ696 ∨ ¬τ695 ∨ ¬⟦(= x_21 x_18)⟧) ∧\n(¬τ697 ∨ τ696) ∧\n(¬τ697 ∨ ⟦(= x_25 x_26)⟧) ∧\n(τ697 ∨ ¬τ696 ∨ ¬⟦(= x_25 x_26)⟧) ∧\n(¬τ698 ∨ τ697) ∧\n(¬τ698 ∨ ⟦(= x_33 x_32)⟧) ∧\n(τ698 ∨ ¬τ697 ∨ ¬⟦(= x_33 x_32)⟧) ∧\n(¬τ699 ∨ τ698) ∧\n(¬τ699 ∨ ⟦(= x_326 2)⟧) ∧\n(τ699 ∨ ¬τ698 ∨ ¬⟦(= x_326 2)⟧) ∧\n(¬τ700 ∨ τ699) ∧\n(¬τ700 ∨ ⟦(= x_20 x_32)⟧) ∧\n(τ700 ∨ ¬τ699 ∨ ¬⟦(= x_20 x_32)⟧) ∧\n(¬τ701 ∨ τ700) ∧\n(¬τ701 ∨ ⟦(= x_3 (store x_0 x_32 3))⟧) ∧\n(τ701 ∨ ¬τ700 ∨ ¬⟦(= x_3 (store x_0 x_32 3))⟧) ∧\n(τ702 ∨ ¬τ692) ∧\n(τ702 ∨ ¬τ701) ∧\n(¬τ702 ∨ τ692 ∨ τ701) ∧\n(¬τ703 ∨ ⟦(= x_29 2)⟧) ∧\n(¬τ703 ∨ ¬⟦(<= x_26 x_19)⟧) ∧\n(τ703 ∨ ¬⟦(= x_29 2)⟧ ∨ ⟦(<= x_26 x_19)⟧) ∧\n(¬τ704 ∨ τ703) ∧\n(¬τ704 ∨ ⟦(= x_22 (+ x_19 1))⟧) ∧\n(τ704 ∨ ¬τ703 ∨ ¬⟦(= x_22 (+ x_19 1))⟧) ∧\n(¬τ705 ∨ τ704) ∧\n(¬τ705 ∨ ⟦(= x_23 x_24)⟧) ∧\n(τ705 ∨ ¬τ704 ∨ ¬⟦(= x_23 x_24)⟧) ∧\n(¬τ706 ∨ τ705) ∧\n(¬τ706 ∨ ⟦(= x_21 x_18)⟧) ∧\n(τ706 ∨ ¬τ705 ∨ ¬⟦(= x_21 x_18)⟧) ∧\n(¬τ707 ∨ τ706) ∧\n(¬τ707 ∨ ⟦(= x_25 x_26)⟧) ∧\n(τ707 ∨ ¬τ706 ∨ ¬⟦(= x_25 x_26)⟧) ∧\n(¬τ708 ∨ τ707) ∧\n(¬τ708 ∨ ⟦(= x_35 x_34)⟧) ∧\n(τ708 ∨ ¬τ707 ∨ ¬⟦(= x_35 x_34)⟧) ∧\n(¬τ709 ∨ τ708) ∧\n(¬τ709 ∨ ⟦(= x_327 3)⟧) ∧\n(τ709 ∨ ¬τ708 ∨ ¬⟦(= x_327 3)⟧) ∧\n(τ710 ∨ ⟦(<= x_28 12)⟧) ∧\n(τ710 ∨ ¬⟦(= x_20 x_34)⟧) ∧\n(¬τ710 ∨ ¬⟦(<= x_28 12)⟧ ∨ ⟦(= x_20 x_34)⟧) ∧\n(¬τ711 ∨ τ709) ∧\n(¬τ711 ∨ τ710) ∧\n(τ711 ∨ ¬τ709 ∨ ¬τ710) ∧\n(¬τ712 ∨ τ711) ∧\n(¬τ712 ∨ ⟦(= x_3 (store x_0 x_34 1))⟧) ∧\n(τ712 ∨ ¬τ711 ∨ ¬⟦(= x_3 (store x_0 x_34 1))⟧) ∧\n(τ713 ∨ ¬τ702) ∧\n(τ713 ∨ ¬τ712) ∧\n(¬τ713 ∨ τ702 ∨ τ712) ∧\n(¬τ714 ∨ ⟦(= x_29 3)⟧) ∧\n(¬τ714 ∨ ⟦(= x_21 x_18)⟧) ∧\n(τ714 ∨ ¬⟦(= x_29 3)⟧ ∨ ¬⟦(= x_21 x_18)⟧) ∧\n(¬τ715 ∨ τ714) ∧\n(¬τ715 ∨ ⟦(= x_22 x_19)⟧) ∧\n(τ715 ∨ ¬τ714 ∨ ¬⟦(= x_22 x_19)⟧) ∧\n(¬τ716 ∨ τ715) ∧\n(¬τ716 ∨ ⟦(= x_23 x_24)⟧) ∧\n(τ716 ∨ ¬τ715 ∨ ¬⟦(= x_23 x_24)⟧) ∧\n(¬τ717 ∨ τ716) ∧\n(¬τ717 ∨ ⟦(= x_3 x_0)⟧) ∧\n(τ717 ∨ ¬τ716 ∨ ¬⟦(= x_3 x_0)⟧) ∧\n(¬τ718 ∨ τ717) ∧\n(¬τ718 ∨ ⟦(= x_25 x_26)⟧) ∧\n(τ718 ∨ ¬τ717 ∨ ¬⟦(= x_25 x_26)⟧) ∧\n(τ719 ∨ ¬τ713) ∧\n(τ719 ∨ ¬τ718) ∧\n(¬τ719 ∨ τ713 ∨ τ718) ∧\n(¬τ720 ∨ τ685) ∧\n(¬τ720 ∨ τ719) ∧\n(τ720 ∨ ¬τ685 ∨ ¬τ719) ∧\n(¬τ721 ∨ τ720) ∧\n(¬τ721 ∨ ⟦(= x_328 (select x_227 x_1))⟧) ∧\n(τ721 ∨ ¬τ720 ∨ ¬⟦(= x_328 (select x_227 x_1))⟧) ∧\n(¬τ722 ∨ τ721) ∧\n(¬τ722 ∨ ⟦(= x_328 3)⟧) ∧\n(τ722 ∨ ¬τ721 ∨ ¬⟦(= x_328 3)⟧) ∧\n(¬τ723 ∨ τ722) ∧\n(¬τ723 ∨ ⟦(= x_329 (select x_227 x_2))⟧) ∧\n(τ723 ∨ ¬τ722 ∨ ¬⟦(= x_329 (select x_227 x_2))⟧) ∧\n(¬τ724 ∨ τ723) ∧\n(¬τ724 ∨ ⟦(= x_329 3)⟧) ∧\n(τ724 ∨ ¬τ723 ∨ ¬⟦(= x_329 3)⟧) ∧\n(τ724)"
+}

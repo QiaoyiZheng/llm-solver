@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "logic": "QF_ALIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "x_0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_1",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_3",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_7",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_8",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_9",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_10",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_11",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_12",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_13",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_14",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_15",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_16",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_17",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_18",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_19",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_20",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_21",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_22",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_23",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_24",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_25",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_26",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_27",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_28",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_29",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_30",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_31",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_32",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_33",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_34",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_35",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_36",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_37",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "x_38",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(<= x_32 2)⟧) ∧\n(¬τ1 ∨ ⟦(>= x_32 0)⟧) ∧\n(τ1 ∨ ¬⟦(<= x_32 2)⟧ ∨ ¬⟦(>= x_32 0)⟧) ∧\n(¬τ2 ∨ τ1) ∧\n(¬τ2 ∨ ⟦(<= x_28 2)⟧) ∧\n(τ2 ∨ ¬τ1 ∨ ¬⟦(<= x_28 2)⟧) ∧\n(¬τ3 ∨ τ2) ∧\n(¬τ3 ∨ ⟦(>= x_28 0)⟧) ∧\n(τ3 ∨ ¬τ2 ∨ ¬⟦(>= x_28 0)⟧) ∧\n(¬τ4 ∨ τ3) ∧\n(¬τ4 ∨ ⟦(<= x_24 2)⟧) ∧\n(τ4 ∨ ¬τ3 ∨ ¬⟦(<= x_24 2)⟧) ∧\n(¬τ5 ∨ τ4) ∧\n(¬τ5 ∨ ⟦(>= x_24 0)⟧) ∧\n(τ5 ∨ ¬τ4 ∨ ¬⟦(>= x_24 0)⟧) ∧\n(¬τ6 ∨ τ5) ∧\n(¬τ6 ∨ ⟦(<= x_20 2)⟧) ∧\n(τ6 ∨ ¬τ5 ∨ ¬⟦(<= x_20 2)⟧) ∧\n(¬τ7 ∨ τ6) ∧\n(¬τ7 ∨ ⟦(>= x_20 0)⟧) ∧\n(τ7 ∨ ¬τ6 ∨ ¬⟦(>= x_20 0)⟧) ∧\n(¬τ8 ∨ τ7) ∧\n(¬τ8 ∨ ⟦(<= x_16 2)⟧) ∧\n(τ8 ∨ ¬τ7 ∨ ¬⟦(<= x_16 2)⟧) ∧\n(¬τ9 ∨ τ8) ∧\n(¬τ9 ∨ ⟦(>= x_16 0)⟧) ∧\n(τ9 ∨ ¬τ8 ∨ ¬⟦(>= x_16 0)⟧) ∧\n(¬τ10 ∨ τ9) ∧\n(¬τ10 ∨ ⟦(<= x_12 2)⟧) ∧\n(τ10 ∨ ¬τ9 ∨ ¬⟦(<= x_12 2)⟧) ∧\n(¬τ11 ∨ τ10) ∧\n(¬τ11 ∨ ⟦(>= x_12 0)⟧) ∧\n(τ11 ∨ ¬τ10 ∨ ¬⟦(>= x_12 0)⟧) ∧\n(¬τ12 ∨ τ11) ∧\n(¬τ12 ∨ ⟦(<= x_5 2)⟧) ∧\n(τ12 ∨ ¬τ11 ∨ ¬⟦(<= x_5 2)⟧) ∧\n(¬τ13 ∨ τ12) ∧\n(¬τ13 ∨ ⟦(>= x_5 0)⟧) ∧\n(τ13 ∨ ¬τ12 ∨ ¬⟦(>= x_5 0)⟧) ∧\n(¬τ14 ∨ τ13) ∧\n(¬τ14 ∨ ¬⟦(< x_0 0)⟧) ∧\n(τ14 ∨ ¬τ13 ∨ ⟦(< x_0 0)⟧) ∧\n(¬τ15 ∨ τ14) ∧\n(¬τ15 ∨ ¬⟦(< x_2 0)⟧) ∧\n(τ15 ∨ ¬τ14 ∨ ⟦(< x_2 0)⟧) ∧\n(¬τ16 ∨ τ15) ∧\n(¬τ16 ∨ ¬⟦(< x_10 0)⟧) ∧\n(τ16 ∨ ¬τ15 ∨ ⟦(< x_10 0)⟧) ∧\n(¬τ17 ∨ τ16) ∧\n(¬τ17 ∨ ¬⟦(< x_13 0)⟧) ∧\n(τ17 ∨ ¬τ16 ∨ ⟦(< x_13 0)⟧) ∧\n(¬τ18 ∨ τ17) ∧\n(¬τ18 ∨ ¬⟦(< x_14 0)⟧) ∧\n(τ18 ∨ ¬τ17 ∨ ⟦(< x_14 0)⟧) ∧\n(¬τ19 ∨ τ18) ∧\n(¬τ19 ∨ ¬⟦(< x_17 0)⟧) ∧\n(τ19 ∨ ¬τ18 ∨ ⟦(< x_17 0)⟧) ∧\n(¬τ20 ∨ τ19) ∧\n(¬τ20 ∨ ¬⟦(< x_18 0)⟧) ∧\n(τ20 ∨ ¬τ19 ∨ ⟦(< x_18 0)⟧) ∧\n(¬τ21 ∨ τ20) ∧\n(¬τ21 ∨ ¬⟦(< x_21 0)⟧) ∧\n(τ21 ∨ ¬τ20 ∨ ⟦(< x_21 0)⟧) ∧\n(¬τ22 ∨ τ21) ∧\n(¬τ22 ∨ ¬⟦(< x_22 0)⟧) ∧\n(τ22 ∨ ¬τ21 ∨ ⟦(< x_22 0)⟧) ∧\n(¬τ23 ∨ τ22) ∧\n(¬τ23 ∨ ¬⟦(< x_25 0)⟧) ∧\n(τ23 ∨ ¬τ22 ∨ ⟦(< x_25 0)⟧) ∧\n(¬τ24 ∨ τ23) ∧\n(¬τ24 ∨ ¬⟦(< x_26 0)⟧) ∧\n(τ24 ∨ ¬τ23 ∨ ⟦(< x_26 0)⟧) ∧\n(¬τ25 ∨ τ24) ∧\n(¬τ25 ∨ ¬⟦(< x_29 0)⟧) ∧\n(τ25 ∨ ¬τ24 ∨ ⟦(< x_29 0)⟧) ∧\n(¬τ26 ∨ τ25) ∧\n(¬τ26 ∨ ¬⟦(< x_30 0)⟧) ∧\n(τ26 ∨ ¬τ25 ∨ ⟦(< x_30 0)⟧) ∧\n(¬τ27 ∨ τ26) ∧\n(¬τ27 ∨ ¬⟦(< x_33 0)⟧) ∧\n(τ27 ∨ ¬τ26 ∨ ⟦(< x_33 0)⟧) ∧\n(¬τ28 ∨ τ27) ∧\n(¬τ28 ∨ ⟦(= x_0 0)⟧) ∧\n(τ28 ∨ ¬τ27 ∨ ¬⟦(= x_0 0)⟧) ∧\n(¬τ29 ∨ τ28) ∧\n(¬τ29 ∨ ⟦(= x_2 0)⟧) ∧\n(τ29 ∨ ¬τ28 ∨ ¬⟦(= x_2 0)⟧) ∧\n(¬τ30 ∨ τ29) ∧\n(¬τ30 ∨ ⟦(= x_32 (ite (<= x_33 2) 1 (ite (<= x_33 5) 0 2)))⟧) ∧\n(τ30 ∨ ¬τ29 ∨ ¬⟦(= x_32 (ite (<= x_33 2) 1 (ite (<= x_33 5) 0 2)))⟧) ∧\n(¬τ31 ∨ τ30) ∧\n(¬τ31 ∨ ⟦(= x_28 (ite (<= x_29 2) 1 (ite (<= x_29 5) 0 2)))⟧) ∧\n(τ31 ∨ ¬τ30 ∨ ¬⟦(= x_28 (ite (<= x_29 2) 1 (ite (<= x_29 5) 0 2)))⟧) ∧\n(¬τ32 ∨ τ31) ∧\n(¬τ32 ∨ ⟦(= x_24 (ite (<= x_25 2) 1 (ite (<= x_25 5) 0 2)))⟧) ∧\n(τ32 ∨ ¬τ31 ∨ ¬⟦(= x_24 (ite (<= x_25 2) 1 (ite (<= x_25 5) 0 2)))⟧) ∧\n(¬τ33 ∨ τ32) ∧\n(¬τ33 ∨ ⟦(= x_20 (ite (<= x_21 2) 1 (ite (<= x_21 5) 0 2)))⟧) ∧\n(τ33 ∨ ¬τ32 ∨ ¬⟦(= x_20 (ite (<= x_21 2) 1 (ite (<= x_21 5) 0 2)))⟧) ∧\n(¬τ34 ∨ τ33) ∧\n(¬τ34 ∨ ⟦(= x_16 (ite (<= x_17 2) 1 (ite (<= x_17 5) 0 2)))⟧) ∧\n(τ34 ∨ ¬τ33 ∨ ¬⟦(= x_16 (ite (<= x_17 2) 1 (ite (<= x_17 5) 0 2)))⟧) ∧\n(¬τ35 ∨ τ34) ∧\n(¬τ35 ∨ ⟦(= x_12 (ite (<= x_13 2) 1 (ite (<= x_13 5) 0 2)))⟧) ∧\n(τ35 ∨ ¬τ34 ∨ ¬⟦(= x_12 (ite (<= x_13 2) 1 (ite (<= x_13 5) 0 2)))⟧) ∧\n(¬τ36 ∨ τ35) ∧\n(¬τ36 ∨ ⟦(= (select x_3 0) (ite (not (<= x_0 0)) (select x_1 (- x_0 1)) x_4))⟧) ∧\n(τ36 ∨ ¬τ35 ∨ ¬⟦(= (select x_3 0) (ite (not (<= x_0 0)) (select x_1 (- x_0 1)) x_4))⟧) ∧\n(¬τ37 ∨ τ36) ∧\n(¬τ37 ∨ ⟦(= x_5 (ite (<= x_2 2) 1 (ite (<= x_2 5) 0 2)))⟧) ∧\n(τ37 ∨ ¬τ36 ∨ ¬⟦(= x_5 (ite (<= x_2 2) 1 (ite (<= x_2 5) 0 2)))⟧) ∧\n(¬τ38 ∨ τ37) ∧\n(¬τ38 ∨ ⟦(= x_30 (ite (= x_28 1) (+ x_26 1) (ite (and (= x_28 0) (not (<= x_26 0))) (- x_26 1) x_26)))⟧) ∧\n(τ38 ∨ ¬τ37 ∨ ¬⟦(= x_30 (ite (= x_28 1) (+ x_26 1) (ite (and (= x_28 0) (not (<= x_26 0))) (- x_26 1) x_26)))⟧) ∧\n(¬τ39 ∨ τ38) ∧\n(¬τ39 ∨ ⟦(= x_31 (ite (= x_28 1) (store x_27 x_26 (ite (= x_29 0) x_6 (ite (= x_29 1) x_7 (ite (= x_29 2) x_8 x_9)))) x_27))⟧) ∧\n(τ39 ∨ ¬τ38 ∨ ¬⟦(= x_31 (ite (= x_28 1) (store x_27 x_26 (ite (= x_29 0) x_6 (ite (= x_29 1) x_7 (ite (= x_29 2) x_8 x_9)))) x_27))⟧) ∧\n(¬τ40 ∨ τ39) ∧\n(¬τ40 ∨ ⟦(= x_33 (+ x_29 1))⟧) ∧\n(τ40 ∨ ¬τ39 ∨ ¬⟦(= x_33 (+ x_29 1))⟧) ∧\n(¬τ41 ∨ τ40) ∧\n(¬τ41 ∨ ⟦(= x_26 (ite (= x_24 1) (+ x_22 1) (ite (and (= x_24 0) (not (<= x_22 0))) (- x_22 1) x_22)))⟧) ∧\n(τ41 ∨ ¬τ40 ∨ ¬⟦(= x_26 (ite (= x_24 1) (+ x_22 1) (ite (and (= x_24 0) (not (<= x_22 0))) (- x_22 1) x_22)))⟧) ∧\n(¬τ42 ∨ τ41) ∧\n(¬τ42 ∨ ⟦(= x_27 (ite (= x_24 1) (store x_23 x_22 (ite (= x_25 0) x_6 (ite (= x_25 1) x_7 (ite (= x_25 2) x_8 x_9)))) x_23))⟧) ∧\n(τ42 ∨ ¬τ41 ∨ ¬⟦(= x_27 (ite (= x_24 1) (store x_23 x_22 (ite (= x_25 0) x_6 (ite (= x_25 1) x_7 (ite (= x_25 2) x_8 x_9)))) x_23))⟧) ∧\n(¬τ43 ∨ τ42) ∧\n(¬τ43 ∨ ⟦(= x_29 (+ x_25 1))⟧) ∧\n(τ43 ∨ ¬τ42 ∨ ¬⟦(= x_29 (+ x_25 1))⟧) ∧\n(¬τ44 ∨ τ43) ∧\n(¬τ44 ∨ ⟦(= x_38 (store x_37 x_29 (ite (not (<= x_26 0)) (select x_27 (- x_26 1)) x_4)))⟧) ∧\n(τ44 ∨ ¬τ43 ∨ ¬⟦(= x_38 (store x_37 x_29 (ite (not (<= x_26 0)) (select x_27 (- x_26 1)) x_4)))⟧) ∧\n(¬τ45 ∨ τ44) ∧\n(¬τ45 ∨ ⟦(= x_22 (ite (= x_20 1) (+ x_18 1) (ite (and (= x_20 0) (not (<= x_18 0))) (- x_18 1) x_18)))⟧) ∧\n(τ45 ∨ ¬τ44 ∨ ¬⟦(= x_22 (ite (= x_20 1) (+ x_18 1) (ite (and (= x_20 0) (not (<= x_18 0))) (- x_18 1) x_18)))⟧) ∧\n(¬τ46 ∨ τ45) ∧\n(¬τ46 ∨ ⟦(= x_23 (ite (= x_20 1) (store x_19 x_18 (ite (= x_21 0) x_6 (ite (= x_21 1) x_7 (ite (= x_21 2) x_8 x_9)))) x_19))⟧) ∧\n(τ46 ∨ ¬τ45 ∨ ¬⟦(= x_23 (ite (= x_20 1) (store x_19 x_18 (ite (= x_21 0) x_6 (ite (= x_21 1) x_7 (ite (= x_21 2) x_8 x_9)))) x_19))⟧) ∧\n(¬τ47 ∨ τ46) ∧\n(¬τ47 ∨ ⟦(= x_25 (+ x_21 1))⟧) ∧\n(τ47 ∨ ¬τ46 ∨ ¬⟦(= x_25 (+ x_21 1))⟧) ∧\n(¬τ48 ∨ τ47) ∧\n(¬τ48 ∨ ⟦(= x_37 (store x_36 x_25 (ite (not (<= x_22 0)) (select x_23 (- x_22 1)) x_4)))⟧) ∧\n(τ48 ∨ ¬τ47 ∨ ¬⟦(= x_37 (store x_36 x_25 (ite (not (<= x_22 0)) (select x_23 (- x_22 1)) x_4)))⟧) ∧\n(¬τ49 ∨ τ48) ∧\n(¬τ49 ∨ ⟦(= x_18 (ite (= x_16 1) (+ x_14 1) (ite (and (= x_16 0) (not (<= x_14 0))) (- x_14 1) x_14)))⟧) ∧\n(τ49 ∨ ¬τ48 ∨ ¬⟦(= x_18 (ite (= x_16 1) (+ x_14 1) (ite (and (= x_16 0) (not (<= x_14 0))) (- x_14 1) x_14)))⟧) ∧\n(¬τ50 ∨ τ49) ∧\n(¬τ50 ∨ ⟦(= x_19 (ite (= x_16 1) (store x_15 x_14 (ite (= x_17 0) x_6 (ite (= x_17 1) x_7 (ite (= x_17 2) x_8 x_9)))) x_15))⟧) ∧\n(τ50 ∨ ¬τ49 ∨ ¬⟦(= x_19 (ite (= x_16 1) (store x_15 x_14 (ite (= x_17 0) x_6 (ite (= x_17 1) x_7 (ite (= x_17 2) x_8 x_9)))) x_15))⟧) ∧\n(¬τ51 ∨ τ50) ∧\n(¬τ51 ∨ ⟦(= x_21 (+ x_17 1))⟧) ∧\n(τ51 ∨ ¬τ50 ∨ ¬⟦(= x_21 (+ x_17 1))⟧) ∧\n(¬τ52 ∨ τ51) ∧\n(¬τ52 ∨ ⟦(= x_36 (store x_35 x_21 (ite (not (<= x_18 0)) (select x_19 (- x_18 1)) x_4)))⟧) ∧\n(τ52 ∨ ¬τ51 ∨ ¬⟦(= x_36 (store x_35 x_21 (ite (not (<= x_18 0)) (select x_19 (- x_18 1)) x_4)))⟧) ∧\n(¬τ53 ∨ τ52) ∧\n(¬τ53 ∨ ⟦(= x_14 (ite (= x_12 1) (+ x_10 1) (ite (and (= x_12 0) (not (<= x_10 0))) (- x_10 1) x_10)))⟧) ∧\n(τ53 ∨ ¬τ52 ∨ ¬⟦(= x_14 (ite (= x_12 1) (+ x_10 1) (ite (and (= x_12 0) (not (<= x_10 0))) (- x_10 1) x_10)))⟧) ∧\n(¬τ54 ∨ τ53) ∧\n(¬τ54 ∨ ⟦(= x_15 (ite (= x_12 1) (store x_11 x_10 (ite (= x_13 0) x_6 (ite (= x_13 1) x_7 (ite (= x_13 2) x_8 x_9)))) x_11))⟧) ∧\n(τ54 ∨ ¬τ53 ∨ ¬⟦(= x_15 (ite (= x_12 1) (store x_11 x_10 (ite (= x_13 0) x_6 (ite (= x_13 1) x_7 (ite (= x_13 2) x_8 x_9)))) x_11))⟧) ∧\n(¬τ55 ∨ τ54) ∧\n(¬τ55 ∨ ⟦(= x_17 (+ x_13 1))⟧) ∧\n(τ55 ∨ ¬τ54 ∨ ¬⟦(= x_17 (+ x_13 1))⟧) ∧\n(¬τ56 ∨ τ55) ∧\n(¬τ56 ∨ ⟦(= x_35 (store x_34 x_17 (ite (not (<= x_14 0)) (select x_15 (- x_14 1)) x_4)))⟧) ∧\n(τ56 ∨ ¬τ55 ∨ ¬⟦(= x_35 (store x_34 x_17 (ite (not (<= x_14 0)) (select x_15 (- x_14 1)) x_4)))⟧) ∧\n(¬τ57 ∨ τ56) ∧\n(¬τ57 ∨ ⟦(= x_10 (ite (= x_5 1) (+ x_0 1) (ite (and (= x_5 0) (not (<= x_0 0))) (- x_0 1) x_0)))⟧) ∧\n(τ57 ∨ ¬τ56 ∨ ¬⟦(= x_10 (ite (= x_5 1) (+ x_0 1) (ite (and (= x_5 0) (not (<= x_0 0))) (- x_0 1) x_0)))⟧) ∧\n(¬τ58 ∨ τ57) ∧\n(¬τ58 ∨ ⟦(= x_11 (ite (= x_5 1) (store x_1 x_0 (ite (= x_2 0) x_6 (ite (= x_2 1) x_7 (ite (= x_2 2) x_8 x_9)))) x_1))⟧) ∧\n(τ58 ∨ ¬τ57 ∨ ¬⟦(= x_11 (ite (= x_5 1) (store x_1 x_0 (ite (= x_2 0) x_6 (ite (= x_2 1) x_7 (ite (= x_2 2) x_8 x_9)))) x_1))⟧) ∧\n(¬τ59 ∨ τ58) ∧\n(¬τ59 ∨ ⟦(= x_13 (+ x_2 1))⟧) ∧\n(τ59 ∨ ¬τ58 ∨ ¬⟦(= x_13 (+ x_2 1))⟧) ∧\n(¬τ60 ∨ τ59) ∧\n(¬τ60 ∨ ⟦(= x_34 (store x_3 x_13 (ite (not (<= x_10 0)) (select x_11 (- x_10 1)) x_4)))⟧) ∧\n(τ60 ∨ ¬τ59 ∨ ¬⟦(= x_34 (store x_3 x_13 (ite (not (<= x_10 0)) (select x_11 (- x_10 1)) x_4)))⟧) ∧\n(τ61 ∨ ⟦(= (select (store x_38 x_33 (ite (not (<= x_30 0)) (select x_31 (- x_30 1)) x_4)) 3) x_6)⟧) ∧\n(τ61 ∨ ⟦(= (select (store x_38 x_33 (ite (not (<= x_30 0)) (select x_31 (- x_30 1)) x_4)) 4) x_7)⟧) ∧\n(¬τ61 ∨ ¬⟦(= (select (store x_38 x_33 (ite (not (<= x_30 0)) (select x_31 (- x_30 1)) x_4)) 3) x_6)⟧ ∨ ¬⟦(= (select (store x_38 x_33 (ite (not (<= x_30 0)) (select x_31 (- x_30 1)) x_4)) 4) x_7)⟧) ∧\n(τ62 ∨ ¬τ61) ∧\n(τ62 ∨ ⟦(= (select (store x_38 x_33 (ite (not (<= x_30 0)) (select x_31 (- x_30 1)) x_4)) 5) x_8)⟧) ∧\n(¬τ62 ∨ τ61 ∨ ¬⟦(= (select (store x_38 x_33 (ite (not (<= x_30 0)) (select x_31 (- x_30 1)) x_4)) 5) x_8)⟧) ∧\n(¬τ63 ∨ ¬⟦(< x_33 6)⟧) ∧\n(¬τ63 ∨ τ62) ∧\n(τ63 ∨ ⟦(< x_33 6)⟧ ∨ ¬τ62) ∧\n(τ64 ∨ ⟦(= (select x_38 3) x_6)⟧) ∧\n(τ64 ∨ ⟦(= (select x_38 4) x_7)⟧) ∧\n(¬τ64 ∨ ¬⟦(= (select x_38 3) x_6)⟧ ∨ ¬⟦(= (select x_38 4) x_7)⟧) ∧\n(τ65 ∨ ¬τ64) ∧\n(τ65 ∨ ⟦(= (select x_38 5) x_8)⟧) ∧\n(¬τ65 ∨ τ64 ∨ ¬⟦(= (select x_38 5) x_8)⟧) ∧\n(¬τ66 ∨ ¬⟦(< x_29 6)⟧) ∧\n(¬τ66 ∨ τ65) ∧\n(τ66 ∨ ⟦(< x_29 6)⟧ ∨ ¬τ65) ∧\n(τ67 ∨ ¬τ63) ∧\n(τ67 ∨ ¬τ66) ∧\n(¬τ67 ∨ τ63 ∨ τ66) ∧\n(τ68 ∨ ⟦(= (select x_37 3) x_6)⟧) ∧\n(τ68 ∨ ⟦(= (select x_37 4) x_7)⟧) ∧\n(¬τ68 ∨ ¬⟦(= (select x_37 3) x_6)⟧ ∨ ¬⟦(= (select x_37 4) x_7)⟧) ∧\n(τ69 ∨ ¬τ68) ∧\n(τ69 ∨ ⟦(= (select x_37 5) x_8)⟧) ∧\n(¬τ69 ∨ τ68 ∨ ¬⟦(= (select x_37 5) x_8)⟧) ∧\n(¬τ70 ∨ ¬⟦(< x_25 6)⟧) ∧\n(¬τ70 ∨ τ69) ∧\n(τ70 ∨ ⟦(< x_25 6)⟧ ∨ ¬τ69) ∧\n(τ71 ∨ ¬τ67) ∧\n(τ71 ∨ ¬τ70) ∧\n(¬τ71 ∨ τ67 ∨ τ70) ∧\n(τ72 ∨ ⟦(= (select x_36 3) x_6)⟧) ∧\n(τ72 ∨ ⟦(= (select x_36 4) x_7)⟧) ∧\n(¬τ72 ∨ ¬⟦(= (select x_36 3) x_6)⟧ ∨ ¬⟦(= (select x_36 4) x_7)⟧) ∧\n(τ73 ∨ ¬τ72) ∧\n(τ73 ∨ ⟦(= (select x_36 5) x_8)⟧) ∧\n(¬τ73 ∨ τ72 ∨ ¬⟦(= (select x_36 5) x_8)⟧) ∧\n(¬τ74 ∨ ¬⟦(< x_21 6)⟧) ∧\n(¬τ74 ∨ τ73) ∧\n(τ74 ∨ ⟦(< x_21 6)⟧ ∨ ¬τ73) ∧\n(τ75 ∨ ¬τ71) ∧\n(τ75 ∨ ¬τ74) ∧\n(¬τ75 ∨ τ71 ∨ τ74) ∧\n(τ76 ∨ ⟦(= (select x_35 3) x_6)⟧) ∧\n(τ76 ∨ ⟦(= (select x_35 4) x_7)⟧) ∧\n(¬τ76 ∨ ¬⟦(= (select x_35 3) x_6)⟧ ∨ ¬⟦(= (select x_35 4) x_7)⟧) ∧\n(τ77 ∨ ¬τ76) ∧\n(τ77 ∨ ⟦(= (select x_35 5) x_8)⟧) ∧\n(¬τ77 ∨ τ76 ∨ ¬⟦(= (select x_35 5) x_8)⟧) ∧\n(¬τ78 ∨ ¬⟦(< x_17 6)⟧) ∧\n(¬τ78 ∨ τ77) ∧\n(τ78 ∨ ⟦(< x_17 6)⟧ ∨ ¬τ77) ∧\n(τ79 ∨ ¬τ75) ∧\n(τ79 ∨ ¬τ78) ∧\n(¬τ79 ∨ τ75 ∨ τ78) ∧\n(τ80 ∨ ⟦(= (select x_34 3) x_6)⟧) ∧\n(τ80 ∨ ⟦(= (select x_34 4) x_7)⟧) ∧\n(¬τ80 ∨ ¬⟦(= (select x_34 3) x_6)⟧ ∨ ¬⟦(= (select x_34 4) x_7)⟧) ∧\n(τ81 ∨ ¬τ80) ∧\n(τ81 ∨ ⟦(= (select x_34 5) x_8)⟧) ∧\n(¬τ81 ∨ τ80 ∨ ¬⟦(= (select x_34 5) x_8)⟧) ∧\n(¬τ82 ∨ ¬⟦(< x_13 6)⟧) ∧\n(¬τ82 ∨ τ81) ∧\n(τ82 ∨ ⟦(< x_13 6)⟧ ∨ ¬τ81) ∧\n(τ83 ∨ ¬τ79) ∧\n(τ83 ∨ ¬τ82) ∧\n(¬τ83 ∨ τ79 ∨ τ82) ∧\n(τ84 ∨ ⟦(= (select x_3 3) x_6)⟧) ∧\n(τ84 ∨ ⟦(= (select x_3 4) x_7)⟧) ∧\n(¬τ84 ∨ ¬⟦(= (select x_3 3) x_6)⟧ ∨ ¬⟦(= (select x_3 4) x_7)⟧) ∧\n(τ85 ∨ ¬τ84) ∧\n(τ85 ∨ ⟦(= (select x_3 5) x_8)⟧) ∧\n(¬τ85 ∨ τ84 ∨ ¬⟦(= (select x_3 5) x_8)⟧) ∧\n(¬τ86 ∨ ¬⟦(< x_2 6)⟧) ∧\n(¬τ86 ∨ τ85) ∧\n(τ86 ∨ ⟦(< x_2 6)⟧ ∨ ¬τ85) ∧\n(τ87 ∨ ¬τ83) ∧\n(τ87 ∨ ¬τ86) ∧\n(¬τ87 ∨ τ83 ∨ τ86) ∧\n(¬τ88 ∨ τ60) ∧\n(¬τ88 ∨ τ87) ∧\n(τ88 ∨ ¬τ60 ∨ ¬τ87) ∧\n(τ88)"
+}

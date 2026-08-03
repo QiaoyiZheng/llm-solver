@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "logic": "QF_S",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "X",
+      "parameter_sorts": [],
+      "return_sort": "String"
+    }
+  ],
+  "cnf": "(⟦(str.in_re X (re.++ (re.opt (str.to_re \"F-\")) (re.union (re.++ (str.to_re \"2\") (re.union (str.to_re \"A\") (str.to_re \"|\") (str.to_re \"B\"))) ((_ re.loop 2 2) (re.range \"0\" \"9\"))) ((_ re.loop 3 3) (re.range \"0\" \"9\")) (str.to_re \"\\u{a}\")))⟧) ∧\n(⟦(str.in_re X (re.++ (str.to_re \"Spy\") (re.range \"0\" \"9\") (str.to_re \"ccecaedbebfcaf.com\\u{a}\")))⟧) ∧\n(⟦(str.in_re X (str.to_re \"SpyBuddyZOMBIES_HTTP_GETearch.earthlink\\u{a}\"))⟧) ∧\n(¬⟦(str.in_re X (re.++ (str.to_re \"/.mov\") (re.union (str.to_re \"?\") (str.to_re \"\\u{5c}\") (str.to_re \"/\")) (str.to_re \"/smiU\\u{a}\")))⟧) ∧\n(¬⟦(str.in_re X (re.++ (re.* (re.++ (re.* (re.union (str.to_re \" \") (str.to_re \"\\u{9}\") (str.to_re \"\\u{a}\") (str.to_re \"\\u{c}\") (str.to_re \"\\u{d}\"))) (re.+ (re.union (str.to_re \",\") (str.to_re \";\"))) (re.* (re.union (str.to_re \" \") (str.to_re \"\\u{9}\") (str.to_re \"\\u{a}\") (str.to_re \"\\u{c}\") (str.to_re \"\\u{d}\"))) (re.union (re.++ (str.to_re \"25\") (re.range \"0\" \"5\")) (re.++ (str.to_re \"2\") (re.range \"0\" \"4\") (re.range \"0\" \"9\")) (re.++ (re.opt (re.union (str.to_re \"0\") (str.to_re \"1\"))) (re.range \"0\" \"9\") (re.opt (re.range \"0\" \"9\")))) (str.to_re \".\") (re.union (re.++ (str.to_re \"25\") (re.range \"0\" \"5\")) (re.++ (str.to_re \"2\") (re.range \"0\" \"4\") (re.range \"0\" \"9\")) (re.++ (re.opt (re.union (str.to_re \"0\") (str.to_re \"1\"))) (re.range \"0\" \"9\") (re.opt (re.range \"0\" \"9\")))) (str.to_re \".\") (re.union (re.++ (str.to_re \"25\") (re.range \"0\" \"5\")) (re.++ (str.to_re \"2\") (re.range \"0\" \"4\") (re.range \"0\" \"9\")) (re.++ (re.opt (re.union (str.to_re \"0\") (str.to_re \"1\"))) (re.range \"0\" \"9\") (re.opt (re.range \"0\" \"9\")))) (str.to_re \".\") (re.union (re.++ (str.to_re \"25\") (re.range \"0\" \"5\")) (re.++ (str.to_re \"2\") (re.range \"0\" \"4\") (re.range \"0\" \"9\")) (re.++ (re.opt (re.union (str.to_re \"0\") (str.to_re \"1\"))) (re.range \"0\" \"9\") (re.opt (re.range \"0\" \"9\")))))) (str.to_re \"\\u{a}\")))⟧)"
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "logic": "QF_NIRA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "|#NULL.offset_-1|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|#NULL.base_-1|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|old(#NULL.offset)_0|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|old(#NULL.base)_0|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|#NULL.offset_0|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|#NULL.base_0|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|#NULL.offset_1|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|#NULL.base_1|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|main_#t~union1_3|",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "main_~var~4.y_4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "main_~var~4.z_4",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|__VERIFIER_assert_#in~cond_5|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "__VERIFIER_assert_~cond_6",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(⟦(<= |#NULL.offset_0| |old(#NULL.offset)_0|)⟧) ∧\n(⟦(>= |#NULL.offset_0| |old(#NULL.offset)_0|)⟧) ∧\n(⟦(<= |#NULL.base_0| |old(#NULL.base)_0|)⟧) ∧\n(⟦(>= |#NULL.base_0| |old(#NULL.base)_0|)⟧) ∧\n(⟦(<= |old(#NULL.offset)_0| |#NULL.offset_-1|)⟧) ∧\n(⟦(>= |old(#NULL.offset)_0| |#NULL.offset_-1|)⟧) ∧\n(⟦(<= |old(#NULL.base)_0| |#NULL.base_-1|)⟧) ∧\n(⟦(>= |old(#NULL.base)_0| |#NULL.base_-1|)⟧) ∧\n(⟦(<= |#NULL.base_1| 0)⟧) ∧\n(⟦(>= |#NULL.base_1| 0)⟧) ∧\n(⟦(<= |#NULL.offset_1| 0)⟧) ∧\n(⟦(>= |#NULL.offset_1| 0)⟧) ∧\n(⟦(<= main_~var~4.y_4 10)⟧) ∧\n(⟦(>= main_~var~4.y_4 10)⟧) ∧\n(⟦(<= main_~var~4.z_4 |main_#t~union1_3|)⟧) ∧\n(⟦(>= main_~var~4.z_4 |main_#t~union1_3|)⟧) ∧\n(⟦(<= |__VERIFIER_assert_#in~cond_5| (ite (= (mod main_~var~4.y_4 4294967296) (mod 10 4294967296)) 1 0))⟧) ∧\n(⟦(>= |__VERIFIER_assert_#in~cond_5| (ite (= (mod main_~var~4.y_4 4294967296) (mod 10 4294967296)) 1 0))⟧) ∧\n(⟦(<= __VERIFIER_assert_~cond_6 |__VERIFIER_assert_#in~cond_5|)⟧) ∧\n(⟦(>= __VERIFIER_assert_~cond_6 |__VERIFIER_assert_#in~cond_5|)⟧) ∧\n(⟦(<= __VERIFIER_assert_~cond_6 0)⟧) ∧\n(⟦(>= __VERIFIER_assert_~cond_6 0)⟧)"
+}

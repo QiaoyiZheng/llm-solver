@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "logic": "QF_AUFLIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "a_435",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_437",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_439",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_441",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_443",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_445",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_447",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_448",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_450",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_452",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_454",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_455",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_456",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_457",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_459",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_461",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_463",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_465",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_467",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_468",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_470",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_472",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_474",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_476",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_434",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_436",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_438",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_440",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_442",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_444",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_446",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_449",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_451",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_453",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_458",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_460",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_462",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_464",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_466",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_469",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_471",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_473",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_475",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_478",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_479",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i_477",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a1",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i3",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "function",
+      "symbol": "sk",
+      "parameter_sorts": [
+        "(Array Int Int)",
+        "(Array Int Int)"
+      ],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(⟦(= a_435 (store a1 i1 e_434))⟧) ∧\n(⟦(= a_437 (store a_435 i4 e_436))⟧) ∧\n(⟦(= a_439 (store a_437 i3 e_438))⟧) ∧\n(⟦(= a_441 (store a_439 i1 e_440))⟧) ∧\n(⟦(= a_443 (store a_441 i1 e_442))⟧) ∧\n(⟦(= a_445 (store a_443 i4 e_444))⟧) ∧\n(⟦(= a_447 (store a_445 i2 e_446))⟧) ∧\n(⟦(= a_448 (store a_447 i2 e_446))⟧) ∧\n(⟦(= a_450 (store a_448 i3 e_449))⟧) ∧\n(⟦(= a_452 (store a_450 i5 e_451))⟧) ∧\n(⟦(= a_454 (store a_452 i4 e_453))⟧) ∧\n(⟦(= a_455 (store a_454 i4 e_453))⟧) ∧\n(⟦(= a_456 (store a1 i4 e_436))⟧) ∧\n(⟦(= a_457 (store a_456 i1 e_434))⟧) ∧\n(⟦(= a_459 (store a_457 i3 e_458))⟧) ∧\n(⟦(= a_461 (store a_459 i1 e_460))⟧) ∧\n(⟦(= a_463 (store a_461 i1 e_462))⟧) ∧\n(⟦(= a_465 (store a_463 i4 e_464))⟧) ∧\n(⟦(= a_467 (store a_465 i2 e_466))⟧) ∧\n(⟦(= a_468 (store a_467 i2 e_466))⟧) ∧\n(⟦(= a_470 (store a_468 i5 e_469))⟧) ∧\n(⟦(= a_472 (store a_470 i3 e_471))⟧) ∧\n(⟦(= a_474 (store a_472 i5 e_473))⟧) ∧\n(⟦(= a_476 (store a_474 i4 e_475))⟧) ∧\n(⟦(= e_434 (select a1 i4))⟧) ∧\n(⟦(= e_436 (select a1 i1))⟧) ∧\n(⟦(= e_438 (select a_437 i1))⟧) ∧\n(⟦(= e_440 (select a_437 i3))⟧) ∧\n(⟦(= e_442 (select a_441 i4))⟧) ∧\n(⟦(= e_444 (select a_441 i1))⟧) ∧\n(⟦(= e_446 (select a_445 i2))⟧) ∧\n(⟦(= e_449 (select a_448 i5))⟧) ∧\n(⟦(= e_451 (select a_448 i3))⟧) ∧\n(⟦(= e_453 (select a_452 i4))⟧) ∧\n(⟦(= e_458 (select a_457 i1))⟧) ∧\n(⟦(= e_460 (select a_457 i3))⟧) ∧\n(⟦(= e_462 (select a_461 i4))⟧) ∧\n(⟦(= e_464 (select a_461 i1))⟧) ∧\n(⟦(= e_466 (select a_465 i2))⟧) ∧\n(⟦(= e_469 (select a_468 i3))⟧) ∧\n(⟦(= e_471 (select a_468 i5))⟧) ∧\n(⟦(= e_473 (select a_472 i4))⟧) ∧\n(⟦(= e_475 (select a_472 i5))⟧) ∧\n(⟦(= e_478 (select a_455 i_477))⟧) ∧\n(⟦(= e_479 (select a_476 i_477))⟧) ∧\n(⟦(= i_477 (sk a_455 a_476))⟧) ∧\n(¬⟦(= e_478 e_479)⟧)"
+}

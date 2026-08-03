@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [],
+  "cnf": "(¬⟦(exists ((?X Int) (?Y Int) (?Z Int) (?Z1 Int) (?Z2 Int) (?Z3 Int) (?Z4 Int)) (=> (and (= (* ?X ?Y) ?Z1) (= (* ?Z1 ?Z) ?Z2) (= (* ?Y ?Z) ?Z3) (= (* ?X ?Z3) ?Z4)) (= ?Z2 ?Z4)))⟧)"
+}

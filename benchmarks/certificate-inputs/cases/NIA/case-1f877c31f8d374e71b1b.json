@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "c_~a24~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a21~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_old(~a26~0)|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a26~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a14~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a28~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_calculate_output_~input",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(τ1 ∨ ⟦(<= c_~a28~0 134)⟧) ∧\n(τ1 ∨ ⟦(< 37 c_~a28~0)⟧) ∧\n(¬τ1 ∨ ¬⟦(<= c_~a28~0 134)⟧ ∨ ¬⟦(< 37 c_~a28~0)⟧) ∧\n(τ2 ∨ ⟦(< 134 c_~a28~0)⟧) ∧\n(τ2 ∨ ⟦(<= c_~a28~0 300)⟧) ∧\n(¬τ2 ∨ ¬⟦(< 134 c_~a28~0)⟧ ∨ ¬⟦(<= c_~a28~0 300)⟧) ∧\n(¬τ3 ∨ ¬⟦(< 300 c_~a28~0)⟧) ∧\n(¬τ3 ∨ τ1) ∧\n(¬τ3 ∨ τ2) ∧\n(τ3 ∨ ⟦(< 300 c_~a28~0)⟧ ∨ ¬τ1 ∨ ¬τ2) ∧\n(τ4 ∨ ⟦(< 124 c_~a26~0)⟧) ∧\n(τ4 ∨ ¬τ3) ∧\n(τ4 ∨ ⟦(<= c_~a26~0 217)⟧) ∧\n(τ4 ∨ ⟦(<= (+ c_~a14~0 114) 0)⟧) ∧\n(τ4 ∨ ⟦(= 2 c_~a24~0)⟧) ∧\n(τ4 ∨ ⟦(< 0 (+ c_~a14~0 182))⟧) ∧\n(τ4 ∨ ⟦(= c_calculate_output_~input 1)⟧) ∧\n(τ4 ∨ ⟦(<= c_~a21~0 127)⟧) ∧\n(¬τ4 ∨ ¬⟦(< 124 c_~a26~0)⟧ ∨ τ3 ∨ ¬⟦(<= c_~a26~0 217)⟧ ∨ ¬⟦(<= (+ c_~a14~0 114) 0)⟧ ∨ ¬⟦(= 2 c_~a24~0)⟧ ∨ ¬⟦(< 0 (+ c_~a14~0 182))⟧ ∨ ¬⟦(= c_calculate_output_~input 1)⟧ ∨ ¬⟦(<= c_~a21~0 127)⟧) ∧\n(τ4) ∧\n(¬τ5 ∨ ⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10)) (<= v_~a26~0_1267 222)))⟧) ∧\n(¬τ5 ∨ ⟦(<= c_~a26~0 |c_old(~a26~0)|)⟧) ∧\n(τ5 ∨ ¬⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10)) (<= v_~a26~0_1267 222)))⟧ ∨ ¬⟦(<= c_~a26~0 |c_old(~a26~0)|)⟧) ∧\n(τ5) ∧\n(¬⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= v_~a26~0_1267 |c_old(~a26~0)|) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10))))⟧)"
+}

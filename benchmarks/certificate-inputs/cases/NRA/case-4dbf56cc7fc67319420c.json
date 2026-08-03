@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "logic": "NRA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "t0uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "zuscore1dollarskuscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ts0uscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "zuscore1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "b",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "A",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "Auscore0uscore0dollarmvuscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "vuscore1dollarskuscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "vo",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "puscore0dollarskuscore2",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "ep",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "vuscore1",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    },
+    {
+      "kind": "constant",
+      "symbol": "uscorenuscore0dollarskuscore0",
+      "parameter_sorts": [],
+      "return_sort": "Real"
+    }
+  ],
+  "cnf": "(¬⟦(exists ((Auscore0uscore0dollarmvuscore0 Real)) (exists ((t0uscore0 Real)) (forall ((ts0uscore0 Real)) (=> (and (and (and (and (and (and (> uscorenuscore0dollarskuscore0 0.0) (>= (+ zuscore1dollarskuscore0 (* (* uscorenuscore0dollarskuscore0 ep) vo)) puscore0dollarskuscore2)) (= vuscore1dollarskuscore0 vo)) (> vo 0.0)) (> ep 0.0)) (> b 0.0)) (>= A 0.0)) (and (and (and (and (>= t0uscore0 0.0) (=> (and (<= 0.0 ts0uscore0) (<= ts0uscore0 t0uscore0)) (<= ts0uscore0 ep))) (>= (+ (* (/ 1.0 2.0) (+ (+ (* Auscore0uscore0dollarmvuscore0 (* t0uscore0 t0uscore0)) (* (* 2.0 t0uscore0) vuscore1)) (* 2.0 zuscore1))) (* (* ep vo) (+ (- 1.0) uscorenuscore0dollarskuscore0))) puscore0dollarskuscore2)) (= (+ (* Auscore0uscore0dollarmvuscore0 t0uscore0) vuscore1) vo)) (<= Auscore0uscore0dollarmvuscore0 A))))))⟧)"
+}

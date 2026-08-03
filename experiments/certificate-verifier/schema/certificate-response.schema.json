@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {"type": "integer", "enum": [1]},
+    "status": {"type": "string", "enum": ["sat", "unsat", "unknown"]},
+    "certificate": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"type": "string", "enum": ["sat_model"]},
+            "constants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "symbol": {"type": "string"},
+                  "sort": {"type": "string"},
+                  "value_smt2": {"type": "string"}
+                },
+                "required": ["symbol", "sort", "value_smt2"],
+                "additionalProperties": false
+              }
+            },
+            "functions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "symbol": {"type": "string"},
+                  "parameters": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "symbol": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+                        "sort": {"type": "string"}
+                      },
+                      "required": ["symbol", "sort"],
+                      "additionalProperties": false
+                    }
+                  },
+                  "return_sort": {"type": "string"},
+                  "body_smt2": {"type": "string"}
+                },
+                "required": ["symbol", "parameters", "return_sort", "body_smt2"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": ["kind", "constants", "functions"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"type": "string", "enum": ["unsat_core"]},
+            "clause_indices": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"type": "integer", "minimum": 1}
+            }
+          },
+          "required": ["kind", "clause_indices"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {"kind": {"type": "string", "enum": ["none"]}},
+          "required": ["kind"],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": ["schema_version", "status", "certificate"],
+  "additionalProperties": false
+}

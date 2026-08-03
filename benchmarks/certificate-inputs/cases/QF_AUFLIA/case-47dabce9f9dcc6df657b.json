@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "logic": "QF_AUFLIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "a_1215",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1217",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1219",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1221",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1223",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1225",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1227",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1229",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1231",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1233",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1235",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1237",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1239",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1241",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1243",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1245",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1247",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1249",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1251",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1253",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1254",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1255",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1257",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1259",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1261",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1263",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1265",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1267",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1269",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1271",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1273",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1275",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1277",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1279",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1281",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1283",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1285",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1287",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1289",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a_1291",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1214",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1216",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1218",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1220",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1222",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1224",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1226",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1228",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1230",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1232",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1234",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1236",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1238",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1240",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1242",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1244",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1246",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1248",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1250",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1252",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1256",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1258",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1260",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1262",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1264",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1266",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1268",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1270",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1272",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1274",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1276",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1278",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1280",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1282",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1284",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1286",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1288",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1290",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1293",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "e_1294",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i_1292",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "a1",
+      "parameter_sorts": [],
+      "return_sort": "(Array Int Int)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i1",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i2",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i3",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i4",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i5",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i7",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i8",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "i9",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "function",
+      "symbol": "sk",
+      "parameter_sorts": [
+        "(Array Int Int)",
+        "(Array Int Int)"
+      ],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(⟦(= a_1215 (store a1 i8 e_1214))⟧) ∧\n(⟦(= a_1217 (store a_1215 i0 e_1216))⟧) ∧\n(⟦(= a_1219 (store a_1217 i4 e_1218))⟧) ∧\n(⟦(= a_1221 (store a_1219 i5 e_1220))⟧) ∧\n(⟦(= a_1223 (store a_1221 i9 e_1222))⟧) ∧\n(⟦(= a_1225 (store a_1223 i2 e_1224))⟧) ∧\n(⟦(= a_1227 (store a_1225 i5 e_1226))⟧) ∧\n(⟦(= a_1229 (store a_1227 i4 e_1228))⟧) ∧\n(⟦(= a_1231 (store a_1229 i3 e_1230))⟧) ∧\n(⟦(= a_1233 (store a_1231 i0 e_1232))⟧) ∧\n(⟦(= a_1235 (store a_1233 i3 e_1234))⟧) ∧\n(⟦(= a_1237 (store a_1235 i4 e_1236))⟧) ∧\n(⟦(= a_1239 (store a_1237 i9 e_1238))⟧) ∧\n(⟦(= a_1241 (store a_1239 i7 e_1240))⟧) ∧\n(⟦(= a_1243 (store a_1241 i5 e_1242))⟧) ∧\n(⟦(= a_1245 (store a_1243 i1 e_1244))⟧) ∧\n(⟦(= a_1247 (store a_1245 i8 e_1246))⟧) ∧\n(⟦(= a_1249 (store a_1247 i1 e_1248))⟧) ∧\n(⟦(= a_1251 (store a_1249 i5 e_1250))⟧) ∧\n(⟦(= a_1253 (store a_1251 i7 e_1252))⟧) ∧\n(⟦(= a_1254 (store a1 i0 e_1216))⟧) ∧\n(⟦(= a_1255 (store a_1254 i8 e_1214))⟧) ∧\n(⟦(= a_1257 (store a_1255 i5 e_1256))⟧) ∧\n(⟦(= a_1259 (store a_1257 i4 e_1258))⟧) ∧\n(⟦(= a_1261 (store a_1259 i9 e_1260))⟧) ∧\n(⟦(= a_1263 (store a_1261 i2 e_1262))⟧) ∧\n(⟦(= a_1265 (store a_1263 i4 e_1264))⟧) ∧\n(⟦(= a_1267 (store a_1265 i5 e_1266))⟧) ∧\n(⟦(= a_1269 (store a_1267 i0 e_1268))⟧) ∧\n(⟦(= a_1271 (store a_1269 i3 e_1270))⟧) ∧\n(⟦(= a_1273 (store a_1271 i3 e_1272))⟧) ∧\n(⟦(= a_1275 (store a_1273 i4 e_1274))⟧) ∧\n(⟦(= a_1277 (store a_1275 i7 e_1276))⟧) ∧\n(⟦(= a_1279 (store a_1277 i9 e_1278))⟧) ∧\n(⟦(= a_1281 (store a_1279 i1 e_1280))⟧) ∧\n(⟦(= a_1283 (store a_1281 i5 e_1282))⟧) ∧\n(⟦(= a_1285 (store a_1283 i8 e_1284))⟧) ∧\n(⟦(= a_1287 (store a_1285 i1 e_1286))⟧) ∧\n(⟦(= a_1289 (store a_1287 i7 e_1288))⟧) ∧\n(⟦(= a_1291 (store a_1289 i5 e_1290))⟧) ∧\n(⟦(= e_1214 (select a1 i0))⟧) ∧\n(⟦(= e_1216 (select a1 i8))⟧) ∧\n(⟦(= e_1218 (select a_1217 i5))⟧) ∧\n(⟦(= e_1220 (select a_1217 i4))⟧) ∧\n(⟦(= e_1222 (select a_1221 i2))⟧) ∧\n(⟦(= e_1224 (select a_1221 i9))⟧) ∧\n(⟦(= e_1226 (select a_1225 i4))⟧) ∧\n(⟦(= e_1228 (select a_1225 i5))⟧) ∧\n(⟦(= e_1230 (select a_1229 i0))⟧) ∧\n(⟦(= e_1232 (select a_1229 i3))⟧) ∧\n(⟦(= e_1234 (select a_1233 i4))⟧) ∧\n(⟦(= e_1236 (select a_1233 i3))⟧) ∧\n(⟦(= e_1238 (select a_1237 i7))⟧) ∧\n(⟦(= e_1240 (select a_1237 i9))⟧) ∧\n(⟦(= e_1242 (select a_1241 i1))⟧) ∧\n(⟦(= e_1244 (select a_1241 i5))⟧) ∧\n(⟦(= e_1246 (select a_1245 i1))⟧) ∧\n(⟦(= e_1248 (select a_1245 i8))⟧) ∧\n(⟦(= e_1250 (select a_1249 i7))⟧) ∧\n(⟦(= e_1252 (select a_1249 i5))⟧) ∧\n(⟦(= e_1256 (select a_1255 i4))⟧) ∧\n(⟦(= e_1258 (select a_1255 i5))⟧) ∧\n(⟦(= e_1260 (select a_1259 i2))⟧) ∧\n(⟦(= e_1262 (select a_1259 i9))⟧) ∧\n(⟦(= e_1264 (select a_1263 i5))⟧) ∧\n(⟦(= e_1266 (select a_1263 i4))⟧) ∧\n(⟦(= e_1268 (select a_1267 i3))⟧) ∧\n(⟦(= e_1270 (select a_1267 i0))⟧) ∧\n(⟦(= e_1272 (select a_1271 i4))⟧) ∧\n(⟦(= e_1274 (select a_1271 i3))⟧) ∧\n(⟦(= e_1276 (select a_1275 i9))⟧) ∧\n(⟦(= e_1278 (select a_1275 i7))⟧) ∧\n(⟦(= e_1280 (select a_1279 i5))⟧) ∧\n(⟦(= e_1282 (select a_1279 i1))⟧) ∧\n(⟦(= e_1284 (select a_1283 i1))⟧) ∧\n(⟦(= e_1286 (select a_1283 i8))⟧) ∧\n(⟦(= e_1288 (select a_1287 i5))⟧) ∧\n(⟦(= e_1290 (select a_1287 i7))⟧) ∧\n(⟦(= e_1293 (select a_1253 i_1292))⟧) ∧\n(⟦(= e_1294 (select a_1291 i_1292))⟧) ∧\n(⟦(= i_1292 (sk a_1253 a_1291))⟧) ∧\n(¬⟦(= e_1293 e_1294)⟧)"
+}

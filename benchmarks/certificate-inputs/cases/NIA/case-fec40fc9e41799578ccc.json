@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "logic": "NIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "c_~a24~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a21~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_old(~a26~0)|",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a26~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a14~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_~a28~0",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c_calculate_output_~input",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(τ1 ∨ ⟦(= c_calculate_output_~input 4)⟧) ∧\n(τ1 ∨ ⟦(< 217 c_~a26~0)⟧) ∧\n(τ1 ∨ ⟦(<= c_~a28~0 37)⟧) ∧\n(τ1 ∨ ⟦(= 3 c_~a24~0)⟧) ∧\n(τ1 ∨ ⟦(<= (+ c_~a14~0 182) 0)⟧) ∧\n(τ1 ∨ ⟦(<= c_~a21~0 127)⟧) ∧\n(¬τ1 ∨ ¬⟦(= c_calculate_output_~input 4)⟧ ∨ ¬⟦(< 217 c_~a26~0)⟧ ∨ ¬⟦(<= c_~a28~0 37)⟧ ∨ ¬⟦(= 3 c_~a24~0)⟧ ∨ ¬⟦(<= (+ c_~a14~0 182) 0)⟧ ∨ ¬⟦(<= c_~a21~0 127)⟧) ∧\n(τ1) ∧\n(¬τ2 ∨ ⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10)) (<= v_~a26~0_1267 222)))⟧) ∧\n(¬τ2 ∨ ⟦(<= c_~a26~0 |c_old(~a26~0)|)⟧) ∧\n(τ2 ∨ ¬⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10)) (<= v_~a26~0_1267 222)))⟧ ∨ ¬⟦(<= c_~a26~0 |c_old(~a26~0)|)⟧) ∧\n(τ2) ∧\n(¬⟦(exists ((v_~a26~0_1267 Int)) (and (< 217 v_~a26~0_1267) (<= 0 (* 9 v_~a26~0_1267)) (<= v_~a26~0_1267 |c_old(~a26~0)|) (<= (+ c_~a26~0 554854) (div (* 9 v_~a26~0_1267) 10))))⟧)"
+}

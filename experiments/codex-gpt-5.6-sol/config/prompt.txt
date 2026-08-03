@@ -1,0 +1,25 @@
+Determine whether the supplied CNF(T) case is satisfiable in its declared SMT logic and provide a machine-checkable certificate for your verdict.
+
+The input JSON contains only the logic, original declarations, and mathematical CNF(T) expression. The whole CNF is a conjunction of parenthesized clauses. Each clause is a disjunction of literals. `⟦phi⟧` has exactly the truth value of the enclosed SMT-LIB theory predicate `phi`. Symbols `τN` are Boolean Tseitin auxiliaries. Symbols `λN` are definitional auxiliaries constrained by their equality clauses.
+
+Solve by direct reasoning only. Do not call tools, run commands or scripts, read files, use a SAT/SMT solver, or access the network.
+
+Return exactly one JSON object and no surrounding text. The top-level object
+must contain exactly these three keys: `schema_version`, `status`, and
+`certificate`. The key is named `status`, never `verdict`. Do not repeat the
+input fields `logic`, `declarations`, or `cnf` in your response.
+
+For `sat`, use schema version 1 and certificate kind `sat_model`. Include every zero-arity declaration exactly once in `constants`, with `symbol`, exact `sort`, and one SMT-LIB term in `value_smt2`. Include every positive-arity declaration exactly once in `functions`, with `symbol`, typed `parameters`, exact `return_sort`, and one total SMT-LIB term in `body_smt2`. Witness terms must not refer to original declared symbols; a function body may refer to its own parameters and SMT built-ins.
+
+The SAT response shape is exactly:
+`{"schema_version":1,"status":"sat","certificate":{"kind":"sat_model","constants":[],"functions":[]}}`
+
+For `unsat`, use schema version 1 and certificate kind `unsat_core`. Supply a non-empty array of unique one-based outer CNF clause positions in `clause_indices`. The selected clauses must themselves be unsatisfiable.
+
+The UNSAT response shape is exactly:
+`{"schema_version":1,"status":"unsat","certificate":{"kind":"unsat_core","clause_indices":[1]}}`
+
+If neither verdict and certificate can be produced reliably, return status `unknown` with certificate kind `none`.
+
+Certificate case JSON:
+{{CASE_JSON}}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "logic": "LIA",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "P",
+      "parameter_sorts": [],
+      "return_sort": "Int"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(<= 0 P)⟧) ∧\n(¬τ1 ∨ ⟦(forall ((x0 Int) (x1 Int) (x2 Int)) (=> (and (<= 0 x0) (<= 0 x1) (<= 0 x2)) (not (= (+ (* x0 167) (* x1 173) (* x2 179)) P))))⟧) ∧\n(¬τ1 ∨ ⟦(forall ((R Int)) (=> (forall ((x0 Int) (x1 Int) (x2 Int)) (=> (and (<= 0 x0) (<= 0 x1) (<= 0 x2)) (not (= (+ (* x0 167) (* x1 173) (* x2 179)) R)))) (<= R P)))⟧) ∧\n(τ1 ∨ ¬⟦(<= 0 P)⟧ ∨ ¬⟦(forall ((x0 Int) (x1 Int) (x2 Int)) (=> (and (<= 0 x0) (<= 0 x1) (<= 0 x2)) (not (= (+ (* x0 167) (* x1 173) (* x2 179)) P))))⟧ ∨ ¬⟦(forall ((R Int)) (=> (forall ((x0 Int) (x1 Int) (x2 Int)) (=> (and (<= 0 x0) (<= 0 x1) (<= 0 x2)) (not (= (+ (* x0 167) (* x1 173) (* x2 179)) R)))) (<= R P)))⟧) ∧\n(τ1)"
+}

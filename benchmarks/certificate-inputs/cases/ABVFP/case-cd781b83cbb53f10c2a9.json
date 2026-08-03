@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "logic": "ABVFP",
+  "declarations": [
+    {
+      "kind": "constant",
+      "symbol": "c_currentRoundingMode",
+      "parameter_sorts": [],
+      "return_sort": "RoundingMode"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_~#T_ktan~0.base|",
+      "parameter_sorts": [],
+      "return_sort": "(_ BitVec 32)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_~#T_ktan~0.offset|",
+      "parameter_sorts": [],
+      "return_sort": "(_ BitVec 32)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c_#memory_int|",
+      "parameter_sorts": [],
+      "return_sort": "(Array (_ BitVec 32) (Array (_ BitVec 32) (_ BitVec 32)))"
+    },
+    {
+      "kind": "constant",
+      "symbol": "|c___kernel_tanf_#in~x|",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~x",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~y",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~z~2_primed",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~r~1_primed",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~v~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~w~1_primed",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~s~0_primed",
+      "parameter_sorts": [],
+      "return_sort": "(_ FloatingPoint 8 24)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~ix~5",
+      "parameter_sorts": [],
+      "return_sort": "(_ BitVec 32)"
+    },
+    {
+      "kind": "constant",
+      "symbol": "c___kernel_tanf_~hx~2",
+      "parameter_sorts": [],
+      "return_sort": "(_ BitVec 32)"
+    }
+  ],
+  "cnf": "(¬τ1 ∨ ⟦(= c___kernel_tanf_~w~1_primed (fp.add c_currentRoundingMode c___kernel_tanf_~x c___kernel_tanf_~r~1_primed))⟧) ∧\n(¬τ1 ∨ ⟦(= c___kernel_tanf_~z~2_primed (fp.mul c_currentRoundingMode c___kernel_tanf_~x c___kernel_tanf_~x))⟧) ∧\n(¬τ1 ∨ ⟦(= c___kernel_tanf_~s~0_primed (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~x))⟧) ∧\n(¬τ1 ∨ ⟦(= c___kernel_tanf_~r~1_primed (fp.add c_currentRoundingMode (fp.add c_currentRoundingMode c___kernel_tanf_~y (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed (fp.add c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~s~0_primed (fp.add c_currentRoundingMode (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv4 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv4 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv4 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv12 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv12 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv12 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv20 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv20 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv20 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv28 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv28 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv28 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv36 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv36 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv36 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv44 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv44 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv44 32))))))))))))))) c___kernel_tanf_~v~0_primed)) c___kernel_tanf_~y))) (fp.mul c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) |c_~#T_ktan~0.offset|)) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) |c_~#T_ktan~0.offset|)) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) |c_~#T_ktan~0.offset|))) c___kernel_tanf_~s~0_primed)))⟧) ∧\n(¬τ1 ∨ ⟦(= c___kernel_tanf_~v~0_primed (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv8 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv8 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv8 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv16 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv16 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv16 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv24 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv24 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv24 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv32 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv32 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv32 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv40 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv40 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv40 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv48 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv48 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv48 32)))))))))))))))))⟧) ∧\n(τ1 ∨ ¬⟦(= c___kernel_tanf_~w~1_primed (fp.add c_currentRoundingMode c___kernel_tanf_~x c___kernel_tanf_~r~1_primed))⟧ ∨ ¬⟦(= c___kernel_tanf_~z~2_primed (fp.mul c_currentRoundingMode c___kernel_tanf_~x c___kernel_tanf_~x))⟧ ∨ ¬⟦(= c___kernel_tanf_~s~0_primed (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~x))⟧ ∨ ¬⟦(= c___kernel_tanf_~r~1_primed (fp.add c_currentRoundingMode (fp.add c_currentRoundingMode c___kernel_tanf_~y (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed (fp.add c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~s~0_primed (fp.add c_currentRoundingMode (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv4 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv4 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv4 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv12 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv12 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv12 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv20 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv20 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv20 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv28 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv28 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv28 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv36 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv36 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv36 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv44 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv44 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv44 32))))))))))))))) c___kernel_tanf_~v~0_primed)) c___kernel_tanf_~y))) (fp.mul c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) |c_~#T_ktan~0.offset|)) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) |c_~#T_ktan~0.offset|)) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) |c_~#T_ktan~0.offset|))) c___kernel_tanf_~s~0_primed)))⟧ ∨ ¬⟦(= c___kernel_tanf_~v~0_primed (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv8 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv8 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv8 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv16 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv16 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv16 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv24 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv24 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv24 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv32 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv32 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv32 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp.add c_currentRoundingMode (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv40 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv40 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv40 32))))) (fp.mul c_currentRoundingMode (fp.mul c_currentRoundingMode c___kernel_tanf_~z~2_primed c___kernel_tanf_~z~2_primed) (fp ((_ extract 31 31) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv48 32)))) ((_ extract 30 23) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv48 32)))) ((_ extract 22 0) (select (select |c_#memory_int| |c_~#T_ktan~0.base|) (bvadd |c_~#T_ktan~0.offset| (_ bv48 32)))))))))))))))))⟧) ∧\n(τ1) ∧\n(¬τ2 ∨ ⟦(exists ((__kernel_tanf_~hx~2 (_ BitVec 32))) (and (not (bvslt (bvand (_ bv2147483647 32) __kernel_tanf_~hx~2) (_ bv830472192 32))) (= (fp ((_ extract 31 31) __kernel_tanf_~hx~2) ((_ extract 30 23) __kernel_tanf_~hx~2) ((_ extract 22 0) __kernel_tanf_~hx~2)) |c___kernel_tanf_#in~x|)))⟧) ∧\n(¬τ2 ∨ ⟦(exists ((__kernel_tanf_~hx~2 (_ BitVec 32))) (and (= c___kernel_tanf_~ix~5 (bvand (_ bv2147483647 32) __kernel_tanf_~hx~2)) (= (fp ((_ extract 31 31) __kernel_tanf_~hx~2) ((_ extract 30 23) __kernel_tanf_~hx~2) ((_ extract 22 0) __kernel_tanf_~hx~2)) |c___kernel_tanf_#in~x|)))⟧) ∧\n(¬τ2 ∨ ⟦(= (fp ((_ extract 31 31) c___kernel_tanf_~hx~2) ((_ extract 30 23) c___kernel_tanf_~hx~2) ((_ extract 22 0) c___kernel_tanf_~hx~2)) |c___kernel_tanf_#in~x|)⟧) ∧\n(τ2 ∨ ¬⟦(exists ((__kernel_tanf_~hx~2 (_ BitVec 32))) (and (not (bvslt (bvand (_ bv2147483647 32) __kernel_tanf_~hx~2) (_ bv830472192 32))) (= (fp ((_ extract 31 31) __kernel_tanf_~hx~2) ((_ extract 30 23) __kernel_tanf_~hx~2) ((_ extract 22 0) __kernel_tanf_~hx~2)) |c___kernel_tanf_#in~x|)))⟧ ∨ ¬⟦(exists ((__kernel_tanf_~hx~2 (_ BitVec 32))) (and (= c___kernel_tanf_~ix~5 (bvand (_ bv2147483647 32) __kernel_tanf_~hx~2)) (= (fp ((_ extract 31 31) __kernel_tanf_~hx~2) ((_ extract 30 23) __kernel_tanf_~hx~2) ((_ extract 22 0) __kernel_tanf_~hx~2)) |c___kernel_tanf_#in~x|)))⟧ ∨ ¬⟦(= (fp ((_ extract 31 31) c___kernel_tanf_~hx~2) ((_ extract 30 23) c___kernel_tanf_~hx~2) ((_ extract 22 0) c___kernel_tanf_~hx~2)) |c___kernel_tanf_#in~x|)⟧) ∧\n(τ2) ∧\n(¬⟦(= c___kernel_tanf_~x |c___kernel_tanf_#in~x|)⟧)"
+}
