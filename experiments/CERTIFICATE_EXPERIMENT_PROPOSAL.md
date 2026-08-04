@@ -63,25 +63,20 @@ Requirements:
 - no undeclared helper symbol or original declared symbol may occur in a value
   or body (function bodies may reference only their own parameters and built-ins).
 
-### UNSAT response, phase 1
+### UNSAT response (current experiment)
 
 ```json
 {
   "schema_version": 1,
   "status": "unsat",
-  "certificate": {
-    "kind": "unsat_core",
-    "clause_indices": [3, 8, 12]
-  }
+  "certificate": {"kind": "none"}
 }
 ```
 
-Clause indices are one-based positions in the outer CNF conjunction. The verifier
-must prove that the selected clauses are themselves unsatisfiable. An unsat core
-is a weak certificate because cvc5 still performs the final theory proof, but it
-tests whether the model identified a sufficient contradictory subset.
+The scorer compares `status` with the private golden answer after the response is
+final. A matching UNSAT verdict is accepted without a certificate or cvc5 call.
 
-### UNSAT response, phase 2
+### UNSAT formal proof (possible future experiment)
 
 ```json
 {
@@ -169,9 +164,11 @@ Each model response produces these independent fields:
 }
 ```
 
-`fully_solved` is true only when both `verdict_correct` and
-`certificate_valid` are true. For every model and benchmark, report separate
-5/4/3/2/1/0 distributions for verdict correctness and fully solved runs.
+Report exactly two core metrics. SAT/UNSAT accuracy is the fraction of valid
+attempts whose verdict matches the golden answer. SAT witness rate is the
+fraction of correct SAT predictions whose submitted model passes cvc5. Correct
+UNSAT predictions are excluded from both the numerator and denominator of SAT
+witness rate. `fully_solved` remains only as a backward-compatible record field.
 
 ## Experiment separation
 

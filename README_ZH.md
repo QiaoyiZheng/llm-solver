@@ -113,16 +113,14 @@ SAT 必须解释全部原始声明：
 }
 ```
 
-UNSAT 必须给出从 1 开始编号的非空矛盾子句集合：
+UNSAT 不要求证明或矛盾子句集合，必须使用 `certificate.kind=none`。评分阶段只将
+最终分类与私有 golden answer 比较：
 
 ```json
 {
   "schema_version": 1,
   "status": "unsat",
-  "certificate": {
-    "kind": "unsat_core",
-    "clause_indices": [1, 4, 7]
-  }
+  "certificate": {"kind": "none"}
 }
 ```
 
@@ -147,17 +145,20 @@ UNSAT 必须给出从 1 开始编号的非空矛盾子句集合：
 7. 从私有 manifest 读取标准状态。
 8. 比较模型分类和标准状态。
 9. 分类错误或无法读取时，立即判错，不调用 cvc5。
-10. 分类正确且为 SAT/UNSAT 时，才运行对应的证书验证器。
-11. 分别记录分类正确性和证书有效性。
+10. 分类正确且为 SAT 时，运行 SAT 模型证书验证器。
+11. 分类正确且为 UNSAT 时，以 golden answer 匹配为准，不调用 cvc5 验证 UNSAT 证书。
+12. 只汇总两个核心指标：SAT/UNSAT 分类准确率，以及正确 SAT 回答中的真解比例。
 
 流程可以概括为：
 
 ```text
 无标签输入 -> 模型回答 -> 比较分类
                            ├─ 分类错误：停止，fully_solved=false
-                           └─ 分类正确：使用 cvc5 验证证书
-                                        ├─ 证书无效：fully_solved=false
-                                        └─ 证书有效：fully_solved=true
+                           └─ 分类正确
+                                ├─ UNSAT：匹配 golden answer，fully_solved=true
+                                └─ SAT：使用 cvc5 验证模型证书
+                                         ├─ 证书无效：fully_solved=false
+                                         └─ 证书有效：fully_solved=true
 ```
 
 ### SAT 证书验证
@@ -175,21 +176,18 @@ UNSAT 必须给出从 1 开始编号的非空矛盾子句集合：
 
 只有输入本身没有零参数声明时，`constants=[]` 才是完整证书；它不能用于省略本应赋值的变量。
 
-### UNSAT 证书验证
+### UNSAT 评分
 
-验证器执行以下步骤：
+UNSAT 不再要求模型生成不可满足核心。模型只需输出 `status=unsat`；评分器在模型响应结束后读取私有 golden answer。两者均为 `unsat` 时直接记为完全解出，不调用 cvc5。结果记录 `verification_basis=golden_answer`、`certificate_checked=false` 和 `certificate_valid=null`。
 
-1. 在不破坏理论原子边界的情况下解析外层 CNF。
-2. 检查子句编号为唯一、正数且从 1 开始。
-3. 只重建模型选择的子句。
-4. 声明其中使用的 Tseitin 布尔辅助变量。
-5. 递归展开 `lambda` 定义辅助项。
-6. 拒绝格式错误、冲突、循环定义或过大的重建公式。
-7. 只有固定版本 cvc5 返回 `unsat` 且退出码为 0 时才接受。
+## 评分指标与字段
 
-当前 UNSAT 证书是不可满足核心，仍由 cvc5 完成最终理论证明，不等同于独立形式化证明。后续可以增加 Alethe 或 LRAT 作为更强的证明实验。
+实验只报告两个核心指标：
 
-## 评分字段
+1. **SAT/UNSAT accuracy**：`verdict_correct=true` 的次数除以全部有效回答次数。
+2. **SAT 真解率**：`sat_witness_valid=true` 的次数除以“分类正确且预测为 SAT”的次数。正确 UNSAT 不进入这个指标的分子或分母。
+
+另外按题目统计五次运行的“最终成功”分布：正确 UNSAT 算成功；SAT 必须分类正确且解通过 cvc5 才算成功。每题分别进入 5/5、4/5、3/5、2/5、1/5 或 0/5 档，并保留具体题目清单。SAT/UNSAT accuracy 按五次独立回答逐次计算，不使用多数投票。
 
 每次有效模型响应至少记录：
 
@@ -202,11 +200,14 @@ UNSAT 必须给出从 1 开始编号的非空矛盾子句集合：
   "certificate_checked": true,
   "certificate_valid": true,
   "certificate_skip_reason": null,
+  "sat_witness_checked": true,
+  "sat_witness_valid": true,
+  "verification_basis": "sat_certificate",
   "fully_solved": true
 }
 ```
 
-只有 `verdict_correct` 和 `certificate_valid` 同时为真时，`fully_solved` 才为真。最终需要分别对“分类正确”和“完整求解”统计每题每模型的 5/5、4/5、3/5、2/5、1/5、0/5 分布，不能用多数投票覆盖单次结果。
+`fully_solved` 仅为兼容旧结果保留，不作为独立汇总指标。最终分别统计 SAT/UNSAT accuracy，以及 SAT 真解率；不能让正确 UNSAT 扩大 SAT 真解率的分母。
 
 ## 实验目录和产物
 
@@ -215,6 +216,20 @@ UNSAT 必须给出从 1 开始编号的非空矛盾子句集合：
 ```text
 experiments/<模型>/runs/<UTC时间戳>__<实验内容>__<配置>/
 ```
+
+### 版本化统计批次
+
+统计好的数据统一放在 `experiments/statistics/vN/`，从 `v1` 开始按新一轮实验递增为 `v2`、`v3`。每批固定保存来源运行目录、总体指标、Logic 指标、逐题五次结果、0/5～5/5 最终成功分布及具体题目清单。统计时按 `(case, run)` 去重，只保留最新 attempt。
+
+SAT/UNSAT accuracy 使用每题五次独立回答的全部结果做 micro-average，不做多数投票。最终成功的定义为“正确 UNSAT，或正确 SAT 且见证通过 cvc5”；未跑满五次的题单列为 incomplete，不得记成 0/5。
+
+生成下一批统计：
+
+```powershell
+python experiments/statistics/build_statistics.py --batch v2
+```
+
+本轮 `v2` 使用 `experiments/benchmark-sets/v2.json` 定义的共同 93 题集合。两个超出当前 Codex CLI 活跃路由容量的用例从三个模型的 v2 统计中统一排除，因此每个模型的计划量为 `93 × 5 = 465`。排除只影响 v2 统计，原始 95 题响应不会删除。
 
 主要文件包括：
 
@@ -262,10 +277,10 @@ python experiments/deepseek-v4-pro/scripts/run_certificate.py `
 
 ```powershell
 python experiments/codex-gpt-5.6-sol/scripts/run_codex.py `
-  --run-directory RUN_NAME --experiment-id cnf-certificate-full-v1
+  --run-directory RUN_NAME --experiment-id cnf-sat-certificate-unsat-golden-v2
 
 python experiments/codex-gpt-5.6-sol/scripts/run_codex.py `
-  --run-directory RUN_NAME --experiment-id cnf-certificate-full-v1 --resume
+  --run-directory RUN_NAME --experiment-id cnf-sat-certificate-unsat-golden-v2 --resume
 ```
 
 付费全量实验前应先使用 `--dry-run`。运行产物和项目根目录的 `api-key` 已由 Git 忽略。

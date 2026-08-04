@@ -1,0 +1,4 @@
+﻿model,completed_slots,planned_slots,completion_rate,accuracy_correct,accuracy_total,accuracy_rate,valid_sat_witnesses,correct_sat_verdicts,sat_witness_rate,correct_unsat
+Codex 5.6 Sol,465,465,1.00000000,449,465,0.96559140,173,214,0.80841121,235
+DeepSeek V4 Flash,465,465,1.00000000,403,465,0.86666667,139,189,0.73544974,214
+DeepSeek V4 Pro,465,465,1.00000000,356,465,0.76559140,105,165,0.63636364,191

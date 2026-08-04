@@ -115,16 +115,32 @@ def run_slot(case_path: Path, run: int, args: argparse.Namespace, run_dir: Path,
             expected = labels.expected_status(benchmark)
             prediction, parsed = parse_prediction(final_text)
             verdict_correct = prediction == expected
-            if verdict_correct and prediction in {"sat", "unsat"}:
+            if verdict_correct and prediction == "sat":
                 verification = verify(case_path, final_text, (run_dir / "verifier" / stem).with_suffix(".smt2"), args.certificate_timeout)
                 certificate_checked = True
                 certificate_valid = verification.get("certificate_valid") is True
                 skip_reason = None
+                verification_basis = "sat_certificate"
+                fully_solved = certificate_valid
+            elif verdict_correct and prediction == "unsat":
+                verification = {
+                    "schema_version": 1,
+                    "status": "unsat",
+                    "verification_result": "golden_answer_match",
+                    "verification_error": None,
+                }
+                certificate_checked = False
+                certificate_valid = None
+                skip_reason = "unsat_golden_answer_match"
+                verification_basis = "golden_answer"
+                fully_solved = True
             else:
                 verification = {}
                 certificate_checked = False
                 certificate_valid = False
                 skip_reason = "unreadable_verdict" if prediction is None else "incorrect_verdict" if not verdict_correct else "no_certificate_for_unknown"
+                verification_basis = "none"
+                fully_solved = False
             record = {
                 "schema_version": 1,
                 "experiment_id": args.experiment_id,
@@ -146,7 +162,10 @@ def run_slot(case_path: Path, run: int, args: argparse.Namespace, run_dir: Path,
                 "certificate_checked": certificate_checked,
                 "certificate_valid": certificate_valid,
                 "certificate_skip_reason": skip_reason,
-                "fully_solved": verdict_correct and certificate_valid,
+                "sat_witness_checked": verdict_correct and prediction == "sat" and certificate_checked,
+                "sat_witness_valid": certificate_valid if verdict_correct and prediction == "sat" else None,
+                "verification_basis": verification_basis,
+                "fully_solved": fully_solved,
                 "verification": verification,
                 "latency_seconds": response.get("latency_seconds"),
                 "finish_reason": response.get("finish_reason"),
@@ -168,7 +187,7 @@ def run_slot(case_path: Path, run: int, args: argparse.Namespace, run_dir: Path,
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-directory", required=True)
-    parser.add_argument("--experiment-id", default="cnf-certificate-full-v1")
+    parser.add_argument("--experiment-id", default="cnf-sat-certificate-unsat-golden-v2")
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--certificate-timeout", type=int, default=300)
@@ -213,7 +232,7 @@ def main() -> int:
             "thinking": THINKING, "repetitions": REPETITIONS, "workers": args.workers,
             "timeout_seconds": args.timeout, "certificate_timeout_seconds": args.certificate_timeout,
             "max_output_tokens": args.max_tokens,
-            "scoring_order": "verdict_then_certificate", "benchmarks": len(tasks),
+            "scoring_policy": "sat_certificate_unsat_golden_answer", "benchmarks": len(tasks),
         }, ensure_ascii=False, indent=2) + "\n")
     api = load_module("smoke_api", SMOKE_MODULE)
     labels = load_module("private_labels", CODEX_RUNNER)

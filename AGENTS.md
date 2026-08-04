@@ -49,12 +49,12 @@ Codex 必须使用临时独立工作目录、ephemeral 会话和只读 sandbox�
 
 DeepSeek 必须启用 thinking mode，并固定 `reasoning_effort=max`。thinking mode 下不要设置无效的 `temperature`、`top_p`、`presence_penalty` 或 `frequency_penalty`。不得给 DeepSeek 提供 tools。
 
-## 统一输出协议
+## 统一证书输出协议
 
-三个模型使用完全相同的任务语义，只允许最终输出一个 JSON 对象：
+三个模型使用完全相同的任务语义，只允许最终输出一个 JSON 对象。SAT 必须提供完整模型见证：
 
 ```json
-{"status":"sat"}
+{"schema_version":1,"status":"sat","certificate":{"kind":"sat_model","constants":[],"functions":[]}}
 ```
 
 `status` 只能是：
@@ -62,6 +62,12 @@ DeepSeek 必须启用 thinking mode，并固定 `reasoning_effort=max`。thinkin
 - `sat`
 - `unsat`
 - `unknown`
+
+UNSAT 不要求证明，必须输出 `certificate.kind=none`：
+
+```json
+{"schema_version":1,"status":"unsat","certificate":{"kind":"none"}}
+```
 
 模型输出无法严格解析时，记录为 `invalid`，不得猜测或从长篇回答中宽松提取答案。
 
@@ -81,11 +87,16 @@ manifest 字段或历史结果。case ID 只能作为 opaque 文件名存在，�
 
 SAT 结果必须附带覆盖全部原始自由符号的可机验见证；验证器把见证编译成 SMT-LIB
 后与原公式一起检查。部分赋值不能算完整证书，因为求解器可能自动补全缺失符号。
-UNSAT 结果必须附带不可满足核心、结构化推导或形式化证明，并在报告中区分证书强度。
+UNSAT 只比较模型分类与私有 golden answer；两者均为 `unsat` 时即分类正确，不调用
+cvc5 验证 UNSAT 证明。
 
-每次证书实验必须分别记录 `verdict_correct`、`certificate_present`、
-`certificate_valid` 和 `fully_solved`。只有判断正确且证书有效时，`fully_solved`
-才为真。分类 baseline 与证书实验必须使用不同 experiment ID，不能混合统计。
+每次实验必须记录 `verdict_correct`、`sat_witness_checked`、
+`sat_witness_valid` 和 `verification_basis`。项目只汇总两个核心比例指标：
+
+1. SAT/UNSAT accuracy = 五次运行中所有分类正确次数 / 所有有效运行次数；
+2. SAT 真解率 = cvc5 验证有效的 SAT 见证数 / 分类正确的 SAT 回答数。
+
+正确 UNSAT 只进入指标 1，不进入 SAT 真解率的分子或分母。
 
 ## 重复次数与正确性
 
@@ -97,7 +108,29 @@ UNSAT 结果必须附带不可满足核心、结构化推导或形式化证明�
 - 对标准答案为 `sat` 或 `unsat` 的题目，回答 `unknown` 算错误；
 - 禁止多数投票替代单次统计。
 
-每个 benchmark、每个模型最终得到一个 `correct_count`，取值只能是 5、4、3、2、1、0。报告必须分别统计 5/5、4/5、3/5、2/5、1/5、0/5 的题目数量和比例。
+准确率必须让五次独立运行逐次参与计算，禁止先多数投票再按题计分。
+
+另外，每个 benchmark、每个模型必须得到一个“最终成功次数”：正确 UNSAT 算成功；
+SAT 只有分类正确且见证通过 cvc5 才算成功。该计数取值为 5、4、3、2、1、0，报告
+必须列出每档题目数量、比例和具体题目。没有跑满五次的题必须单列 incomplete，禁止
+当作 0/5。
+
+## 统计批次规范
+
+- 统计快照统一存放在 `experiments/statistics/vN/`，从 `v1` 递增；
+- 每轮新实验对应一个新的统计批次，禁止覆盖已经发布的旧批次；
+- 每批必须包含来源运行目录与配置、模型汇总、logic 汇总、逐题明细、0/5～5/5
+  分布和每档具体题目清单；
+- 标准文件为 `manifest.json`、`summary.json`、`models.csv`、`logics.csv`、
+  `cases.csv`、`distributions.csv`、`success_buckets.csv` 和
+  `success_buckets.json`；
+- 统计前按 `(case, run)` 去重，只保留最新 attempt；基础设施重试不得重复计分；
+- SAT/UNSAT accuracy 对全部五次有效回答做 micro-average，不使用多数投票；
+- `success_buckets` 使用“正确 UNSAT 或正确 SAT 且见证有效”的最终成功定义。
+- 每批若排除 benchmark，必须在 `experiments/benchmark-sets/vN.json` 中列出 opaque
+  case、原因和统一适用规则；三个模型必须使用同一集合，禁止只从某个模型分母删除；
+- v2 的正式集合为 93 题，每模型 465 个槽位，具体排除项见
+  `experiments/benchmark-sets/v2.json`。原始响应必须保留。
 
 ## 可复现运行要求
 
@@ -137,8 +170,8 @@ UNSAT 结果必须附带不可满足核心、结构化推导或形式化证明�
 
 完成全量实验后，至少生成以下内容：
 
-1. 每题明细：三个模型各自的 5 次预测、正确次数和 5/4/3/2/1/0 分组；
-2. 模型汇总：总正确次数、有效运行数、准确率、invalid 数和基础设施失败数；
+1. 每题明细：三个模型各自的 5 次预测、分类正确次数、最终成功次数和 5/4/3/2/1/0 分组；
+2. 模型汇总：SAT/UNSAT accuracy、SAT 真解率、有效运行数、invalid 数和基础设施失败数；
 3. logic 汇总：每个模型在各 logic 上的准确率和正确次数分布；
 4. 复杂度分桶：按子句数、文字数、最大子句宽度、理论原子长度等分位数分桶；
 5. 稳定性分析：区分稳定正确（5/5）、不稳定（4/5 至 1/5）和稳定错误（0/5）；

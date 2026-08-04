@@ -109,10 +109,27 @@ def check_certificate(final_text: str, expected: str, artifact: Path, timeout: i
         "verdict_correct": verdict_correct,
         "certificate_checked": False,
         "certificate_valid": False,
+        "sat_witness_checked": False,
+        "sat_witness_valid": None,
         "fully_solved": False,
     }
     if not verdict_correct:
         result["certificate_skip_reason"] = "unreadable_verdict" if prediction is None else "incorrect_verdict"
+        result["verification_basis"] = "none"
+        return result
+    if prediction == "unsat":
+        result.update({
+            "certificate_valid": None,
+            "certificate_skip_reason": "unsat_golden_answer_match",
+            "fully_solved": True,
+            "verification_basis": "golden_answer",
+            "verification": {
+                "schema_version": 1,
+                "status": "unsat",
+                "verification_result": "golden_answer_match",
+                "verification_error": None,
+            },
+        })
         return result
     with tempfile.TemporaryDirectory(prefix="smoke-certificate-") as directory:
         response_path = Path(directory) / "response.json"
@@ -128,8 +145,11 @@ def check_certificate(final_text: str, expected: str, artifact: Path, timeout: i
     result.update({
         "certificate_checked": True,
         "certificate_valid": verifier_result.get("certificate_valid") is True,
+        "sat_witness_checked": True,
+        "sat_witness_valid": verifier_result.get("certificate_valid") is True,
         "certificate_skip_reason": None,
         "fully_solved": verifier_result.get("certificate_valid") is True,
+        "verification_basis": "sat_certificate",
         "verification": verifier_result,
     })
     return result

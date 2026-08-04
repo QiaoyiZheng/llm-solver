@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "batch": "v1",
+  "generated_at": "2026-08-03T10:24:17.434792+00:00",
+  "scoring_policy": "sat_unsat_accuracy_and_correct_sat_witness_rate",
+  "repetitions": 5,
+  "planned_cases_per_model": 95,
+  "planned_slots_per_model": 475,
+  "sources": [
+    {
+      "model_directory": "codex-gpt-5.6-sol",
+      "model_label": "Codex 5.6 Sol",
+      "run_directory": "experiments/codex-gpt-5.6-sol/runs/20260803T071327Z__cnf-certificate-full-v1__gpt-5.6-sol_high_priority_5x",
+      "configuration": {
+        "schema_version": 1,
+        "created_at": "2026-08-03T07:13:27.940017+00:00",
+        "timestamp_key": "20260803T071327Z",
+        "experiment_content": "cnf-certificate-full-v1",
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "reasoning_summary": "detailed",
+        "service_tier": "priority",
+        "repetitions": 5,
+        "codex_version": "codex-cli 0.146.0",
+        "prompt_template_sha256": "8a1509b873cc89bbd97af58fe33f44ded0fcaec2103f7a60ca9e64fb8e526d90",
+        "selected_logics": null,
+        "selected_benchmarks": null,
+        "benchmark_limit": null,
+        "attempt_timeout_seconds": 1800,
+        "certificate_timeout_seconds": 300,
+        "scoring_order": "verdict_then_certificate"
+      },
+      "raw_result_records": 66,
+      "deduplicated_completed_slots": 66
+    },
+    {
+      "model_directory": "deepseek-v4-flash",
+      "model_label": "DeepSeek V4 Flash",
+      "run_directory": "experiments/deepseek-v4-flash/runs/20260803T070627Z__cnf-certificate-full-v1__deepseek-v4-flash_max-thinking_32768tokens_4workers_5x",
+      "configuration": {
+        "schema_version": 1,
+        "created_at": "2026-08-03T07:06:28.099504+00:00",
+        "experiment_id": "cnf-certificate-full-v1",
+        "provider": "deepseek",
+        "model": "deepseek-v4-flash",
+        "reasoning_effort": "max",
+        "thinking": "enabled",
+        "repetitions": 5,
+        "workers": 4,
+        "timeout_seconds": 600,
+        "certificate_timeout_seconds": 300,
+        "max_output_tokens": 32768,
+        "scoring_order": "verdict_then_certificate",
+        "benchmarks": 95
+      },
+      "raw_result_records": 551,
+      "deduplicated_completed_slots": 302
+    },
+    {
+      "model_directory": "deepseek-v4-pro",
+      "model_label": "DeepSeek V4 Pro",
+      "run_directory": "experiments/deepseek-v4-pro/runs/20260803T071327Z__cnf-certificate-full-v1__deepseek-v4-pro_max-thinking_32768tokens_4workers_5x",
+      "configuration": {
+        "schema_version": 1,
+        "created_at": "2026-08-03T07:13:27.739182+00:00",
+        "experiment_id": "cnf-certificate-full-v1",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": "max",
+        "thinking": "enabled",
+        "repetitions": 5,
+        "workers": 4,
+        "timeout_seconds": 600,
+        "certificate_timeout_seconds": 300,
+        "max_output_tokens": 32768,
+        "scoring_order": "verdict_then_certificate",
+        "benchmarks": 95
+      },
+      "raw_result_records": 100,
+      "deduplicated_completed_slots": 100
+    }
+  ]
+}

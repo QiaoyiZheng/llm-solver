@@ -1,0 +1,714 @@
+{
+  "schema_version": 1,
+  "batch": "v1",
+  "success_definition": "correct_unsat_or_correct_sat_with_valid_witness",
+  "models": {
+    "Codex 5.6 Sol": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-2ba84614cde72ad3c098.json",
+          "benchmark": "ABVFP/302cf07a5e-float_req_bl_0530b_true-unreach-call.c_5.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-3b95015f1e769e665f79.json",
+          "benchmark": "ALIA/57ada40aa8-piVC_098a89.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-4369920991204ed45b09.json",
+          "benchmark": "ALIA/5ed037e3cc-piVC_ffb7db.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-447347e15be831c94d5a.json",
+          "benchmark": "ALIA/499ffa55ba-piVC_2186b5.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-5aab47e21370d04f7449.json",
+          "benchmark": "ALIA/f6285a256e-piVC_849b63.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        }
+      ],
+      "5": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-1ea76502db619835c34e.json",
+          "benchmark": "ABVFP/308e5a972a-double_req_bl_0320_true-unreach-call.c_4.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-3fe852ca5f1862168341.json",
+          "benchmark": "ABVFP/dd5e3b0351-float_req_bl_1210_false-unreach-call.c_0.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-4d5cdc4bb3ee51806fee.json",
+          "benchmark": "ABVFP/189893bdbb-float_req_bl_0530b_true-unreach-call.c_2.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-5d9e1ba66e6f34e00f62.json",
+          "benchmark": "ABVFP/a2be3080e2-float_req_bl_0621b_true-unreach-call.c_1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-6a0803fedb88a746ebe0.json",
+          "benchmark": "ABVFP/ac2811a735-float_req_bl_0684a_true-unreach-call.c_4.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-a52114d20df1abee5cd6.json",
+          "benchmark": "ABVFP/0c12618c85-float_req_bl_0682a_true-unreach-call.c_13.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-c79d3d0f8ca31eb4b567.json",
+          "benchmark": "ABVFP/ea7e47b81e-float_req_bl_0620b_true-unreach-call.c_6.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-cd781b83cbb53f10c2a9.json",
+          "benchmark": "ABVFP/ea681cac71-float_req_bl_0530b_true-unreach-call.c_8.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        }
+      ],
+      "incomplete": [
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-7533a101e746b4eb8d75.json",
+          "benchmark": "ALIA/af7d7d155d-piVC_7f6962.md",
+          "completed_runs": 1,
+          "successful_runs": 1
+        }
+      ]
+    },
+    "DeepSeek V4 Flash": {
+      "0": [
+        {
+          "logic": "LIA",
+          "case": "LIA/case-37133ee346dae01a3598.json",
+          "benchmark": "LIA/a60b6e08c6-fcp_197_199.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-37ae4ee4ff23f9ce16e4.json",
+          "benchmark": "LIA/01b211cc37-fcp_167_173_179.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-bccf4ac09527548438e1.json",
+          "benchmark": "LIA/4935b59fa2-137.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-07fc023d7b5bbc4b46c9.json",
+          "benchmark": "NRA/722eaea277-strassen-hard.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "QF_ALIA",
+          "case": "QF_ALIA/case-15c163e0d3fb062cba1d.json",
+          "benchmark": "QF_ALIA/b1092fb93e-qlock.base.30.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "QF_ALIA",
+          "case": "QF_ALIA/case-333f4df714e4fdacf030.json",
+          "benchmark": "QF_ALIA/28114b6375-qlock-bug2-10.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        }
+      ],
+      "1": [
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-447347e15be831c94d5a.json",
+          "benchmark": "ALIA/499ffa55ba-piVC_2186b5.md",
+          "completed_runs": 5,
+          "successful_runs": 1
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-5aab47e21370d04f7449.json",
+          "benchmark": "ALIA/f6285a256e-piVC_849b63.md",
+          "completed_runs": 5,
+          "successful_runs": 1
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-d256d0656b1a0ca617f1.json",
+          "benchmark": "ALIA/dd3cff8a69-piVC_5cee0c.md",
+          "completed_runs": 5,
+          "successful_runs": 1
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-f4a6ac3a7e94b54bff2a.json",
+          "benchmark": "ALIA/bdd5eb546d-piVC_a04477.md",
+          "completed_runs": 5,
+          "successful_runs": 1
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-55e4dccbd311dad51747.json",
+          "benchmark": "LIA/ee94632839-138.md",
+          "completed_runs": 5,
+          "successful_runs": 1
+        }
+      ],
+      "2": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-5d9e1ba66e6f34e00f62.json",
+          "benchmark": "ABVFP/a2be3080e2-float_req_bl_0621b_true-unreach-call.c_1.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-4369920991204ed45b09.json",
+          "benchmark": "ALIA/5ed037e3cc-piVC_ffb7db.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-e42cddba6c760e17a4e6.json",
+          "benchmark": "LIA/07d23f440c-076.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-089daad396150f00befe.json",
+          "benchmark": "NIA/6097397d24-Problem17_label54_false-unreach-call.c_10.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-09a7f924777a4241e65c.json",
+          "benchmark": "NIA/d2baf9a6e3-184.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-571d8eaf9802c576628c.json",
+          "benchmark": "NIA/520443d627-183.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        }
+      ],
+      "3": [
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-84b2f0287d6e40d79b6e.json",
+          "benchmark": "ALIA/af81486a3f-piVC_c5a79f.md",
+          "completed_runs": 5,
+          "successful_runs": 3
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-e650227321378ef3c6e0.json",
+          "benchmark": "ALIA/4c97df26e7-piVC_bd0142.md",
+          "completed_runs": 5,
+          "successful_runs": 3
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-1f877c31f8d374e71b1b.json",
+          "benchmark": "NIA/adba4fcc0d-Problem17_label54_false-unreach-call.c_12.md",
+          "completed_runs": 5,
+          "successful_runs": 3
+        }
+      ],
+      "4": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-1ea76502db619835c34e.json",
+          "benchmark": "ABVFP/308e5a972a-double_req_bl_0320_true-unreach-call.c_4.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-3fe852ca5f1862168341.json",
+          "benchmark": "ABVFP/dd5e3b0351-float_req_bl_1210_false-unreach-call.c_0.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-4d5cdc4bb3ee51806fee.json",
+          "benchmark": "ABVFP/189893bdbb-float_req_bl_0530b_true-unreach-call.c_2.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-6a0803fedb88a746ebe0.json",
+          "benchmark": "ABVFP/ac2811a735-float_req_bl_0684a_true-unreach-call.c_4.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-a52114d20df1abee5cd6.json",
+          "benchmark": "ABVFP/0c12618c85-float_req_bl_0682a_true-unreach-call.c_13.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-c79d3d0f8ca31eb4b567.json",
+          "benchmark": "ABVFP/ea7e47b81e-float_req_bl_0620b_true-unreach-call.c_6.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-cd781b83cbb53f10c2a9.json",
+          "benchmark": "ABVFP/ea681cac71-float_req_bl_0530b_true-unreach-call.c_8.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-3b95015f1e769e665f79.json",
+          "benchmark": "ALIA/57ada40aa8-piVC_098a89.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-38cca494cece5d7ed65e.json",
+          "benchmark": "LIA/818325b2de-nested9_true-unreach-call.i_1749.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-8e6cb8f4af6eceeb2090.json",
+          "benchmark": "LIA/0afccb8013-009.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-fec40fc9e41799578ccc.json",
+          "benchmark": "NIA/2da4538e94-Problem17_label54_false-unreach-call.c_13.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-565e22bbc482817f68c9.json",
+          "benchmark": "NRA/3f4c9f1d1c-strassen-linear.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        }
+      ],
+      "5": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-2ba84614cde72ad3c098.json",
+          "benchmark": "ABVFP/302cf07a5e-float_req_bl_0530b_true-unreach-call.c_5.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-7533a101e746b4eb8d75.json",
+          "benchmark": "ALIA/af7d7d155d-piVC_7f6962.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-a93238253a2173e570e1.json",
+          "benchmark": "ALIA/e46b638c7c-piVC_982830.sat.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-c607b0e1da0f02296fbb.json",
+          "benchmark": "ALIA/dba123416f-piVC_600bf6.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-cf9c9f8464ec3a758f79.json",
+          "benchmark": "ALIA/cce1e61ff2-piVC_3240b6.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-6f75e2ff0f056270393e.json",
+          "benchmark": "LIA/514835a5aa-jain_7_true-unreach-call_true-no-overflow_false-termination.i_5.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-83dc3b96c4f285725b92.json",
+          "benchmark": "LIA/86ece07d34-ARI011=1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-97c27a0ae12d69082ff9.json",
+          "benchmark": "LIA/4d472d34fe-NUM874=1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-a24ed4a919d05ba3463e.json",
+          "benchmark": "LIA/7e33141df7-nested9_true-unreach-call.i_1676.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "LIA",
+          "case": "LIA/case-b94cfa21f7a768c5616a.json",
+          "benchmark": "LIA/87f585dce5-nested9_true-unreach-call.i_670.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-6e49f1e848bfcea046e7.json",
+          "benchmark": "NIA/d8e2e6a94b-byte_add_1_true-unreach-call_true-no-overflow_true-termination.i_1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-79c18f0e40fc9f262690.json",
+          "benchmark": "NIA/f78bd5b9f4-NUM878=1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-7c3536b9dc2009f2d65e.json",
+          "benchmark": "NIA/b9297b0cc3-ARI123=1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-b82a0bacc829be583cfd.json",
+          "benchmark": "NIA/33b3fa2910-jain_6_true-unreach-call_true-no-overflow_false-termination.i_0.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-c4f10a8031854f8b4bd0.json",
+          "benchmark": "NIA/63da306c9c-Problem18_label34_false-unreach-call.c_13.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-dd0f3cb79e8310b233e8.json",
+          "benchmark": "NIA/41a6c07a20-jain_6_true-unreach-call_true-no-overflow_false-termination.i_11.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NIA",
+          "case": "NIA/case-e30a97bc4a165022fc17.json",
+          "benchmark": "NIA/11d889a116-NUM885=1.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-0dd93fe9495ae97a1076.json",
+          "benchmark": "NRA/05f6f3c412-intersection-example-simple.proof-node139846.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-2300cc91e46152c38058.json",
+          "benchmark": "NRA/5de9b96fd7-strassen-trivial.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-4dbf56cc7fc67319420c.json",
+          "benchmark": "NRA/b71c706c27-ETCS-essentials-live-range2.proof-node1046.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-587bb9e70acab7083a09.json",
+          "benchmark": "NRA/7af8bd92ec-intersection-example-simple.proof-node123456.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-77dc803deaf402445c07.json",
+          "benchmark": "NRA/b8c28b67ab-intersection-example-simple.proof-node469037.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-86481b1bb8a2780a2ae1.json",
+          "benchmark": "NRA/f73795ffcb-strassen-impossible.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-911b24806d76530bb747.json",
+          "benchmark": "NRA/18dc573cc5-intersection-example-simple.proof-node256483.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-9bdce909e2dcd9694f7d.json",
+          "benchmark": "NRA/a94c71fdd6-reactivity-lemma-node2938.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-9c704194115bdbe3ba93.json",
+          "benchmark": "NRA/6a99aa37dd-intersection-example-simple.proof-node729267.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "NRA",
+          "case": "NRA/case-e688fedd8e2670700d3a.json",
+          "benchmark": "NRA/f93694880b-moving-point-node2370.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "QF_ALIA",
+          "case": "QF_ALIA/case-12b55d9c2e1b455ce3d6.json",
+          "benchmark": "QF_ALIA/679e0ffaa9-ios_t1_ios_bia_np_sf_ai_00001_001.cvc.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        }
+      ],
+      "incomplete": [
+        {
+          "logic": "QF_ALIA",
+          "case": "QF_ALIA/case-3e1df4139db3543e9ee2.json",
+          "benchmark": "QF_ALIA/faf9ed7349-qlock.base.13.md",
+          "completed_runs": 2,
+          "successful_runs": 1
+        }
+      ]
+    },
+    "DeepSeek V4 Pro": {
+      "0": [
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-3b95015f1e769e665f79.json",
+          "benchmark": "ALIA/57ada40aa8-piVC_098a89.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-4369920991204ed45b09.json",
+          "benchmark": "ALIA/5ed037e3cc-piVC_ffb7db.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-447347e15be831c94d5a.json",
+          "benchmark": "ALIA/499ffa55ba-piVC_2186b5.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-5aab47e21370d04f7449.json",
+          "benchmark": "ALIA/f6285a256e-piVC_849b63.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-7533a101e746b4eb8d75.json",
+          "benchmark": "ALIA/af7d7d155d-piVC_7f6962.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-cf9c9f8464ec3a758f79.json",
+          "benchmark": "ALIA/cce1e61ff2-piVC_3240b6.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-d256d0656b1a0ca617f1.json",
+          "benchmark": "ALIA/dd3cff8a69-piVC_5cee0c.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-e650227321378ef3c6e0.json",
+          "benchmark": "ALIA/4c97df26e7-piVC_bd0142.md",
+          "completed_runs": 5,
+          "successful_runs": 0
+        }
+      ],
+      "1": [],
+      "2": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-4d5cdc4bb3ee51806fee.json",
+          "benchmark": "ABVFP/189893bdbb-float_req_bl_0530b_true-unreach-call.c_2.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-cd781b83cbb53f10c2a9.json",
+          "benchmark": "ABVFP/ea681cac71-float_req_bl_0530b_true-unreach-call.c_8.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-84b2f0287d6e40d79b6e.json",
+          "benchmark": "ALIA/af81486a3f-piVC_c5a79f.md",
+          "completed_runs": 5,
+          "successful_runs": 2
+        }
+      ],
+      "3": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-2ba84614cde72ad3c098.json",
+          "benchmark": "ABVFP/302cf07a5e-float_req_bl_0530b_true-unreach-call.c_5.md",
+          "completed_runs": 5,
+          "successful_runs": 3
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-6a0803fedb88a746ebe0.json",
+          "benchmark": "ABVFP/ac2811a735-float_req_bl_0684a_true-unreach-call.c_4.md",
+          "completed_runs": 5,
+          "successful_runs": 3
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-c79d3d0f8ca31eb4b567.json",
+          "benchmark": "ABVFP/ea7e47b81e-float_req_bl_0620b_true-unreach-call.c_6.md",
+          "completed_runs": 5,
+          "successful_runs": 3
+        }
+      ],
+      "4": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-5d9e1ba66e6f34e00f62.json",
+          "benchmark": "ABVFP/a2be3080e2-float_req_bl_0621b_true-unreach-call.c_1.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-a52114d20df1abee5cd6.json",
+          "benchmark": "ABVFP/0c12618c85-float_req_bl_0682a_true-unreach-call.c_13.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-a93238253a2173e570e1.json",
+          "benchmark": "ALIA/e46b638c7c-piVC_982830.sat.md",
+          "completed_runs": 5,
+          "successful_runs": 4
+        }
+      ],
+      "5": [
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-1ea76502db619835c34e.json",
+          "benchmark": "ABVFP/308e5a972a-double_req_bl_0320_true-unreach-call.c_4.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ABVFP",
+          "case": "ABVFP/case-3fe852ca5f1862168341.json",
+          "benchmark": "ABVFP/dd5e3b0351-float_req_bl_1210_false-unreach-call.c_0.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        },
+        {
+          "logic": "ALIA",
+          "case": "ALIA/case-c607b0e1da0f02296fbb.json",
+          "benchmark": "ALIA/dba123416f-piVC_600bf6.md",
+          "completed_runs": 5,
+          "successful_runs": 5
+        }
+      ],
+      "incomplete": []
+    }
+  }
+}

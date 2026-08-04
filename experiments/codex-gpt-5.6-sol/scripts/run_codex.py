@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import hashlib
 import json
 import os
@@ -12,6 +13,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -22,8 +24,10 @@ MODEL = "gpt-5.6-sol"
 REASONING_EFFORT = "high"
 REASONING_SUMMARY = "detailed"
 SERVICE_TIER = "priority"  # Codex catalog: Fast, 1.5x speed.
+MODEL_CONTEXT_WINDOW = 1_000_000
+MODEL_AUTO_COMPACT_TOKEN_LIMIT = 950_000
 REPETITIONS = 5
-DEFAULT_EXPERIMENT_ID = "cnf-certificate-v1"
+DEFAULT_EXPERIMENT_ID = "cnf-sat-certificate-unsat-golden-v2"
 VALID_STATUSES = {"sat", "unsat", "unknown"}
 TOOL_EVENT_TYPES = {
     "command_execution",
@@ -48,6 +52,7 @@ VERIFIER_PATH = REPO_ROOT / "experiments" / "certificate-verifier" / "scripts" /
 PROMPT_PATH = MODEL_DIR / "config" / "prompt.txt"
 SCHEMA_PATH = REPO_ROOT / "experiments" / "certificate-verifier" / "schema" / "certificate-response.schema.json"
 RUN_ROOT = MODEL_DIR / "runs"
+WRITE_LOCK = threading.Lock()
 
 
 def utc_now() -> str:
@@ -83,6 +88,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--timeout", type=int, default=1800, help="Seconds per Codex attempt")
     parser.add_argument("--certificate-timeout", type=int, default=300, help="Seconds per cvc5 certificate check")
     parser.add_argument("--retries", type=int, default=3, help="Infrastructure retries per slot")
+    parser.add_argument("--workers", type=int, default=1, help="Concurrent independent Codex sessions")
     parser.add_argument(
         "--contamination-retries",
         type=int,
@@ -202,11 +208,12 @@ def extract_reasoning_summaries(stdout: str) -> list[str]:
 
 
 def append_jsonl(path: Path, record: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8", newline="\n") as handle:
-        handle.write(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n")
-        handle.flush()
-        os.fsync(handle.fileno())
+    with WRITE_LOCK:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("a", encoding="utf-8", newline="\n") as handle:
+            handle.write(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n")
+            handle.flush()
+            os.fsync(handle.fileno())
 
 
 def write_text(path: Path, value: str) -> None:
@@ -338,6 +345,10 @@ def build_command(executable: str, work_dir: Path, last_message: Path) -> list[s
         "--config",
         f'service_tier="{SERVICE_TIER}"',
         "--config",
+        f"model_context_window={MODEL_CONTEXT_WINDOW}",
+        "--config",
+        f"model_auto_compact_token_limit={MODEL_AUTO_COMPACT_TOKEN_LIMIT}",
+        "--config",
         'approval_policy="never"',
         "--output-schema",
         str(SCHEMA_PATH),
@@ -452,6 +463,8 @@ def print_plan(
 
 def main() -> int:
     args = parse_args()
+    if args.workers < 1 or args.retries < 1 or args.contamination_retries < 1:
+        raise ValueError("workers and retry counts must be positive")
     experiment_id = validate_experiment_id(args.experiment_id)
     tasks = discover_tasks(args)
     prompt_template, prompt_hash = load_prompt_template()
@@ -486,6 +499,8 @@ def main() -> int:
         "reasoning_effort": REASONING_EFFORT,
         "reasoning_summary": REASONING_SUMMARY,
         "service_tier": SERVICE_TIER,
+        "model_context_window": MODEL_CONTEXT_WINDOW,
+        "model_auto_compact_token_limit": MODEL_AUTO_COMPACT_TOKEN_LIMIT,
         "repetitions": REPETITIONS,
         "codex_version": version,
         "prompt_template_sha256": prompt_hash,
@@ -494,132 +509,105 @@ def main() -> int:
         "benchmark_limit": args.limit,
         "attempt_timeout_seconds": args.timeout,
         "certificate_timeout_seconds": args.certificate_timeout,
-        "scoring_order": "verdict_then_certificate",
+        "workers": args.workers,
+        "scoring_policy": "sat_certificate_unsat_golden_answer",
     }
     if not initialized:
         write_text(run_directory / "configuration.json", json.dumps(metadata, ensure_ascii=False, indent=2) + "\n")
         write_text(run_directory / "prompt.txt", prompt_template)
         write_text(run_directory / "answer.schema.json", SCHEMA_PATH.read_text(encoding="utf-8"))
 
-    failures = 0
-    for task in tasks:
+    def process_slot(task: Path, run: int) -> bool:
         relative = task.relative_to(CNF_ROOT).as_posix()
         case_text = task.read_text(encoding="utf-8").strip()
         case_value = json.loads(case_text)
         prompt = prompt_template.replace("{{CASE_JSON}}", case_text)
         prompt_instance_hash = sha256_text(prompt)
-        for run in range(1, REPETITIONS + 1):
-            if (relative, run) in completed:
+        infrastructure_tries = 0
+        contamination_tries = 0
+        attempt = 0
+        while True:
+            attempt += 1
+            print(f"[{relative}] run={run}/5 attempt={attempt}", flush=True)
+            response = invoke_codex(executable, prompt, args.timeout)
+            save_attempt_artifacts(run_directory, relative, run, attempt, response)
+
+            common = {
+                "schema_version": 1, "experiment_id": experiment_id,
+                "timestamp": utc_now(), "provider": "codex-cli", "model": MODEL,
+                "reasoning_effort": REASONING_EFFORT, "reasoning_summary": REASONING_SUMMARY,
+                "service_tier": SERVICE_TIER, "codex_version": version, "case": relative,
+                "logic": Path(relative).parts[0], "run": run, "attempt": attempt,
+                "prompt_template_sha256": prompt_hash, "prompt_instance_sha256": prompt_instance_hash,
+                "case_chars": len(case_text), "latency_seconds": response["latency_seconds"],
+            }
+            if response.get("infrastructure_error"):
+                infrastructure_tries += 1
+                append_jsonl(errors_path, {**common, "state": "infrastructure_error", "error_type": response["infrastructure_error"], "error_detail": response.get("error_detail")})
+                if infrastructure_tries >= args.retries:
+                    print(f"  incomplete: infrastructure retries exhausted", file=sys.stderr, flush=True)
+                    return False
+                time.sleep(min(2 ** (infrastructure_tries - 1), 30))
                 continue
-            valid_slot_finished = False
-            infrastructure_tries = 0
-            contamination_tries = 0
-            attempt = 0
-            while not valid_slot_finished:
-                attempt += 1
-                print(f"[{relative}] run={run}/5 attempt={attempt}", flush=True)
-                response = invoke_codex(executable, prompt, args.timeout)
-                save_attempt_artifacts(run_directory, relative, run, attempt, response)
+            if response.get("contaminated"):
+                contamination_tries += 1
+                append_jsonl(contaminated_path, {**common, "state": "contaminated", "tool_types": response.get("tool_types", [])})
+                if contamination_tries >= args.contamination_retries:
+                    print(f"  incomplete: contamination retries exhausted", file=sys.stderr, flush=True)
+                    return False
+                continue
 
-                common = {
-                    "schema_version": 1,
-                    "experiment_id": experiment_id,
-                    "timestamp": utc_now(),
-                    "provider": "codex-cli",
-                    "model": MODEL,
-                    "reasoning_effort": REASONING_EFFORT,
-                    "reasoning_summary": REASONING_SUMMARY,
-                    "service_tier": SERVICE_TIER,
-                    "codex_version": version,
-                    "case": relative,
-                    "logic": Path(relative).parts[0],
-                    "run": run,
-                    "attempt": attempt,
-                    "prompt_template_sha256": prompt_hash,
-                    "prompt_instance_sha256": prompt_instance_hash,
-                    "case_chars": len(case_text),
-                    "latency_seconds": response["latency_seconds"],
-                }
+            final_text = str(response.get("final_text", ""))
+            parse_state, prediction, parsed_response = strict_json_status(final_text)
+            benchmark = private_benchmark(case_value)
+            expected = expected_status(benchmark)
+            verdict_correct = prediction == expected
+            if verdict_correct and prediction == "sat":
+                artifact = run_directory / "verifier" / attempt_stem(relative, run, attempt).with_suffix(".smt2")
+                verification = verify_certificate(task, final_text, artifact, args.certificate_timeout)
+                certificate_checked = True
+                certificate_valid = verification.get("certificate_valid") is True
+                skip_reason, verification_basis, fully_solved = None, "sat_certificate", certificate_valid
+            elif verdict_correct and prediction == "unsat":
+                verification = {"schema_version": 1, "status": "unsat", "verification_result": "golden_answer_match", "verification_error": None}
+                certificate_checked, certificate_valid = False, None
+                skip_reason, verification_basis, fully_solved = "unsat_golden_answer_match", "golden_answer", True
+            else:
+                verification = {}
+                certificate_checked, certificate_valid = False, False
+                skip_reason = "unreadable_verdict" if prediction is None else "incorrect_verdict" if not verdict_correct else "no_certificate_for_unknown"
+                verification_basis, fully_solved = "none", False
+            record = {
+                **common, "state": "complete", "benchmark": benchmark,
+                "response_format": parse_state, "prediction": prediction, "expected": expected,
+                "verdict_correct": verdict_correct,
+                "certificate_present": isinstance(parsed_response, dict) and isinstance(parsed_response.get("certificate"), dict),
+                "certificate_checked": certificate_checked, "certificate_valid": certificate_valid,
+                "certificate_skip_reason": skip_reason,
+                "sat_witness_checked": verdict_correct and prediction == "sat" and certificate_checked,
+                "sat_witness_valid": certificate_valid if verdict_correct and prediction == "sat" else None,
+                "verification_basis": verification_basis, "fully_solved": fully_solved,
+                "verification": verification, "usage": response.get("usage", {}), "tool_types": [],
+            }
+            append_jsonl(results_path, record)
+            print(f"  prediction={prediction or 'invalid'} expected={expected} verdict_correct={verdict_correct} certificate_valid={certificate_valid}", flush=True)
+            return True
 
-                if response.get("infrastructure_error"):
-                    infrastructure_tries += 1
-                    append_jsonl(
-                        errors_path,
-                        {
-                            **common,
-                            "state": "infrastructure_error",
-                            "error_type": response["infrastructure_error"],
-                            "error_detail": response.get("error_detail"),
-                        },
-                    )
-                    if infrastructure_tries >= args.retries:
-                        failures += 1
-                        print(f"  incomplete: infrastructure retries exhausted", file=sys.stderr)
-                        print(f"completed_slots={len(completed)} incomplete_slots={failures}")
-                        return 1
-                    time.sleep(min(2 ** (infrastructure_tries - 1), 30))
-                    continue
-
-                if response.get("contaminated"):
-                    contamination_tries += 1
-                    append_jsonl(
-                        contaminated_path,
-                        {
-                            **common,
-                            "state": "contaminated",
-                            "tool_types": response.get("tool_types", []),
-                        },
-                    )
-                    if contamination_tries >= args.contamination_retries:
-                        failures += 1
-                        print(f"  incomplete: contamination retries exhausted", file=sys.stderr)
-                        print(f"completed_slots={len(completed)} incomplete_slots={failures}")
-                        return 1
-                    continue
-
-                final_text = str(response.get("final_text", ""))
-                parse_state, prediction, parsed_response = strict_json_status(final_text)
-                # Private identity and label are recovered only after the response is final.
-                benchmark = private_benchmark(case_value)
-                expected = expected_status(benchmark)
-                verdict_correct = prediction == expected
-                verification: dict[str, Any]
-                if verdict_correct and prediction in {"sat", "unsat"}:
-                    artifact = run_directory / "verifier" / attempt_stem(relative, run, attempt).with_suffix(".smt2")
-                    verification = verify_certificate(task, final_text, artifact, args.certificate_timeout)
-                    certificate_checked = True
-                    certificate_valid = verification.get("certificate_valid") is True
-                    skip_reason = None
-                else:
-                    verification = {}
-                    certificate_checked = False
-                    certificate_valid = False
-                    skip_reason = "unreadable_verdict" if prediction is None else "incorrect_verdict" if not verdict_correct else "no_certificate_for_unknown"
-                record = {
-                    **common,
-                    "state": "complete",
-                    "benchmark": benchmark,
-                    "response_format": parse_state,
-                    "prediction": prediction,
-                    "expected": expected,
-                    "verdict_correct": verdict_correct,
-                    "certificate_present": isinstance(parsed_response, dict) and isinstance(parsed_response.get("certificate"), dict),
-                    "certificate_checked": certificate_checked,
-                    "certificate_valid": certificate_valid,
-                    "certificate_skip_reason": skip_reason,
-                    "fully_solved": verdict_correct and certificate_valid,
-                    "verification": verification,
-                    "usage": response.get("usage", {}),
-                    "tool_types": [],
-                }
-                append_jsonl(results_path, record)
-                completed.add((relative, run))
-                valid_slot_finished = True
-                print(
-                    f"  prediction={prediction or 'invalid'} expected={expected} "
-                    f"verdict_correct={verdict_correct} certificate_valid={certificate_valid}",
-                    flush=True,
-                )
+    slots = [
+        (task, run)
+        for task in tasks
+        for run in range(1, REPETITIONS + 1)
+        if (task.relative_to(CNF_ROOT).as_posix(), run) not in completed
+    ]
+    failures = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as executor:
+        futures = {executor.submit(process_slot, task, run): (task, run) for task, run in slots}
+        for future in concurrent.futures.as_completed(futures):
+            task, run = futures[future]
+            if future.result():
+                completed.add((task.relative_to(CNF_ROOT).as_posix(), run))
+            else:
+                failures += 1
 
     print(f"completed_slots={len(completed)} incomplete_slots={failures}")
     return 1 if failures else 0

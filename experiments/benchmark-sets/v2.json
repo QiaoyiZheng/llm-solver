@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "batch": "v2",
+  "source_case_count": 95,
+  "included_case_count": 93,
+  "repetitions": 5,
+  "planned_slots_per_model": 465,
+  "excluded_cases": [
+    {
+      "case": "QF_ALIA/case-875434a9d4afb78d0f4f.json",
+      "reason": "codex_cli_active_route_context_limit"
+    },
+    {
+      "case": "QF_NIRA/case-6424ad354fc044b5c06c.json",
+      "reason": "codex_cli_active_route_context_limit"
+    }
+  ],
+  "fairness_rule": "The same two cases are excluded from every model's v2 statistics. Raw outputs are retained."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "batch": "v1",
+  "scoring_policy": "sat_unsat_accuracy_and_correct_sat_witness_rate",
+  "models": [
+    {
+      "model": "Codex 5.6 Sol",
+      "planned_slots": 475,
+      "completion_rate": 0.13894736842105262,
+      "completed_slots": 66,
+      "sat_unsat_accuracy": {
+        "numerator": 62,
+        "denominator": 66,
+        "rate": 0.9393939393939394
+      },
+      "sat_witness_rate": {
+        "numerator": 44,
+        "denominator": 45,
+        "rate": 0.9777777777777777
+      },
+      "correct_unsat": 17
+    },
+    {
+      "model": "DeepSeek V4 Flash",
+      "planned_slots": 475,
+      "completion_rate": 0.6357894736842106,
+      "completed_slots": 302,
+      "sat_unsat_accuracy": {
+        "numerator": 245,
+        "denominator": 302,
+        "rate": 0.8112582781456954
+      },
+      "sat_witness_rate": {
+        "numerator": 91,
+        "denominator": 121,
+        "rate": 0.7520661157024794
+      },
+      "correct_unsat": 124
+    },
+    {
+      "model": "DeepSeek V4 Pro",
+      "planned_slots": 475,
+      "completion_rate": 0.21052631578947367,
+      "completed_slots": 100,
+      "sat_unsat_accuracy": {
+        "numerator": 55,
+        "denominator": 100,
+        "rate": 0.55
+      },
+      "sat_witness_rate": {
+        "numerator": 35,
+        "denominator": 48,
+        "rate": 0.7291666666666666
+      },
+      "correct_unsat": 7
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+﻿model,logic,completed_slots,accuracy_correct,accuracy_total,accuracy_rate,valid_sat_witnesses,correct_sat_verdicts,sat_witness_rate
+Codex 5.6 Sol,ABVFP,45,45,45,1.00000000,44,45,0.97777778
+Codex 5.6 Sol,ALIA,21,17,21,0.80952381,0,0,
+DeepSeek V4 Flash,ABVFP,45,41,45,0.91111111,35,41,0.85365854
+DeepSeek V4 Flash,ALIA,60,36,60,0.60000000,5,5,1.00000000
+DeepSeek V4 Flash,LIA,60,48,60,0.80000000,11,23,0.47826087
+DeepSeek V4 Flash,NIA,60,54,60,0.90000000,21,27,0.77777778
+DeepSeek V4 Flash,NRA,60,60,60,1.00000000,19,25,0.76000000
+DeepSeek V4 Flash,QF_ALIA,17,6,17,0.35294118,0,0,
+DeepSeek V4 Pro,ABVFP,45,43,45,0.95555556,31,43,0.72093023
+DeepSeek V4 Pro,ALIA,55,12,55,0.21818182,4,5,0.80000000

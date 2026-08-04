@@ -1,4 +1,4 @@
-Determine whether the supplied CNF(T) case is satisfiable in its declared SMT logic and provide a machine-checkable certificate for your verdict.
+Determine whether the supplied CNF(T) case is satisfiable in its declared SMT logic. A `sat` verdict requires a machine-checkable model. An `unsat` verdict does not require a proof certificate.
 
 The input JSON contains only the logic, original declarations, and mathematical CNF(T) expression. The whole CNF is a conjunction of parenthesized clauses. Each clause is a disjunction of literals. `⟦phi⟧` has exactly the truth value of the enclosed SMT-LIB theory predicate `phi`. Symbols `τN` are Boolean Tseitin auxiliaries. Symbols `λN` are definitional auxiliaries constrained by their equality clauses.
 
@@ -14,12 +14,12 @@ For `sat`, use schema version 1 and certificate kind `sat_model`. Include every 
 The SAT response shape is exactly:
 `{"schema_version":1,"status":"sat","certificate":{"kind":"sat_model","constants":[],"functions":[]}}`
 
-For `unsat`, use schema version 1 and certificate kind `unsat_core`. Supply a non-empty array of unique one-based outer CNF clause positions in `clause_indices`. The selected clauses must themselves be unsatisfiable.
+For `unsat`, use schema version 1 and certificate kind `none`. The evaluator checks the verdict against the private golden answer, so do not generate an UNSAT core.
 
 The UNSAT response shape is exactly:
-`{"schema_version":1,"status":"unsat","certificate":{"kind":"unsat_core","clause_indices":[1]}}`
+`{"schema_version":1,"status":"unsat","certificate":{"kind":"none"}}`
 
-If neither verdict and certificate can be produced reliably, return status `unknown` with certificate kind `none`.
+If neither verdict can be produced reliably, return status `unknown` with certificate kind `none`.
 
 Certificate case JSON:
 {{CASE_JSON}}

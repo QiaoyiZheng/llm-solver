@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "batch": "v2",
+  "batch_status": "complete",
+  "generated_at": "2026-08-04T05:14:12.993440+00:00",
+  "scoring_policy": "sat_unsat_accuracy_and_correct_sat_witness_rate",
+  "repetitions": 5,
+  "benchmark_set": "experiments/benchmark-sets/v2.json",
+  "excluded_cases": [
+    "QF_ALIA/case-875434a9d4afb78d0f4f.json",
+    "QF_NIRA/case-6424ad354fc044b5c06c.json"
+  ],
+  "planned_cases_per_model": 93,
+  "planned_slots_per_model": 465,
+  "sources": [
+    {
+      "model_directory": "codex-gpt-5.6-sol",
+      "model_label": "Codex 5.6 Sol",
+      "run_directory": "experiments/codex-gpt-5.6-sol/runs/20260803T102815Z__cnf-sat-certificate-unsat-golden-v2__gpt-5.6-sol_high_priority_5x",
+      "configuration": {
+        "schema_version": 1,
+        "created_at": "2026-08-03T10:28:15.716469+00:00",
+        "timestamp_key": "20260803T102815Z",
+        "experiment_content": "cnf-sat-certificate-unsat-golden-v2",
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "high",
+        "reasoning_summary": "detailed",
+        "service_tier": "priority",
+        "repetitions": 5,
+        "codex_version": "codex-cli 0.146.0",
+        "prompt_template_sha256": "5dcdaea986f6dcbea1db2ed5a696ba8e9173d71d4f99a2b6677d405a663600c7",
+        "selected_logics": null,
+        "selected_benchmarks": null,
+        "benchmark_limit": null,
+        "attempt_timeout_seconds": 1800,
+        "certificate_timeout_seconds": 300,
+        "scoring_policy": "sat_certificate_unsat_golden_answer"
+      },
+      "raw_result_records": 465,
+      "deduplicated_completed_slots": 465
+    },
+    {
+      "model_directory": "deepseek-v4-flash",
+      "model_label": "DeepSeek V4 Flash",
+      "run_directory": "experiments/deepseek-v4-flash/runs/20260803T102815Z__cnf-sat-certificate-unsat-golden-v2__deepseek-v4-flash_max-thinking_32768tokens_4workers_5x",
+      "configuration": {
+        "schema_version": 1,
+        "created_at": "2026-08-03T10:28:15.620981+00:00",
+        "experiment_id": "cnf-sat-certificate-unsat-golden-v2",
+        "provider": "deepseek",
+        "model": "deepseek-v4-flash",
+        "reasoning_effort": "max",
+        "thinking": "enabled",
+        "repetitions": 5,
+        "workers": 4,
+        "timeout_seconds": 600,
+        "certificate_timeout_seconds": 300,
+        "max_output_tokens": 32768,
+        "scoring_policy": "sat_certificate_unsat_golden_answer",
+        "benchmarks": 95
+      },
+      "raw_result_records": 475,
+      "deduplicated_completed_slots": 465
+    },
+    {
+      "model_directory": "deepseek-v4-pro",
+      "model_label": "DeepSeek V4 Pro",
+      "run_directory": "experiments/deepseek-v4-pro/runs/20260803T102815Z__cnf-sat-certificate-unsat-golden-v2__deepseek-v4-pro_max-thinking_32768tokens_4workers_5x",
+      "configuration": {
+        "schema_version": 1,
+        "created_at": "2026-08-03T10:28:15.644703+00:00",
+        "experiment_id": "cnf-sat-certificate-unsat-golden-v2",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": "max",
+        "thinking": "enabled",
+        "repetitions": 5,
+        "workers": 4,
+        "timeout_seconds": 600,
+        "certificate_timeout_seconds": 300,
+        "max_output_tokens": 32768,
+        "scoring_policy": "sat_certificate_unsat_golden_answer",
+        "benchmarks": 95
+      },
+      "raw_result_records": 475,
+      "deduplicated_completed_slots": 465
+    }
+  ]
+}

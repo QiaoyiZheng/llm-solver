@@ -32,13 +32,14 @@ from rich.text import Text
 
 ROOT = Path(__file__).resolve().parent
 EXPERIMENTS = ROOT / "experiments"
+BENCHMARK_SETS = EXPERIMENTS / "benchmark-sets"
 INPUTS = ROOT / "benchmarks" / "certificate-inputs" / "cases"
 MODEL_DIRS = (
     ("Codex 5.6 Sol", "codex-gpt-5.6-sol"),
     ("DeepSeek V4 Flash", "deepseek-v4-flash"),
     ("DeepSeek V4 Pro", "deepseek-v4-pro"),
 )
-RECENT_LIMIT = 12
+RECENT_PER_MODEL = 4
 
 
 def load_json(path: Path, default=None):
@@ -94,6 +95,14 @@ def ratio(num, den):
     return f"{num / den:.1%}" if den else "—"
 
 
+def is_correct_sat(row):
+    return row.get("verdict_correct") is True and row.get("prediction") == "sat"
+
+
+def has_valid_sat_witness(row):
+    return is_correct_sat(row) and row.get("certificate_valid") is True
+
+
 def process_alive(pid):
     if not isinstance(pid, int) or pid <= 0:
         return False
@@ -119,15 +128,20 @@ def latest_run(model_dir, run_kind):
         return None
     candidates = [p for p in runs_dir.iterdir() if p.is_dir()]
     if run_kind == "formal":
-        candidates = [p for p in candidates if "full" in p.name.lower()]
+        candidates = [
+            p for p in candidates
+            if "smoke" not in p.name.lower() and (p / "configuration.json").is_file()
+        ]
     return max(candidates, key=lambda p: p.name, default=None)
 
 
-def planned_cases(config):
+def planned_cases(config, excluded_cases=None):
     repetitions = int(config.get("repetitions", 5) or 5)
     selected_logics = set(config.get("selected_logics") or [])
     selected_benchmarks = set(config.get("selected_benchmarks") or [])
     files = list(INPUTS.rglob("*.json")) if INPUTS.is_dir() else []
+    excluded_cases = excluded_cases or set()
+    files = [p for p in files if p.relative_to(INPUTS).as_posix() not in excluded_cases]
     if selected_logics:
         files = [p for p in files if p.parent.name in selected_logics]
     if selected_benchmarks:
@@ -159,6 +173,12 @@ class ModelState:
         self.run = latest_run(model_dir, run_kind)
         self.config = load_json(self.run / "configuration.json", {}) if self.run else {}
         self.launcher = load_json(self.run / "launcher.json", {}) if self.run else {}
+        batch = self.launcher.get("batch")
+        benchmark_set = load_json(BENCHMARK_SETS / f"{batch}.json", {}) if batch else {}
+        self.excluded_cases = {
+            item["case"] for item in benchmark_set.get("excluded_cases", [])
+            if isinstance(item, dict) and item.get("case")
+        }
         self.raw_rows = load_jsonl(self.run / "results" / "runs.jsonl") if self.run else []
         # --resume 和单次重试会追加记录；一个 (case, run) 只能占一个实验槽位。
         latest = {}
@@ -167,13 +187,16 @@ class ModelState:
             rank = (int(row.get("attempt") or 0), index)
             if key not in latest or rank > latest[key][0]:
                 latest[key] = (rank, row)
-        self.rows = [item[1] for item in latest.values()]
-        self.errors = load_jsonl(self.run / "results" / "infrastructure-errors.jsonl") if self.run else []
-        self.planned = planned_cases(self.config) if self.run else 0
+        self.rows = [item[1] for item in latest.values() if item[1].get("case") not in self.excluded_cases]
+        self.errors = [
+            row for row in load_jsonl(self.run / "results" / "infrastructure-errors.jsonl")
+            if row.get("case") not in self.excluded_cases
+        ] if self.run else []
+        self.planned = planned_cases(self.config, self.excluded_cases) if self.run else 0
         self.complete = sum(r.get("state") == "complete" for r in self.rows)
         self.correct = sum(r.get("verdict_correct") is True for r in self.rows)
-        self.cert_valid = sum(r.get("certificate_valid") is True for r in self.rows)
-        self.fully_solved = sum(r.get("fully_solved") is True for r in self.rows)
+        self.correct_sat = sum(is_correct_sat(r) for r in self.rows)
+        self.sat_witness_valid = sum(has_valid_sat_witness(r) for r in self.rows)
         self.format_valid = sum(r.get("response_format") in (None, "valid") for r in self.rows)
         self.latency = sum(float(r.get("latency_seconds") or 0) for r in self.rows)
         self.inputs = self.outputs = self.reasoning = 0
@@ -186,8 +209,8 @@ class ModelState:
             bucket = self.logic[row.get("logic") or "?"]
             bucket["total"] += 1
             bucket["correct"] += row.get("verdict_correct") is True
-            bucket["certificate"] += row.get("certificate_valid") is True
-            bucket["solved"] += row.get("fully_solved") is True
+            bucket["correct_sat"] += is_correct_sat(row)
+            bucket["sat_witness"] += has_valid_sat_witness(row)
         self.pid = self.launcher.get("pid")
         self.alive = process_alive(self.pid)
 
@@ -200,6 +223,29 @@ class ModelState:
         if self.run:
             return "已停止", "yellow"
         return "无记录", "dim"
+
+    def reasoning_summary(self, row):
+        if not self.run:
+            return ""
+        case = Path(str(row.get("case") or ""))
+        if not case.name:
+            return ""
+        logic = str(row.get("logic") or case.parent.name)
+        run_number = int(row.get("run") or 0)
+        attempt = int(row.get("attempt") or 1)
+        base = self.run / "raw" / logic / case.stem
+        candidates = (
+            base / f"run-{run_number:02d}-attempt-{attempt:02d}.reasoning.txt",
+            base / f"run-{run_number:02d}.reasoning.txt",
+        )
+        for path in candidates:
+            try:
+                value = path.read_text(encoding="utf-8-sig").strip()
+            except OSError:
+                continue
+            if value:
+                return " ".join(value.split())
+        return ""
 
 
 def render_header(states, refreshed):
@@ -220,9 +266,8 @@ def render_models(states):
     table.add_column("模型", min_width=18)
     table.add_column("状态", width=9)
     table.add_column("进度", ratio=3)
-    table.add_column("分类正确", justify="right")
-    table.add_column("证书有效", justify="right")
-    table.add_column("完全解出", justify="right")
+    table.add_column("SAT/UNSAT Accuracy", justify="right")
+    table.add_column("SAT 真解率", justify="right")
     table.add_column("均时", justify="right")
     table.add_column("Token (入/出/推理)", justify="right")
     for s in states:
@@ -237,8 +282,7 @@ def render_models(states):
             f"[{color}]{status}[/]\n[dim]PID {s.pid or '—'}[/]",
             progress_cell,
             f"{s.correct}/{len(s.rows)}\n[dim]{ratio(s.correct, len(s.rows))}[/]",
-            f"{s.cert_valid}/{len(s.rows)}\n[dim]{ratio(s.cert_valid, len(s.rows))}[/]",
-            f"[bold green]{s.fully_solved}[/]/{len(s.rows)}\n[dim]{ratio(s.fully_solved, len(s.rows))}[/]",
+            f"[bold green]{s.sat_witness_valid}[/]/{s.correct_sat}\n[dim]{ratio(s.sat_witness_valid, s.correct_sat)}[/]",
             fmt_duration(avg),
             f"{fmt_tokens(s.inputs)}/{fmt_tokens(s.outputs)}/{fmt_tokens(s.reasoning)}",
         )
@@ -255,17 +299,24 @@ def render_logics(states):
         cells = []
         for state in states:
             b = state.logic.get(logic)
-            cells.append("—" if not b else f"{b['solved']}/{b['total']} ({ratio(b['solved'], b['total'])})")
+            if not b:
+                cells.append("—")
+            else:
+                accuracy = ratio(b["correct"], b["total"])
+                witness = ratio(b["sat_witness"], b["correct_sat"])
+                cells.append(f"A {accuracy} · SAT {witness}")
         table.add_row(logic, *cells)
     if not names:
         table.add_row("[dim]暂无结果[/]", *("—" for _ in states))
-    return Panel(table, title="各逻辑完全解出（有效分类 + 有效证书）", border_style="green")
+    return Panel(table, title="各逻辑：分类准确率 · SAT 真解率", border_style="green")
 
 
 def render_recent(states):
     recent = []
     for state in states:
-        for row in state.rows[-RECENT_LIMIT:]:
+        # Keep equal visibility for every model. DeepSeek has four workers per
+        # model while Codex is serial, so a global tail would hide Codex rows.
+        for row in state.rows[-RECENT_PER_MODEL:]:
             recent.append((parse_time(row.get("timestamp")), state, row))
     recent.sort(key=lambda item: item[0] or datetime.min.astimezone(), reverse=True)
     table = Table(expand=True, show_header=True, header_style="bold", pad_edge=False)
@@ -276,18 +327,29 @@ def render_recent(states):
     table.add_column("分类", no_wrap=True)
     table.add_column("证书", no_wrap=True)
     table.add_column("最终", no_wrap=True)
-    for ts, state, row in recent[:RECENT_LIMIT]:
+    table.add_column("推理摘要", ratio=2, overflow="ellipsis", no_wrap=True)
+    for ts, state, row in recent:
         correct = row.get("verdict_correct") is True
-        cert = row.get("certificate_valid") is True
-        solved = row.get("fully_solved") is True
+        correct_sat = is_correct_sat(row)
+        cert = has_valid_sat_witness(row)
+        correct = row.get("verdict_correct") is True
+        if not correct:
+            final_label, final_style = "分类错误", "bold red"
+        elif row.get("prediction") == "unsat":
+            final_label, final_style = "分类正确", "bold cyan"
+        elif cert:
+            final_label, final_style = "SAT 真解", "bold green"
+        else:
+            final_label, final_style = "SAT 假解", "bold red"
         table.add_row(
             ts.astimezone().strftime("%H:%M:%S") if ts else "—",
             state.label.replace("DeepSeek ", "DS "),
             row.get("logic") or "?",
             f"{Path(row.get('case') or '?').stem} / {row.get('run', '?')}",
             f"[{'green' if correct else 'red'}]{row.get('prediction') or '?'}[/]",
-            f"[{'green' if cert else 'red'}]{'有效' if cert else '无效'}[/]",
-            f"[{'bold green' if solved else 'bold red'}]{'通过' if solved else '失败'}[/]",
+            "[dim]—[/]" if not correct_sat else f"[{'green' if cert else 'red'}]{'有效' if cert else '无效'}[/]",
+            f"[{final_style}]{final_label}[/]",
+            state.reasoning_summary(row) or "[dim]—[/]",
         )
     return Panel(table, title="最近完成", border_style="cyan")
 

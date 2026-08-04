@@ -146,17 +146,15 @@ SAT responses contain a complete interpretation of every original declaration:
 }
 ```
 
-UNSAT responses identify a non-empty contradictory subset of the outer CNF
-clauses using one-based indices:
+UNSAT responses do not require a proof or contradictory clause subset. They use
+`certificate.kind=none`; scoring compares the final verdict with the private
+golden answer:
 
 ```json
 {
   "schema_version": 1,
   "status": "unsat",
-  "certificate": {
-    "kind": "unsat_core",
-    "clause_indices": [1, 4, 7]
-  }
+  "certificate": {"kind": "none"}
 }
 ```
 
@@ -182,18 +180,22 @@ The scoring pipeline uses the following order:
 7. Read the expected status from the private manifest.
 8. Compare the predicted and expected statuses.
 9. If the verdict is wrong or unreadable, mark the attempt wrong and skip cvc5.
-10. If the verdict is correct and is SAT or UNSAT, run the corresponding
-    certificate verifier.
-11. Record verdict correctness and certificate validity independently.
+10. If the correct verdict is SAT, run the SAT model-certificate verifier.
+11. If the correct verdict is UNSAT, accept the private golden-answer match
+    without running cvc5 on an UNSAT certificate.
+12. Aggregate only two core metrics: SAT/UNSAT accuracy and the valid-witness
+    rate among correct SAT predictions.
 
 In compact form:
 
 ```text
 label-free case -> model response -> compare verdict
                                       | wrong: stop, fully_solved=false
-                                      ` correct: verify certificate with cvc5
-                                                   | invalid: fully_solved=false
-                                                   ` valid: fully_solved=true
+                                      ` correct
+                                           | UNSAT: golden match, fully_solved=true
+                                           ` SAT: verify model with cvc5
+                                                  | invalid: fully_solved=false
+                                                  ` valid: fully_solved=true
 ```
 
 ### SAT certificate verification
@@ -214,22 +216,29 @@ The verifier:
 An empty `constants` array is valid only when the input has no zero-arity
 declarations. It is not accepted as a partial witness.
 
-### UNSAT certificate verification
+### UNSAT scoring
 
-The verifier:
+UNSAT no longer requires an unsatisfiable-core certificate. The model returns
+`status=unsat`; after the response is final, the scorer compares it with the
+private golden answer. A matching UNSAT verdict is fully solved without calling
+cvc5. The record uses `verification_basis=golden_answer`,
+`certificate_checked=false`, and `certificate_valid=null`.
 
-1. parses the outer CNF while respecting theory-atom boundaries;
-2. validates unique positive one-based clause indices;
-3. reconstructs only the selected clauses;
-4. declares referenced Tseitin Boolean auxiliaries;
-5. recursively expands `lambda` definitional auxiliaries;
-6. rejects malformed, conflicting, cyclic, or oversized reconstructions;
-7. accepts only when pinned cvc5 returns exactly `unsat` with exit code zero.
+## Metrics and result fields
 
-The current UNSAT certificate is an unsatisfiable core, not a standalone formal
-proof. Alethe/LRAT proof checking can be added later as a stronger track.
+The experiment reports exactly two core metrics:
 
-## Result fields
+1. **SAT/UNSAT accuracy**: attempts with `verdict_correct=true` divided by all
+   valid attempts.
+2. **SAT witness rate**: attempts with `sat_witness_valid=true` divided by
+   attempts whose verdict is both correct and SAT. Correct UNSAT attempts are
+   excluded from both the numerator and denominator of this metric.
+
+Reports also group benchmarks by final successes across the five runs. A correct
+UNSAT verdict is successful; SAT is successful only when its correct verdict has
+a cvc5-valid witness. Each benchmark is listed under 5/5, 4/5, 3/5, 2/5, 1/5,
+or 0/5. SAT/UNSAT accuracy micro-averages all five independent attempts and
+never uses majority voting.
 
 Each valid model attempt records at least:
 
@@ -242,13 +251,16 @@ Each valid model attempt records at least:
   "certificate_checked": true,
   "certificate_valid": true,
   "certificate_skip_reason": null,
+  "sat_witness_checked": true,
+  "sat_witness_valid": true,
+  "verification_basis": "sat_certificate",
   "fully_solved": true
 }
 ```
 
-`fully_solved` is true only when both the verdict and certificate are valid.
-Reports must separately aggregate verdict correctness and fully solved counts as
-5/5, 4/5, 3/5, 2/5, 1/5, and 0/5 per benchmark and model.
+`fully_solved` remains only for backward compatibility and is not a separate
+headline metric. Reports aggregate SAT/UNSAT accuracy and SAT witness rate; a
+correct UNSAT answer must never enlarge the SAT-witness denominator.
 
 ## Artifacts and run directories
 
@@ -257,6 +269,31 @@ Every experiment is isolated under:
 ```text
 experiments/<model>/runs/<UTC timestamp>__<experiment>__<configuration>/
 ```
+
+### Versioned statistics batches
+
+Derived statistics live under `experiments/statistics/vN/`, starting at `v1`
+and incrementing once per new experiment round. Every batch records exact source
+runs, model and logic aggregates, per-case five-run results, 0/5 through 5/5
+final-success distributions, and the concrete benchmark lists. Records are
+deduplicated by `(case, run)`, keeping only the latest attempt.
+
+SAT/UNSAT accuracy micro-averages all five independent attempts and never uses
+majority voting. Final success means a correct UNSAT verdict, or a correct SAT
+verdict with a cvc5-valid witness. Cases without five completed runs are marked
+incomplete rather than counted as 0/5.
+
+Generate the next batch with:
+
+```powershell
+python experiments/statistics/build_statistics.py --batch v2
+```
+
+Batch `v2` uses the shared 93-case set declared in
+`experiments/benchmark-sets/v2.json`. Two cases beyond the active Codex CLI
+route capacity are excluded consistently from every model's v2 statistics, so
+each model has `93 × 5 = 465` planned slots. Exclusion affects only v2 derived
+statistics; raw responses for all 95 source cases remain intact.
 
 Important artifacts are:
 
@@ -306,10 +343,10 @@ Run or resume Codex:
 
 ```powershell
 python experiments/codex-gpt-5.6-sol/scripts/run_codex.py `
-  --run-directory RUN_NAME --experiment-id cnf-certificate-full-v1
+  --run-directory RUN_NAME --experiment-id cnf-sat-certificate-unsat-golden-v2
 
 python experiments/codex-gpt-5.6-sol/scripts/run_codex.py `
-  --run-directory RUN_NAME --experiment-id cnf-certificate-full-v1 --resume
+  --run-directory RUN_NAME --experiment-id cnf-sat-certificate-unsat-golden-v2 --resume
 ```
 
 Use `--dry-run` before paid full runs. Runtime outputs and the repository-root
