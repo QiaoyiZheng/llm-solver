@@ -68,13 +68,17 @@
 | QF_ALIA | `d6617f16d8-qlock.induction.16.md` | 5 次全部长度耗尽 | reasoning 持续追踪状态分支，却未压缩成可管理的依赖图 |
 | QF_ALIA | `76fabb1637-stack-invalid-6.md` | 2 次假 UNSAT，其余 3 次成功 | 不是稳定失败，说明模型偶尔能正确保留分支，但重复运行存在波动 |
 
-### 3.2 找到 SAT 思路，但 witness 没有真正封闭
+### 3.2 判断可能有解，但提交的赋值不完整或不能满足全部公式
+
+这一类错误可以用一句话概括：**模型回答了 SAT，也尝试给出具体值，但这些值还不是一个真正可用的完整解。** 有时它只满足了部分 clause；有时漏了变量或函数；有时多写了不该出现的辅助变量；还有时数学值可能合理，但 JSON 或 SMT-LIB 格式写错。
+
+因此，这一类并不表示模型完全没有思路。它往往已经找到了一个可能的解法方向，问题出在没有把候选值逐项代回全部公式，也没有按证书协议检查完整性和格式。
 
 **先看一个最小例子。** 输入声明只有 `x:Int`，CNF 转换另外引入 `τ1`。SAT 证书应该只给原始声明赋值，例如 `x=3`；`τ1` 是内部辅助符号，可由 CNF 约束扩展。若证书额外提交 `τ1=true`，验证器会发现证书符号集合与原始声明不一致。反过来，如果漏掉 `x`，证书也不完整。
 
 **Flash 的真实表现。** 在 LIA Frobenius 类题中，它能分析 `197x+199y` 一类表示问题，推出候选最大不可表示数，并正确回答 SAT。可是 reasoning 末尾反复讨论‘要不要把 `τ1` 也加入 constants’。实际运行中出现过 `constant coverage mismatch: extra=['τ1']`。这不是 SAT/UNSAT 数学结论错，而是把内部辅助变量误当成原始证书变量。
 
-另一个‘没有封闭’的例子是只给出看似合理的局部赋值，却没有回代所有 clause。例如模型令所有浮点值为 `+zero`，可能满足多数等式；如果还有一个 clause 要求某个结果非零，那么全零模型仍会被 cvc5 返回 UNSAT。正确 SAT 证书必须覆盖全部原始自由符号，并把候选值回代到全部约束，而不是只检查产生候选值的局部片段。
+另一个例子是只给出看似合理的局部赋值，却没有回代所有 clause。例如模型令所有浮点值为 `+zero`，可能满足多数等式；如果还有一个 clause 要求某个结果非零，那么全零模型仍会被 cvc5 返回 UNSAT。正确 SAT 证书必须覆盖全部原始自由符号，并把候选值代回全部约束，而不是只检查其中一部分。
 
 **正确做法。** 将过程明确拆成两步：第一步只解决数学问题；第二步根据 `declarations` 建立严格清单，逐项检查 symbol、sort、函数参数、SMT-LIB 值和覆盖范围，禁止额外加入 `τ/λ`。
 
@@ -86,7 +90,7 @@
 | LIA | `0afccb8013-009.md` | 1 次额外提交 `τ1` | 把内部 Tseitin 变量当成原始声明，触发 coverage mismatch |
 | ABVFP | `dd5e3b0351-float_req_bl_1210_false-unreach-call.c_0.md` | 1 次额外提交 `τ1` | 推理得出 SAT 后，证书清单没有严格以 declarations 为准 |
 | ABVFP | `189893bdbb-float_req_bl_0530b_true-unreach-call.c_2.md` | 1 次括号未闭合，1 次 witness 被 cvc5 反驳 | 一次是 SMT-LIB 表达错误；另一次是具体赋值确实不能满足全部公式 |
-| LIA | `07d23f440c-076.md` | 2 次 witness 被 cvc5 返回 UNSAT | verdict 是 SAT，但候选整数赋值只满足了局部推导，没有封闭全部约束 |
+| LIA | `07d23f440c-076.md` | 2 次 witness 被 cvc5 返回 UNSAT | verdict 是 SAT，但候选整数赋值只满足了部分条件，代入完整公式后仍有约束不成立 |
 | NIA | `6097397d24-Problem17_label54_false-unreach-call.c_10.md` | 1 次 witness 被 cvc5 返回 UNSAT | 非线性候选值未能同时满足所有多项式约束 |
 | QF_S | `fae5a3418c-instance12239.md` | 1 次 constant 字段结构错误 | 把声明结构字段直接抄进 certificate，没有转换成要求的 `symbol/sort/value_smt2` |
 
